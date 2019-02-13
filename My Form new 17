@@ -1,6 +1,6 @@
 {
     "_id": "5c62bbef0e17f20015947244",
-    "updated_at": "2019-02-13T11:37:49.096Z",
+    "updated_at": "2019-02-13T11:47:55.013Z",
     "created_by_id": "5c61664e5e09c400100a559f",
     "owner_id": "5c61664e5e09c400100a559f",
     "name": "My Form new 17",
@@ -8,7 +8,7 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-12T12:28:19.398Z",
-    "__v": 7,
+    "__v": 8,
     "pages": [
         {
             "page_id": "c6a6-c82a-995f",
@@ -28,20 +28,6 @@
                     "component_id": "d3ed-5095-c2a2",
                     "required": false,
                     "_id": "5c63db36f3eacf001589f89a",
-                    "components": [],
-                    "repeat_value": [],
-                    "controlling_elements": []
-                },
-                {
-                    "type": "Signature",
-                    "name": "Signature",
-                    "category": "media",
-                    "label": "Signature Input",
-                    "icon": "/scripts/formbuilder/img/signature.png",
-                    "height": "110",
-                    "component_id": "58e8-2fb2-aafc",
-                    "required": false,
-                    "_id": "5c6400f98da23700152990bd",
                     "components": [],
                     "repeat_value": [],
                     "controlling_elements": []
@@ -68,7 +54,7 @@
         "first_name": "Shanu",
         "id": "5c61664e5e09c400100a559f"
     },
-    "sha": "90be54550d36f89cc16524c56da15594038491a9",
+    "sha": "77b42654e7af8a14f440bdb07db86f75cc3fa8ab",
     "access": "Private",
     "public": false,
     "list_view_fields": [],
