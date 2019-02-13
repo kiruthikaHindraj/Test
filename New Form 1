@@ -1,4 +1,6 @@
 {
+    "_id": "5c640fe0a73a810010717f44",
+    "updated_at": "2019-02-13T12:38:57.680Z",
     "created_by_id": "5c61664e5e09c400100a559f",
     "owner_id": "5c61664e5e09c400100a559f",
     "name": "New Form 1",
@@ -6,7 +8,7 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-13T12:23:46.386Z",
-    "_id": "5c640fe0a73a810010717f44",
+    "__v": 0,
     "pages": [
         {
             "page_id": "339a-13d4-5533",
@@ -119,41 +121,6 @@
             "_id": "5c640fe0a73a810010717f45",
             "components": [
                 {
-                    "type": "Salesforce",
-                    "name": "",
-                    "category": "salesforce",
-                    "label": "Record Lookup",
-                    "icon": "/scripts/formbuilder/img/salesforce.png",
-                    "version": "2",
-                    "attributes": {
-                        "button": "Find",
-                        "enable_barcode_scanner": false,
-                        "position": "Fill",
-                        "auto_fill_id": "",
-                        "query_search_group": "",
-                        "query_order_by": "",
-                        "query_visibility": "",
-                        "filter_fields": "",
-                        "query_limit": "10",
-                        "query_fields": ""
-                    },
-                    "sfdc_query_fields": "",
-                    "sfdc_query_limit": "10",
-                    "sfdc_filter_fields": "",
-                    "sfdc_query_visibility": "",
-                    "sfdc_query_order_by": "",
-                    "sfdc_query_search_group": "",
-                    "sfdc_auto_fill_id": "",
-                    "object_label": "None Selected",
-                    "object_api_name": "None Selected",
-                    "component_id": "7036-6db2-b3fd",
-                    "required": false,
-                    "_id": "5c640fe0a73a810010717f47",
-                    "components": [],
-                    "repeat_value": [],
-                    "controlling_elements": []
-                },
-                {
                     "type": "Signature",
                     "name": "Signature",
                     "category": "media",
@@ -176,7 +143,7 @@
         "first_name": "Shanu",
         "id": "5c61664e5e09c400100a559f"
     },
-    "sha": "",
+    "sha": "633342119a328bfcb0138248d7fea29edb0782f3",
     "access": "Private",
     "public": false,
     "list_view_fields": [],
