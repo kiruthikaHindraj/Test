@@ -1,6 +1,6 @@
 {
     "_id": "5c62bbef0e17f20015947244",
-    "updated_at": "2019-02-13T11:48:31.532Z",
+    "updated_at": "2019-02-13T11:51:22.709Z",
     "created_by_id": "5c61664e5e09c400100a559f",
     "owner_id": "5c61664e5e09c400100a559f",
     "name": "My Form new 17",
@@ -8,7 +8,7 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-12T12:28:19.398Z",
-    "__v": 9,
+    "__v": 10,
     "pages": [
         {
             "page_id": "c6a6-c82a-995f",
@@ -28,20 +28,6 @@
                     "component_id": "d3ed-5095-c2a2",
                     "required": false,
                     "_id": "5c63db36f3eacf001589f89a",
-                    "components": [],
-                    "repeat_value": [],
-                    "controlling_elements": []
-                },
-                {
-                    "type": "Sketch",
-                    "name": "Sketch",
-                    "category": "media",
-                    "label": "Sketch Input",
-                    "icon": "/scripts/formbuilder/img/signature.png",
-                    "height": "220",
-                    "component_id": "473e-4f2b-856d",
-                    "required": false,
-                    "_id": "5c6404b9d19e2400105102f8",
                     "components": [],
                     "repeat_value": [],
                     "controlling_elements": []
@@ -68,7 +54,7 @@
         "first_name": "Shanu",
         "id": "5c61664e5e09c400100a559f"
     },
-    "sha": "a5cee70020bbe3170bb75ff51fb0140fe728747e",
+    "sha": "5d49f569c1e92c8c0f8e7934590a15487ce471a9",
     "access": "Private",
     "public": false,
     "list_view_fields": [],
