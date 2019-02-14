@@ -1,6 +1,6 @@
 {
     "_id": "5c6504c70b44f6001031bf8c",
-    "updated_at": "2019-02-14T06:03:52.741Z",
+    "updated_at": "2019-02-14T06:10:47.233Z",
     "created_by_id": "5c61664e5e09c400100a559f",
     "owner_id": "5c61664e5e09c400100a559f",
     "name": "My Form jdsgf66",
@@ -8,7 +8,7 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-14T05:59:33.733Z",
-    "__v": 0,
+    "__v": 1,
     "pages": [
         {
             "page_id": "43da-925a-0777",
@@ -19,28 +19,18 @@
             "_id": "5c6504c70b44f6001031bf8d",
             "components": [
                 {
+                    "attributes": {
+                        "position": "Left"
+                    },
                     "type": "Header",
                     "name": "Header",
                     "category": "input",
-                    "label": "Header Text",
+                    "label": "Header New",
                     "icon": "/scripts/formbuilder/img/header.png",
-                    "header": "h2",
+                    "header": "H2",
                     "component_id": "abcb-2188-67f6",
                     "required": false,
                     "_id": "5c6506660b44f6001031bf91",
-                    "components": [],
-                    "repeat_value": [],
-                    "controlling_elements": []
-                },
-                {
-                    "type": "Paragraph",
-                    "name": "Paragraph",
-                    "category": "input",
-                    "label": "This is an example paragraph text generated for your form.",
-                    "icon": "/scripts/formbuilder/img/paragraph.png",
-                    "component_id": "77d2-e3e8-1910",
-                    "required": false,
-                    "_id": "5c6506660b44f6001031bf90",
                     "components": [],
                     "repeat_value": [],
                     "controlling_elements": []
@@ -54,7 +44,7 @@
         "first_name": "Shanu",
         "id": "5c61664e5e09c400100a559f"
     },
-    "sha": "33467c090e98b7974678547d519690d3ce3c84e5",
+    "sha": "de63606bf864d30963c400aa727d925d02783ad2",
     "access": "Private",
     "public": false,
     "list_view_fields": [],
