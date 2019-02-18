@@ -1,6 +1,6 @@
 {
-    "__v": 0,
-    "updated_at": "2019-02-18T08:10:31.681Z",
+    "_id": "5c6a68779fe87100114dba2c",
+    "updated_at": "2019-02-18T08:10:56.569Z",
     "created_by_id": "5c6517d40fe5ae001a475fca",
     "owner_id": "5c6517d40fe5ae001a475fca",
     "name": "New testing form 1",
@@ -8,7 +8,8 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-18T08:10:09.477Z",
-    "_id": "5c6a68779fe87100114dba2c",
+    "__v": 1,
+    "sha": "35b8fad473c7a360952306e2d5127c28538d377c",
     "pages": [
         {
             "page_id": "2b26-330b-c614",
@@ -28,6 +29,19 @@
                     "component_id": "6f4a-6083-4935",
                     "required": false,
                     "_id": "5c6a68779fe87100114dba30",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Text Field",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "eee0-56c9-d821",
+                    "required": false,
+                    "_id": "5c6a68904c5c2b0016a78137",
                     "components": [],
                     "repeat_value": [],
                     "controlling_elements": []
