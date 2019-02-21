@@ -1,6 +1,6 @@
 {
-    "__v": 0,
-    "updated_at": "2019-02-21T10:53:33.334Z",
+    "_id": "5c6e832dce7486001651dcb5",
+    "updated_at": "2019-02-21T11:02:46.370Z",
     "created_by_id": "5c6517d40fe5ae001a475fca",
     "owner_id": "5c6517d40fe5ae001a475fca",
     "name": "My Form 7",
@@ -8,7 +8,10 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-21T10:53:22.075Z",
-    "_id": "5c6e832dce7486001651dcb5",
+    "__v": 3,
+    "attributes": {
+        "github_repository_sha": "9246938edd730ea1c1dd34bf58b1dfd61c359f0d"
+    },
     "pages": [
         {
             "page_id": "7d1d-52fa-1989",
@@ -27,6 +30,22 @@
                     "component_id": "bc23-1646-f17e",
                     "required": false,
                     "_id": "5c6e832dce7486001651dcb8",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Phone",
+                    "name": "Phone",
+                    "category": "input",
+                    "label": "Phone Field",
+                    "icon": "/scripts/formbuilder/img/number.png",
+                    "attributes": {
+                        "show_label": "Yes"
+                    },
+                    "component_id": "6568-63e1-5740",
+                    "required": false,
+                    "_id": "5c6e8556402e970016b3db1d",
                     "components": [],
                     "repeat_value": [],
                     "controlling_elements": []
