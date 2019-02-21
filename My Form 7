@@ -1,6 +1,6 @@
 {
     "_id": "5c6e832dce7486001651dcb5",
-    "updated_at": "2019-02-21T11:02:46.370Z",
+    "updated_at": "2019-02-21T11:03:14.477Z",
     "created_by_id": "5c6517d40fe5ae001a475fca",
     "owner_id": "5c6517d40fe5ae001a475fca",
     "name": "My Form 7",
@@ -8,9 +8,9 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-21T10:53:22.075Z",
-    "__v": 3,
+    "__v": 4,
     "attributes": {
-        "github_repository_sha": "9246938edd730ea1c1dd34bf58b1dfd61c359f0d"
+        "github_repository_sha": "22b9e3218df477d9f6e3096eaa7428af8ce9769d"
     },
     "pages": [
         {
@@ -46,20 +46,6 @@
                     "component_id": "6568-63e1-5740",
                     "required": false,
                     "_id": "5c6e8556402e970016b3db1d",
-                    "components": [],
-                    "repeat_value": [],
-                    "controlling_elements": []
-                },
-                {
-                    "type": "Select",
-                    "name": "Select",
-                    "category": "select",
-                    "label": "Select List",
-                    "icon": "/scripts/formbuilder/img/select.png",
-                    "select_options": "Select One\nSelect Two\nSelect Three",
-                    "component_id": "1def-8d44-f9b6",
-                    "required": false,
-                    "_id": "5c6e832dce7486001651dcb7",
                     "components": [],
                     "repeat_value": [],
                     "controlling_elements": []
