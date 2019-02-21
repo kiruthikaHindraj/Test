@@ -1,6 +1,6 @@
 {
-    "__v": 0,
-    "updated_at": "2019-02-21T12:17:58.603Z",
+    "_id": "5c6e96f69c61df0015fa5e3a",
+    "updated_at": "2019-02-21T12:20:17.216Z",
     "created_by_id": "5c6e96357d70150016f64a7a",
     "owner_id": "5c6e96357d70150016f64a7a",
     "name": "My Form 1",
@@ -8,7 +8,10 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-21T12:17:50.057Z",
-    "_id": "5c6e96f69c61df0015fa5e3a",
+    "__v": 1,
+    "attributes": {
+        "github_repository_sha": "5cf8d0809d2415ca37866be7c49f1aba2916c44b"
+    },
     "pages": [
         {
             "page_id": "4542-ba92-6b37",
@@ -17,7 +20,22 @@
             "component_count": null,
             "deployed": true,
             "_id": "5c6e96f69c61df0015fa5e3b",
-            "components": []
+            "components": [
+                {
+                    "type": "Header",
+                    "name": "Header",
+                    "category": "input",
+                    "label": "Header Text",
+                    "icon": "/scripts/formbuilder/img/header.png",
+                    "header": "h2",
+                    "component_id": "781d-61f6-3b9b",
+                    "required": false,
+                    "_id": "5c6e97819c61df0015fa5e3e",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                }
+            ]
         }
     ],
     "connections": [],
