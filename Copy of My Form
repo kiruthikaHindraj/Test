@@ -1,6 +1,6 @@
 {
-    "__v": 0,
-    "updated_at": "2019-02-22T08:29:25.010Z",
+    "_id": "5c6fb2e487513700102fa97a",
+    "updated_at": "2019-02-22T08:30:15.861Z",
     "created_by_id": "5c61664e5e09c400100a559f",
     "owner_id": "5c61664e5e09c400100a559f",
     "name": "Copy of My Form",
@@ -8,7 +8,10 @@
     "current_page": 0,
     "deployed": true,
     "created_at": "2019-02-22T08:29:24.918Z",
-    "_id": "5c6fb2e487513700102fa97a",
+    "__v": 1,
+    "attributes": {
+        "github_repository_sha": "88a6505c5aed46b3270fd7780855ad35d7b0092a"
+    },
     "pages": [
         {
             "page_id": "00cd-468f-c7f8",
@@ -41,6 +44,19 @@
                     "component_id": "03a9-2d36-c393",
                     "required": false,
                     "_id": "5c6fb2e487513700102fa97c",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Paragraph",
+                    "name": "Paragraph",
+                    "category": "input",
+                    "label": "This is an example paragraph text generated for your form.",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "df04-41c6-e385",
+                    "required": false,
+                    "_id": "5c6fb3172eb89900154ee0a4",
                     "components": [],
                     "repeat_value": [],
                     "controlling_elements": []
