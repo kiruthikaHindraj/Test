@@ -1,13 +1,16 @@
 {
     "_id": "5c2ed9a75388140019d3a154",
     "created_at": "2019-01-04T03:57:27.310Z",
-    "updated_at": "2019-02-22T06:03:40.575Z",
+    "updated_at": "2019-02-22T06:04:06.564Z",
     "name": "Account Update",
     "page_count": 1,
     "deployed": true,
     "created_by_id": "5c138f0c776ae30018debf52",
     "owner_id": "5c138f0c776ae30018debf52",
-    "__v": 2,
+    "__v": 3,
+    "attributes": {
+        "github_repository_sha": "5cf331a4907fbee2f1d3022061174103592c55c8"
+    },
     "current_page": 0,
     "pages": [
         {
@@ -18,20 +21,6 @@
             "deployed": true,
             "_id": "5c2ed9a75388140019d3a155",
             "components": [
-                {
-                    "type": "Header",
-                    "name": "Header",
-                    "category": "input",
-                    "label": "Header Text",
-                    "icon": "/scripts/formbuilder/img/header.png",
-                    "header": "h2",
-                    "component_id": "4173-dab9-8c9e",
-                    "required": false,
-                    "_id": "5c6f90bc2255df002b8645b2",
-                    "components": [],
-                    "repeat_value": [],
-                    "controlling_elements": []
-                },
                 {
                     "type": "SalesforceSelect",
                     "name": "",
