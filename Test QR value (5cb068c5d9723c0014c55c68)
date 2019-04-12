@@ -1,0 +1,34 @@
+{
+    "__v": 0,
+    "updated_at": "2019-04-12T10:30:29.312Z",
+    "created_by_id": "5c138f0c776ae30018debf52",
+    "owner_id": "5c138f0c776ae30018debf52",
+    "name": "Test QR value",
+    "page_count": 1,
+    "current_page": 0,
+    "deployed": true,
+    "created_at": "2019-04-12T10:30:11.824Z",
+    "_id": "5cb068c5d9723c0014c55c68",
+    "pages": [
+        {
+            "page_id": "8e99-5c4a-6d6d",
+            "title": "Details",
+            "page_index": 1,
+            "component_count": null,
+            "deployed": true,
+            "_id": "5cb068c5d9723c0014c55c69",
+            "components": []
+        }
+    ],
+    "connections": [],
+    "created_by": {
+        "last_name": "H",
+        "first_name": "Kiruthika",
+        "id": "5c138f0c776ae30018debf52"
+    },
+    "access": "Private",
+    "public": false,
+    "list_view_fields": [],
+    "archived": false,
+    "id": "5cb068c5d9723c0014c55c68"
+}
