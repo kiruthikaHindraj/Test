@@ -1,0 +1,1452 @@
+{
+    "_id": "5cc2bd85899c96001080e352",
+    "updated_at": "2019-05-21T09:03:10.916Z",
+    "created_by_id": "5cc17f16630ca900103bac08",
+    "owner_id": "5cc17f16630ca900103bac08",
+    "name": "TEST_SYNGENTA_23",
+    "page_count": 1,
+    "current_page": 0,
+    "deployed": true,
+    "created_at": "2019-04-26T08:12:53.512Z",
+    "__v": 6,
+    "attributes": {
+        "github_repository_sha": "3f058ecad565f4b3fe201aba6c2cdaaf320b70c7"
+    },
+    "pages": [
+        {
+            "page_id": "a389-6423-e34e",
+            "title": "Details",
+            "page_index": 1,
+            "component_count": null,
+            "deployed": true,
+            "_id": "5cc2bd85899c96001080e36e",
+            "components": [
+                {
+                    "type": "Header",
+                    "name": "Header",
+                    "category": "input",
+                    "label": "Safe Usage Kit Austral Plus - Voucher e-Form",
+                    "icon": "/scripts/formbuilder/img/header.png",
+                    "header": "H3",
+                    "component_id": "2124-4555-343d",
+                    "attributes": {
+                        "position": "Center"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e383",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "HTML",
+                    "name": "HTML",
+                    "category": "media",
+                    "label": "<style>\n#component-814f-1c4c-de38 .panel-heading {\ndisplay: none;\n}\n</style>\n<style>\n.dataTables_paginate , dataTables_filter {\ndisplay :none;\n}\n</style>",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "b0bf-70a8-153d",
+                    "required": false,
+                    "attributes": {
+                        "html_detail": "",
+                        "html_edit": ""
+                    },
+                    "_id": "5cc2bd85899c96001080e382",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "component_id": "435a-5964-3be4",
+                    "attributes": {
+                        "script_detail": "",
+                        "script": "//Code outside of repeat\nfunction add_calculate_price_event(){\n//remove old evnts\n$(\"#component-3a70-8441-9c0a\").off(\".calculate_price\");\n$(\".existing_repeat_entry_panel\").off(\".calculate_price\");\n//Onclick\n$(\"#component-3a70-8441-9c0a .add, #component-3a70-8441-9c0a .delete\").on(\"click.calculate_price\",function(e){\nconsole.log(\"click\");\nsetTimeout(function(){\ncalculate_price()\n},2000);\n});\n//Onchange\n$(\".existing_repeat_entry_panel #component-95e5-b0e7-67d4 input\").on(\"change.calculate_price\",function(e){\nconsole.log(\"change\");\nsetTimeout(function(){\ncalculate_price()\n},1000);\n});\n };\n//Calculate price function\nfunction calculate_price(){\nvar new_total_grand = 0;\n//Get repeat values\n//Loop over all repeat items\nformyoula.form_fields[\"3a70-8441-9c0a\"].get(\"repeat_value\").forEach(function(repeat_item, index){\n//Get individual value\nvar quantity1 = 1;\nvar price1 = _.findWhere(repeat_item, {component_id: \"95e5-b0e7-67d4\"});\nvar total_price_for_item = quantity1 * price1.value;\n//get currecnt grandd total\nnew_total_grand = new_total_grand + total_price_for_item;\n\nformyoula.form_fields[\"76ca-9345-afed\"].set(\"value\", new_total_grand);\n});\n};"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e381",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "component_id": "1a99-c680-7477",
+                    "attributes": {
+                        "script": "//Code outside of repeat\nfunction calculate_quantity_event(){\n//remove old evnts\n$(\"#component-dd94-799d-48a9\").off(\".calculate_quantity\");\n$(\".existing_repeat_entry_panel\").off(\".calculate_quantity\");\n//Onclick\n$(\"#component-dd94-799d-48a9 .add, #component-dd94-799d-48a9 .delete\").on(\"click.calculate_quantity\",function(e){\nconsole.log(\"click\");\nsetTimeout(function(){\ncalculate_quantity()\n},2000);\n});\n//Onchange\n$(\".existing_repeat_entry_panel #component-2484-c97e-85ea input\").on(\"change.calculate_quantity\",function(e){\nconsole.log(\"change\");\nsetTimeout(function(){\ncalculate_price()\n},1000);\n});\n };\n//Calculate price function\nfunction calculate_quantity(){\nvar new_total_grand = 0;\n//Get repeat values\n//Loop over all repeat items\nformyoula.form_fields[\"dd94-799d-48a9\"].get(\"repeat_value\").forEach(function(repeat_item, index){\n//Get individual value\nvar quantity1 = 1;\nvar price1 = _.findWhere(repeat_item, {component_id: \"2484-c97e-85ea\"});\nvar total_price_for_item = quantity1 * price1.value;\n//get currecnt grandd total\nnew_total_grand = new_total_grand + total_price_for_item;\n\nformyoula.form_fields[\"0136-23e2-b223\"].set(\"value\", new_total_grand);\n});\n};",
+                        "script_detail": ""
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e380",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "2019",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Year",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "8e20-2f59-9c4e",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e37f",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Salesforce",
+                    "name": "",
+                    "category": "salesforce",
+                    "label": "Account",
+                    "icon": "/scripts/formbuilder/img/salesforce.png",
+                    "version": "2",
+                    "attributes": {
+                        "custom_offline_lookup_filter": "function (value) {  \n return value.Status_c__c != 'Inactive';\n }",
+                        "offline_sync_filter": "Status_c__c!='Inactive'",
+                        "show_auto_search_results": false,
+                        "button": "Search Account",
+                        "enable_barcode_scanner": false,
+                        "position": "Fill",
+                        "auto_fill_id": "",
+                        "query_search_group": "",
+                        "query_order_by": "",
+                        "query_visibility": "",
+                        "filter_fields": "",
+                        "query_limit": "10",
+                        "query_fields": ""
+                    },
+                    "sfdc_query_fields": "Name,BillingCity,BillingState,BillingStreet,Tax_ID_1__c",
+                    "sfdc_query_limit": "10",
+                    "sfdc_filter_fields": "Status_c__c!='Inactive' and Account_category__c='Non Transactional Account' and Account_Country__c='RO'",
+                    "sfdc_query_visibility": "All Records",
+                    "sfdc_query_order_by": "",
+                    "sfdc_query_search_group": "All Fields",
+                    "sfdc_auto_fill_id": "5cc2bd85899c96001080e384",
+                    "object_label": "None Selected",
+                    "object_api_name": "Account",
+                    "component_id": "d2f7-ca9d-6f36",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e37e",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "SalesforceTable",
+                    "name": "Salesforce Table",
+                    "category": "salesforce",
+                    "label": "Account Table",
+                    "icon": "/scripts/formbuilder/img/salesforce.png",
+                    "version": "1",
+                    "attributes": {
+                        "custom_column_name": [
+                            {
+                                "data_type": "ReadOnly",
+                                "default_value": "",
+                                "column_label": "Account Name",
+                                "api_name": "Name"
+                            },
+                            {
+                                "data_type": "Text",
+                                "default_value": "",
+                                "column_label": "Billing City",
+                                "api_name": "BillingCity"
+                            },
+                            {
+                                "data_type": "Text",
+                                "default_value": "",
+                                "column_label": "Billing State",
+                                "api_name": "BillingState"
+                            },
+                            {
+                                "data_type": "Text",
+                                "default_value": "",
+                                "column_label": "Billing Street",
+                                "api_name": "BillingStreet"
+                            },
+                            {
+                                "data_type": "Text",
+                                "default_value": "",
+                                "column_label": "Tax ID",
+                                "api_name": "Tax_ID_1__c"
+                            }
+                        ],
+                        "custom_offline_lookup_filter": "",
+                        "offline_sync_filter": "",
+                        "table_submit_button_label": "",
+                        "add_table_submit_button": false,
+                        "sfdc_parent_field_name": "",
+                        "sfdc_parent_component": "",
+                        "table_page_length": "",
+                        "owner_field": ""
+                    },
+                    "sfdc_query_fields": "Name,BillingCity,BillingState,BillingStreet,BillingPostalCode",
+                    "sfdc_query_limit": "1",
+                    "sfdc_filter_fields": "id='{{d2f7-ca9d-6f36}}'",
+                    "sfdc_query_visibility": "All Records",
+                    "sfdc_query_order_by": "",
+                    "sfdc_query_search_group": "",
+                    "object_label": "None Selected",
+                    "object_api_name": "Account",
+                    "component_id": "814f-1c4c-de38",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e37d",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": [
+                        {
+                            "component_id": "d2f7-ca9d-6f36",
+                            "label": "Ügyfél (Details)",
+                            "value": "Yes",
+                            "type": "Salesforce",
+                            "_id": "5bd012f810816f001bb79d0c"
+                        }
+                    ]
+                },
+                {
+                    "type": "Repeat",
+                    "name": "Repeat Group",
+                    "category": "select",
+                    "label": "Contact",
+                    "icon": "/scripts/formbuilder/img/repeat.png",
+                    "component_id": "7221-d2aa-1adf",
+                    "attributes": {
+                        "all_expanded": false,
+                        "max_repeat_items": "",
+                        "sfdc_parent_field_name": "AccountId",
+                        "sfdc_parent_component": "d2f7-ca9d-6f36",
+                        "list_view_fields": [
+                            "f4b3-6b43-a2d8"
+                        ],
+                        "delete_button_label": "Delete contact",
+                        "add_title_label": "",
+                        "add_button_label": ""
+                    },
+                    "required": false,
+                    "object_api_name": "Contact",
+                    "sfdc_filter_fields": "",
+                    "sfdc_query_limit": "",
+                    "sfdc_auto_fill_id": "5cc2bd85899c96001080e385",
+                    "_id": "5cc2bd85899c96001080e37c",
+                    "components": [
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "b363-f6ed-3412",
+                            "icon": "/scripts/formbuilder/img/hidden.png",
+                            "label": "Record ID",
+                            "category": "input",
+                            "name": "Hidden",
+                            "value": "",
+                            "type": "Hidden"
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "attributes": {
+                                "readonly": "no"
+                            },
+                            "component_id": "05f8-434c-da17",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "label": "First Name",
+                            "category": "input",
+                            "name": "Text",
+                            "type": "Text"
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "attributes": {
+                                "readonly": "no"
+                            },
+                            "component_id": "ec9b-f676-3fca",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "label": "Last Name",
+                            "category": "input",
+                            "name": "Text",
+                            "type": "Text"
+                        },
+                        {
+                            "type": "Text",
+                            "name": "Text",
+                            "category": "input",
+                            "label": "Name",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "component_id": "f4b3-6b43-a2d8",
+                            "attributes": {
+                                "readonly": "yes"
+                            },
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "9d62-7e96-896d",
+                            "icon": "/scripts/formbuilder/img/email.png",
+                            "label": "Email",
+                            "category": "input",
+                            "name": "Email",
+                            "type": "Email"
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "attributes": {
+                                "readonly": "no"
+                            },
+                            "component_id": "ed23-e80b-88e9",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "label": "Mobile Number",
+                            "category": "input",
+                            "name": "Text",
+                            "type": "Text"
+                        },
+                        {
+                            "type": "CheckBox",
+                            "value": "",
+                            "name": "CheckBox",
+                            "category": "input",
+                            "label": "Send Email",
+                            "icon": "/scripts/formbuilder/img/checkbox.png",
+                            "component_id": "8c87-c400-d277",
+                            "required": false,
+                            "components": []
+                        }
+                    ],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "HTML",
+                    "name": "HTML",
+                    "category": "media",
+                    "label": "",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "e7c8-6ef8-7e76",
+                    "attributes": {
+                        "html_detail": "",
+                        "html_edit": "<style>\n#component-f4b3-6b43-a2d8{\ndisplay:none;\n}\n</style>"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e37b",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Grower Name",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "0902-8ffd-7307",
+                    "attributes": {
+                        "readonly": "yes"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e37a",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": [
+                        {
+                            "component_id": "d2f7-ca9d-6f36",
+                            "label": "Ügyfél (Details)",
+                            "value": "Yes",
+                            "type": "Salesforce",
+                            "_id": "5bd012f810816f001bb79d0b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Email",
+                    "name": "Email",
+                    "category": "input",
+                    "label": "Grower Email",
+                    "icon": "/scripts/formbuilder/img/email.png",
+                    "component_id": "26ea-3e08-f489",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e379",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": [
+                        {
+                            "component_id": "d2f7-ca9d-6f36",
+                            "label": "Ügyfél (Details)",
+                            "value": "Yes",
+                            "type": "Salesforce",
+                            "_id": "5bd012f810816f001bb79d09"
+                        }
+                    ]
+                },
+                {
+                    "type": "SalesforceSelect",
+                    "name": "",
+                    "category": "salesforce",
+                    "version": "2",
+                    "label": "Business Plan",
+                    "icon": "/scripts/formbuilder/img/salesforce.png",
+                    "attributes": {
+                        "owner_field": "",
+                        "button": "Select Business Plan",
+                        "position": "Fill",
+                        "auto_fill_id": "",
+                        "query_search_group": "",
+                        "query_order_by": "",
+                        "query_visibility": "",
+                        "filter_fields": "",
+                        "query_limit": "10",
+                        "query_fields": "",
+                        "offline_sync_filter": "Years__c='2019' and country__c='RO' and Account__c='{{d2f7-ca9d-6f36}}'",
+                        "custom_offline_lookup_filter": "function (value) {  \n return value.Years__c='2019 && country__c='RO' && Account__c==formyoula.form_fields[\"d2f7-ca9d-6f36\"].get(\"value\");\n }"
+                    },
+                    "sfdc_query_fields": "",
+                    "sfdc_query_limit": "10",
+                    "sfdc_filter_fields": "Years__c='{{8e20-2f59-9c4e}}' and Account__c='{{d2f7-ca9d-6f36}}'",
+                    "sfdc_query_visibility": "All Records",
+                    "sfdc_query_order_by": "",
+                    "sfdc_query_search_group": "",
+                    "sfdc_auto_fill_id": "",
+                    "object_label": "None Selected",
+                    "object_api_name": "Account",
+                    "component_id": "5373-ce9b-fe2f",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e378",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "SalesforceSelect",
+                    "name": "",
+                    "category": "salesforce",
+                    "version": "2",
+                    "label": "Sales Plan",
+                    "icon": "/scripts/formbuilder/img/salesforce.png",
+                    "attributes": {
+                        "owner_field": "",
+                        "button": "Select Sales Plan",
+                        "position": "Fill",
+                        "auto_fill_id": "",
+                        "query_search_group": "",
+                        "query_order_by": "",
+                        "query_visibility": "",
+                        "filter_fields": "",
+                        "query_limit": "10",
+                        "query_fields": "",
+                        "offline_sync_filter": "Account_Business_Plan__c='{{5373-ce9b-fe2f}}' and Name LIKE '2019-GL:Tactical Non-Transactional Sales Plan%'",
+                        "custom_offline_lookup_filter": "function (value) {  \n return value.Name LIKE '2019-GL:Tactical Non-Transactional Sales Plan%' && Account_Business_Plan__c==formyoula.form_fields[\"5373-ce9b-fe2f\"].get(\"value\");\n }"
+                    },
+                    "sfdc_query_fields": "Name",
+                    "sfdc_query_limit": "10",
+                    "sfdc_filter_fields": "Account_Business_Plan__c='{{5373-ce9b-fe2f}}' and Name LIKE '{{8e20-2f59-9c4e}}-GL:Tactical Non-Transactional Sales Plan%'",
+                    "sfdc_query_visibility": "All Records",
+                    "sfdc_query_order_by": "",
+                    "sfdc_query_search_group": "",
+                    "sfdc_auto_fill_id": "",
+                    "object_label": "None Selected",
+                    "object_api_name": "Opportunity",
+                    "component_id": "de81-49c2-670c",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e377",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": [
+                        {
+                            "component_id": "5373-ce9b-fe2f",
+                            "label": "Business Plan (Details)",
+                            "value": "Yes",
+                            "type": "SalesforceSelect",
+                            "_id": "5bd029d53cd56400114fab2b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Hidden",
+                    "value": "01224000000wpxCAAQ",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Opp Recordtype Id",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "1e23-edee-b55a",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e376",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "OPEN",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Opp Stage",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "f843-ea55-b2f3",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e375",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "RO",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Country",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "3583-3578-9d1d",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e374",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "RON",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "CurrenycISOCode",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "176e-088f-f6a7",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e373",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Repeat",
+                    "name": "Repeat Group",
+                    "category": "select",
+                    "label": "Syngenta Product",
+                    "icon": "/scripts/formbuilder/img/repeat.png",
+                    "component_id": "dd94-799d-48a9",
+                    "attributes": {
+                        "all_expanded": false,
+                        "max_repeat_items": "",
+                        "sfdc_parent_field_name": "",
+                        "sfdc_parent_component": "",
+                        "list_view_fields": [
+                            "c836-73ed-f593",
+                            "2484-c97e-85ea",
+                            "dad3-ce26-ef87",
+                            "578d-144d-5d08",
+                            "def3-59f6-f439"
+                        ],
+                        "delete_button_label": "Delete",
+                        "add_title_label": "",
+                        "add_button_label": "Add"
+                    },
+                    "required": false,
+                    "object_api_name": "",
+                    "sfdc_filter_fields": "",
+                    "sfdc_query_limit": "",
+                    "sfdc_auto_fill_id": "5cc2bd85899c96001080e388",
+                    "_id": "5cc2bd85899c96001080e372",
+                    "components": [
+                        {
+                            "type": "Salesforce",
+                            "name": "",
+                            "category": "salesforce",
+                            "label": "Syngenta Product",
+                            "icon": "/scripts/formbuilder/img/salesforce.png",
+                            "version": "2",
+                            "attributes": {
+                                "custom_offline_lookup_filter": "function (value) {  \n return  ( value.pricebook2Id ='01s1o000000Jwj9AAC' && value.Species__c='CRNF: Fieldcorn');\n }",
+                                "offline_sync_filter": "pricebook2Id ='01s1o000000Jwj9AAC' and Species__c='CRNF: Fieldcorn'",
+                                "show_auto_search_results": false,
+                                "query_fields": "",
+                                "query_limit": "10",
+                                "filter_fields": "",
+                                "query_visibility": "",
+                                "query_order_by": "",
+                                "query_search_group": "",
+                                "auto_fill_id": "",
+                                "position": "Fill",
+                                "enable_barcode_scanner": false,
+                                "button": "Syngenta Product"
+                            },
+                            "sfdc_query_fields": "Species_Group__c,Name",
+                            "sfdc_query_limit": "20",
+                            "sfdc_filter_fields": "pricebook2Id ='01s1o000000JwjCAAS'",
+                            "sfdc_query_visibility": "All Records",
+                            "sfdc_query_order_by": "",
+                            "sfdc_query_search_group": "All Fields",
+                            "sfdc_auto_fill_id": "5cc2bd85899c96001080e389",
+                            "object_label": "None Selected",
+                            "object_api_name": "PricebookEntry",
+                            "record_id": "",
+                            "component_id": "7f4d-8705-a7c5",
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "type": "Hidden",
+                            "value": "",
+                            "name": "Hidden",
+                            "category": "input",
+                            "label": "Product2Id",
+                            "icon": "/scripts/formbuilder/img/hidden.png",
+                            "component_id": "4815-11ea-3818",
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "type": "Text",
+                            "name": "Text",
+                            "category": "input",
+                            "label": "Product Name",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "component_id": "c836-73ed-f593",
+                            "attributes": {
+                                "readonly": "yes"
+                            },
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "type": "Number",
+                            "name": "Number",
+                            "category": "input",
+                            "label": "Current Year Planned Quantity",
+                            "icon": "/scripts/formbuilder/img/number.png",
+                            "component_id": "2484-c97e-85ea",
+                            "required": true,
+                            "components": []
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "dad3-ce26-ef87",
+                            "icon": "/scripts/formbuilder/img/number.png",
+                            "label": "Promotional Quantity",
+                            "category": "input",
+                            "name": "Number",
+                            "type": "Number"
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "578d-144d-5d08",
+                            "record_id": "",
+                            "object_api_name": "Account",
+                            "object_label": "None Selected",
+                            "sfdc_auto_fill_id": "",
+                            "sfdc_query_search_group": "All Fields",
+                            "sfdc_query_order_by": "",
+                            "sfdc_query_visibility": "All Records",
+                            "sfdc_filter_fields": "Account_Country__c='RO' and RecordType.DeveloperName='Account_Global_Retailler'",
+                            "sfdc_query_limit": "10",
+                            "sfdc_query_fields": "Name",
+                            "attributes": {
+                                "custom_offline_lookup_filter": "",
+                                "offline_sync_filter": "",
+                                "show_auto_search_results": false,
+                                "button": "Supplier of the Product",
+                                "enable_barcode_scanner": false,
+                                "position": "Fill",
+                                "auto_fill_id": "",
+                                "query_search_group": "",
+                                "query_order_by": "",
+                                "query_visibility": "",
+                                "filter_fields": "",
+                                "query_limit": "10",
+                                "query_fields": ""
+                            },
+                            "version": "2",
+                            "icon": "/scripts/formbuilder/img/salesforce.png",
+                            "label": "Supplier",
+                            "category": "salesforce",
+                            "name": "",
+                            "type": "Salesforce"
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "attributes": {
+                                "readonly": "yes"
+                            },
+                            "component_id": "def3-59f6-f439",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "label": "Status",
+                            "category": "input",
+                            "name": "Text",
+                            "type": "Text"
+                        },
+                        {
+                            "type": "JavaScript",
+                            "name": "JavaScript",
+                            "category": "media",
+                            "label": "",
+                            "component_id": "796f-54cb-7745",
+                            "attributes": {
+                                "script_detail": "",
+                                "script": "calculate_quantity_event();"
+                            },
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "attributes": {
+                                "script_detail": "formyoula.form_fields['def3-59f6-f439'].set('value','Forecasted');\n\nwindow.formyoula.form_fields[\"578d-144d-5d08\"].on(\"change\",function(e){\n\nif(formyoula.form_fields['578d-144d-5d08'].get('value')!=''){\n\nformyoula.form_fields['def3-59f6-f439'].set('value','Requested by Grower');\n\n}\n\n})",
+                                "script": "formyoula.form_fields['def3-59f6-f439'].set('value','Forecasted');\n\nwindow.formyoula.form_fields[\"578d-144d-5d08\"].on(\"change\",function(e){\n\nif(formyoula.form_fields['578d-144d-5d08'].get('value')!=''){\n\nformyoula.form_fields['def3-59f6-f439'].set('value','Requested by Grower');\n\n}\n\n})"
+                            },
+                            "component_id": "59a2-7816-55be",
+                            "version": 2,
+                            "label": "",
+                            "category": "media",
+                            "name": "JavaScript",
+                            "type": "JavaScript"
+                        }
+                    ],
+                    "repeat_value": [],
+                    "controlling_elements": [
+                        {
+                            "component_id": "5373-ce9b-fe2f",
+                            "label": "Business Plan (Details)",
+                            "value": "Yes",
+                            "type": "SalesforceSelect",
+                            "_id": "5bed3952eaa39300377f863d"
+                        },
+                        {
+                            "component_id": "de81-49c2-670c",
+                            "label": "Sales Plan (Details)",
+                            "value": "Yes",
+                            "type": "SalesforceSelect",
+                            "_id": "5bed3952eaa39300377f863c"
+                        }
+                    ]
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "component_id": "31df-6431-427e",
+                    "attributes": {
+                        "script_detail": "",
+                        "script": "/* $('body').off(\"change.repeat_header_update\");\n$('body').on(\"change.repeat_header_update\", \".existing_repeat_entry_panel #component-f2ac-47ad-782b input\" ,function(){\nformyoula.form_fields[\"3a70-8441-9c0a\"].trigger(\"change\");\n})\n*/"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e371",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Repeat",
+                    "name": "Repeat Group",
+                    "category": "select",
+                    "label": "Existing Syngenta Product",
+                    "icon": "/scripts/formbuilder/img/repeat.png",
+                    "component_id": "3a70-8441-9c0a",
+                    "attributes": {
+                        "all_expanded": false,
+                        "max_repeat_items": "",
+                        "sfdc_parent_field_name": "OpportunityId",
+                        "sfdc_parent_component": "faac-d78a-36e6",
+                        "list_view_fields": [
+                            "f2ac-47ad-782b"
+                        ],
+                        "delete_button_label": "Delete",
+                        "add_title_label": "",
+                        "add_button_label": "Add Product"
+                    },
+                    "required": false,
+                    "object_api_name": "OpportunityLineItem",
+                    "sfdc_filter_fields": "",
+                    "sfdc_query_limit": "",
+                    "sfdc_auto_fill_id": "5cb5584b4bcd9a002fde7939",
+                    "_id": "5cc2bd85899c96001080e370",
+                    "components": [
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "85fc-ff38-d5fd",
+                            "record_id": "",
+                            "object_api_name": "PricebookEntry",
+                            "object_label": "None Selected",
+                            "sfdc_auto_fill_id": "5cb5584b4bcd9a002fde793a",
+                            "sfdc_query_search_group": "All Fields",
+                            "sfdc_query_order_by": "",
+                            "sfdc_query_visibility": "All Records",
+                            "sfdc_filter_fields": "pricebook2Id ='01s1o000000JwjCAAS'",
+                            "sfdc_query_limit": "20",
+                            "sfdc_query_fields": "Species_Group__c,Name",
+                            "attributes": {
+                                "button": "Select Syngenta Product",
+                                "enable_barcode_scanner": false,
+                                "position": "Fill",
+                                "auto_fill_id": "",
+                                "query_search_group": "",
+                                "query_order_by": "",
+                                "query_visibility": "",
+                                "filter_fields": "",
+                                "query_limit": "10",
+                                "query_fields": "",
+                                "show_auto_search_results": false,
+                                "offline_sync_filter": "pricebook2Id ='01s1o000000Jwj9AAC' and Species__c='CRNF: Fieldcorn'",
+                                "custom_offline_lookup_filter": "function (value) {  \n return  ( value.pricebook2Id ='01s1o000000Jwj9AAC' && value.Species__c='CRNF: Fieldcorn');\n }"
+                            },
+                            "version": "2",
+                            "icon": "/scripts/formbuilder/img/salesforce.png",
+                            "label": "Select Syngenta Product",
+                            "category": "salesforce",
+                            "name": "",
+                            "type": "Salesforce"
+                        },
+                        {
+                            "type": "Text",
+                            "name": "Text",
+                            "category": "input",
+                            "label": "Product Name",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "component_id": "f2ac-47ad-782b",
+                            "attributes": {
+                                "readonly": "yes"
+                            },
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "type": "Number",
+                            "name": "Number",
+                            "category": "input",
+                            "label": "Current Year Planned Quantity",
+                            "icon": "/scripts/formbuilder/img/number.png",
+                            "component_id": "95e5-b0e7-67d4",
+                            "required": true,
+                            "components": []
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "a679-f639-b904",
+                            "icon": "/scripts/formbuilder/img/number.png",
+                            "label": "Promotional Quantity",
+                            "category": "input",
+                            "name": "Number",
+                            "type": "Number"
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "dfef-e422-d742",
+                            "record_id": "",
+                            "object_api_name": "Account",
+                            "object_label": "None Selected",
+                            "sfdc_auto_fill_id": "",
+                            "sfdc_query_search_group": "All Fields",
+                            "sfdc_query_order_by": "",
+                            "sfdc_query_visibility": "All Records",
+                            "sfdc_filter_fields": "Account_Country__c='RO' and RecordType.DeveloperName='Account_Global_Retailler'",
+                            "sfdc_query_limit": "10",
+                            "sfdc_query_fields": "Name",
+                            "attributes": {
+                                "custom_offline_lookup_filter": "",
+                                "offline_sync_filter": "",
+                                "show_auto_search_results": false,
+                                "button": "Supplier of the Product",
+                                "enable_barcode_scanner": false,
+                                "position": "Fill",
+                                "auto_fill_id": "",
+                                "query_search_group": "",
+                                "query_order_by": "",
+                                "query_visibility": "",
+                                "filter_fields": "",
+                                "query_limit": "10",
+                                "query_fields": ""
+                            },
+                            "version": "2",
+                            "icon": "/scripts/formbuilder/img/salesforce.png",
+                            "label": "Supplier",
+                            "category": "salesforce",
+                            "name": "",
+                            "type": "Salesforce"
+                        },
+                        {
+                            "type": "Hidden",
+                            "value": "",
+                            "name": "Hidden",
+                            "category": "input",
+                            "label": "OpportunityLineItem Id",
+                            "icon": "/scripts/formbuilder/img/hidden.png",
+                            "component_id": "38df-75f7-60ae",
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "attributes": {
+                                "readonly": "no"
+                            },
+                            "component_id": "6800-c4d8-ba38",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "label": "Status",
+                            "category": "input",
+                            "name": "Text",
+                            "type": "Text"
+                        },
+                        {
+                            "type": "Text",
+                            "name": "Text",
+                            "category": "input",
+                            "label": "Liste Fiyatı",
+                            "icon": "/scripts/formbuilder/img/text.png",
+                            "component_id": "dd91-f96c-6572",
+                            "attributes": {
+                                "readonly": "yes"
+                            },
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "type": "Hidden",
+                            "value": "",
+                            "name": "Hidden",
+                            "category": "input",
+                            "label": "Product2Id OLI",
+                            "icon": "/scripts/formbuilder/img/hidden.png",
+                            "component_id": "8089-a5ed-12d1",
+                            "required": false,
+                            "components": []
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "attributes": {
+                                "script": "add_calculate_price_event();"
+                            },
+                            "component_id": "d6a0-64f6-5147",
+                            "label": "add_calculate_price_event",
+                            "category": "media",
+                            "name": "JavaScript",
+                            "type": "JavaScript"
+                        },
+                        {
+                            "components": [],
+                            "required": false,
+                            "component_id": "f61e-007c-8451",
+                            "icon": "/scripts/formbuilder/img/number.png",
+                            "label": "Number Field",
+                            "category": "input",
+                            "name": "Number",
+                            "type": "Number"
+                        }
+                    ],
+                    "repeat_value": [],
+                    "controlling_elements": [
+                        {
+                            "component_id": "faac-d78a-36e6",
+                            "label": "Válaszd ki a szezont (Details)",
+                            "value": "Yes",
+                            "type": "SalesforceSelect",
+                            "_id": "5bd0276310816f001bb79e5e"
+                        },
+                        {
+                            "component_id": "45fe-2bad-e492",
+                            "label": "Create New Opportunity (Details)",
+                            "value": "No",
+                            "type": "CheckBox",
+                            "_id": "5bd0276310816f001bb79e5d"
+                        }
+                    ]
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "component_id": "6246-da07-954a",
+                    "attributes": {
+                        "script": "//Remove any old event\n$('body').off(\"change.repeat_header_update\");\n//add event to change in lookup\n$('body').on(\"change.repeat_header_update\", \".existing_repeat_entry_panel #component-85fc-ff38-d5fd .input_content:last\" ,function(){\n//Trigger change on repeat to get updated headers\nformyoula.form_fields[\"3a70-8441-9c0a\"].trigger(\"change\");\n})",
+                        "script_detail": ""
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e36f",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "version": "2",
+                    "component_id": "5151-49f7-479a",
+                    "attributes": {
+                        "script_detail": "",
+                        "script": "var selected_values;\n// Trigger a function on prefill in repeat group\nwindow.formyoula.form_fields[\"Contact\"].on(\"prefill:success\", function(){\n    // Once the data is populated and the checkbox is selected/unselected\n    $(document).on('change', 'input[type=\"checkbox\"]', function(e){\n        // If selected hide the repeat groups other than the selected ones\n        if($(this).is(':checked')){\n            window.formyoula.form_fields[\"Contact\"].changed.repeat_value.forEach(function(index, ival) {\n                for (var i=0; i<index.length; i++) {\n                    if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                        selected_values = index;\n                        for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                            if (j !=ival) {\n                                document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                            } \n                        }\n                    } \n                }\n            })\n        } else {\n            //Show all the repeat group if deselected\n            for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\n                document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"block\";\n            }\n        }\n    });\n});\n\n$(document).on('change', 'input[type=\"checkbox\"]', function(e){\n    if($(this).is(':checked')){\n        window.formyoula.form_fields[\"Contact\"].changed.repeat_value.forEach(function(index, ival) {\n            for (var i=0; i<index.length; i++) {\n                if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                    selected_values = index;\n                    for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                        if (j !=ival) {\n                            document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                        } \n                    }\n                } \n            }\n        })\n    } else {\n        for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\n            document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"block\";\n        }\n    }\n});\n$(document).on( \"click\",\".back\", function() {\n    window.formyoula.form_fields[\"Contact\"].attributes.repeat_value.forEach(function(index, ival) {\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                    if (j !=ival) {\n                        document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })    \n});\n$('.next').on('click', function () {\n    setTimeout(function() {\n        document.getElementsByClassName('form-control input_content')[0].value = selected_values[1].value;\n        document.getElementsByClassName('form-control input_content')[1].value = selected_values[3].value;\n        document.getElementsByClassName('form-control input_content')[8].value = selected_values[4].value;\n        document.getElementsByClassName('form-control input_content')[7].value = selected_values[5].value;\n    }, 1000);\n})"
+                    },
+                    "required": false,
+                    "_id": "5cc2bf05899c96001080e38e",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                }
+            ]
+        },
+        {
+            "page_id": "5f54-8937-5c4d",
+            "title": "GDPR Consent Collection e-form - RO",
+            "page_index": 1,
+            "component_count": null,
+            "deployed": true,
+            "_id": "5cc2bd85899c96001080e353",
+            "components": [
+                {
+                    "type": "Header",
+                    "name": "Header",
+                    "category": "input",
+                    "label": "Formular electronic de consimțământ privind prelucrarea datelor în scop de marketing",
+                    "icon": "/scripts/formbuilder/img/header.png",
+                    "header": "H3",
+                    "component_id": "2241-7941-1684",
+                    "attributes": {
+                        "position": "Center"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e36d",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Prenume",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "a63f-753a-f247",
+                    "attributes": {
+                        "readonly": "no"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e36c",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Nume",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "0b4e-728d-7ee5",
+                    "attributes": {
+                        "readonly": "yes"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e36b",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "TextArea",
+                    "name": "TextArea",
+                    "category": "input",
+                    "label": "Stradă",
+                    "icon": "/scripts/formbuilder/img/text_area.png",
+                    "height": "3",
+                    "attributes": {
+                        "readonly": "yes",
+                        "show_label": "Yes"
+                    },
+                    "component_id": "7950-5719-228f",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e36a",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Oraș",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "196a-43c9-c447",
+                    "attributes": {
+                        "readonly": "yes"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e369",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Sector",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "e4ce-0fc1-c030",
+                    "attributes": {
+                        "readonly": "yes"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e368",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Cod poștal",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "6329-e5ab-fb40",
+                    "attributes": {
+                        "readonly": "yes"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e367",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Telefon",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "b4be-3337-6fe3",
+                    "attributes": {
+                        "readonly": "no"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e366",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Text",
+                    "name": "Text",
+                    "category": "input",
+                    "label": "Telefon mobil",
+                    "icon": "/scripts/formbuilder/img/text.png",
+                    "component_id": "9869-2cab-d5de",
+                    "attributes": {
+                        "readonly": "no"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e365",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Email",
+                    "name": "Email",
+                    "category": "input",
+                    "label": "Adresă de e-mail",
+                    "icon": "/scripts/formbuilder/img/email.png",
+                    "component_id": "b7e7-b5a7-430a",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e364",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "HTML",
+                    "name": "HTML",
+                    "category": "media",
+                    "label": "</br>\n<p style=\"text-align: center;\"><strong><span style=\"font-size: small;\">Legal Text - Vă rugăm să citiți cu atenție</span></strong>\n</br>",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "b1d3-79bd-4202",
+                    "attributes": {
+                        "html_detail": "</br>\n<p style=\"text-align: center;\"><strong><span style=\"font-size: small;\">Legal Text - Vă rugăm să citiți cu atenție</span></strong>\n</br>",
+                        "html_edit": "</br>\n<p style=\"text-align: center;\"><strong><span style=\"font-size: small;\">Legal Text - Vă rugăm să citiți cu atenție</span></strong>\n</br>"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e363",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "HTML",
+                    "name": "HTML",
+                    "category": "media",
+                    "label": "<p style=\"text-align: justify;\"><strong><span style=\"font-size: small;\">Operatorul datelor dumneavoastră cu caracter personal este Syngenta Agro SRL</span></strong><span style=\"font-size: small;\"> cu sediul în Bucureşti, Şoseaua Bucureşti - Ploieşti nr. 73-81, etaj 4, sector 1, Victoria Park - Clădirea 3, înregistrată la Registrul Comerţului Bucureşti cu nr. J40/1380/1995, cod unic de înregistrare (C.U.I) 7025525. tel: +40 21 528 12 00, fax: +40 21 528 12 99, e-mail: marketingromania@syngenta.com, deține conform legii calitatea de operator de date cu caracter personal, și prelucrează datele cu caracter personal în conformitate cu prevederile legale privind protecția persoanelor privind prelucrarea datelor cu caracter personal și libera circulație a acestor date. </span></p>\n<p style=\"text-align: justify;\"><span style=\"font-size: small;\">\nDacă aveți întrebări sau sugestii/sesizări ori doriți să vă exercitați vreunul dintre drepturile pe care le aveți cu privire la protecția datelor în calitate de persoană vizată, vă rugăm să ne contactati, folosind datele de contact de mai sus. Informații suplimentare detaliate găsiți și pe pagina noastră web în secțiunea Declarație de confidențialitate, accesând www.syngenta.ro.\n</span></p>\n<p style=\"text-align: justify;\"><strong><span style=\"font-size: small;\">\nScopurile prelucrării datelor personale și temeiul juridic al prelucrării. </span></strong>\n</P>\n<p style=\"text-align: justify;\"><span style=\"font-size: small;\">\nPe baza consimțământului dumneavoastră, Syngenta Agro SRL vă colectează, utilizează și divulgă datele cu caracter personal în scopuri de reclamă și marketing direct. Acest lucru presupune prelucrarea datelor în vederea trimiterii de informații de către Syngenta Agro SRL cu privire la produsele și serviciile oferite, a administrării relației cu clienții săi actuali sau potențiali, în scopuri de reclamă, marketing și publicitate constând în efectuarea de comunicări comerciale prin e-mail, sms, poștă sau alte mijloace de comunicare directă. Astfel, Syngenta Agro va putea utiliza datele necesare contactării dumneavoastră (e.g. numele, prenumele, adresele poștale și de e-mail, precum și numerele de telefon mobil furnizate), pentru a vă informa periodic asupra celor mai noi produse, servicii, oferte și campanii promoționale Syngenta.\n</span></p>\n<p style=\"text-align: justify;\"><strong>\n<span style=\"font-size: small;\">Atunci când datele personale sunt prelucrate de către Syngenta Agro SRL în scopuri de reclamă și marketing direct, acest lucru are ca temei consimtamantul dumneavoastra și numai pentru că ați optat să vă contactăm în asemenea scopuri. Prin urmare, prelucrarea în scopuri de reclamă și marketing direct se va putea face până la momentul în care ne comunicați că ați decis să vă retrageți consimțământul astfel acordat. Aveti dreptul să vă retrageți în orice moment consimțământul, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de Syngenta Agro SRL înainte de retragerea consimțământului de către dumneavoastră, în calitate de persoană vizată. </span></strong> \n</P>\n<p style=\"text-align: justify;\">\n<span style=\"font-size: small;\">\nTotodată, va vom prelucra în continuare datele cu caracter personal în contextul raporturilor juridice anterioare existente între Syngenta Agro S.R.L. și dumneavoastră, conform celor notificate anterior, inclusiv pentru îndeplinirea obligațiilor noastre legale cu privire la arhivare, ținerea evidențelor finaciar-contabile sau administrative, a obligațiilor de a comunica unor autorități publice, la cerere, anumite informații sau a altor obligații legale.\n</span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Categoriile de destinatari ai datelor cu caracter personal. </span></strong>\n<span style=\"font-size: small;\">Datele cu caracter personal nu vor fi dezvăluite altor persoane, cu exceptia împuterniciților și partenerilor contractuali ai Syngenta Agro SRL, care au acces/necesita acces la aceste informații în contextul serviciilor lor, și a cazurilor în care Syngenta Agro și/sau împuterniciții săi trebuie să respecte obligații impuse de legislația în vigoare. Astfel, în cadrul operațiunilor de prelucrare este posibil să trebuiască să divulgăm către anume persoane (destinatari), fizice sau juridice, intern sau extern, date personale ale persoanelor vizate, astfel încât, spre exemplu, respectivii să ne poată furniza servicii conexe operațiunilor de prelucrare în funcție de scopurile prelucrării, după cum urmează: a) Distribuitori Syngenta: acele societăți distribuitoare de produse Syngenta, care au nevoie să acceseze astfel de informații în vederea respectării contractelor comerciale (livrarea produselor Syngenta comandate de consumatorii finali); b) Syngenta Grup: persoane autorizate din cadrul Syngenta, care au nevoie să acceseze astfel de informații în contextul muncii lor și atribuțiilor lor de serviciu, pentru scopurile descrise mai sus (departamentului financiar, departamentului marketing, personalului IT, Syngenta Business Services (SBS), departamentului juridic sau altor departamente relevante din alte entități din Grupul Syngenta); c) Furnizori de servicii externi care necesită acces la aceste informații în contextul serviciilor lor operaționale, necesare raporturilor juridice anterioare existente între Syngenta Agro S.R.L. și dumneavoastră, precum: telecomunicații, IT, stocare, arhivare, marketing și publicitate, servicii juridice, servicii financiare și de audit, servicii aferente asistentei pentru clienți sau alte servicii operaționale contractate de catre Syngenta Agro SRL.</span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">\nTransferul în strainatate. </span></strong> \n<span style=\"font-size: small;\"> \nÎn funcție de locațiile în care se află serverele Syngenta, pe care vor fi stocate datele, sau de locul în care se află anumiți destinatari ai datelor, datele personale ar putea fi transferate, după caz, în alte state membre ale Uniunii Europene, Spațiului Economic European sau în Statele Unite ale Americii, în baza protectiei oferite de Scutul de confidențialitate UE-SUA. </span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Perioada pentru care vor fi stocate datele cu caracter personal </span></strong>\n<span style=\"font-size: small;\">colectate în baza consimțământului dumnavoastră, se va întinde până la data retragerii consimțământului dumneavoastră, dar nu mai mult de 10 ani de la data colectării.</span> \n</p>\n<p style=\"text-align: justify; page-break-before: always;margin-top:60px;\">\n<strong><span style=\"font-size: small;\">Aveti urmatoarele drepturi cu privire la datele dumneavoastră cu caracter personal: </span></strong>\n</p>\n<p style=\"text-align: justify; \">\n<strong><span style=\"font-size: small;\">Dreptul de acces. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține din partea noastră o confirmare că se prelucrează sau nu date cu caracter personal care vă privesc și, în caz afirmativ, acces la datele respective și la următoarele informații: (a) scopurile prelucrării; (b) categoriile de date vizate; (c) destinatarii sau categoriile de destinatari carora datele le-au fost sau urmează să le fie divulgate, în special destinatari din țări terțe sau organizații internaționale; (d) acolo unde este posibil, perioada pentru care se preconizează că vor fi stocate datele sau, dacă acest lucru nu este posibil, criteriile utilizate pentru a stabili această perioadă; (e) dreptul de a ne solicita rectificarea sau ștergerea datelor ori restricționarea prelucrării datelor referitoare la persoana vizată sau a dreptului de a se opune prelucrării; (f) dreptul de a depune o plangere în fața unei autorități de supraveghere; (g) în cazul în care datele nu sunt colectate de la dumneavoastră, orice informații disponibile privind sursa acestora; (h) existentă (dacă e cazul) a unui proces decizional automatizat incluzând crearea de profiluri, precum și, cel putin în cazurile respective, informații pertinente privind logica utilizată și privind importanța și consecințele preconizate ale unei astfel de prelucrări pentru persoana vizată. Syngenta Agro SRL furnizează la cerere o copie a datelor cu caracter personal care fac obiectul prelucrării. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la rectificare. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține, fără întârzieri nejustificate, rectificarea datelor cu caracter personal inexacte care vă privesc. Ținându-se seama de scopurile în care au fost prelucrate datele, aveți dreptul de a obține completarea datelor cu caracter personal care sunt incomplete, inclusiv prin furnizarea unei declarații suplimentare. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la ștergerea datelor („dreptul de a fi uitat”). </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține din partea nostră ștergerea datelor cu caracter personal care vă privesc, fără întârzieri nejustificate, în cazul în care, spre exemplu, datele cu caracter personal nu mai sunt necesare pentru îndeplinirea scopurilor pentru care au fost colectate sau prelucrate sau vă retrageți consimțământul ori vă exercitați, în orice moment dreptul la opoziție, cu privire la prelucrarea în scop de marketing direct, inclusiv creării de profiluri, în măsura în care este legată de marketingul direct respectiv.</span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la restricționarea prelucrării. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține restricționarea prelucrării în cazul în care: (a) contestați exactitatea datelor – restricționarea se va aplica pentru o perioadă care ne permite să verificăm exactitatea datelor; (b) prelucrarea este ilegală, iar dumneavoastră vă opuneți ștergerii datelor cu caracter personal, solicitând în schimb restricționarea utilizării lor; (c) operatorul nu mai are nevoie de datele cu caracter personal în scopul prelucrarii, dar dumneavoastră i le solicitati pentru constatarea, exercitarea sau apărarea unui drept în instanță; sau (d) v-ați opus prelucrării din motive legate de situația particulară în care vă aflați, prelucrării întemeiate pe interesul legitim, inclusiv creării de profiluri pe baza respectivelor prelucrări, – restricționarea se va aplica pentru o perioadă care îi permite operatorului a verifica dacă drepturile legitime ale operatorului prevalează asupra celor ale persoanei vizate. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la opoziție. Întrucat prelucrarea datelor are drept scop marketingul direct, aveți dreptul de a vă opune în orice moment prelucrării în acest scop a datelor care vă privesc, inclusiv creării de profiluri, în măsura în care este legată de marketingul direct respectiv, iar Syngenta Agro SRL nu va mai prelucra datele cu caracter personal în asemenea asemenea scopuri. </span></strong>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Mai mult, aveți dreptul de a retrage consimțământul în orice moment, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de către Syngenta Agro inainte de retragerea consimțământului</span></strong>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul de a depune o plângere. </span></strong>\n<span style=\"font-size: small;\">În cazul în care considerați că drepturile de care beneficiați în calitate de persoană vizată au fost încalcate, vă puteți adresa oricând, cu o plângere sau sesizare în acest sens, Autorității Naționale de Supraveghere a Prelucrării Datelor cu Caracter Personal, cu sediul in B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, cod postal 010336, Bucuresti, Romania (fax: +40 318 059 602, email: anspdcp@dataprotection.ro). De asemenea, puteti introduce o acțiune ăn justiție, pe rolul instanțelor judecătorești competente. </span> \n</p>\n<p style=\"text-align: justify;\">\n<span style=\"font-size: small;\">Exprimarea consimțămantului dumneavoastră pentru prelucrările în scopurile descrise mai jos este voluntară. Aveți dreptul să vă retrageți în orice moment consimțământul, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de Syngenta Agro SRL înainte de retragerea consimțământului de către dumneavoastră, în calitate de persoană vizată.</span>\n</p>\n<hr />",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "c6a6-b781-50a0",
+                    "attributes": {
+                        "html_detail": "<p style=\"text-align: justify;\"><strong><span style=\"font-size: small;\">Operatorul datelor dumneavoastră cu caracter personal este Syngenta Agro SRL</span></strong><span style=\"font-size: small;\"> cu sediul în Bucureşti, Şoseaua Bucureşti - Ploieşti nr. 73-81, etaj 4, sector 1, Victoria Park - Clădirea 3, înregistrată la Registrul Comerţului Bucureşti cu nr. J40/1380/1995, cod unic de înregistrare (C.U.I) 7025525. tel: +40 21 528 12 00, fax: +40 21 528 12 99, e-mail: marketingromania@syngenta.com, deține conform legii calitatea de operator de date cu caracter personal, și prelucrează datele cu caracter personal în conformitate cu prevederile legale privind protecția persoanelor privind prelucrarea datelor cu caracter personal și libera circulație a acestor date. </span></p>\n<p style=\"text-align: justify;\"><span style=\"font-size: small;\">\nDacă aveți întrebări sau sugestii/sesizări ori doriți să vă exercitați vreunul dintre drepturile pe care le aveți cu privire la protecția datelor în calitate de persoană vizată, vă rugăm să ne contactati, folosind datele de contact de mai sus. Informații suplimentare detaliate găsiți și pe pagina noastră web în secțiunea Declarație de confidențialitate, accesând www.syngenta.ro.\n</span></p>\n<p style=\"text-align: justify;\"><strong><span style=\"font-size: small;\">\nScopurile prelucrării datelor personale și temeiul juridic al prelucrării. </span></strong>\n</P>\n<p style=\"text-align: justify;\"><span style=\"font-size: small;\">\nPe baza consimțământului dumneavoastră, Syngenta Agro SRL vă colectează, utilizează și divulgă datele cu caracter personal în scopuri de reclamă și marketing direct. Acest lucru presupune prelucrarea datelor în vederea trimiterii de informații de către Syngenta Agro SRL cu privire la produsele și serviciile oferite, a administrării relației cu clienții săi actuali sau potențiali, în scopuri de reclamă, marketing și publicitate constând în efectuarea de comunicări comerciale prin e-mail, sms, poștă sau alte mijloace de comunicare directă. Astfel, Syngenta Agro va putea utiliza datele necesare contactării dumneavoastră (e.g. numele, prenumele, adresele poștale și de e-mail, precum și numerele de telefon mobil furnizate), pentru a vă informa periodic asupra celor mai noi produse, servicii, oferte și campanii promoționale Syngenta.\n</span></p>\n<p style=\"text-align: justify;\"><strong>\n<span style=\"font-size: small;\">Atunci când datele personale sunt prelucrate de către Syngenta Agro SRL în scopuri de reclamă și marketing direct, acest lucru are ca temei consimtamantul dumneavoastra și numai pentru că ați optat să vă contactăm în asemenea scopuri. Prin urmare, prelucrarea în scopuri de reclamă și marketing direct se va putea face până la momentul în care ne comunicați că ați decis să vă retrageți consimțământul astfel acordat. Aveti dreptul să vă retrageți în orice moment consimțământul, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de Syngenta Agro SRL înainte de retragerea consimțământului de către dumneavoastră, în calitate de persoană vizată. </span></strong> \n</P>\n<p style=\"text-align: justify;\">\n<span style=\"font-size: small;\">\nTotodată, va vom prelucra în continuare datele cu caracter personal în contextul raporturilor juridice anterioare existente între Syngenta Agro S.R.L. și dumneavoastră, conform celor notificate anterior, inclusiv pentru îndeplinirea obligațiilor noastre legale cu privire la arhivare, ținerea evidențelor finaciar-contabile sau administrative, a obligațiilor de a comunica unor autorități publice, la cerere, anumite informații sau a altor obligații legale.\n</span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Categoriile de destinatari ai datelor cu caracter personal. </span></strong>\n<span style=\"font-size: small;\">Datele cu caracter personal nu vor fi dezvăluite altor persoane, cu exceptia împuterniciților și partenerilor contractuali ai Syngenta Agro SRL, care au acces/necesita acces la aceste informații în contextul serviciilor lor, și a cazurilor în care Syngenta Agro și/sau împuterniciții săi trebuie să respecte obligații impuse de legislația în vigoare. Astfel, în cadrul operațiunilor de prelucrare este posibil să trebuiască să divulgăm către anume persoane (destinatari), fizice sau juridice, intern sau extern, date personale ale persoanelor vizate, astfel încât, spre exemplu, respectivii să ne poată furniza servicii conexe operațiunilor de prelucrare în funcție de scopurile prelucrării, după cum urmează: a) Distribuitori Syngenta: acele societăți distribuitoare de produse Syngenta, care au nevoie să acceseze astfel de informații în vederea respectării contractelor comerciale (livrarea produselor Syngenta comandate de consumatorii finali); b) Syngenta Grup: persoane autorizate din cadrul Syngenta, care au nevoie să acceseze astfel de informații în contextul muncii lor și atribuțiilor lor de serviciu, pentru scopurile descrise mai sus (departamentului financiar, departamentului marketing, personalului IT, Syngenta Business Services (SBS), departamentului juridic sau altor departamente relevante din alte entități din Grupul Syngenta); c) Furnizori de servicii externi care necesită acces la aceste informații în contextul serviciilor lor operaționale, necesare raporturilor juridice anterioare existente între Syngenta Agro S.R.L. și dumneavoastră, precum: telecomunicații, IT, stocare, arhivare, marketing și publicitate, servicii juridice, servicii financiare și de audit, servicii aferente asistentei pentru clienți sau alte servicii operaționale contractate de catre Syngenta Agro SRL.</span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">\nTransferul în strainatate. </span></strong> \n<span style=\"font-size: small;\"> \nÎn funcție de locațiile în care se află serverele Syngenta, pe care vor fi stocate datele, sau de locul în care se află anumiți destinatari ai datelor, datele personale ar putea fi transferate, după caz, în alte state membre ale Uniunii Europene, Spațiului Economic European sau în Statele Unite ale Americii, în baza protectiei oferite de Scutul de confidențialitate UE-SUA. </span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Perioada pentru care vor fi stocate datele cu caracter personal </span></strong>\n<span style=\"font-size: small;\">colectate în baza consimțământului dumnavoastră, se va întinde până la data retragerii consimțământului dumneavoastră, dar nu mai mult de 10 ani de la data colectării.</span> \n</p>\n<p style=\"text-align: justify;page-break-before: always;margin-top:60px;\">\n<strong><span style=\"font-size: small;\">Aveti urmatoarele drepturi cu privire la datele dumneavoastră cu caracter personal: </span></strong>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul de acces. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține din partea noastră o confirmare că se prelucrează sau nu date cu caracter personal care vă privesc și, în caz afirmativ, acces la datele respective și la următoarele informații: (a) scopurile prelucrării; (b) categoriile de date vizate; (c) destinatarii sau categoriile de destinatari carora datele le-au fost sau urmează să le fie divulgate, în special destinatari din țări terțe sau organizații internaționale; (d) acolo unde este posibil, perioada pentru care se preconizează că vor fi stocate datele sau, dacă acest lucru nu este posibil, criteriile utilizate pentru a stabili această perioadă; (e) dreptul de a ne solicita rectificarea sau ștergerea datelor ori restricționarea prelucrării datelor referitoare la persoana vizată sau a dreptului de a se opune prelucrării; (f) dreptul de a depune o plangere în fața unei autorități de supraveghere; (g) în cazul în care datele nu sunt colectate de la dumneavoastră, orice informații disponibile privind sursa acestora; (h) existentă (dacă e cazul) a unui proces decizional automatizat incluzând crearea de profiluri, precum și, cel putin în cazurile respective, informații pertinente privind logica utilizată și privind importanța și consecințele preconizate ale unei astfel de prelucrări pentru persoana vizată. Syngenta Agro SRL furnizează la cerere o copie a datelor cu caracter personal care fac obiectul prelucrării. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la rectificare. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține, fără întârzieri nejustificate, rectificarea datelor cu caracter personal inexacte care vă privesc. Ținându-se seama de scopurile în care au fost prelucrate datele, aveți dreptul de a obține completarea datelor cu caracter personal care sunt incomplete, inclusiv prin furnizarea unei declarații suplimentare. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la ștergerea datelor („dreptul de a fi uitat”). </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține din partea nostră ștergerea datelor cu caracter personal care vă privesc, fără întârzieri nejustificate, în cazul în care, spre exemplu, datele cu caracter personal nu mai sunt necesare pentru îndeplinirea scopurilor pentru care au fost colectate sau prelucrate sau vă retrageți consimțământul ori vă exercitați, în orice moment dreptul la opoziție, cu privire la prelucrarea în scop de marketing direct, inclusiv creării de profiluri, în măsura în care este legată de marketingul direct respectiv.</span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la restricționarea prelucrării. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține restricționarea prelucrării în cazul în care: (a) contestați exactitatea datelor – restricționarea se va aplica pentru o perioadă care ne permite să verificăm exactitatea datelor; (b) prelucrarea este ilegală, iar dumneavoastră vă opuneți ștergerii datelor cu caracter personal, solicitând în schimb restricționarea utilizării lor; (c) operatorul nu mai are nevoie de datele cu caracter personal în scopul prelucrarii, dar dumneavoastră i le solicitati pentru constatarea, exercitarea sau apărarea unui drept în instanță; sau (d) v-ați opus prelucrării din motive legate de situația particulară în care vă aflați, prelucrării întemeiate pe interesul legitim, inclusiv creării de profiluri pe baza respectivelor prelucrări, – restricționarea se va aplica pentru o perioadă care îi permite operatorului a verifica dacă drepturile legitime ale operatorului prevalează asupra celor ale persoanei vizate. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la opoziție. Întrucat prelucrarea datelor are drept scop marketingul direct, aveți dreptul de a vă opune în orice moment prelucrării în acest scop a datelor care vă privesc, inclusiv creării de profiluri, în măsura în care este legată de marketingul direct respectiv, iar Syngenta Agro SRL nu va mai prelucra datele cu caracter personal în asemenea asemenea scopuri. </span></strong>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Mai mult, aveți dreptul de a retrage consimțământul în orice moment, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de către Syngenta Agro inainte de retragerea consimțământului</span></strong>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul de a depune o plângere. </span></strong>\n<span style=\"font-size: small;\">În cazul în care considerați că drepturile de care beneficiați în calitate de persoană vizată au fost încalcate, vă puteți adresa oricând, cu o plângere sau sesizare în acest sens, Autorității Naționale de Supraveghere a Prelucrării Datelor cu Caracter Personal, cu sediul in B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, cod postal 010336, Bucuresti, Romania (fax: +40 318 059 602, email: anspdcp@dataprotection.ro). De asemenea, puteti introduce o acțiune ăn justiție, pe rolul instanțelor judecătorești competente. </span> \n</p>\n<p style=\"text-align: justify; page-break-before: always;margin-top:60px;\">\n<span style=\"font-size: small;\">Exprimarea consimțămantului dumneavoastră pentru prelucrările în scopurile descrise mai jos este voluntară. Aveți dreptul să vă retrageți în orice moment consimțământul, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de Syngenta Agro SRL înainte de retragerea consimțământului de către dumneavoastră, în calitate de persoană vizată.</span>\n</p>\n<hr />",
+                        "html_edit": "<p style=\"text-align: justify;\"><strong><span style=\"font-size: small;\">Operatorul datelor dumneavoastră cu caracter personal este Syngenta Agro SRL</span></strong><span style=\"font-size: small;\"> cu sediul în Bucureşti, Şoseaua Bucureşti - Ploieşti nr. 73-81, etaj 4, sector 1, Victoria Park - Clădirea 3, înregistrată la Registrul Comerţului Bucureşti cu nr. J40/1380/1995, cod unic de înregistrare (C.U.I) 7025525. tel: +40 21 528 12 00, fax: +40 21 528 12 99, e-mail: marketingromania@syngenta.com, deține conform legii calitatea de operator de date cu caracter personal, și prelucrează datele cu caracter personal în conformitate cu prevederile legale privind protecția persoanelor privind prelucrarea datelor cu caracter personal și libera circulație a acestor date. </span></p>\n<p style=\"text-align: justify;\"><span style=\"font-size: small;\">\nDacă aveți întrebări sau sugestii/sesizări ori doriți să vă exercitați vreunul dintre drepturile pe care le aveți cu privire la protecția datelor în calitate de persoană vizată, vă rugăm să ne contactati, folosind datele de contact de mai sus. Informații suplimentare detaliate găsiți și pe pagina noastră web în secțiunea Declarație de confidențialitate, accesând www.syngenta.ro.\n</span></p>\n<p style=\"text-align: justify;\"><strong><span style=\"font-size: small;\">\nScopurile prelucrării datelor personale și temeiul juridic al prelucrării. </span></strong>\n</P>\n<p style=\"text-align: justify;\"><span style=\"font-size: small;\">\nPe baza consimțământului dumneavoastră, Syngenta Agro SRL vă colectează, utilizează și divulgă datele cu caracter personal în scopuri de reclamă și marketing direct. Acest lucru presupune prelucrarea datelor în vederea trimiterii de informații de către Syngenta Agro SRL cu privire la produsele și serviciile oferite, a administrării relației cu clienții săi actuali sau potențiali, în scopuri de reclamă, marketing și publicitate constând în efectuarea de comunicări comerciale prin e-mail, sms, poștă sau alte mijloace de comunicare directă. Astfel, Syngenta Agro va putea utiliza datele necesare contactării dumneavoastră (e.g. numele, prenumele, adresele poștale și de e-mail, precum și numerele de telefon mobil furnizate), pentru a vă informa periodic asupra celor mai noi produse, servicii, oferte și campanii promoționale Syngenta.\n</span></p>\n<p style=\"text-align: justify;\"><strong>\n<span style=\"font-size: small;\">Atunci când datele personale sunt prelucrate de către Syngenta Agro SRL în scopuri de reclamă și marketing direct, acest lucru are ca temei consimtamantul dumneavoastra și numai pentru că ați optat să vă contactăm în asemenea scopuri. Prin urmare, prelucrarea în scopuri de reclamă și marketing direct se va putea face până la momentul în care ne comunicați că ați decis să vă retrageți consimțământul astfel acordat. Aveti dreptul să vă retrageți în orice moment consimțământul, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de Syngenta Agro SRL înainte de retragerea consimțământului de către dumneavoastră, în calitate de persoană vizată. </span></strong> \n</P>\n<p style=\"text-align: justify;\">\n<span style=\"font-size: small;\">\nTotodată, va vom prelucra în continuare datele cu caracter personal în contextul raporturilor juridice anterioare existente între Syngenta Agro S.R.L. și dumneavoastră, conform celor notificate anterior, inclusiv pentru îndeplinirea obligațiilor noastre legale cu privire la arhivare, ținerea evidențelor finaciar-contabile sau administrative, a obligațiilor de a comunica unor autorități publice, la cerere, anumite informații sau a altor obligații legale.\n</span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Categoriile de destinatari ai datelor cu caracter personal. </span></strong>\n<span style=\"font-size: small;\">Datele cu caracter personal nu vor fi dezvăluite altor persoane, cu exceptia împuterniciților și partenerilor contractuali ai Syngenta Agro SRL, care au acces/necesita acces la aceste informații în contextul serviciilor lor, și a cazurilor în care Syngenta Agro și/sau împuterniciții săi trebuie să respecte obligații impuse de legislația în vigoare. Astfel, în cadrul operațiunilor de prelucrare este posibil să trebuiască să divulgăm către anume persoane (destinatari), fizice sau juridice, intern sau extern, date personale ale persoanelor vizate, astfel încât, spre exemplu, respectivii să ne poată furniza servicii conexe operațiunilor de prelucrare în funcție de scopurile prelucrării, după cum urmează: a) Distribuitori Syngenta: acele societăți distribuitoare de produse Syngenta, care au nevoie să acceseze astfel de informații în vederea respectării contractelor comerciale (livrarea produselor Syngenta comandate de consumatorii finali); b) Syngenta Grup: persoane autorizate din cadrul Syngenta, care au nevoie să acceseze astfel de informații în contextul muncii lor și atribuțiilor lor de serviciu, pentru scopurile descrise mai sus (departamentului financiar, departamentului marketing, personalului IT, Syngenta Business Services (SBS), departamentului juridic sau altor departamente relevante din alte entități din Grupul Syngenta); c) Furnizori de servicii externi care necesită acces la aceste informații în contextul serviciilor lor operaționale, necesare raporturilor juridice anterioare existente între Syngenta Agro S.R.L. și dumneavoastră, precum: telecomunicații, IT, stocare, arhivare, marketing și publicitate, servicii juridice, servicii financiare și de audit, servicii aferente asistentei pentru clienți sau alte servicii operaționale contractate de catre Syngenta Agro SRL.</span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">\nTransferul în strainatate. </span></strong> \n<span style=\"font-size: small;\"> \nÎn funcție de locațiile în care se află serverele Syngenta, pe care vor fi stocate datele, sau de locul în care se află anumiți destinatari ai datelor, datele personale ar putea fi transferate, după caz, în alte state membre ale Uniunii Europene, Spațiului Economic European sau în Statele Unite ale Americii, în baza protectiei oferite de Scutul de confidențialitate UE-SUA. </span>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Perioada pentru care vor fi stocate datele cu caracter personal </span></strong>\n<span style=\"font-size: small;\">colectate în baza consimțământului dumnavoastră, se va întinde până la data retragerii consimțământului dumneavoastră, dar nu mai mult de 10 ani de la data colectării.</span> \n</p>\n<p style=\"text-align: justify;page-break-before: always;margin-top:60px;\">\n<strong><span style=\"font-size: small;\">Aveti urmatoarele drepturi cu privire la datele dumneavoastră cu caracter personal: </span></strong>\n</p>\n<p style=\"text-align: \">\n<strong><span style=\"font-size: small;\">Dreptul de acces. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține din partea noastră o confirmare că se prelucrează sau nu date cu caracter personal care vă privesc și, în caz afirmativ, acces la datele respective și la următoarele informații: (a) scopurile prelucrării; (b) categoriile de date vizate; (c) destinatarii sau categoriile de destinatari carora datele le-au fost sau urmează să le fie divulgate, în special destinatari din țări terțe sau organizații internaționale; (d) acolo unde este posibil, perioada pentru care se preconizează că vor fi stocate datele sau, dacă acest lucru nu este posibil, criteriile utilizate pentru a stabili această perioadă; (e) dreptul de a ne solicita rectificarea sau ștergerea datelor ori restricționarea prelucrării datelor referitoare la persoana vizată sau a dreptului de a se opune prelucrării; (f) dreptul de a depune o plangere în fața unei autorități de supraveghere; (g) în cazul în care datele nu sunt colectate de la dumneavoastră, orice informații disponibile privind sursa acestora; (h) existentă (dacă e cazul) a unui proces decizional automatizat incluzând crearea de profiluri, precum și, cel putin în cazurile respective, informații pertinente privind logica utilizată și privind importanța și consecințele preconizate ale unei astfel de prelucrări pentru persoana vizată. Syngenta Agro SRL furnizează la cerere o copie a datelor cu caracter personal care fac obiectul prelucrării. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la rectificare. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține, fără întârzieri nejustificate, rectificarea datelor cu caracter personal inexacte care vă privesc. Ținându-se seama de scopurile în care au fost prelucrate datele, aveți dreptul de a obține completarea datelor cu caracter personal care sunt incomplete, inclusiv prin furnizarea unei declarații suplimentare. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la ștergerea datelor („dreptul de a fi uitat”). </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține din partea nostră ștergerea datelor cu caracter personal care vă privesc, fără întârzieri nejustificate, în cazul în care, spre exemplu, datele cu caracter personal nu mai sunt necesare pentru îndeplinirea scopurilor pentru care au fost colectate sau prelucrate sau vă retrageți consimțământul ori vă exercitați, în orice moment dreptul la opoziție, cu privire la prelucrarea în scop de marketing direct, inclusiv creării de profiluri, în măsura în care este legată de marketingul direct respectiv.</span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la restricționarea prelucrării. </span></strong>\n<span style=\"font-size: small;\">Aveți dreptul de a obține restricționarea prelucrării în cazul în care: (a) contestați exactitatea datelor – restricționarea se va aplica pentru o perioadă care ne permite să verificăm exactitatea datelor; (b) prelucrarea este ilegală, iar dumneavoastră vă opuneți ștergerii datelor cu caracter personal, solicitând în schimb restricționarea utilizării lor; (c) operatorul nu mai are nevoie de datele cu caracter personal în scopul prelucrarii, dar dumneavoastră i le solicitati pentru constatarea, exercitarea sau apărarea unui drept în instanță; sau (d) v-ați opus prelucrării din motive legate de situația particulară în care vă aflați, prelucrării întemeiate pe interesul legitim, inclusiv creării de profiluri pe baza respectivelor prelucrări, – restricționarea se va aplica pentru o perioadă care îi permite operatorului a verifica dacă drepturile legitime ale operatorului prevalează asupra celor ale persoanei vizate. </span> \n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul la opoziție. Întrucat prelucrarea datelor are drept scop marketingul direct, aveți dreptul de a vă opune în orice moment prelucrării în acest scop a datelor care vă privesc, inclusiv creării de profiluri, în măsura în care este legată de marketingul direct respectiv, iar Syngenta Agro SRL nu va mai prelucra datele cu caracter personal în asemenea asemenea scopuri. </span></strong>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Mai mult, aveți dreptul de a retrage consimțământul în orice moment, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de către Syngenta Agro inainte de retragerea consimțământului</span></strong>\n</p>\n<p style=\"text-align: justify;\">\n<strong><span style=\"font-size: small;\">Dreptul de a depune o plângere. </span></strong>\n<span style=\"font-size: small;\">În cazul în care considerați că drepturile de care beneficiați în calitate de persoană vizată au fost încalcate, vă puteți adresa oricând, cu o plângere sau sesizare în acest sens, Autorității Naționale de Supraveghere a Prelucrării Datelor cu Caracter Personal, cu sediul in B-dul G-ral. Gheorghe Magheru 28-30, Sector 1, cod postal 010336, Bucuresti, Romania (fax: +40 318 059 602, email: anspdcp@dataprotection.ro). De asemenea, puteti introduce o acțiune ăn justiție, pe rolul instanțelor judecătorești competente. </span> \n</p>\n<p style=\"text-align: justify;page-break-before: always;margin-top:60px;\">\n<span style=\"font-size: small;\">Exprimarea consimțămantului dumneavoastră pentru prelucrările în scopurile descrise mai jos este voluntară. Aveți dreptul să vă retrageți în orice moment consimțământul, fără a fi prejudiciat în vreun fel. Conform legii, retragerea consimțământului nu va afecta legalitatea prelucrării efectuate de Syngenta Agro SRL înainte de retragerea consimțământului de către dumneavoastră, în calitate de persoană vizată.</span>\n</p>\n<hr />"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e362",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "HTML",
+                    "name": "HTML",
+                    "category": "media",
+                    "label": "<!-- start first radio -->\n<p>\n    <label>\n        <input type=\"radio\" id=\"dpa1\" name=\"general_dpa\" value=true /> \n       <strong>\n         <span style=\"font-size: small;\">Sunt de acord </span>\n      </strong>\n  </label>\n     <strong>\n       <label>\n         <input type=\"radio\" id=\"dpa2\" name=\"general_dpa\" value=false />\n         <span style=\"font-size: small;\">Nu sunt de acord</span>\n       </label>\n  </strong>\n</p>\n<p>\n  <span style=\"font-size: small;\">ca Syngenta Agro SRL să îmi prelucreze numele și datele de contact în scopuri de marketing direct, în vederea trimiterii de informații de către Syngenta Agro SRL cu privire la produsele și serviciile oferite, a administrării relației cu clienții săi finali, constând în efectuarea de comunicări comerciale pentru transmiterea de informații legate de campaniile, produsele și serviciile Syngenta Agro SRL, știri, evenimente, activități ale Syngenta Agro SRL dedicate clienților produselor sale prin:</span>\n</p>\n<!-- end first radio -->",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "b8cf-5f5e-877d",
+                    "attributes": {
+                        "html_detail": "<!-- start first radio -->\n<p>\n    <label>\n        <input type=\"radio\" id=\"dpa1\" name=\"general_dpa\" value=true /> \n       <strong>\n         <span style=\"font-size: small;\">Sunt de acord </span>\n      </strong>\n  </label>\n     <strong>\n       <label>\n         <input type=\"radio\" id=\"dpa2\" name=\"general_dpa\" value=false />\n         <span style=\"font-size: small;\">Nu sunt de acord</span>\n       </label>\n  </strong>\n</p>\n<p>\n  <span style=\"font-size: small;\">ca Syngenta Agro SRL să îmi prelucreze numele și datele de contact în scopuri de marketing direct, în vederea trimiterii de informații de către Syngenta Agro SRL cu privire la produsele și serviciile oferite, a administrării relației cu clienții săi finali, constând în efectuarea de comunicări comerciale pentru transmiterea de informații legate de campaniile, produsele și serviciile Syngenta Agro SRL, știri, evenimente, activități ale Syngenta Agro SRL dedicate clienților produselor sale prin:</span>\n</p>\n<!-- end first radio -->",
+                        "html_edit": "<!-- start first radio -->\n<p>\n    <label>\n        <input type=\"radio\" id=\"dpa1\" name=\"general_dpa\" value=true /> \n       <strong>\n         <span style=\"font-size: small;\">Sunt de acord</span>\n      </strong>\n  </label>\n     <strong>\n       <label>\n         <input type=\"radio\" id=\"dpa2\" name=\"general_dpa\" value=false />\n         <span style=\"font-size: small;\">Nu sunt de acord</span>\n       </label>\n  </strong>\n</p>\n<p>\n  <span style=\"font-size: small;\">ca Syngenta Agro SRL să îmi prelucreze numele și datele de contact în scopuri de marketing direct, în vederea trimiterii de informații de către Syngenta Agro SRL cu privire la produsele și serviciile oferite, a administrării relației cu clienții săi finali, constând în efectuarea de comunicări comerciale pentru transmiterea de informații legate de campaniile, produsele și serviciile Syngenta Agro SRL, știri, evenimente, activități ale Syngenta Agro SRL dedicate clienților produselor sale prin:</span>\n</p>\n<!-- end first radio -->"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e361",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "version": "2",
+                    "component_id": "011f-d08f-e3e1",
+                    "attributes": {
+                        "script_detail": "//set the value in detail view based on hidden input value\nif (window.formyoula.form_fields[\"082f-560f-9197\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"082f-560f-9197\"].get(\"value\")==\"True\"){\n$(\"#dpa1\").prop(\"checked\", true);\n}else{\n$(\"#dpa2\").prop(\"checked\", true);\n}\n}\n   $(\"#dpa1\").prop(\"disabled\", true);\n   $(\"#dpa2\").prop(\"disabled\", true);",
+                        "script": "//Checking if we are editing the form as a second time in formyoula with having values already,  set the value based on hidden input value if any\nif (window.formyoula.form_fields[\"082f-560f-9197\"].get(\"value\")!=\"\"){\n   if (window.formyoula.form_fields[\"082f-560f-9197\"].get(\"value\")==\"True\"){\n       $(\"#dpa1\").prop(\"checked\", true);\n    $(\"#email1\").prop(\"disabled\", false);\n    $(\"#email2\").prop(\"disabled\", false);\n    $(\"#sms1\").prop(\"disabled\", false);\n    $(\"#sms2\").prop(\"disabled\", false);\n    $(\"#posta1\").prop(\"disabled\", false);\n    $(\"#posta2\").prop(\"disabled\", false);\n    $(\"#call1\").prop(\"disabled\", false);\n    $(\"#call2\").prop(\"disabled\", false);\n\n    }else{\n      $(\"#dpa2\").prop(\"checked\", true);\n    $(\"#email1\").prop(\"disabled\", true);\n    $(\"#email2\").prop(\"disabled\", true);\n    $(\"#sms1\").prop(\"disabled\", true);\n    $(\"#sms2\").prop(\"disabled\", true);\n    $(\"#posta1\").prop(\"disabled\", true);\n    $(\"#posta2\").prop(\"disabled\", true);\n    $(\"#call1\").prop(\"disabled\", true);\n    $(\"#call2\").prop(\"disabled\", true);\n\n}\n}else\n{\n    $(\"#email1\").prop(\"disabled\", true);\n    $(\"#email2\").prop(\"disabled\", true);\n    $(\"#sms1\").prop(\"disabled\", true);\n    $(\"#sms2\").prop(\"disabled\", true);\n    $(\"#posta1\").prop(\"disabled\", true);\n    $(\"#posta2\").prop(\"disabled\", true);\n    $(\"#call1\").prop(\"disabled\", true);\n    $(\"#call2\").prop(\"disabled\", true);\n}\n\n//change Event Capture for general_dpa radio button \n$('input[name=\"general_dpa\"]').change(function(){\n    if ( $(\"input[name='general_dpa']:checked\").val() == \"true\" ) {\n//General data protection agreement must be True\n      window.formyoula.form_fields[\"082f-560f-9197\"].set(\"value\",\"True\")\n\n//Enabling the rest of option buttons\n $(\"#email1\").prop(\"disabled\", false);\n    $(\"#email2\").prop(\"disabled\", false);\n    $(\"#sms1\").prop(\"disabled\", false);\n    $(\"#sms2\").prop(\"disabled\", false);\n    $(\"#posta1\").prop(\"disabled\", false);\n    $(\"#posta2\").prop(\"disabled\", false);\n    $(\"#call1\").prop(\"disabled\", false);\n    $(\"#call2\").prop(\"disabled\", false);\n\n    } else {\n       if ($(\"input[name='general_dpa']:checked\").val() == \"false\"){\n             //General data protection agreement must be False\n              window.formyoula.form_fields[\"082f-560f-9197\"].set(\"value\",\"False\")\n             //email opt out = true\n             window.formyoula.form_fields[\"1266-d28c-335c\"].set(\"value\",\"True\")\n            //sms opt out = true\n             window.formyoula.form_fields[\"aa71-b38a-db6c\"].set(\"value\",\"True\")\n            //postal opt out = true\n            window.formyoula.form_fields[\"307d-6c99-f45e\"].set(\"value\",\"True\")\n            //calls opt out = true\n            window.formyoula.form_fields[\"64da-618b-0303\"].set(\"value\",\"True\")\n\n            //reject the rest of the options\n              $(\"#email2\").prop(\"checked\", true);\n              $(\"#sms2\").prop(\"checked\", true);\n              $(\"#posta2\").prop(\"checked\", true);\n              $(\"#call2\").prop(\"checked\", true);\n\n            //Disabling the rest of option buttons  \n             $(\"#email1\").prop(\"disabled\", true);\n             $(\"#email2\").prop(\"disabled\", true);\n             $(\"#sms1\").prop(\"disabled\", true);\n             $(\"#sms2\").prop(\"disabled\", true);\n             $(\"#posta1\").prop(\"disabled\", true);\n             $(\"#posta2\").prop(\"disabled\", true);\n             $(\"#call1\").prop(\"disabled\", true);\n             $(\"#call2\").prop(\"disabled\", true);\n        }\n    }\n})"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e360",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "HTML",
+                    "name": "HTML",
+                    "category": "media",
+                    "label": "<hr />\n<p>\n<span style=\"font-size: small;\">Email</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label>\n      <input type=\"radio\" id=\"email1\" name=\"email_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n <label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n<input type=\"radio\" id=\"email2\"  name=\"email_oo\" value=false />\n     <strong><span style=\"font-size: small;\">Nu sunt de acord</span></strong></label>\n</p>\n<p>\n<span style=\"font-size: small;\">SMS</span>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label >\n      <input type=\"radio\" id=\"sms1\" name=\"sms_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <strong><label>\n<input type=\"radio\" id=\"sms2\"  name=\"sms_oo\" value=false />\n    <span style=\"font-size: small;\">Nu sunt de acord</span></label>\n  </strong>\n</p>\n<p>\n  <span style=\"font-size: small;\">Poștă</span>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label >\n      <input type=\"radio\" id=\"posta1\" name=\"posta_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <strong><label><input type=\"radio\" id=\"posta2\"  name=\"posta_oo\" value=false />\n    <span style=\"font-size: small;\">Nu sunt de acord</span></label>\n  </strong>\n</p>",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "ac72-1da8-b1ef",
+                    "attributes": {
+                        "html_detail": "<hr />\n<p>\n<span style=\"font-size: small;\">Email</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label>\n      <input type=\"radio\" id=\"email1\" name=\"email_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n <label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n<input type=\"radio\" id=\"email2\"  name=\"email_oo\" value=false />\n     <strong><span style=\"font-size: small;\">Nu sunt de acord</span></strong></label>\n</p>\n<p>\n<span style=\"font-size: small;\">SMS</span>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label >\n      <input type=\"radio\" id=\"sms1\" name=\"sms_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <strong><label>\n<input type=\"radio\" id=\"sms2\"  name=\"sms_oo\" value=false />\n    <span style=\"font-size: small;\">Nu sunt de acord</span></label>\n  </strong>\n</p>\n<p>\n  <span style=\"font-size: small;\">Poștă</span>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label >\n      <input type=\"radio\" id=\"posta1\" name=\"posta_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <strong><label><input type=\"radio\" id=\"posta2\"  name=\"posta_oo\" value=false />\n    <span style=\"font-size: small;\">Nu sunt de acord</span></label>\n  </strong>\n</p>",
+                        "html_edit": "<hr />\n<p>\n<span style=\"font-size: small;\">Email</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label>\n      <input type=\"radio\" id=\"email1\" name=\"email_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n <label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n<input type=\"radio\" id=\"email2\"  name=\"email_oo\" value=false />\n     <strong><span style=\"font-size: small;\">Nu sunt de acord</span></strong></label>\n</p>\n<p>\n<span style=\"font-size: small;\">SMS</span>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label >\n      <input type=\"radio\" id=\"sms1\" name=\"sms_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <strong><label>\n<input type=\"radio\" id=\"sms2\"  name=\"sms_oo\" value=false />\n    <span style=\"font-size: small;\">Nu sunt de acord</span></label>\n  </strong>\n</p>\n<p>\n  <span style=\"font-size: small;\">Poștă</span>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <label >\n      <input type=\"radio\" id=\"posta1\" name=\"posta_oo\" value=true />\n      <strong><span style=\"font-size: small;\">Sunt de acord</span> </strong>\n  </label>\n<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>\n  <strong><label><input type=\"radio\" id=\"posta2\"  name=\"posta_oo\" value=false />\n    <span style=\"font-size: small;\">Nu sunt de acord</span></label>\n  </strong>\n</p>"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e35f",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "version": "2",
+                    "component_id": "ce66-df23-2187",
+                    "attributes": {
+                        "script_detail": "//set the value in detail view based on hidden input value\n//set the value in Edit view based on hidden input value, despite the status\nif (window.formyoula.form_fields[\"1266-d28c-335c\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"1266-d28c-335c\"].get(\"value\")==\"False\"){\n$(\"#email1\").prop(\"checked\", true);\n}else{\n$(\"#email2\").prop(\"checked\", true);\n}\n}\n\nif (window.formyoula.form_fields[\"aa71-b38a-db6c\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"aa71-b38a-db6c\"].get(\"value\")==\"False\"){\n$(\"#sms1\").prop(\"checked\", true);\n}else{\n$(\"#sms2\").prop(\"checked\", true);\n}\n}\n\nif (window.formyoula.form_fields[\"307d-6c99-f45e\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"307d-6c99-f45e\"].get(\"value\")==\"False\"){\n$(\"#posta1\").prop(\"checked\", true);\n}else{\n$(\"#posta2\").prop(\"checked\", true);\n}\n}\n\n    $(\"#email1\").prop(\"disabled\", true);\n    $(\"#email2\").prop(\"disabled\", true);\n    $(\"#sms1\").prop(\"disabled\", true);\n    $(\"#sms2\").prop(\"disabled\", true);\n    $(\"#posta1\").prop(\"disabled\", true);\n    $(\"#posta2\").prop(\"disabled\", true);",
+                        "script": "//set the value in Edit view based on hidden input value, despite the status\nif (window.formyoula.form_fields[\"1266-d28c-335c\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"1266-d28c-335c\"].get(\"value\")==\"False\"){\n$(\"#email1\").prop(\"checked\", true);\n}else{\n$(\"#email2\").prop(\"checked\", true);\n}\n}\n\nif (window.formyoula.form_fields[\"aa71-b38a-db6c\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"aa71-b38a-db6c\"].get(\"value\")==\"False\"){\n$(\"#sms1\").prop(\"checked\", true);\n}else{\n$(\"#sms2\").prop(\"checked\", true);\n}\n}\n\nif (window.formyoula.form_fields[\"307d-6c99-f45e\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"307d-6c99-f45e\"].get(\"value\")==\"False\"){\n$(\"#posta1\").prop(\"checked\", true);\n}else{\n$(\"#posta2\").prop(\"checked\", true);\n}\n}\n\n//email radio script\n$('input[name=\"email_oo\"]').change(function(){\n      //Check if EMail radio button\n    if ( $(\"input[name='email_oo']:checked\").val() == \"true\"  ) {\n      window.formyoula.form_fields[\"1266-d28c-335c\"].set(\"value\",\"False\")\n    \n    } else {\n      if ($(\"input[name='email_oo']:checked\").val() == \"false\"){\n          window.formyoula.form_fields[\"1266-d28c-335c\"].set(\"value\",\"True\")\n      }\n   }\n\n})//end of change event\n\n$('input[name=\"sms_oo\"]').change(function(){\n    //Check if SMS radio button\n    if ( $(\"input[name='sms_oo']:checked\").val() == \"true\"  ) {\n      window.formyoula.form_fields[\"aa71-b38a-db6c\"].set(\"value\",\"False\")\n    } else {\n      if ($(\"input[name='sms_oo']:checked\").val() == \"false\"){\n          window.formyoula.form_fields[\"aa71-b38a-db6c\"].set(\"value\",\"True\")\n      }\n    }\n})//end of change event\n\n$('input[name=\"posta_oo\"]').change(function(){\n    //Check if Postal radio button\n    if ( $(\"input[name='posta_oo']:checked\").val() == \"true\"  ) {      \n                     //Postal Opt Out must be false\n      window.formyoula.form_fields[\"307d-6c99-f45e\"].set(\"value\",\"False\")\n    } else {\n      if ($(\"input[name='posta_oo']:checked\").val() == \"false\"){\n      window.formyoula.form_fields[\"307d-6c99-f45e\"].set(\"value\",\"True\")\n    }\n    }\n})"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e35e",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "HTML",
+                    "name": "HTML",
+                    "category": "media",
+                    "label": "<!-- start call_oo radio -->\n\n<hr />\n<p>\n    <label>\n        <input type=\"radio\" id=\"call1\" name=\"call_oo\" value=true /> \n      <strong>\n        <span style=\"font-size: small;\">Sunt de acord</span>\n      </strong>\n  </label>\n    <label>\n      <input type=\"radio\" id=\"call2\" name=\"call_oo\" value=false />\n        <strong><span style=\"font-size: small;\">Nu sunt de acord</span> \n        </strong>\n    </label>\n  \n</p>\n<p>\n  <span style=\"font-size: small;\">ca Syngenta Agro SRL să mă sune la numărul meu de telefon, specificat în formularul de mai sus, sau să folosească alte mijloace de comunicare directă pentru a-mi comunica informații despre produsele și serviciile oferite de această societate, stiri, promoții, evenimente promoționale, programe de fidelitate și alte campanii de marketing activități ale Syngenta Agro SRL dedicate clienților produselor sale.\n</span>\n</p>\n<!-- end call_oo radio -->",
+                    "icon": "/scripts/formbuilder/img/paragraph.png",
+                    "component_id": "d5ed-1412-724f",
+                    "attributes": {
+                        "html_detail": "<!-- start call_oo radio -->\n\n<hr />\n<p>\n    <label>\n        <input type=\"radio\" id=\"call1\" name=\"call_oo\" value=true /> \n      <strong>\n        <span style=\"font-size: small;\">Sunt de acord</span>\n      </strong>\n  </label>\n  <strong>\n    <label>\n      <input type=\"radio\" id=\"call2\" name=\"call_oo\" value=false />\n      <span style=\"font-size: small;\">Nu sunt de acord</span>\n    </label>\n  </strong>\n</p>\n<p>\n  <span style=\"font-size: small;\">ca Syngenta.Agro SRL să mă sune la numărul meu de telefon, specificat în formularul de mai sus, sau să folosească alte mijloace de comunicare directă pentru a-mi comunica informații despre produsele și serviciile oferite de această societate, stiri, promoții, evenimente promoționale, programe de fidelitate și alte campanii de marketing activități ale Syngenta Agro SRL dedicate clienților produselor sale.\n</span>\n</p>\n<!-- end call_oo radio -->",
+                        "html_edit": "<!-- start call_oo radio -->\n\n<hr />\n<p>\n    <label>\n        <input type=\"radio\" id=\"call1\" name=\"call_oo\" value=true /> \n      <strong>\n        <span style=\"font-size: small;\">Sunt de acord</span>\n      </strong>\n  </label>\n     <label>\n      <input type=\"radio\" id=\"call2\" name=\"call_oo\" value=false />\n      <strong>\n        <span style=\"font-size: small;\">Nu sunt de acord</span>\n      </strong>\n    </label>\n\n</p>\n<p>\n  <span style=\"font-size: small;\">ca Syngenta Agro SRL să mă sune la numărul meu de telefon, specificat în formularul de mai sus, sau să folosească alte mijloace de comunicare directă pentru a-mi comunica informații despre produsele și serviciile oferite de această societate, stiri, promoții, evenimente promoționale, programe de fidelitate și alte campanii de marketing activități ale Syngenta Agro SRL dedicate clienților produselor sale.\n</span>\n</p>\n<!-- end call_oo radio -->"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e35d",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "Custom JavaScript",
+                    "version": "2",
+                    "component_id": "b8f2-dd9b-3128",
+                    "attributes": {
+                        "script_detail": "//set the value in detail view based on hidden input value\nif (window.formyoula.form_fields[\"64da-618b-0303\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"64da-618b-0303\"].get(\"value\")==\"False\"){\n$(\"#call1\").prop(\"checked\", true);\n}else{\n$(\"#call2\").prop(\"checked\", true);\n}\n}\n$(\"#call1\").prop(\"disabled\", true);\n$(\"#call2\").prop(\"disabled\", true);",
+                        "script": "//set the value in detail view based on hidden input value\nif (window.formyoula.form_fields[\"64da-618b-0303\"].get(\"value\")!=\"\"){\nif (window.formyoula.form_fields[\"64da-618b-0303\"].get(\"value\")==\"False\"){\n                $(\"#call1\").prop(\"checked\", true);\n             }else{\n               $(\"#call2\").prop(\"checked\", true);\n             }\n}\n\n\n//change event radio Call script\n$('input[name=\"call_oo\"]').change(function(){\n   \n    if ( $(\"input[name='call_oo']:checked\").val() == \"true\" ) {\n         window.formyoula.form_fields[\"64da-618b-0303\"].set(\"value\",\"False\");\n    } else {\n         if ($(\"input[name='call_oo']:checked\").val() == \"false\"){\n            window.formyoula.form_fields[\"64da-618b-0303\"].set(\"value\",\"True\");\n        }\n    }\n});"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e35c",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Date",
+                    "name": "Date",
+                    "category": "input",
+                    "label": "Data semnării consimțământului",
+                    "icon": "/scripts/formbuilder/img/date.png",
+                    "component_id": "c6b8-6724-3017",
+                    "attributes": {
+                        "default_date": "0",
+                        "format": "DD/MM/YYYY"
+                    },
+                    "required": true,
+                    "_id": "5cc2bd85899c96001080e35b",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Signature",
+                    "name": "Signature",
+                    "category": "media",
+                    "label": "Semnătura Clientului",
+                    "icon": "/scripts/formbuilder/img/signature.png",
+                    "height": "220",
+                    "component_id": "8d0e-93b1-38f0",
+                    "attributes": {
+                        "clear_label": "Clear"
+                    },
+                    "required": true,
+                    "_id": "5cc2bd85899c96001080e35a",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Consent_GeneralDPA",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "082f-560f-9197",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e359",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Consent_Email_OptOut",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "1266-d28c-335c",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e358",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Consent_SMS_OptOut",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "aa71-b38a-db6c",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e357",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Consent_Postal_OptOut",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "307d-6c99-f45e",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e356",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "Hidden",
+                    "value": "",
+                    "name": "Hidden",
+                    "category": "input",
+                    "label": "Consent_Call_OptOut",
+                    "icon": "/scripts/formbuilder/img/hidden.png",
+                    "component_id": "64da-618b-0303",
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e355",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                },
+                {
+                    "type": "JavaScript",
+                    "name": "JavaScript",
+                    "category": "media",
+                    "label": "",
+                    "version": "2",
+                    "component_id": "f590-d83f-4612",
+                    "attributes": {
+                        "script_detail": "",
+                        "script": "$('.finish').on('click', function(e){\n       var validated = false;      \n    if (window.formyoula.form_fields[\"15cc-a05f-d948\"].get(\"value\")==\"True\"){\n           validated = validateForm(); \n    }else{\n            alert (\"This form can't be submitted if the General Consent is not given\");  \n    }\n    return validated;  \n});\n\n//To check if all the required fields have value\nfunction validateForm() {\n  var isValid = false;\n  //iterate over the elements of the form\n  $('form#component_list .form-group').each(function() {\n     if ( this.id && this.id.split(\"component-\")[1] ) {\n      var current_element = formyoula.form_fields[ this.id.split(\"component-\")[1] ];\n      //Check if current element is required and have a value\n      if ( current_element && current_element.get &&  \n                           current_element.get(\"type\")==\"Hidden\" && current_element.get(\"label\").split(\"_\")[0]==\"Consent\")\n      {\n         /*\n alert(current_element.get(\"label\").split(\"_\")[0] + \" \" + current_element.get(\"label\").split(\"_\")[1] + \" \" + current_element.get(\"value\"));*/\n          if (current_element.get(\"value\")!=\"\"){\n                isValid = true;\n          } else {\n                 alert ('Please ensure you have reviewed all available consents options before submitting the form.');  \n                 isValid = false;\n                 return false;\n          }\n\n       }\n    }\n  });\n  return isValid;\n}"
+                    },
+                    "required": false,
+                    "_id": "5cc2bd85899c96001080e354",
+                    "components": [],
+                    "repeat_value": [],
+                    "controlling_elements": []
+                }
+            ]
+        }
+    ],
+    "connections": [
+        "Salesforce",
+        "Salesforce",
+        "Salesforce",
+        "Salesforce",
+        "Salesforce",
+        "Salesforce",
+        "Salesforce",
+        "Email"
+    ],
+    "created_by": {
+        "id": "5cc17f16630ca900103bac08",
+        "first_name": "Shanu",
+        "last_name": "H"
+    },
+    "access": "Private",
+    "public": false,
+    "list_view_fields": [],
+    "archived": false,
+    "id": "5cc2bd85899c96001080e352"
+}
