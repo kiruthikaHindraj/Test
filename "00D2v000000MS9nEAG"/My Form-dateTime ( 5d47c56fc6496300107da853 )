@@ -106,7 +106,7 @@
         {
             "_id": "5d47fcf1fb8c210010a28867",
             "created_at": "2019-08-05T09:54:57.110Z",
-            "updated_at": "2019-08-06T13:41:23.377Z",
+            "updated_at": "2019-08-06T14:09:30.656Z",
             "template_id": "5d47c56fc6496300107da853",
             "created_by_id": "5cc17f16630ca900103bac08",
             "owner_id": "5cc17f16630ca900103bac08",
@@ -122,7 +122,7 @@
                     "bcc": "",
                     "cc": "",
                     "subject": "Test",
-                    "template": "",
+                    "template": "<h1>Hello</h1>",
                     "to": "kiruthika@formyoula.com"
                 }
             ],
@@ -139,7 +139,7 @@
             "version": 3,
             "__v": 0,
             "attributes": {
-                "github_repository_sha": "ce0555680bbc51f323902706264406a4c10f946f"
+                "github_repository_sha": "4c61d42567e8deaae8c357fec7f5ea7c7063f85f"
             },
             "push_updates": true
         }
