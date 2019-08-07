@@ -1,0 +1,74 @@
+{
+    "form": {
+        "created_by_id": "5cee84717135e9001a374601",
+        "owner_id": "5cee84717135e9001a374601",
+        "name": "My Form-test gh",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-07T12:57:07.064Z",
+        "pages": [
+            {
+                "page_id": "fef2-d612-e794",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Header Text",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "h2",
+                        "component_id": "fc43-4e7e-43a5",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Number",
+                        "name": "Number",
+                        "category": "input",
+                        "label": "Number Field",
+                        "icon": "/scripts/formbuilder/img/number.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "d319-08bd-0d3b",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Paragraph",
+                        "name": "Paragraph",
+                        "category": "input",
+                        "label": "This is an example paragraph text generated for your form.",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "bc06-6b90-95b9",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "test",
+            "first_name": "formyoula",
+            "id": "5cee84717135e9001a374601"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false,
+        "attributes": {}
+    },
+    "connections": []
+}
