@@ -57,7 +57,9 @@
                 ]
             }
         ],
-        "connections": [],
+        "connections": [
+            "Email"
+        ],
         "created_by": {
             "last_name": "Test",
             "first_name": "Formyoula_Cypress",
@@ -66,7 +68,45 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "bbe75ab615eb847e062d4f22d93340922a87edf1"
+        }
     },
-    "connections": []
+    "connections": [
+        {
+            "_id": "5d4c268f7b1ec400100b3f3b",
+            "created_at": "2019-08-08T13:41:35.663Z",
+            "updated_at": "2019-08-08T13:41:35.925Z",
+            "template_id": "5d4c26767b1ec400100b3f33",
+            "created_by_id": "5d4c26337b1ec400100b3f2f",
+            "owner_id": "5d4c26337b1ec400100b3f2f",
+            "sequence": 1,
+            "type": "Email",
+            "emails": [
+                {
+                    "from_name": "Formyoula_Cypress Test",
+                    "from_email": "test_salesforce6f9be2977035818d7f9a844dac7720fd828a@formyoula.com",
+                    "_id": "5d4c268f7b1ec400100b3f3c",
+                    "attachment": false,
+                    "mail_merge": false
+                }
+            ],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false
+            },
+            "is_disabled": false,
+            "version": 3,
+            "__v": 0,
+            "attributes": {
+                "github_repository_sha": "bbe75ab615eb847e062d4f22d93340922a87edf1"
+            }
+        }
+    ]
 }
