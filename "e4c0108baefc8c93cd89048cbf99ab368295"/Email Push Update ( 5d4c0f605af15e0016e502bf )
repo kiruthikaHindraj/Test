@@ -26,6 +26,48 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
+                    },
+                    {
+                        "type": "Email",
+                        "name": "Email",
+                        "category": "input",
+                        "label": "Email Field",
+                        "icon": "/scripts/formbuilder/img/email.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "0edf-e609-7008",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "2bc7-9e00-bedf",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Number",
+                        "name": "Number",
+                        "category": "input",
+                        "label": "Number Field",
+                        "icon": "/scripts/formbuilder/img/number.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "7326-5ca0-d6e7",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -39,7 +81,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "90921d7c0e973057d3fdede6c010d1fcd375c857"
+        }
     },
     "connections": []
 }
