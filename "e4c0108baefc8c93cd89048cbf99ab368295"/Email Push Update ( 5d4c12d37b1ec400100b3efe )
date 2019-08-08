@@ -62,7 +62,7 @@
         {
             "_id": "5d4c12ed7b1ec400100b3f05",
             "created_at": "2019-08-08T12:17:49.249Z",
-            "updated_at": "2019-08-08T12:17:49.542Z",
+            "updated_at": "2019-08-08T12:18:05.487Z",
             "template_id": "5d4c12d37b1ec400100b3efe",
             "created_by_id": "5d4c128a5af15e0016e502cb",
             "owner_id": "5d4c128a5af15e0016e502cb",
@@ -74,7 +74,12 @@
                     "from_email": "test_salesforce1680c42f0306eccaa09ca0dc8d2e2a55ef5c@formyoula.com",
                     "_id": "5d4c12ed7b1ec400100b3f06",
                     "attachment": false,
-                    "mail_merge": false
+                    "mail_merge": false,
+                    "bcc": "",
+                    "cc": "",
+                    "subject": "Sample Email",
+                    "template": "",
+                    "to": "test@formyoula.com"
                 }
             ],
             "mappings": [],
@@ -90,8 +95,9 @@
             "version": 3,
             "__v": 0,
             "attributes": {
-                "github_repository_sha": "0b8793e50435bc629f3c3c4ae0ef20d606928f60"
-            }
+                "github_repository_sha": "cb1c5bd42833c8a10e9b7049c60ea70568ba3691"
+            },
+            "push_updates": true
         }
     ]
 }
