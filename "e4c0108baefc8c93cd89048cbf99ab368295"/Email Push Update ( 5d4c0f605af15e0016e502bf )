@@ -1,0 +1,45 @@
+{
+    "form": {
+        "created_by_id": "5d4c0f1e65847e0015bfa417",
+        "owner_id": "5d4c0f1e65847e0015bfa417",
+        "name": "Email Push Update",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-08T12:02:11.939Z",
+        "pages": [
+            {
+                "page_id": "ffe0-f69f-511f",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "6abb-5e37-0f39",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "Test",
+            "first_name": "Formyoula_Cypress",
+            "id": "5d4c0f1e65847e0015bfa417"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
