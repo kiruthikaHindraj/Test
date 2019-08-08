@@ -1,0 +1,72 @@
+{
+    "form": {
+        "created_by_id": "5d4c27465af15e0016e502e3",
+        "owner_id": "5d4c27465af15e0016e502e3",
+        "name": "Email Push Update",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-08T13:45:15.856Z",
+        "pages": [
+            {
+                "page_id": "24f6-5db1-26d9",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "1a7c-3855-e9fa",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Number",
+                        "name": "Number",
+                        "category": "input",
+                        "label": "Number Field",
+                        "icon": "/scripts/formbuilder/img/number.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "02ad-7fcd-8a07",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "5359-c98d-36b6",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "Test",
+            "first_name": "Formyoula_Cypress",
+            "id": "5d4c27465af15e0016e502e3"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
