@@ -1,0 +1,60 @@
+{
+    "form": {
+        "created_by_id": "5d4d0df8cd784e0015c4416a",
+        "owner_id": "5d4d0df8cd784e0015c4416a",
+        "name": "Email Push Update",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-09T06:09:40.595Z",
+        "pages": [
+            {
+                "page_id": "ec20-3d19-bc3d",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "1a82-50e9-9d96",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Number",
+                        "name": "Number",
+                        "category": "input",
+                        "label": "Number Field",
+                        "icon": "/scripts/formbuilder/img/number.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "eff2-d50e-9ac6",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "Test",
+            "first_name": "Formyoula_Cypress",
+            "id": "5d4d0df8cd784e0015c4416a"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
