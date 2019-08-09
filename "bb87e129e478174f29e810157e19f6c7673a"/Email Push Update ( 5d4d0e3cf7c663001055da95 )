@@ -65,7 +65,7 @@
         {
             "_id": "5d4d0e59f7c663001055da9c",
             "created_at": "2019-08-09T06:10:33.486Z",
-            "updated_at": "2019-08-09T06:44:21.429Z",
+            "updated_at": "2019-08-09T06:44:23.145Z",
             "template_id": "5d4d0e3cf7c663001055da95",
             "created_by_id": "5d4d0df8cd784e0015c4416a",
             "owner_id": "5d4d0df8cd784e0015c4416a",
@@ -98,7 +98,7 @@
             "version": 3,
             "__v": 0,
             "attributes": {
-                "github_repository_sha": "5e2738773487137e1eb20345257df4642865cc55"
+                "github_repository_sha": "5d5d1af39484308355086f683d2610435184335e"
             },
             "push_updates": true
         }
