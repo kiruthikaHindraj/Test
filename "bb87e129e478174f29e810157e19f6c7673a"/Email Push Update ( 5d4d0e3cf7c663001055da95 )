@@ -65,7 +65,7 @@
         {
             "_id": "5d4d0e59f7c663001055da9c",
             "created_at": "2019-08-09T06:10:33.486Z",
-            "updated_at": "2019-08-09T06:46:04.574Z",
+            "updated_at": "2019-08-09T06:47:12.906Z",
             "template_id": "5d4d0e3cf7c663001055da95",
             "created_by_id": "5d4d0df8cd784e0015c4416a",
             "owner_id": "5d4d0df8cd784e0015c4416a",
@@ -81,7 +81,7 @@
                     "bcc": "",
                     "cc": "",
                     "subject": "Sample Email",
-                    "template": "",
+                    "template": "<h1>Hello</h1>",
                     "to": "test@formyoula.com"
                 }
             ],
@@ -98,7 +98,7 @@
             "version": 3,
             "__v": 0,
             "attributes": {
-                "github_repository_sha": "0e9e86f33e17e5465fd19637e72348ff40f3fb51"
+                "github_repository_sha": "65405c6f7eeb9a9fd37911b32bd3232f4f15ef1c"
             },
             "push_updates": true
         }
