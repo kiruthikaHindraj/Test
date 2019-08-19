@@ -1,0 +1,207 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "My Form - radio select list",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-06-05T10:39:15.599Z",
+        "pages": [
+            {
+                "page_id": "fe82-6851-3a7d",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Find",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Id,Name,Demo_picklist__c,Sample_picklist__c",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5cf79c5e3f3d3f0015073d14",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "7d5b-c0ee-90b3",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Repeat Group",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "bbcb-2915-224f",
+                        "required": false,
+                        "attributes": {
+                            "all_expanded": false,
+                            "max_repeat_items": "",
+                            "sfdc_parent_field_name": "AccountId",
+                            "sfdc_parent_component": "7d5b-c0ee-90b3",
+                            "list_view_fields": [
+                                "bc75-8ac8-4d2f"
+                            ],
+                            "delete_button_label": "",
+                            "add_title_label": "",
+                            "add_button_label": ""
+                        },
+                        "object_api_name": "Contact",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_limit": "",
+                        "sfdc_query_order_by": "",
+                        "sfdc_auto_fill_id": "5cf79c819c738b001a22ed10",
+                        "components": [
+                            {
+                                "type": "MultiCheckList",
+                                "name": "Multi Check List",
+                                "category": "select",
+                                "label": "Multi Check List",
+                                "icon": "/scripts/formbuilder/img/select.png",
+                                "select_options": "Select One\nSelect Two\nSelect Three",
+                                "component_id": "f796-48ad-58b6",
+                                "required": false,
+                                "components": [],
+                                "attributes": {}
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "MultiCheckList",
+                        "name": "Multi Check List",
+                        "category": "select",
+                        "label": "Multi Check List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One\nSelect Two\nSelect Three",
+                        "component_id": "91b2-fd38-5012",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {
+                            "layout": "Horizontal"
+                        }
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce",
+            "Salesforce"
+        ],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5cc17f16630ca900103bac08"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "482d3bef4e9780e91dd51a14ded66f9b836ebeca"
+        }
+    },
+    "connections": [
+        {
+            "_id": "5cf79c5e3f3d3f0015073d14",
+            "created_at": "2019-06-05T10:41:34.772Z",
+            "updated_at": "2019-06-06T08:39:33.010Z",
+            "template_id": "5cf79c0d9c738b001a22ed08",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Demo_picklist__c",
+                    "field_name": "Demo_picklist ( Demo_picklist__c )",
+                    "component_id": "91b2-fd38-5012",
+                    "component_name": "Multi Check List ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false,
+                "object_id": "Account",
+                "object_name": "Account"
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 3,
+            "attributes": {
+                "github_repository_sha": "3198f6d5ab3b6bc542ae2227d21d1b262c4ce5c2"
+            },
+            "push_updates": false
+        },
+        {
+            "_id": "5cf79c819c738b001a22ed10",
+            "created_at": "2019-06-05T10:42:09.781Z",
+            "updated_at": "2019-06-06T08:39:41.637Z",
+            "template_id": "5cf79c0d9c738b001a22ed08",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Salesforce",
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Contact_demo_picklist_1__c",
+                    "field_name": "Contact_demo_picklist_1 ( Contact_demo_picklist_1__c )",
+                    "component_id": "f796-48ad-58b6",
+                    "component_name": "Multi Check List ( Page: Details | Repeat: Repeat Group )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false,
+                "object_id": "Contact",
+                "object_name": "Contact"
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 3,
+            "attributes": {
+                "github_repository_sha": "1656e50f86e94de5bc0ceabda88ed6833ed85dd5"
+            },
+            "push_updates": false
+        }
+    ]
+}
