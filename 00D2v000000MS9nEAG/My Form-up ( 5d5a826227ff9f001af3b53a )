@@ -29,18 +29,6 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
-                    },
-                    {
-                        "type": "Phone",
-                        "name": "Phone",
-                        "category": "input",
-                        "label": "Phone Field",
-                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
-                        "component_id": "975c-38aa-e8df",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
                     }
                 ]
             }
@@ -56,7 +44,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "9c21aa6358006c27cc61d711254600734950b8db"
+            "github_repository_sha": "526b1a9f191e404cc25f9ce8df613c6fc6932e6d"
         }
     },
     "connections": []
