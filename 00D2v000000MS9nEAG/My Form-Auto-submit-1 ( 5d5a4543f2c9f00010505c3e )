@@ -1,0 +1,82 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "My Form-Auto-submit-1",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-19T06:44:01.478Z",
+        "pages": [
+            {
+                "page_id": "70a5-c993-dd48",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Email",
+                        "name": "Email",
+                        "category": "input",
+                        "label": "Email Field",
+                        "icon": "/scripts/formbuilder/img/email.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "fd70-6763-ad51",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "2180-4f5c-24d4",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "AutoSubmit",
+                        "name": "Auto Submit",
+                        "category": "input",
+                        "label": "Auto Submit",
+                        "icon": "/scripts/formbuilder/img/navigation.png",
+                        "attributes": {
+                            "disable_cancel_popup": "true",
+                            "go_to_page": "",
+                            "type": "timer",
+                            "inactive_time": "15",
+                            "action": "cancel"
+                        },
+                        "component_id": "37ea-a9b3-976d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5cc17f16630ca900103bac08"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "8a584ecf086b00352ccdf5655fc0373126526fa0"
+        }
+    },
+    "connections": []
+}
