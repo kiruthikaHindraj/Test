@@ -1,0 +1,132 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "My Form - Grid",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-06-17T07:16:39.744Z",
+        "pages": [
+            {
+                "page_id": "76b5-f898-576b",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "SalesforceGrid",
+                        "name": "Salesforce Grid",
+                        "category": "salesforce",
+                        "label": "Grid Records",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "go_to_page": "",
+                            "action": "",
+                            "record_min_height": "",
+                            "owner_field": "",
+                            "column_width": "4",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": [],
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Description,Id,Contact_demo_picklist__c,Contact_region_picklist__c",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Contact",
+                        "component_id": "2e2f-72c5-9cc5",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce",
+            "Salesforce"
+        ],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5cc17f16630ca900103bac08"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "c738b7ac6734628f782ddea400ea9a3a58ba5ee0"
+        }
+    },
+    "connections": [
+        {
+            "_id": "5d0756ca2b054c001a7fc410",
+            "created_at": "2019-06-17T09:00:58.026Z",
+            "updated_at": "2019-06-17T09:01:06.288Z",
+            "template_id": "5d073e74589ec400106ebb19",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "emails": [],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false,
+                "object_id": "Account",
+                "object_name": "Account"
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0,
+            "push_updates": false
+        },
+        {
+            "_id": "5d0756e5589ec400106ebb26",
+            "created_at": "2019-06-17T09:01:25.619Z",
+            "updated_at": "2019-06-17T09:01:41.196Z",
+            "template_id": "5d073e74589ec400106ebb19",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Salesforce",
+            "emails": [],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false,
+                "object_id": "Contact",
+                "object_name": "Contact"
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0,
+            "push_updates": false
+        }
+    ]
+}
