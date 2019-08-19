@@ -1,0 +1,106 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Tester123",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-05-13T10:47:51.503Z",
+        "pages": [
+            {
+                "page_id": "5660-1640-1727",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Header Text",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "h2",
+                        "component_id": "dd8b-505b-b406",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Repeat Group",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "460a-476f-c962",
+                        "required": false,
+                        "components": [
+                            {
+                                "value": "",
+                                "components": [],
+                                "required": false,
+                                "attributes": {
+                                    "dependent_list_values": "",
+                                    "unselected_label": "",
+                                    "select_option_values": ""
+                                },
+                                "component_id": "ab88-439e-4438",
+                                "select_options": "Select One\nSelect Two\nSelect Three",
+                                "icon": "/scripts/formbuilder/img/select.png",
+                                "label": "Select List",
+                                "category": "select",
+                                "name": "Select",
+                                "type": "Select"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "4b18-180d-4608",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Text Field",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text",
+                                "attributes": {}
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "attributes": {
+                                    "script_detail": "",
+                                    "script": "//  The function is triggered if there are any changes on select\nvar ddVal = ''\n// The focus and blur function is required else it would return the old value instead of the new selected value\n$('select').focus(function () {\n       ddVal = $(this).val();\n   }).blur(function () {\n       if (ddVal == $(this).val()) {\n           $(this).change();\n       }\n   }).change (function () {\n// Here I have three option in select, Select One, Select Two and Select Three on selecting the text value is set as aaa, bbb, ccc respectively\n      if ($(this).val() == \"Select One\") {\n        window.formyoula.form_fields[\"Text Field\"].set({value: 'aaa'});\n      } else if ($(this).val() == \"Select Two\") {\n        window.formyoula.form_fields[\"Text Field\"].set({value: 'bbb'});\n     } else {\n       window.formyoula.form_fields[\"Text Field\"].set({value: 'ccc'});}\n   });\n// The below function is triggered when the changes are made on to the existing repeat elements\n$(document).on('change', 'select', function() {\nif (window.formyoula.form_fields[\"Repeat Group\"] && window.formyoula.form_fields[\"Repeat Group\"].changed != {} && window.formyoula.form_fields[\"Repeat Group\"].changed.hasOwnProperty('repeat_value')) {\nwindow.formyoula.form_fields[\"Repeat Group\"].changed.repeat_value.forEach(function(index, ival) {\n\n           for (var i=0; i<index.length; i++) {\n                       if (index[0].value == 'Select Two') {index[1].value = 'bbb';\n                             $(\"input:text\").val('bbb');      }  else if (index[0].value == 'Select One') {index[1].value = 'aaa';\n                              $(\"input:text\").val('aaa');      }    else if (index[0].value == 'Select Three') {index[1].value = 'ccc';\n                              $(\"input:text\").val('ccc');      }\n            }\n       })\n}\n})"
+                                },
+                                "component_id": "451f-6d2d-7286",
+                                "version": 2,
+                                "label": "Custom JavaScript",
+                                "category": "media",
+                                "name": "JavaScript",
+                                "type": "JavaScript"
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5cc17f16630ca900103bac08"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "63c02e045943bf96281fd19a6efa7bd813c81f59"
+        }
+    },
+    "connections": []
+}
