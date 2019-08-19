@@ -1,0 +1,1379 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Audit",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-06-24T13:07:00.192Z",
+        "pages": [
+            {
+                "page_id": "f2cf-7ecd-67d2",
+                "title": "Visit Details",
+                "page_index": 0,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Visit Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "9a78-1978-7b2a",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Filling location",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "auto_fill_id": "",
+                            "position": "Fill",
+                            "enable_barcode_scanner": false,
+                            "button": "Filling Location",
+                            "show_auto_search_results": false,
+                            "offline_sync_filter": "",
+                            "custom_offline_lookup_filter": ""
+                        },
+                        "sfdc_query_fields": "",
+                        "sfdc_query_limit": "50",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "d4a7-a05e-209a",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Visit Type",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Customer Visit\nPlant Visit\nWarehouse Visit",
+                        "component_id": "78d3-7ec0-75be",
+                        "attributes": {
+                            "select_option_values": "",
+                            "unselected_label": "--None--",
+                            "dependent_list_values": ""
+                        },
+                        "required": true,
+                        "value": "",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "MultiSelect",
+                        "name": "Multi Select",
+                        "category": "select",
+                        "label": "Multi Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One\nSelect Two\nSelect Three",
+                        "component_id": "ec2f-1f04-22e6",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceSelect",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "CTS Activity",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "auto_fill_id": "",
+                            "position": "Fill",
+                            "button": "CTS Activity",
+                            "owner_field": "",
+                            "offline_sync_filter": "",
+                            "custom_offline_lookup_filter": ""
+                        },
+                        "sfdc_query_fields": "CTS_Activity__c",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "sfdc_auto_fill_id": "5d10caf4e4834f00153d2160",
+                        "object_label": "None Selected",
+                        "object_api_name": "Visit__c",
+                        "component_id": "1cf9-b6e4-475a",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "TextArea",
+                        "name": "TextArea",
+                        "category": "input",
+                        "label": "Visit Description",
+                        "icon": "/scripts/formbuilder/img/text_area.png",
+                        "height": "3",
+                        "attributes": {
+                            "show_label": "Yes",
+                            "readonly": "no"
+                        },
+                        "component_id": "df63-16d4-43a9",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Date",
+                        "name": "Date",
+                        "category": "input",
+                        "label": "Start Date",
+                        "icon": "/scripts/formbuilder/img/date.png",
+                        "component_id": "7a95-f64f-b985",
+                        "attributes": {
+                            "format": "MM/DD/YYYY",
+                            "default_date": "0"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "72d0-4822-9bc5",
+                "title": "General Info",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Hub Quality Engineer",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "f6ae-edbb-62fd",
+                        "required": false,
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Inspection done by",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "5b2a-2876-5f01",
+                        "required": false,
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Production Unit(s)",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "14ba-4f1c-5428",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Production Line(s)",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "965f-34b0-56d3",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "QM(s)",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "7317-a845-688f",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "PM(s)",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "9c30-c1fa-c653",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "f724-6d22-53c2",
+                "title": "Product Inspection",
+                "page_index": 2,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Graphic",
+                        "value": "00D0E0000000Q2FUAU/5cadd8e3a159630014e83df6/a5c0-b3eb-e3ed.image/jpeg",
+                        "name": "Graphic",
+                        "width": "60",
+                        "category": "media",
+                        "label": "Graphic Field",
+                        "icon": "/scripts/formbuilder/img/graphic.png",
+                        "attributes": {
+                            "position": "Center",
+                            "base64": false
+                        },
+                        "component_id": "a5c0-b3eb-e3ed",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "ae5f-46e5-696c",
+                        "attributes": {
+                            "script": "$('.formyoula-RadioSelect .radio_input_wrapper').addClass('radio-inline');",
+                            "script_detail": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Can pallet presentation",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "1d74-7e34-62b7",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "7cd9-7659-e984",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "1d74-7e34-62b7",
+                                "label": "Can pallet presentation (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d0386e8f5c9a10014572460"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "4515-136f-6ddb",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Visible transport damages",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "32aa-654c-84b1",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "3307-d2f8-4bcf",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "32aa-654c-84b1",
+                                "label": "Visible transport damages (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d0386e8f5c9a1001457245e"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "2e9b-0bbf-acb3",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Strapping (tension/correct amount/placement)",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "a048-d356-dd14",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "8ec7-fb8f-8d1e",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "a048-d356-dd14",
+                                "label": "Strapping (tension/correct amount/placement) (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7f1"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "9c34-e530-b508",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Cans and Layerpads square on pallet",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "7bbe-e0b1-12d0",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "f094-97d9-d76e",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "7bbe-e0b1-12d0",
+                                "label": "Cans and Layerpads square on pallet (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7ef"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "216f-4348-cf42",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Colour variation between different pallets",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "103b-ee1f-b2e0",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "dae8-041a-ae41",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "103b-ee1f-b2e0",
+                                "label": "Colour variation between different pallets (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7ed"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "24bf-7d33-5a15",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Readable Ball Can Code",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "11ae-6dc0-07ba",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "476a-d652-0147",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "11ae-6dc0-07ba",
+                                "label": "Readable Ball Can Code (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7eb"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "9575-295e-47af",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Visible process damages",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "e477-896e-8c54",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "c898-486f-6a68",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "e477-896e-8c54",
+                                "label": "Visible process damages (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7e9"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "4ee1-8792-de12",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Code for recycling system (DPG etc.) n/a UK",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "9367-3b72-022b",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "011a-cc0c-75ea",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "9367-3b72-022b",
+                                "label": "Code for recycling system (DPG etc.) n/a UK (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7e7"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "d20d-5f3d-f836",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Pallet- and Top Frame condition",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "39cf-5029-dd4c",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "684b-aae0-be26",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "39cf-5029-dd4c",
+                                "label": "Pallet- and Top Frame condition (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7e5"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "1295-c51a-5eff",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Layer pad condition",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "2fff-7e2a-87eb",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "12d8-a63c-9d61",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "2fff-7e2a-87eb",
+                                "label": "Layer pad condition (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7e3"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "6323-bbcd-d56b",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Shrinkfilm condition",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "210e-1398-ad85",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "ea32-922c-724f",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "210e-1398-ad85",
+                                "label": "Shrinkfilm condition (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7e1"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "8456-1b84-469a",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Pallet ticket condition",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "5089-7f44-25d4",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "6eba-50d9-1e5b",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "5089-7f44-25d4",
+                                "label": "Pallet ticket condition (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7df"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "5ef5-3e63-88ab",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Correct amount of pallet tickets",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "e589-1a33-2065",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "2c6b-aecd-6063",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "e589-1a33-2065",
+                                "label": "Correct amount of pallet tickets (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7dd"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "c191-1594-6ae5",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Pallet ticket placement",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "3c58-0bef-9475",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "17b1-f30f-e72a",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "3c58-0bef-9475",
+                                "label": "Pallet ticket placement (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7db"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "0732-1ccc-d13d",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Does slivers or steps trim exist?",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "92fc-21ea-9a5d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "4ce7-6d02-a516",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "92fc-21ea-9a5d",
+                                "label": "Does slivers or steps trim exist? (Product Inspection)",
+                                "value": "IN",
+                                "type": "RadioSelect",
+                                "_id": "5d03889b9aaf760014d7d7d9"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "49f7-12fa-b80b",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Generel comment/view from the customer",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "OK\nIN",
+                        "component_id": "904c-dada-6eec",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "General Remarks",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "5e95-fdd7-6264",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo 1",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Standard",
+                        "component_id": "c839-5c68-53d5",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo 2",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Standard",
+                        "component_id": "6288-066a-624c",
+                        "attributes": {
+                            "photo_source_selection_label": "",
+                            "library_button_lable": "",
+                            "camera_button_lable": "",
+                            "album_button_lable": "",
+                            "camera_direction": "back",
+                            "saveToPhotoAlbum": "no",
+                            "default_source": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "f129c00c520688ed23dd9782d0d809f47379a458"
+        }
+    },
+    "connections": [
+        {
+            "_id": "5d10caf4e4834f00153d2160",
+            "created_at": "2019-04-10T12:27:30.164Z",
+            "updated_at": "2019-06-24T13:07:00.361Z",
+            "template_id": "5d10caf4e4834f00153d211c",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Visit Name ( Name )",
+                    "component_id": "9a78-1978-7b2a",
+                    "component_name": "Visit Name ( Page: Visit Details )"
+                },
+                {
+                    "field_id": "Visit_Type__c",
+                    "field_name": "Visit Type ( Visit_Type__c )",
+                    "component_id": "78d3-7ec0-75be",
+                    "component_name": "Visit Type ( Page: Visit Details )"
+                },
+                {
+                    "field_id": "Description__c",
+                    "field_name": "Description ( Description__c )",
+                    "component_id": "df63-16d4-43a9",
+                    "component_name": "Visit Description ( Page: Visit Details )"
+                },
+                {
+                    "field_id": "Visit_Start_Date__c",
+                    "field_name": "Visit Start Date ( Visit_Start_Date__c )",
+                    "component_id": "7a95-f64f-b985",
+                    "component_name": "Start Date ( Page: Visit Details )"
+                },
+                {
+                    "field_id": "Filling_Location__c",
+                    "field_name": "Filling Location ( Filling_Location__c )",
+                    "component_id": "d4a7-a05e-209a",
+                    "component_name": "Filling location ( Page: Visit Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Visit__c",
+                "object_name": "Visit",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": true
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        }
+    ],
+    "form_pdf": {
+        "_id": "5d10cb5d96ca880017f703af",
+        "created_at": "2019-06-24T13:08:45.123Z",
+        "updated_at": "2019-06-25T06:10:38.755Z",
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "template_id": "5d10caf4e4834f00153d211c",
+        "html": "<html>\n <body>\n  <div style=\"border: solid 1px black;\">\n   <div class=\"row\">\n      <div class=\"col-xs-2\" ></div>\n      <div class=\"col-xs-8\" style=\"margin-top: 12px;\"><center><b >Product</b><br><b >Product</b></center></div>\n      <div class=\"col-xs-2\" ><img alt=\"\\\" src=\"https://www.ball.com/App_Themes/Ball/images/logo-ball.svg\" style=\"width:100%\" /></div>\n    </div>\n   </div>\n   <div style=\"border: solid 1px black;\">\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Datum / Date:</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\">{{7a95-f64f-b985}}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Tappningsort / Filling Location:</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 45px;\"></div>\n      <div class=\"col-xs-5\">{{d4a7-a05e-209a}}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Kontaktperson till CTS / Reference to CTS:</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 45px;\"></div>\n      <div class=\"col-xs-5\">{{1cf9-b6e4-475a}}</div>\n    </div>  \n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Burkstorlek(ar) / Can Size(s):</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\"></div>\n    </div> \n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Linjehastighet / Line speed:</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\"></div>\n    </div> \n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Fraktvillkor / Incoterms:</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\"></div>\n    </div> \n  </div>\n  <div style=\"border: solid 1px black;\">\n    <div class=\"row\">\n    <div class=\"col-xs-5\" ><img alt=\"\\\" src=\"https://www.ball.com/App_Themes/Ball/images/logo-ball.svg\"  /></div>\n    <div class=\"col-xs-2\" style=\"background:lightgray;height: 45px;\"></div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Hub Quality Engineer:</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\">{{f6ae-edbb-62fd}}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Inspection done by:</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\">{{5b2a-2876-5f01}}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Production Unit(s):</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\">{{14ba-4f1c-5428}}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">Production Line(s):</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\">{{965f-34b0-56d3}}</div>\n    </div> \n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">QM(s):</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\">{{7317-a845-688f}}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-5\" style=\"padding-left:3%;\">PM(s):</div>\n      <div class=\"col-xs-2\" style=\"background:lightgray;height: 30px;\"></div>\n      <div class=\"col-xs-5\">{{9c30-c1fa-c653}}</div>\n    </div>    \n  </div>\n  <div style=\"border: solid 1px black;\">\n   <div class=\"row\">\n    <div class=\"col-xs-7\" style=\"padding-top: 10px;padding-left: 3%;\">\n      <span><b>Explanation</b></span>\n    </div>\n    <div class=\"col-xs-5 \" style=\"border-left: solid 2px black;\">\n      <div class=\"row\" style=\"padding-left:3%;margin:2px;\">\n        <span style=\"background-color: green;padding: 2px;\">OK</span>&nbsp;Good\n      </div>\n      <div class=\"row\" style=\"padding-left:3%;margin:2px;\">\n        <span style=\"background-color: red;padding: 2px;\">IN</span>&nbsp;Improvement Needed\n      </div>\n    </div>\n   </div>\n  </div>\n  <table class=\"table table-bordered\">\n   <tbody>\n    <tr class=\"row\" style=\"background:grey\">\n     <th class=\"col-xs-5\">Checkpoint</th>\n     <th class=\"col-xs-1\">OK</th>\n     <th class=\"col-xs-1\">IN</th>\n     <th class=\"col-xs-5\">Remarks</th>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Can pallet presentation</td>\n     <td class=\"col-xs-1\"><!--{{#compare 1d74-7e34-62b7 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 1d74-7e34-62b7 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{4515-136f-6ddb}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Visible transport damages</td>\n     <td class=\"col-xs-1\"><!--{{#compare 32aa-654c-84b1 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 32aa-654c-84b1 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{2e9b-0bbf-acb3}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Strapping (tension/correct amount/placement)</td>\n     <td class=\"col-xs-1\"><!--{{#compare a048-d356-dd14 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare a048-d356-dd14 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{9c34-e530-b508}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Cans and Layerpads square on pallet</td>\n     <td class=\"col-xs-1\"><!--{{#compare 7bbe-e0b1-12d0 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 7bbe-e0b1-12d0 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{216f-4348-cf42}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Colour variation between different pallets</td>\n     <td class=\"col-xs-1\"><!--{{#compare 103b-ee1f-b2e0 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 103b-ee1f-b2e0 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{24bf-7d33-5a15}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Readable Ball Can Code</td>\n     <td class=\"col-xs-1\"><!--{{#compare 11ae-6dc0-07ba \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 11ae-6dc0-07ba \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{9575-295e-47af}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Visible process damages</td>\n     <td class=\"col-xs-1\"><!--{{#compare e477-896e-8c54 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare e477-896e-8c54 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{4ee1-8792-de12}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Code for recycling system (DPG etc.) n/a UK</td>\n     <td class=\"col-xs-1\"><!--{{#compare 9367-3b72-022b \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 9367-3b72-022b \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{d20d-5f3d-f836}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Pallet- and Top Frame condition</td>\n     <td class=\"col-xs-1\"><!--{{#compare 39cf-5029-dd4c \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 39cf-5029-dd4c \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{1295-c51a-5eff}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Layer pad condition</td>\n     <td class=\"col-xs-1\"><!--{{#compare 2fff-7e2a-87eb \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 2fff-7e2a-87eb \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{6323-bbcd-d56b}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Shrinkfilm condition</td>\n     <td class=\"col-xs-1\"><!--{{#compare 210e-1398-ad85 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 210e-1398-ad85 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{8456-1b84-469a}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Pallet ticket condition</td>\n     <td class=\"col-xs-1\"><!--{{#compare 5089-7f44-25d4 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 5089-7f44-25d4 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{5ef5-3e63-88ab}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Correct amount of pallet tickets</td>\n     <td class=\"col-xs-1\"><!--{{#compare e589-1a33-2065 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare e589-1a33-2065 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{c191-1594-6ae5}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Pallet ticket placement</td>\n     <td class=\"col-xs-1\"><!--{{#compare 3c58-0bef-9475 \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 3c58-0bef-9475 \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{0732-1ccc-d13d}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Does slivers or steps trim exist?</td>\n     <td class=\"col-xs-1\"><!--{{#compare 92fc-21ea-9a5d \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 92fc-21ea-9a5d \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{49f7-12fa-b80b}}</td>\n    </tr>\n    <tr class=\"row\">\n     <td class=\"col-xs-5\">Generel comment/view from the customer</td>\n     <td class=\"col-xs-1\"><!--{{#compare 904c-dada-6eec \"OK\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-ok\" style=\"color:green\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-1\"><!--{{#compare 904c-dada-6eec \"IN\" operator=\"==\"}} --><span class=\"glyphicon glyphicon-remove\" style=\"color:red\"></span><!--{{/compare}} --></td>\n     <td class=\"col-xs-5\">{{5e95-fdd7-6264}}</td>\n    </tr>\n   </tbody>\n  </table>\n </body>\n</html>",
+        "file_name": "",
+        "css": "<style>\ntable tr td, table tr th {\n        page-break-inside: avoid !important;\n    }\n</style>",
+        "javascript": "                      ",
+        "page_settings": {
+            "footer_html": "",
+            "header_html": "",
+            "enable_advanced_templating": true,
+            "disable_auto_page_break": true,
+            "disable_timezone_offset": false,
+            "disable_forms": false,
+            "engine": false,
+            "lowquality": false,
+            "image_dpi": 400,
+            "image_quality": 94,
+            "no_images": false,
+            "header_left": "",
+            "header_right": "",
+            "header_center": "",
+            "footer_left": "",
+            "footer_right": "",
+            "footer_center": "",
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "page_width": "",
+            "orientation": "Portrait",
+            "page_size": "A4"
+        },
+        "use_beta_engine": true,
+        "disable_bootstrap": false,
+        "use_custom": true,
+        "__v": 0
+    }
+}
