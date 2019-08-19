@@ -1,0 +1,333 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "TET_SYN",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-05-03T06:48:55.822Z",
+        "pages": [
+            {
+                "page_id": "a4aa-6cdb-b0a0",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Find",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "eafa-b9a5-f364",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Repeat Group",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "1b48-7d58-c02b",
+                        "attributes": {
+                            "all_expanded": false,
+                            "max_repeat_items": "",
+                            "sfdc_parent_field_name": "AccountId",
+                            "sfdc_parent_component": "eafa-b9a5-f364",
+                            "list_view_fields": [
+                                "abc3-3aed-5b0d",
+                                "0aec-df16-0ee4"
+                            ],
+                            "delete_button_label": "",
+                            "add_title_label": "",
+                            "add_button_label": ""
+                        },
+                        "required": false,
+                        "object_api_name": "Contact",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_limit": "",
+                        "sfdc_auto_fill_id": "5ccbe457dc911d00108653b0",
+                        "components": [
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "First Name",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "abc3-3aed-5b0d",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Last Name",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "0aec-df16-0ee4",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Email",
+                                "name": "Email",
+                                "category": "input",
+                                "label": "Email",
+                                "icon": "/scripts/formbuilder/img/email.png",
+                                "component_id": "e96b-ba27-a253",
+                                "required": false,
+                                "components": [],
+                                "attributes": {}
+                            },
+                            {
+                                "type": "CheckBox",
+                                "value": "",
+                                "name": "CheckBox",
+                                "category": "input",
+                                "label": "Send Email?",
+                                "icon": "/scripts/formbuilder/img/checkbox.png",
+                                "component_id": "e424-f164-fe5a",
+                                "required": false,
+                                "components": [],
+                                "attributes": {}
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "5f06-fbd9-3b0a",
+                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "label": "Contact ID",
+                                "category": "input",
+                                "name": "Hidden",
+                                "value": "",
+                                "type": "Hidden",
+                                "attributes": {}
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "8c97-2fff-b9f8",
+                        "required": false,
+                        "attributes": {
+                            "script": "var selected_values;\n// Trigger a function on prefill success\nwindow.formyoula.form_fields[\"Repeat Group\"].on(\"prefill:success\", function(){\n    // Once the data is populated and the checkbox is selected/unselected\n    $(document).on('change', 'input[type=\"checkbox\"]', function(e){\n        // If selected hide the repeat groups other than the selected ones\n        if($(this).is(':checked')){\n            window.formyoula.form_fields[\"Repeat Group\"].changed.repeat_value.forEach(function(index, ival) {console.log(index);\n                for (var i=0; i<index.length; i++) {\n                    if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                        selected_values = index;\n                        for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                            if (j !=ival) {\n                                document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                            } \n                        }\n                    } \n                }\n            })\n        } else {\n            //Show all the repeat group if deselected\n            for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\n                document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"block\";\n            }\n        }\n    });\n});\n\n$(document).on('change', 'input[type=\"checkbox\"]', function(e){\n    if($(this).is(':checked')){\n        window.formyoula.form_fields[\"Repeat Group\"].changed.repeat_value.forEach(function(index, ival) {console.log(index);\n            for (var i=0; i<index.length; i++) {\n                if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                    selected_values = index;\n                    for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                        if (j !=ival) {\n                            document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                        } \n                    }\n                } \n            }\n        })\n    } else {\n        for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\n            document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"block\";\n        }\n    }\n});\n$(document).on( \"click\",\".back \", function()  {\n    window.formyoula.form_fields[\"Repeat Group\"].attributes.repeat_value.forEach(function(index, ival) {console.log(index);\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                    if (j !=ival) {\n                        document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })    \n});\n$(document).on(\"click\", \".list-group-item\", function() {\nconsole.log(\"list-group-item\");\nvar id = document.getElementsByClassName(\"formyoula-Repeat\")[0].id.split(\"component-\")[1];\nwindow.formyoula.form_fields[id].attributes.repeat_value.forEach(function(index, ival) {console.log(index);\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                    if (j !=ival) {\n                        document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })\n});\n$(document).on( \"click\",\".edit\", function()  {\n    window.formyoula.form_fields[\"Repeat Group\"].attributes.repeat_value.forEach(function(index, ival) {console.log(index);\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                    if (j !=ival) {\n                        document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })    \n});\n\n$('.next').on('click', function () {\n    setTimeout(function() {\n        formyoula.form_fields[\"84a7-024d-bb81\"].set('value', selected_values[0].value);\n        formyoula.form_fields[\"8e30-cb6c-e1b7\"].set('value', selected_values[1].value);\n        formyoula.form_fields[\"2acf-50f1-8b4f\"].set('value', selected_values[2].value);\n    }, 1000);\n})\n\n$(document).on('click', 'a', function() {\nconsole.log(\"a\");\nformyoula.form_fields[\"Repeat Group\"].attributes.repeat_value.forEach(function(index, ival) {console.log(index);console.log(ival);\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\nconsole.log(\"goes in\");\n                for (var j=0; j<document.querySelectorAll(\"div.repeat_group_wrapper > .panel-default\").length; j++) {\t\n                    if (j !=ival) {\n                        document.querySelectorAll(\"div.repeat_group_wrapper > .panel-default\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })\n});",
+                            "script_detail": "$(document).on('click', '.form_record td b u a ', function() { \nformyoula.form_fields[\"Repeat Group\"].attributes.repeat_value.forEach(function(index, ival) {console.log(index);console.log(ival);\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\nconsole.log(\"goes in\");\n                for (var j=0; j<document.querySelectorAll(\"div.repeat_group_wrapper > .panel-default\").length; j++) {\t\n                    if (j !=ival) {\n                        document.querySelectorAll(\"div.repeat_group_wrapper > .panel-default\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })\n});\n$(document).ready( function () {\nconsole.log('hashchange ready');\nformyoula.form_fields[\"Repeat Group\"].attributes.repeat_value.forEach(function(index, ival) {console.log(index);console.log(ival);\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\nconsole.log(\"goes in\");\n                for (var j=0; j<document.querySelectorAll(\"div.repeat_group_wrapper > .panel-default\").length; j++) {\t\n                    if (j !=ival) {\n                        document.querySelectorAll(\"div.repeat_group_wrapper > .panel-default\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })\n});\n$(document).on( \"click\",\".back \", function()  {\nconsole.log(\"back in detail\");\n    window.formyoula.form_fields[\"Repeat Group\"].attributes.repeat_value.forEach(function(index, ival) {console.log(index);\n        for (var i=0; i<index.length; i++) {\n            if (index[i].type == \"CheckBox\" && index[i].value == true) {\n                for (var j=0; j<document.getElementsByClassName(\"existing_repeat_entry_panel\").length; j++) {\t\n                    if (j !=ival) {\n                        document.getElementsByClassName(\"existing_repeat_entry_panel\")[j].style.display = \"none\"\n                    } \n                }\n            } \n        }\n    })    \n});"
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "9af0-077a-3931",
+                "title": "Page 1",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "First Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "84a7-024d-bb81",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Last Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "8e30-cb6c-e1b7",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Email",
+                        "name": "Email",
+                        "category": "input",
+                        "label": "Email Field",
+                        "icon": "/scripts/formbuilder/img/email.png",
+                        "component_id": "2acf-50f1-8b4f",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce",
+            "Email"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {}
+    },
+    "connections": [
+        {
+            "_id": "5ccbe457dc911d00108653b0",
+            "created_at": "2019-04-25T09:04:45.082Z",
+            "updated_at": "2019-05-03T06:48:55.863Z",
+            "template_id": "5ccbe457dc911d00108653a7",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "FirstName",
+                    "field_name": "First Name ( FirstName )",
+                    "component_id": "abc3-3aed-5b0d",
+                    "component_name": "First Name ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "LastName",
+                    "field_name": "Last Name ( LastName )",
+                    "component_id": "0aec-df16-0ee4",
+                    "component_name": "Last Name ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "Email",
+                    "field_name": "Email ( Email )",
+                    "component_id": "e96b-ba27-a253",
+                    "component_name": "Email ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Existing Record ID (Only For Updates)",
+                    "component_id": "5f06-fbd9-3b0a",
+                    "component_name": "Contact ID ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "AccountId",
+                    "field_name": "Account ID ( AccountId )",
+                    "component_id": "eafa-b9a5-f364",
+                    "component_name": "Record Lookup ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Contact",
+                "object_name": "Contact",
+                "repeat_group": "1b48-7d58-c02b",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "",
+                "enable_blank_values": true,
+                "use_form_owner": false,
+                "attachment": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5ccbe457dc911d00108653b1",
+            "created_at": "2019-04-25T09:05:48.588Z",
+            "updated_at": "2019-05-03T06:48:55.875Z",
+            "template_id": "5ccbe457dc911d00108653a7",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Email",
+            "push_updates": false,
+            "emails": [
+                {
+                    "from_name": "GG Koh",
+                    "from_email": "gatis.faaca+fufc@gmail.com",
+                    "_id": "5cc1786cb5f341001e92368e",
+                    "bcc": "",
+                    "cc": "",
+                    "subject": "Test Subject",
+                    "template": "<p>Test Email Body</p>\r\n",
+                    "to": "{{2acf-50f1-8b4f}}",
+                    "attachment": true,
+                    "mail_merge": false
+                }
+            ],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false
+            },
+            "is_disabled": false,
+            "version": 3,
+            "__v": 0
+        }
+    ]
+}
