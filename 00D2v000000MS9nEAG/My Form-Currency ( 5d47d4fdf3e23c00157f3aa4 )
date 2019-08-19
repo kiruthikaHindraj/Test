@@ -1,0 +1,121 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "My Form-Currency",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-05T07:04:20.399Z",
+        "pages": [
+            {
+                "page_id": "309f-73ac-62a0",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Currency",
+                        "name": "Currency",
+                        "category": "input",
+                        "label": "Currency Field",
+                        "icon": "/scripts/formbuilder/img/currency.png",
+                        "component_id": "b79c-47f3-d3b1",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce",
+            "Email"
+        ],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5cc17f16630ca900103bac08"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "8ab09302c1fe01de46ec997845a70001f24c1e7a"
+        }
+    },
+    "connections": [
+        {
+            "_id": "5d494df0c4d11f00151d31ab",
+            "created_at": "2019-08-06T09:52:48.575Z",
+            "updated_at": "2019-08-06T09:53:01.959Z",
+            "template_id": "5d47d4fdf3e23c00157f3aa4",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "emails": [],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "object_id": "Account",
+                "object_name": "Account",
+                "upsert_field": ""
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0,
+            "attributes": {
+                "github_repository_sha": "21b06ceb8ee9f7ae0cee22f0de306b85712b2dc9"
+            },
+            "push_updates": false
+        },
+        {
+            "_id": "5d494ef3ba460d0015a62931",
+            "created_at": "2019-08-06T09:57:07.984Z",
+            "updated_at": "2019-08-06T09:57:34.009Z",
+            "template_id": "5d47d4fdf3e23c00157f3aa4",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Email",
+            "emails": [
+                {
+                    "from_name": "Shanu H",
+                    "from_email": "kiruthikahindraj94@gmail.com",
+                    "_id": "5d494ef3ba460d0015a62932",
+                    "attachment": true,
+                    "mail_merge": false,
+                    "bcc": "",
+                    "cc": "",
+                    "subject": "Test",
+                    "template": "",
+                    "to": "kiruthika@formyoula.com"
+                }
+            ],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false
+            },
+            "is_disabled": false,
+            "version": 3,
+            "__v": 0,
+            "attributes": {
+                "github_repository_sha": "8f6dacb157df18319530eba92cf51c5842b76ed4"
+            },
+            "push_updates": true
+        }
+    ]
+}
