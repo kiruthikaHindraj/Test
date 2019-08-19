@@ -1,0 +1,252 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "select_list",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-05-29T08:09:02.095Z",
+        "pages": [
+            {
+                "page_id": "9cff-2832-e204",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "auto_fill_id": "",
+                            "position": "Fill",
+                            "enable_barcode_scanner": false,
+                            "button": "Find",
+                            "show_auto_search_results": false,
+                            "offline_sync_filter": "",
+                            "custom_offline_lookup_filter": ""
+                        },
+                        "sfdc_query_fields": "Id,Name,Demo_picklist__c,Sample_picklist__c,Sample_picklist_1__c",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5cee3e1eb47ef3001092386e",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "b131-b14f-12b0",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "MultiSelect",
+                        "name": "Multi Select",
+                        "category": "select",
+                        "label": "Multi Select List Demo Picklist",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One\nSelect Two\nSelect Three\nSelect Four",
+                        "component_id": "e6bb-4e78-4c94",
+                        "attributes": {
+                            "dependent_list_values": "",
+                            "select_option_values": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "MultiSelect",
+                        "name": "Multi Select",
+                        "category": "select",
+                        "label": "Dependent Multi Select List Demo Picklist",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "1\n2\n3",
+                        "component_id": "6b45-9820-e613",
+                        "attributes": {
+                            "dependent_list_values": {
+                                "e6bb-4e78-4c94": {
+                                    "Select Three": [
+                                        "Select One",
+                                        "Select Two"
+                                    ],
+                                    "Select Two": [
+                                        "Select One"
+                                    ],
+                                    "Select One": [
+                                        "Select Two",
+                                        "Select Three"
+                                    ]
+                                }
+                            },
+                            "select_option_values": "Select One\nSelect Two\nSelect Three"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "MultiSelect",
+                        "name": "Multi Select",
+                        "category": "select",
+                        "label": "Multi Select List without option",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Выберите один\nВыберите два\nВыберите Три",
+                        "component_id": "de56-7af7-d65e",
+                        "attributes": {
+                            "select_option_values": "Select One\nSelect Two\nSelect Three"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One Select One Select One Select One Select OneSelect OneSelect OneSelect One Select One Select One Select One Select One Select One Select OneSelect OneSelect OneSelect One Select One\nSelect Two\nSelect Three",
+                        "component_id": "5a48-abe0-0c81",
+                        "attributes": {
+                            "third_party_library": "true",
+                            "dependent_list_values": "",
+                            "unselected_label": "",
+                            "select_option_values": "1\n2\n3\n4"
+                        },
+                        "required": false,
+                        "value": "",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "e03f71ee6c2aef2d6fbd5b095440a35b31d85a4f"
+        }
+    },
+    "connections": [
+        {
+            "_id": "5cee3e1eb47ef3001092386e",
+            "created_at": "2019-05-28T15:27:38.407Z",
+            "updated_at": "2019-06-07T17:24:38.511Z",
+            "template_id": "5cee3e1eb47ef30010923867",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Sample_picklist__c",
+                    "field_name": "Sample_picklist ( Sample_picklist__c )",
+                    "component_id": "e3e0-c01d-bbaf",
+                    "component_name": "Multi Select List ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "Sample_picklist_1__c",
+                    "field_name": "Sample_picklist_1 ( Sample_picklist_1__c )",
+                    "component_id": "de56-7af7-d65e",
+                    "component_name": "Multi Select List without option ( Page: Details )"
+                },
+                {
+                    "field_id": "Demo_picklist__c",
+                    "field_name": "Demo_picklist ( Demo_picklist__c )",
+                    "component_id": "e6bb-4e78-4c94",
+                    "component_name": "Multi Select List Demo Picklist ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Account",
+                "object_name": "Account",
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "attachment": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 7,
+            "attributes": {
+                "github_repository_sha": "9f75c6b7e4759835077ac1e42fe50e3d994265a7"
+            }
+        }
+    ],
+    "form_pdf": {
+        "_id": "5cf635a0063fed0015c36aa8",
+        "created_at": "2019-06-04T09:10:56.186Z",
+        "updated_at": "2019-06-05T09:57:51.168Z",
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "template_id": "5cee3e1eb47ef30010923867",
+        "html": "<p>&lt;span class=&rdquo;multipicklist&rdquo;&gt;&nbsp;{{e6bb-4e78-4c94}} &lt;/span&gt;</p>\n",
+        "file_name": "",
+        "css": "",
+        "javascript": "  ",
+        "page_settings": {
+            "footer_html": "",
+            "header_html": "",
+            "enable_advanced_templating": false,
+            "disable_auto_page_break": false,
+            "disable_timezone_offset": false,
+            "disable_forms": false,
+            "engine": false,
+            "lowquality": false,
+            "image_dpi": 600,
+            "image_quality": 25,
+            "no_images": false,
+            "header_left": "",
+            "header_right": "",
+            "header_center": "",
+            "footer_left": "",
+            "footer_right": "",
+            "footer_center": "",
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "page_width": "",
+            "orientation": "",
+            "page_size": ""
+        },
+        "use_beta_engine": false,
+        "disable_bootstrap": false,
+        "use_custom": true,
+        "__v": 0,
+        "attributes": {
+            "github_repository_sha": "fc2fb56e4f62a0e1ae1fb84ce68212b9a8413282"
+        }
+    }
+}
