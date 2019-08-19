@@ -1,0 +1,2210 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Test salesforce prefill",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-02T05:19:06.158Z",
+        "pages": [
+            {
+                "page_id": "7976-2ed7-6081",
+                "title": "Opportunity Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Opportunities",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Find",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "CloseDate,Name,StageName",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfcd",
+                        "object_label": "None Selected",
+                        "object_api_name": "Opportunity",
+                        "component_id": "8e24-10c2-692a",
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "8011w000000Kjzp",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Order ID",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "346a-b76b-2ff1",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Year",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "5c67-1bd1-b48e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Opp ID",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "d557-86be-405c",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Verkaufschance",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "H2",
+                        "component_id": "ba39-1360-7614",
+                        "attributes": {
+                            "position": "Left"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Phase",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Closed Won",
+                        "component_id": "8af0-5b36-bbdc",
+                        "attributes": {
+                            "dependent_list_values": "",
+                            "unselected_label": "",
+                            "select_option_values": ""
+                        },
+                        "required": true,
+                        "value": "Closed Won",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Date",
+                        "name": "Date",
+                        "category": "input",
+                        "label": "Schlusstermin",
+                        "icon": "/scripts/formbuilder/img/date.png",
+                        "component_id": "ef2f-279b-ab7c",
+                        "required": true,
+                        "attributes": {
+                            "default_date": "0",
+                            "format": "DD.MM.YYYY"
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "TextArea",
+                        "name": "TextArea",
+                        "category": "input",
+                        "label": "Notizen",
+                        "icon": "/scripts/formbuilder/img/text_area.png",
+                        "height": "3",
+                        "attributes": {
+                            "show_label": "Yes",
+                            "readonly": "no"
+                        },
+                        "component_id": "b81f-dc1e-5db9",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Id",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "e0a7-53a2-bc58",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Opportunity PriceBook2Id",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "e3c5-74b3-0b9a",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "OpportunityContactRole_OpportunityId",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "53ea-e1ca-33fe",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Record delete Script",
+                        "component_id": "f6be-e123-2483",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "function delete_sfdc_record(e,t,n){function o(e,t){new Lawnchair({name:e,adapter:localStorage.getItem(\"f_db_adapter\")},function(e){e.all(function(n){n.every(function(n){return n.Id!=t||(e.remove(n.key),!1)})})})}function a(e,t){new Lawnchair({name:e,adapter:localStorage.getItem(\"f_db_adapter\")},function(e){e.all(function(n){n.every(function(n){return n.Id!=t||(e.remove(n.key),!1)})})})}$(\"#component-\"+e+\" .before_delete\").length||($(\"#component-\"+e+\"  .delete\").addClass(\"hide\"),$(\"#component-\"+e+\"  .panel-body\").append('<a class=\"btn btn-danger btn-block before_delete\">Delete</a>'),JSON.parse(localStorage.getItem(\"sfdc_delete_request_queue\"))||localStorage.setItem(\"sfdc_delete_request_queue\",JSON.stringify({})),$(\"#component-\"+e+\"  .before_delete\").on(\"click\",function(l){var d=$(this).parent(\".panel-body\").find(\".delete\").attr(\"data-item_index\"),r=window.formyoula.form_fields[t+d],c=window.formyoula.form_fields[e];r&&c&&($(this).parent(\".panel-body\").find(\".delete\").click(),a(\"offline_lookup_\"+c.get(\"component_id\").replace(/-/g,\"\")+\"_temp_\"+n,r.value),o(\"offline_lookup_\"+c.get(\"sfdc_auto_fill_id\")+\"_temp_\"+n,r.value),window.formyoula.sfdc.del(c.get(\"object_api_name\"),r.value,function(e){},function(e){var t=JSON.parse(localStorage.getItem(\"sfdc_delete_request_queue\"));t[r.value]={record_id:r.value,object_api_name:c.get(\"object_api_name\")},localStorage.setItem(\"sfdc_delete_request_queue\",JSON.stringify(t))}))}))}"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Produkte",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "H3",
+                        "component_id": "9d79-f275-bbbc",
+                        "attributes": {
+                            "position": "Left"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Picklist",
+                        "version": "2",
+                        "component_id": "4e4b-2c0b-05d0",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "/***********************Dependency List***************************/\n//Dependency JSON\nvar product1 = {\n    \"Alibaba groß Rapspalette\": [\"Alibaba groß Rapspalette\"],\n\t\"One\": [\"One\"],\n\t\"test\": [\"test\"],\n\t\"Amazon.de Gutschein 25 Euro\": [\"Amazon.de Gutschein 25 Euro\"]\n}\n\nvar OLI_unit_price = {\n    \"Alibaba groß Rapspalette\": [\"12\"],\n\t\"One\": [\"13\"],\n\t\"test\": [\"13\"],\n\t\"Amazon.de Gutschein 25 Euro\": [\"14\"]\n}\nvar order_unit_price = {\n    \"Alibaba groß Rapspalette\": [\"30\"],\n\t\"One\": [\"31\"],\n\t\"test\": [\"32\"],\n\t\"Amazon.de Gutschein 25 Euro\": [\"33\"]\n}\n\n\n//Repeat group event on adding the record\nformyoula.form_fields['f7e2-c61c-8a3a'].on('element:create:success',function() {\nalert('first cond');\n  //Loop for repeat index\n  for (var repeat_index=0; repeat_index < window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value').length; repeat_index++ ) {\nconsole.log('first for');\n    //Looop for component data\n    for ( var i_component = 0; i_component <  window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index].length; i_component++ ) {\nconsole.log('second for');\n       //Check if type is Salesforce and null value or no value available\n      /****************Code for the picklist****************/\n       $( \".new_repeat_entry_panel #component-6ee2-acfd-2e89 .input_content\" ).change(function() {\n\nalert('inside');\n  // Check input( $( this ).val() ) for validity here\n  var selected_option = $( this ).val();\n  //Product/OLI Price book ID\n  var dependent_picklist = product1[selected_option] ? product1[selected_option][0] : '';\n  //order Price\n  var order_price = order_unit_price[selected_option] ? order_unit_price[selected_option][0] : '';\n  //Unit Price\n  var unit_price = unit_price_data[selected_option] ? unit_price_data[selected_option][0] : '';\n  alert(dependent_picklist);\n  alert(unit_price);\n  alert(order_price);\n  //Added by pramod\n  window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index][3].value =  dependent_picklist;\n\t\t\t  // Added by the pramod\n\t\t\t  window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index][5].value = order_price;\n\t\t\t  window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index][6].value = unit_price;\n //Ended by the pramod\t\t\t  \n  //dependent picklist\n  $( \".new_repeat_entry_panel #component-49b8-df0d-2c75 .input_content\" ).val(dependent_picklist);\n  //Order price\n  $( \".new_repeat_entry_panel #component-e255-3f8c-28b5 .input_content\" ).val(order_price);\n  //Unit Price\n  $( \".new_repeat_entry_panel #component-3969-7298-147b .input_content\" ).val(unit_price);\n});\n    }\n  }\n})\n//Event for pre-fill success.\nformyoula.form_fields['f7e2-c61c-8a3a'].on('prefill:success',function(){\nalert('prefill success');\n//Loop for repeat index\n  for (var repeat_index=0; repeat_index < window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value').length; repeat_index++ ) {\nalert('prefill_success_for');\n    //Looop for component data\n    for ( var i_component = 0; i_component <  window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index].length; i_component++ ) {\nconsole.log(window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index][i_component].label);\n       //Check if type is Salesforce and null value or no value available\n      /****************Code for the picklist****************/\n       if ( window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index][i_component].label == \"OLI Price book ID\" ) {\nalert('goes in');\n          //Get selected product \n          var selected_product = window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index][i_component].value;\nalert('selected_product' + selected_product);\n          //Check if dependent picklist available.\n          if ( product1[selected_product] ) {\n              window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get('repeat_value')[repeat_index][3].value =  product1[selected_product][0];\n              //Update UI of the form\n              $('#collapse_f7e2-c61c-8a3a_'+repeat_index+' #component-49b8-df0d-2c75 .input_content').val(product1[selected_product][0])\n          }\n       }\n    }\n  }\n})"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_limit": "100",
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Opportunity Products",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "f7e2-c61c-8a3a",
+                        "attributes": {
+                            "max_repeat_items": "",
+                            "add_title_label": "",
+                            "all_expanded": false,
+                            "sfdc_parent_field_name": "OpportunityId",
+                            "sfdc_parent_component": "8e24-10c2-692a",
+                            "list_view_fields": [
+                                "aece-570c-c78b"
+                            ],
+                            "add_button_label": "",
+                            "delete_button_label": ""
+                        },
+                        "required": false,
+                        "object_api_name": "OpportunityLineItem",
+                        "sfdc_filter_fields": "",
+                        "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfc9",
+                        "components": [
+                            {
+                                "type": "Hidden",
+                                "value": "",
+                                "name": "Hidden",
+                                "category": "input",
+                                "label": "OpportunityLineItemId",
+                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "component_id": "2f41-ae0f-bb13",
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "37b6-fecf-51c0",
+                                "record_id": "",
+                                "object_api_name": "PricebookEntry",
+                                "object_label": "None Selected",
+                                "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfcb",
+                                "sfdc_query_search_group": "All Fields",
+                                "sfdc_query_order_by": "",
+                                "custom_offline_lookup_filter": "(function(result){ \r\n return (result.Pricebook2Id == window.formyoula.form_fields[\"e3c5-74b3-0b9a\"].get(\"value\"));\r\n });",
+                                "sfdc_query_visibility": "All Records",
+                                "sfdc_filter_fields": "IsActive = true AND CurrencyIsoCode = 'EUR' AND Pricebook2Id='01s1o0000051vW2'",
+                                "sfdc_query_limit": "50000",
+                                "sfdc_query_fields": "Desc_Local__c",
+                                "attributes": {
+                                    "button": "Find",
+                                    "enable_barcode_scanner": false,
+                                    "position": "Fill",
+                                    "auto_fill_id": "",
+                                    "query_search_group": "",
+                                    "query_order_by": "",
+                                    "query_visibility": "",
+                                    "filter_fields": "",
+                                    "query_limit": "10",
+                                    "query_fields": "",
+                                    "show_auto_search_results": false,
+                                    "offline_sync_filter": "",
+                                    "custom_offline_lookup_filter": ""
+                                },
+                                "version": "2",
+                                "icon": "/scripts/formbuilder/img/salesforce.png",
+                                "label": "Produktsuche",
+                                "category": "salesforce",
+                                "name": "",
+                                "type": "Salesforce"
+                            },
+                            {
+                                "value": "",
+                                "components": [],
+                                "required": false,
+                                "attributes": {
+                                    "dependent_list_values": "",
+                                    "unselected_label": "",
+                                    "select_option_values": "One\n01u2v00000Bq978AAB\ntest\n1234"
+                                },
+                                "component_id": "6ee2-acfd-2e89",
+                                "select_options": "One\nAlibaba groß Rapspalette\ntest\nAmazon.de Gutschein 25 Euro",
+                                "icon": "/scripts/formbuilder/img/select.png",
+                                "label": "OLI Price book ID",
+                                "category": "select",
+                                "name": "Select",
+                                "type": "Select"
+                            },
+                            {
+                                "value": "",
+                                "components": [],
+                                "required": false,
+                                "attributes": {
+                                    "dependent_list_values": "",
+                                    "unselected_label": "",
+                                    "select_option_values": "01u1o00000OuSj0AAF\n1234\n9755\n01u1w000003n5CaAAI"
+                                },
+                                "component_id": "49b8-df0d-2c75",
+                                "select_options": "Alibaba groß Rapspalette\ntest\nOne\nAmazon.de Gutschein 25 Euro",
+                                "icon": "/scripts/formbuilder/img/select.png",
+                                "label": "Order PBI",
+                                "category": "select",
+                                "name": "Select",
+                                "type": "Select"
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Produktname",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "aece-570c-c78b",
+                                "attributes": {
+                                    "readonly": "yes"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "OLI_unit_price",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "3969-7298-147b",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "order_unit_price",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "e255-3f8c-28b5",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Number",
+                                "name": "Number",
+                                "category": "input",
+                                "label": "Menge",
+                                "icon": "/scripts/formbuilder/img/number.png",
+                                "component_id": "f039-b501-27fb",
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Currency",
+                                "name": "Currency",
+                                "category": "input",
+                                "label": "Preis",
+                                "icon": "/scripts/formbuilder/img/currency.png",
+                                "component_id": "03c2-b143-4a9f",
+                                "required": false,
+                                "components": [],
+                                "attributes": {
+                                    "prefix": "",
+                                    "suffix": "",
+                                    "currency_locale": ""
+                                }
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "component_id": "d1cf-adf4-dfb7",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Order Quantity",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
+                            },
+                            {
+                                "type": "JavaScript",
+                                "name": "JavaScript",
+                                "category": "media",
+                                "label": "Custom JavaScript",
+                                "component_id": "3215-57cf-a470",
+                                "attributes": {
+                                    "script": "//Add a javascript element inside  repat group with following code\n//Pass repeat_group_component_id, sub_component_id, template_id)\ndelete_sfdc_record(\"f7e2-c61c-8a3a\",\"2f41-ae0f-bb13\", \"59d47d13b6aeac0015f167b5\");"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Unit Price",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "f16f-49c8-59d6",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Händler",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "H3",
+                        "component_id": "ac82-5724-efe0",
+                        "attributes": {
+                            "position": "Left"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "CheckBox",
+                        "value": "",
+                        "name": "CheckBox",
+                        "category": "input",
+                        "label": "Checkbox Field",
+                        "icon": "/scripts/formbuilder/img/checkbox.png",
+                        "component_id": "b1de-3a58-1088",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Account Retailer",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Auswahlliste",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Name,BillingCity,BillingStreet,BillingPostalCode",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "Account_country__c='DE' and recordtypeid='01224000000R2Rb' and Owner.id !='005240000010FDXAA2' and Status_c__c='Active' and Account_Sub_Type_baseline__c not in ('Contractor','Distrubutor','Industrie','L&G Channel')",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfc8",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "450d-23a1-d052",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Retailer Account Id",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "6ed1-9e52-3a1d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Kundenkontakt",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "H3",
+                        "component_id": "7a55-b828-7cfd",
+                        "attributes": {
+                            "position": "Left"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "sfdc_query_limit": "",
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Contact Roles",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "5c35-c2f7-7a01",
+                        "attributes": {
+                            "max_repeat_items": "",
+                            "add_title_label": "",
+                            "all_expanded": false,
+                            "sfdc_parent_field_name": "OpportunityId",
+                            "sfdc_parent_component": "8e24-10c2-692a",
+                            "list_view_fields": [
+                                "a310-09cc-62bf"
+                            ],
+                            "add_button_label": "",
+                            "delete_button_label": ""
+                        },
+                        "required": false,
+                        "object_api_name": "OpportunityContactRole",
+                        "sfdc_filter_fields": "",
+                        "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfcc",
+                        "sfdc_query_order_by": "",
+                        "components": [
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "0d80-6439-e534",
+                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "label": "OpportunityContactRoleId",
+                                "category": "input",
+                                "name": "Hidden",
+                                "value": "",
+                                "type": "Hidden"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "d018-2150-b80d",
+                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "label": "Contact Id",
+                                "category": "input",
+                                "name": "Hidden",
+                                "value": "",
+                                "type": "Hidden"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "f66b-dde2-631c",
+                                "record_id": "",
+                                "object_api_name": "Contact",
+                                "object_label": "None Selected",
+                                "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfcf",
+                                "sfdc_query_search_group": "All Fields",
+                                "sfdc_query_order_by": "",
+                                "sfdc_query_visibility": "All Records",
+                                "sfdc_filter_fields": "Account.BillingCountryCode='DE'  AND Status__c = 'Active' AND Account.Account_Type_FR__c= 'Grower' AND accountid='{{07df-5343-dc4e}}'",
+                                "sfdc_query_limit": "10",
+                                "sfdc_query_fields": "Email,Name",
+                                "attributes": {
+                                    "button": "Find",
+                                    "enable_barcode_scanner": false,
+                                    "position": "Fill",
+                                    "auto_fill_id": "",
+                                    "query_search_group": "",
+                                    "query_order_by": "",
+                                    "query_visibility": "",
+                                    "filter_fields": "",
+                                    "query_limit": "10",
+                                    "query_fields": "",
+                                    "show_auto_search_results": false,
+                                    "offline_sync_filter": "",
+                                    "custom_offline_lookup_filter": ""
+                                },
+                                "version": "2",
+                                "icon": "/scripts/formbuilder/img/salesforce.png",
+                                "label": "Kontaktsuche",
+                                "category": "salesforce",
+                                "name": "",
+                                "type": "Salesforce"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "attributes": {
+                                    "readonly": "yes"
+                                },
+                                "component_id": "a310-09cc-62bf",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Name",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "9e2c-eb82-124a",
+                                "icon": "/scripts/formbuilder/img/checkbox.png",
+                                "label": "Primärer Kontakt",
+                                "category": "input",
+                                "name": "CheckBox",
+                                "value": "",
+                                "type": "CheckBox"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "28a3-195b-d07f",
+                                "icon": "/scripts/formbuilder/img/email.png",
+                                "label": "E-Mail",
+                                "category": "input",
+                                "name": "Email",
+                                "type": "Email"
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Hidden Contact Email",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "ff24-7ed0-5f36",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Hidden Contact Name",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "d59e-24dd-853c",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceSelect",
+                        "name": "",
+                        "category": "salesforce",
+                        "version": "2",
+                        "label": "Opportunity Account Details",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "owner_field": "",
+                            "button": "Select",
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "BillingCountryCode = 'DE' AND Status_c__c='Active' AND Account_Type_FR__c= 'Grower'",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfd0",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "07df-5343-dc4e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "b1de-3a58-1088",
+                                "label": "Checkbox Field (Opportunity Details)",
+                                "value": "Yes",
+                                "type": "CheckBox",
+                                "_id": "5d43c471f9d19c0019c05685"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "SalesforceSelect",
+                        "name": "",
+                        "category": "salesforce",
+                        "version": "2",
+                        "label": "Opportunity Owner Details",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "owner_field": "",
+                            "button": "Select",
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "User_Country__c='DE'",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "sfdc_auto_fill_id": "5d43c7ca78647a0015fabfd1",
+                        "object_label": "None Selected",
+                        "object_api_name": "User",
+                        "component_id": "b9f2-de7a-cf01",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Opportunity Contact Repeat Group Prefills",
+                        "component_id": "ee04-dc8c-2c07",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "//Start a delayed looping\nvar opportunity_lineItem_length = 0;\nvar opportunity_contactrole_length = 0;\nvar i = 0;\nvar prefill_contact_Id = '';\n\nvar selectId = setInterval(function() {\n  if (window.$.isReady) {\n\n    if (window.formyoula.form_fields[\"5c35-c2f7-7a01\"]) {\n      if (opportunity_contactrole_length != window.formyoula.form_fields[\"5c35-c2f7-7a01\"].get(\"repeat_value\").length) {\n        opportunity_contactrole_length = window.formyoula.form_fields[\"5c35-c2f7-7a01\"].get(\"repeat_value\").length;\n        i = 0;\n        if (opportunity_contactrole_length > i) {\n          $(\"#component-5c35-c2f7-7a01\").addClass(\"whirl traditional\");\n          hide_opportunity_contactrole_lookup(opportunity_contactrole_length);\n          $(\"#component-5c35-c2f7-7a01\").removeClass(\"whirl traditional\");\n        }\n      }\n    }\n    if (window.formyoula.form_fields[\"f7e2-c61c-8a3a\"]) {\n      if (opportunity_lineItem_length != window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get(\"repeat_value\").length) {\n        opportunity_lineItem_length = window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get(\"repeat_value\").length;\n        hide_opportunity_product_lookups(opportunity_lineItem_length);\n      }\n    }\n    //clearInterval(selectId);\n    $(\"#component-03c2-b143-4a9f .form-control.input_content\").attr('readonly', 'readonly');\n  }\n}, 2000);\n\nvar flag = false;\nvar primary_contact_index = 0;\n$('.next').on('click', function(e) {\n\n  if (flag) return;\n  e.stopImmediatePropagation();\n  var primary_contact_exisits_count = 0;\n\n  for (var i = 0; i < window.formyoula.form_fields[\"5c35-c2f7-7a01\"].get(\"repeat_value\").length; i++) {\n    //Get checkbox based on compoennt id\n    var primery_contact = _.where(window.formyoula.form_fields[\"5c35-c2f7-7a01\"].get(\"repeat_value\")[i], {component_id: \"9e2c-eb82-124a\", value: true })\n    if (primery_contact && primery_contact.length) {\n      primary_contact_exisits_count++;\n      primary_contact_index = i;\n    }\n  \n  } //END For\n  \n  console.log(\"primary contact exists: \" + primary_contact_exisits_count);\n\n  if (primary_contact_exisits_count > 1 || primary_contact_exisits_count == 0) {\n    alert(\"Please assign one primary contact\");\n    primary_contact_index = 0;\n  }\n  else {\n    flag = true;\n    //update primary conatct details\n    var parent_component_Id = \"#collapse_5c35-c2f7-7a01_\" + primary_contact_index;\n    console.log(\"primary_contact_index: \" + primary_contact_index);\n    window.formyoula.form_fields['0b9c-1cfb-ca3d'].set(\"value\", $(parent_component_Id + \" #component-a310-09cc-62bf .form-control.input_content\").val());\n    window.formyoula.form_fields['d48d-6c58-d3c8'].set(\"value\", $(parent_component_Id + \" #component-28a3-195b-d07f .form-control.input_content\").val());\n\twindow.formyoula.form_fields['c0e4-6749-f1d9'].set(\"value\", $(parent_component_Id + \" #component-f66b-dde2-631c input[type='hidden'].input_content\").val());\n\t//alert($(parent_component_Id + \" #component-f66b-dde2-631c input[type='hidden'].input_content\").val());\n//window.formyoula.form_fields['c0e4-6749-f1d9'].set(\"value\", $(parent_component_Id + \" #component-f66b-dde2-631c input[type='hidden'].input_content\").val());\n\n\t\n    //end of update\n    $(this).click();\n  }\n});\n\n$('.back').on('click', function(e) {\n  opportunity_contactrole_length = 0;\n  i = 0;\n  flag = false;\n});\n\nfunction hide_opportunity_product_lookups(record_length) {\n  for (var i = 0; i < record_length; i++) {\n    var parent_componentId = '#collapse_f7e2-c61c-8a3a_' + i;\n    //var syngenta_product_lookup_componentId = '#component-86ee-b597-a1ae';\n    var syngenta_pricebookentry_componentId = '#component-37b6-fecf-51c0';\n\n    var repeatgroup_component_id = '14f0-225c-1597' + i;\n    var pricebookentryId_elementId = 'db89-4e6d-0b5e' + i\n    //$(parent_componentId + ' ' + syngenta_product_lookup_componentId).hide();\n    $(parent_componentId + ' ' + syngenta_pricebookentry_componentId).hide();\n  }\n}\n\nfunction hide_opportunity_contactrole_lookup(record_length) {\n  for (var i = 0; i < record_length; i++) {\n    var parent_componentId = '#collapse_5c35-c2f7-7a01_' + i;\n    var contact_componentId = '#component-f66b-dde2-631c';\n    $(parent_componentId + ' ' + contact_componentId).hide();\n  }\n}"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Opportunity LineItem Offline prefill",
+                        "component_id": "68d9-878c-8ba9",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "/*var pricebookEntry_filter = '';\nwindow.formyoula.form_fields[\"e3c5-74b3-0b9a\"].on(\"change\", function(){\n  if(this.get(\"value\")){\n  \tpricebookEntry_filter = 'IsActive=true AND CurrencyIsoCode = \\'EUR\\' AND PriceBook2Id=' + '\\'' + this.get(\"value\") + '\\'';\n\t  //Set filter for online use\n\t  window.formyoula.form_fields[\"37b6-fecf-51c0\"].set(\"sfdc_filter_fields\", pricebookEntry_filter);\n  }\n});*/"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "ee79-73eb-f663",
+                "title": "Bestellschein",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Hidden",
+                        "value": "7011w000000AyAT",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Campaign ID",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "9bf4-e154-6d43",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Contact Id",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "c0e4-6749-f1d9",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Email",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "a6a5-d9de-6a05",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Opportunity Distributor Email",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "f16a-797f-9c45",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Opportunity Closed Date",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "2237-01ea-fdb1",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Name",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "027d-805c-73f7",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Retailer Name",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "6357-521f-4cc1",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Billing Street",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "14b2-917a-8873",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Retailer Billing Street",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "e5ce-1fc5-363f",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Billing PostalCode",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "0feb-28c3-b689",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Retailer Billing Postal Code",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "324b-a666-55d3",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account City",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "f75c-37b5-e1df",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Retailer Billing City",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "4a4e-90cd-d0fc",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Email",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "6eed-8707-08a5",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Account Phone",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "7407-4702-647d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Owner Signature Link",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "80c3-b7d8-d44a",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Opportunity Owner Name",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "65f8-fc8a-300b",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Opportunity Owner Email",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "825f-3f0f-9475",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Primary Contact Name",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "0b9c-1cfb-ca3d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Grower Email",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "e312-d0f7-181d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "E-Mail an",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "d48d-6c58-d3c8",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "HTML",
+                        "name": "HTML",
+                        "category": "media",
+                        "label": "<style>\n.form-group.formyoula-Hidden\n {\n    display: none !important;\n}\n.title{\n    color: rgb(83,129,53);\n    font-size: 24px !important;\n    font-family: Impact;\n    font-weight: bold;\n} \n\n.Subtitle{\n    color: rgb(83,129,53);\n    font-size: 28px !important;\n    font-family: Impact;\n    font-weight: bold;\n} \n.SubtitleHead{\n    font-size: 28px !important;\n    font-family: Impact;\n}\n.phoneemail{\n    font-size:10.5px !important;\n    font-family: Calibri;\n    font-weight: bold;\n}\n\n@media print {\ntr.opportunityLineItemListHeading {\n    background-color: #C5E0B3 !important;\n    -webkit-print-color-adjust: exact; \n}}\n</style>\n\n<!-- div>\n<button type=\"button\" id=\"opportunity_agreement_print_pdf\" class=\"btn btn-success\">Print Agreement PDF</button>\n</div>\n<br/><br/ -->\n<div>\n<span id=\"opportunity_agreement_pdf_data\"></span>\n</div>",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "d3a7-4650-16de",
+                        "required": false,
+                        "attributes": {
+                            "html_detail": "",
+                            "html_edit": ""
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "CheckBox",
+                        "value": "",
+                        "name": "CheckBox",
+                        "category": "input",
+                        "label": "Hyvido Anbautelegramm",
+                        "icon": "/scripts/formbuilder/img/checkbox.png",
+                        "component_id": "7ec1-46cc-81ba",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "CheckBox",
+                        "value": "",
+                        "name": "CheckBox",
+                        "category": "input",
+                        "label": "Ich stimme zu und unterschreibe",
+                        "icon": "/scripts/formbuilder/img/checkbox.png",
+                        "component_id": "acd9-7a29-10bc",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "HTML",
+                        "name": "HTML",
+                        "category": "media",
+                        "label": "<div style=\"text-align:center; text-transform: uppercase; width: 100%; margin-bottom: 10px; border-bottom: none; color: #FFFFFF; background: #5F7800; padding: 10px\">Unterschrift Landwirt</div>",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "be53-c03d-9b14",
+                        "attributes": {
+                            "html_detail": "",
+                            "html_edit": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Signature",
+                        "name": "Signature",
+                        "category": "media",
+                        "label": "Unterschrift Landwirt",
+                        "icon": "/scripts/formbuilder/img/signature.png",
+                        "height": "150",
+                        "component_id": "e7ac-0f87-4735",
+                        "required": true,
+                        "attributes": {
+                            "width": "",
+                            "clear_label": ""
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "HTML",
+                        "name": "HTML",
+                        "category": "media",
+                        "label": "<div style=\"text-align:center; text-transform: uppercase; width: 100%; margin-bottom: 10px; border-bottom: none; color: #FFFFFF; background: #5F7800; padding: 10px\">Unterschrift Verkaufsberater</div>",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "5600-f1cd-41ab",
+                        "attributes": {
+                            "html_detail": "",
+                            "html_edit": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Signature",
+                        "name": "Signature",
+                        "category": "media",
+                        "label": "Unterschrift Verkaufsberater",
+                        "icon": "/scripts/formbuilder/img/signature.png",
+                        "height": "110",
+                        "component_id": "6eef-1c80-5ef6",
+                        "attributes": {
+                            "width": "",
+                            "clear_label": ""
+                        },
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Graphic",
+                        "value": "00D1w0000008ahHEAQ/5c656bcbd60ca3001ee5c82e/98a5-e0d2-ab4d.image/png",
+                        "name": "Graphic",
+                        "width": "100",
+                        "category": "media",
+                        "label": "Graphic Field",
+                        "icon": "/scripts/formbuilder/img/graphic.png",
+                        "attributes": {
+                            "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAABtCAYAAACxzpgtAAAgAElEQVR4XuydB3gchbW2v522Xb0323LBHXAFTDEtoRMSAqFjek3lTw8ELqk3hBZK6KEkXBJIQugYggEDxg33LtmS1XvZvjv7P+fMrizjKllaCXMmUWRLs1Pemd088/qc79ji8XgcicU0TbS1teHTlcvw0poFWNq2GcuDNclfy3chIASEwA4CvT47BIsQEAJCQAgIASEgBISAEBACQkAICIFBJDDPJgJrEPHKpoWAEBACQkAICAEhIASEgBAQAkJACAgBISAEDpCAOc8WCoV2qsBqb2/HktWf4V/r3sey9i1YHqw9wJ3Iy4WAEBACQkAICAEhIASEgBAQAkJACAgBISAEhEB/CZjzbEuWLGGBRf9jxk10+bqxoboC79avwjp/DdaG6vu7dXmdEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAQOEAC5jzbq6++Go+pQMRmoivYje6gH1Wt9fi0bTMqgk2oirYf4E7k5UJACAgBISAEhIAQEAJCQAgIASEgBISAEBACQqC/BMx5tvvuuy/uc5po1cNYWbse/lgYXfEItoVb0G6GEOfaLFmEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBITAUBAw59nuv//+eFtaDNV2P+av/QDtkSBMVUG3GUZM5NVQXBXZpxAQAkJACAgBISAEhIAQEAJCQAgIASEgBIRAD4GEwGrJjGGrvRsvr5yP1nAAUHWBJASEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBIYBARFYw+AiyCEIASEgBISAEBACQkAICAEhIASEgBAQAkJACOyZgAgsuTuEgBAQAkJACAgBISAEhIAQEAJCQAgIASEgBIY1ARFYw/ryyMEJASEgBISAEBACQkAICAEhIASEgBAQAkJACIjAkntACAgBISAEhIAQEAJCQAgIASEgBISAEBACQmBYExCBNawvjxycEBACQkAICAEhIASEgBAQAkJACAgBISAEhIAILLkHhIAQEAJCQAgIASEgBISAEBACQkAICAEhIASGNYFeAmubw4eXV7yDlkgANlUb1octBycEhMDQE4jH6Rj4f2QRAkJACAgBISAEhIAQEAJCQAgIASEwiAQSAqstM45qtx+vrPwvWiMBQATWIEKXTQuBg4MACaxoNAIzGjo4TkjOQggIASEgBISAEBACQkAIfKkJ2ACbBtiULzUFOfnhSiA2z3b//ffHM0cXwlGajXX1mxGIRQFFbtjhesnkuITAcCEQj8fRHfSjK9g1XA5JjkMICAEhIASEgBAQAkJACAiBfhAw4yb8kVbUdK5BINrRjy3IS4TA4BKImfF5tvvuu+/NqdMPw/jJk9AV8SdagmyDu2fZuhAQAvskYIOq2zV1qmJTsve58hCsQM2DphlDzOollEUICAEhIASEgBAQAkJACAiBLygBMx5BY/cGvF95Dxq7N8JmEyfwBb2UB+1hm4jPs917772TZxw1A1OnToUvHDloT1ZOTAh80QjYNT3LpTl+a7PhyOF67IpNgSoVm8P18shxCQEhIASEgBAQAkJACAiB/SIQM8Oo6ViFNzf+EvVdawBIV9Z+gZOVUkcgjnmiVVOHW/YkBPpEIB6P5wJ4DsDJfXqhrCwEhIAQEAJCQAgIASEgBISAEOgDgagZxvb2FXhr4x2o61orFVh9YCerpoZAPCoCKzWkZS9CoB8ERGD1A5q8RAgIASEgBISAEBACQkAICIE+ExCB1Wdk8oIUExCBlWLgsjsh0BcCIrD6QkvWFQJCQAgIASEgBISAEBACQqC/BERg9ZecvC5VBERgpYq07EcI9IOACKx+QJOXCAEhIASEgBAQAkJACAgBIdBnAiKw+oxMXpBiAiKwUgxcdicE+kJABFZfaMm6QkAICAEhIASEgBAQAkJACPSXgAis/pKT16WKgAisVJGW/QiBfhAQgdUPaPISISAEhIAQEAJCQAgIASEgBPpMQARWn5HJC1JMQARWioHL7oRAXwiIwOoLLVlXCAgBISAEhIAQEAJCQAgIgf4SEIHVX3LyulQREIGVKtKyHyHQDwIisPoBTV4iBISAEBACQkAICAEhIASEQJ8JiMDqMzJ5QYoJiMBKMXDZnRDoCwERWH2hJesKASEgBISAEBACQkAICAEh0F8CIrD6S05elyoCIrBSRVr2IwT6QUAEVj+gyUuEgBAQAkJACAgBISAEhIAQ6DMBEVh9RiYvSDEBEVgpBi67EwJ9ISACqy+0ZF0hIASEgBAQAkJACAgBISAE+ktABFZ/ycnrUkVABFaqSMt+hEA/CIjA6gc0eYkQEAJCQAgIASEgBISAEBACfSYgAqvPyOQFKSYgAivFwGV3QqAvBERg9YWWrCsEhIAQEAJCQAgIASEgBIRAfwmIwOovOXldqgiIwEoVadmPEOgHARFY/YAmLxECQkAICAEhIASEgBAQAkKgzwREYPUZmbwgxQREYKUYuOxOCPSFgAisvtCSdYWAEBACQkAICAEhIASEgBDoLwERWP0lJ69LFQERWKkiLfsRAv0gIAKrH9DkJUJACAgBISAEhMBBSyAej+/93GyADbaD9vzlxITAYBIQgTWYdGXbA0FABNZAUJRtCIFBIiACa5DAymaFgBAQAkJACAiBLwSBpLAy43HE4yYisSgiZgQx+nviDEhXqTYFuqpCVw0WWLZeIstGf5FFCAiBfRIQgbVPRLLCEBMQgTXEF0B2LwT2RkAEltwfQkAICAEhIASEwJeRAIkrklaRWBhtgU40+trRGfKhqbsFTf5O+GMxxOImyyrNZoNX05Ht9CDHkwenYUe63YkCTw7smh2KwkoLIrK+jHeSnHNfCIjA6gstWXcoCIjAGgrqsk8hsJ8ERGDtJyhZTQgIASEgBISAEPjCE+CaqjgQM2PoDvlQ1dGANY2VWNmwBasaK9DY3YFGXxuagt0ImlGYZhw2xKEqCjyqhizDhVx3NtIdbpSm5WBWyUSUpOdjXE4xcj058BguKDYRWV/4G0VOYNAIiMAaNLSy4QEiIAJrgEDKZoTAYBAQgTUYVGWbQkAICAEhIASEwHAjYFVcmegIdmFtwxZ8XL0WH9Wsx4qGLaj3dSAQDVuHbFPA/YHWX8DGi3KxqJ8wHgPMGP9dUzWk213Id6VjRuFYHFo8DjOLxmN89ghkeTJFZA23G0COZ1gQEIE1LC6DHMReCIjAkttDCAxjAiKwhvHFkUMTAkJACAgBISAEDpgA51jF4whFw9jWVov3KpfhlY0fY3H9ZjQGfZakstkQJ3G1p4WD3RMSi7+bltQyre+kufJcHkzLK8cpo2fi2DEzMSZ3BFy6g0WWLEJACFgERGDJnTDcCYjAGu5XSI7vS01ABNaX+vLLyQsBISAEhIAQOOgJWFVX3VhWsx5/WzUf71WtwrauVsTozBW1V3ZVMpidfmFVXlmFV4n/kKyyfgqYSaFFP0tUaMViUAEUuzMwu3gCzppwDOaWT0dheh63IMoiBISACCy5B4Y/ARFYw/8ayRF+iQmIwPoSX3w5dSEgBISAEBACBzkBkk1t/g7M37wIT656FwurVqM7FoWNxJVNgWJTeLogiScqlCKdpbC8skQV6akotR7Sf+JxnkxIQozMFk8v5MosE7a4iThLLfqrCScUTMotwbkTj8NpE4/B+Lxy6Kp2kNOW0xMC+yYgFVj7ZiRrDC0BEVhDy1/2LgT2SkAEltwgQkAICAEhIASEwMFIgARUR6ALr65dgPuX/AdLW7azhLIpGnSbDbpNga4oiT/TDEFwu1+yVorkFVVp0WtIYkXNOCJxE+G4iWicJhQms7FIaCVaCuk7F2WZIF1V6s7EiaOn45KZZ2J2yUTYVf1gRC3nJAT2m4AIrP1GJSsOEQERWEMEXnYrBPaHgAis/aEk6wgBISAEhIAQEAJfNAIdgU68sf5D/O6TF7GqtRamokK30ZcNTkWB3abAUG2wQ4VG4spm4wos+o/VNEguiqquSFjFEYrHETZNBOMmgmbM+hkFulMFVjILKxHwTtKLFsU0kWV34eSxs3DljLNw9MipIrG+aDeSHO+AEhCBNaA4ezaWqP+0/p74i8Tv9Y+1CKz+cZNXCYGUEBCBlRLMshMhIASEgBAQAkIghQQCkRAWbv0Mty/4Cz6pr4CparDbNLhUS1w5VQVOmwrDZoNhswSW1UpoVWJZz39xrsCKJgQWVV6RsAqQwIrF4I+bCMQsgaUjDk2xQUMcLpuNxZcvEkUsFkU0GkOm3Y25Y2bgutnfwBGlE6WdMIX3guxqeBEQgTWw16NHXPX8gUpA6XNMgc2mwkQ00RQ9sPs9mLcmAutgvrpybl94AiKwvvCXUE5ACAgBISAEhIAQ6EUgakaxob4CP373Mby9dRUiqgq7osGjKPCoKpyKyvLKYaOfq9CVhLxSKA/LEliWvgK3CZLAipkmV1/RVyAeQ8CMIRiPwVAUFHicmJCZjhFZWTAUFQ5FAc0l9Eej6PD7sbG5CetaWhCPAV8dPRtXH3UuDskrhyLB7nLffgkJiMAamIu+a8WVDYbqgkvPgFNPh9fIA9WUbu1YhHC0ywr5k2W/CIjA2i9MspIQGBoCIrCGhrvsVQgIASEgBISAEBgcAvVdzXh08b/xv4v+ie64CZdqcOWVR1HhVnS4WTJZX4aqsnTSFJXlFQW42/hBz2ojJIEVi8cQZXkVRTgWQ4jaBZU4StLdmJyXg/LsTOQ6XfA4HNAUDarNgKrYQZHw4VgU7QEfKtuasLJuOxq6A5g75licM+Uk5HmzBgeAbFUIDGMCIrAO/OKwvEoYLENxIMNZgjz3eOR5xyHbNRIeO8krGyqaF2Jh9SOIxgIisPqAXQRWH2DJqkIg1QREYKWauOxPCAgBISAEhIAQGCwC/kgQ/920CD/47+PY1NEEu2LAoyrwqlSBpcOjaHCqGhxUiaVqMFSdc7E0RemRWFadgtUGaJrUgGMiYsYQNmOImFG4dRWTCzMxIT8bed40zrRSVQccehbcRjac9kzoipOnHPJzJrUeRv1o7GrEyrqNqO/2YWbpdMwacThUheYfyiIEvjwERGD1/1r3rrrSbAZyXOUYm30cRmUfzRLLoXv5s0dVdLT5qzF/4++wpvlVqDYZHtEX6iKw+kJL1hUCKSYgAivFwGV3QkAICAEhIASEwKARqGqrxa3z/4z/27wUMZuCNFWFl74UHWlUfaWRvNLg1AzYKRdLoS8SUCp0laqwuAaLyxt4CqFJ7YMxRGJRhOMRpDs0TCrKwNjcLDgNO3TVDpeegwzPaLiNHGiqHYqicf7MjoUeO0mGReGPdKPN3wx6+Mz1FkHXqFKrP0sclBNPgu3zi1VBhv1uUYzHLVF3oNvpz1kMl9fsiUGSY5LpgR7vnllTgQxlFqWmzYuud/Ka0z6T7ax0fPT3wTwOEVj9v4uSAsuhpmF09rE4rPDrKEibCKeeAcWm9ly3mBlFVesS/GvtD9ER2gZFBFafoIvA6hMuWVkIpJaACKzU8pa9CQEhIASEgBAQAoNDIBwNY2HlUlz62r2o93fBqepIUzWkKxrSVB0eVYNb01leOVX60rkCy9A1GIqWqMBSeBohV2Al8q+o6opytRw6MDbPg1G5XpZXhuJGhnsUMl0j4TDSodi0fTz4k3SKw4zHuCqL1lf6WYFF8qGjox2bN29GKBTi400uTqcTpaWlyMnJ2afEou10dnaiomILAoEAS7HkQhKjoKAAo0aN2ud2BueKDv5W6XrEYjG0trZi69atCId3sFQUGzIyMlBcXIL09PQDPhhi3d7ejq1bK+D3B3quGXF2uVwoLStFdlb2oMojOoloNIqmpia+dwLBADweN0qKS2EYOkLhEHJycuF2uQ/4fPe0ARFY/UObfGvaVQ/Ks47GEWWXozBtMjTFvss9E476sLL2Nby28Sf8mTOYQrJ/ZzO8XyUCa3hfHzm6LzkBEVhf8htATl8ICAEhIASEwEFCoK6zCb9//2n8eeW7iCoqsjSVxRVVX2VoOtyqBpfusDKxdAMOLfGl6lyFpWsaVIWqYBTOl6EMLBJXVH0VN8MoNnwo9drg0HUYjnRk50xBXvY06LobqqrtJJH2jtSqnqKlvw+WJK0WL16MW2/9GbZVbYemWhVfJN/GjB2Dq6++Dqeddho0jY5rz0s4HMbKlStw2223stBILiRbPB4XvnHuefjRD38MXT84W5Do4b67uxsLFizA7373W9TV1UFVFZhmHIah4eijj8E111yH6dOnH9C7hPYTiUTw8ccf4Xe/+w02btzM+6GFvk+YMBHX33AjTjj+hEGXhSSwampqMP+d+WhtaeFKrMysLNgNO98vc+fORXFx8QGd795eLAKrf2jpI4PmpBZ5p2LOyGswOueY3cor2np3sBkfb30UC6v/zKJclr4REIHVN16ythBIKQERWCnFLTsTAkJACAgBISAEBoEAtfmtb9iC7731EN6v2QBDsyNTtQRWBlVfaQY8miWwqALLQ991u1WNpdlhaDoMaiWkMHeaDsiVUiSwYojGgnAGmlHo2wq3GeSjtykKDEcW0nLGIaP4MGQUToLuTOf2wVQswWAQixZ9gltuuQVVVdu4BZKkGB37uEPG4cabbsZZZ561T/FEAmvZsmX4yU9+iE2bNiAWo/YxqzWRBNYFF16CW39x6z63k4pzHox9JAXW/Pnzcccdv0RtbS2zJIFlt9tx/PHH44YbbsCsWbMPaPdJgfX+++/jjjtux4YN63dcM1XFlCmT8d3vfg8nn/yVQRdYdCwdHR346KOF6Orq5gq8LVu2ID0jHWVlZTh+7vEoKio6oPMVgTXw+Oj9bdfScGjB2ZhVegmy3KP2KMAp/+rNDf+D9c1vpURg9RRuxhO1oKnphB14yIktisAaNLSyYSFw4AREYB04Q9mCEBACQkAICAEhMLQEfGE/3t70Ma5/82G0hEOcfZXJLYRW9ZWXKrA0B395dDtchhNug/KrnHBSNZZuwK7ZeYogVTHF6SuRfRUPdSGjeysyA41QEqVT1AIYNyOIR6OAosObV478sSchs3QmNINyrQb3Cc4SWItYYFVXb4Wq6twq1COwbrwZZ5555j7FU1Jg/fSnP2KBZZqJCYymCTcLrIvxi5//Yp/bGdqr3/+9JwXWO++QwLo9IbA0FngOhx1z556A66+/HrNmzer/TjjI36rA+uCDD3oJLM26ZpqKKZMn4zvf+W5KBBadiM/nw5o1a7htNBwJoa62Dh6PB/n5+Zg4cRIyMzMP6HxFYA08PrpXPEYBjhpxNaYWnQW3sfspppTeV9+5Hn9fdSNa/ZWDLrB2TES0NBa3Rtt0xOJhgJMEv3iLCKwv3jWTI/4SERCB9SW62HKqQkAICAEhIAQOUgJtgU68sHI+frbgWZ4WSO2CWbqBLMq9Ug2k6QbcOskrB3/32p1w6ySxHHDZnXDodjg0BwzVYAlEj2JU1RWNhqAEmpHZuRUOrr5KThaktsIYYrEQEA0jHPRBsbtQMPp4FE85E5rDyy2I9NCZXJLTDWGjnK3eIe99vygisPrObHev6C2wbr/dEljURnewCyw67+RXso01ea9SoHt/W1v356pIC+H+UNp1Hbo+XnsJjiu/CZMKToFD8+52Q4FIB1Zu/yfmV/wWFOY+mC49Ka9URYNHy0e2ZxQKPRN46uHyhr+jK1gPm+2LN2lVBFb/7lF5lRBICQERWCnBLDsRAkJACAgBISAEBpFATVst7vrgL3h03SewxW3I0DRk6gYySF5pGrwkrjQHvIYDbsOJNMMJj90FN3854TJccBpOODUHVJvK8okEVjjig95VA4+/EZoSS0wotFkT3BICy4yEEI36EQl2cXZWdvlRSB83B13xVnQGtiMU6UQMMWiKE2nOYuR4xiHNkQ9ddViT5/rxhCkCa2Buph0thG/j9tuphbAOmmpdX7vDgRNOOB7XX3/TgLUQDpcKrIGh17+tDKXA6jWj4HNiuX/nkspX7Y/AMs0IajtW461Nv0J1xxLYBjn/io5JV92YlH86ZpdcjDRnCeyaC9valuA/a3+MtmAVT0f8oi0isL5oV0yO90tFQATWl+pyy8kKASEgBISAEDjoCNBD1Kamrfh/b92Pt7dvhqGoyNBUZKkOFlnpVH2VkFdencQVCSwXvHYPvA4XvA4P3IYLLrsHTsMBXTOslq9oGJFgJ4zObdDDXZxNRNlXtMRj1EIYhWmGEIsEEA37EQt1IxruRjgWQCwnE6HCTIRsAUSiPoRiQQ6EJymmqC7kuMegPOcoFKZN4FYgesjrS9WLCKyBuY3pOlMb3dKlS/HMM8+gta2FrwU/mOsaDj30UJx99tcwfvz4A9rhYLUQ9q7w632AfbmXDujE+vHiVAqsndvbSBXbaHJCr6MmVc3vaM69+7zgSlZN8ncbr2Ute1h3z4IsoakTu7aOi/7XypxLHMGO40r+LrHf5OpWC+FVmFp4Bhw6TcbkaRMwEUMk5kdd51osqnoam1r/C5u1+R3b7oFBDHrvatej7qkWTW4iee69V+WsvBjcehaOGXUjjhx5BW80ZkawrW0xXiaBFajiCqze29tBMfHT3R4jkxnU6rG93boisPrxxpaXCIFUERCBlSrSsh8hIASEgBAQAkJgMAiYcRPrGitx3Wv34NOGbfAoKjI1HZmagXSaQqhTC6GT2wfT7E54DBfSHG547YnvjjR4HF54nV547B4YusHZLaFwEEF/B9Su7TCiftgUkkyq9cBoRhGPR2FGQzAjQcQi3QiHuxELdiIa6kJIiSBclIVghhPhKEktPyJmGLFYBGEzjLAZhaGmoSxzBiYXfhV5njFQFX2/JdZQCazewmQXeWLbUUu2O4GSXH/Hw/uOu2Fv6/e+Z5Lr7Y+g6dlfrzbO5LZ6b4eqrWiqo9/v58qrnm3bbJz95XI695kBtjuR9Pmf0fS/gajA6r1dOl76Sv6Mjp2+KIj+8+c6GO+9/mwzVQJrh7yixl9iYodDTYemOBISi5t8YcbCCMY6ETH9sCVahHvpHZi8Ieu+6H0rMeseE0QtmTuECzkZ1mH0XxvlQqm8X0Nx8GvCZghR08dCm1faSapZ8kaFBk11QLNZlZqUbaUrLhySeyLG5c7l6qqoGYQZj8EfakZN5ypUNL+PllA1qKVPV+y8PqDCjEcQNekzKJg4h6Q8szLvrD32knkMQOHPJEN18rHE4hFEYgHQ9eM1iQficGnZOHbktThiJ4G1BC+v+wnaA9VWRSsLP8t+WTLQxm2GmkK5gxYT2j59TsbioR6514/i1P7ckru8RgTWgGCUjQiBwSEgAmtwuMpWhYAQEAJCQAgIgdQQIIG1pqESl716N1Y3VSHtcwLLoxtITwgsllZJgcUSy4N0VxrSHGlId6fD60zjVkJ61AqEfAh0N0PxNcAwo1BUjcYPWo+mJA2oooqqr6IBRIN+xKKdiIS6EIh1wecIIeC2IeywcUUCfUXpKx7q+XuI/66iIG0KphWfg7LMKTBU135JrKEUWBRG3tLago6Ozp2OlaRJRnoGMjLSOUfq80ssFuPpd61trYjFdg53drtcyMvLY1FE59bU3IxAwL9TGD6F61PQeFZWFk8I3NdCx9lKx9nZuZN4oNc5HQ7k5OTA6XTywzWFmre0tICOsbf4od9nZGTwertbkjlStC86bvoKhcOIRiIc2t5bTNDPFi9ZgocfehDbtlXyxMq+hLgn90XB+3S8XV1daG5pQUd7G7q7fVwhSMdJfNIzMpDm9TIvYpUUW/tilorfp0Jg9Z6K51A9yPMcgtFZc1CccTjS7UU9uUwkon2RRlS3L8fm1g/h0DzIdo/m+y4ej6ErXI/tHZ+xiLHkdZxDyr32ApSkH4Y0RwGvG4760B6ogtPIhMfITcglP1p8FfBHOlHonoBC73hkukawzGoNbkdNx3JUtH6CrlBdjxBSoMChpSPHNQZF6ROR6xoDrz0fus2OWDyKULQLncF61Hevw7aOpegON4EHSoCqQU1oqh0ZzlKUeg9DUdokZDjLoNo0BKMdaPZXoqZzNeq71qIzXM+vs6seFHonId87HopClacR+MLNaA/UwqVn8u9y3WPgUN3ojrShoXs9trR8gBZ/BexaOkZmzkK2eyRGZR2FkVlH8O1DQo2mIK5tfA3+cAdzbPZtxvaO5TBhwmvkI9s1Ennu0ch0lSDNXgTNZsAXaUeTbyNqu9agrmsN/JHWhMga9JkYIrBS8caXfQiBgSIgAmugSMp2hIAQEAJCQAgIgaEgQAJrbUMl5r12N1Y0WgKLJg9mawa8NInQsCMt0ULI1Ve9BFaaw4N0ZzrSnF54XWnwOtM51J0egINBP4K+FuihDuhURaHqVgthPM6tM/FYBFb+lY/FVTjcBb+tC52uEIKGyRUFphkG5dJEYyGrgoErL+jLklmRWAgRU0F+2lTMKDkXI7OmQVOMfUqsoRJYJHhqamrw7LPP4pVXXk5Uq1nVJunpGfj617+Os846C1lZ2bvcCiSv3njzTTz77NPo7OjgqguqbiHxNWv2LHzvu99HXl4utmzZgqeeehLvf7AAKgtDq9JD1w3MmDEDl1xyKSZOnLhXRiR7qqq24bHHHsWHH34A04xb+wOgqQqOOOJIXHfdDSgtLeHKq48//hgPPvggmpsbOWCfWwgNHTNnzsIFF1yIqVOn7nI+dN+FgiE0NTVhw4YNWL16NdatW4vamhoEgiQ2ozvlm7Eo8/vR3NyESIQmtFn72dcUQq5dMa1Wx8bGRqxavQoff/QRVq5agcbGZgT8PhZnVKVjGEZC8mVi/PgJmHP00Zg6ZSqKi4vhcu2fHB3s93AqBZZD9WJczgmYVnwBitOnQuNpnXSGVj2QVSkFNPu2YGHFQ8hxj8VRo67iyiMSMS3dFVhc/RyW1T7P719a16GlYVzOiTh65NXI8x7CQrqxawM2NS1AWeZ0lGQcziKJWolbuyt4T9nuUdB5PDAAACAASURBVNB7yWluXY20Y2XNy/i4+lF0hGq5IindKMSE/FNxaNHZyHKNgkpSCVRhRxVgVEem8HF1BGqwpv5VLK99Ae3BGj4RauUbkzUXhxafy+LJrpOc7X0141yptan5fXxa8xwaOtcgzV6A2aXzMK30PBiam0Pf/eFWBCJtcOqZcNuzEwMnrD6/SCyIra2f4P2KB2DG4zhl3I9RnHGY1SbYU0VG1Wg79ktVVXSsi6qfQoFnEqYWnMXCjGTfTvlYiZbEjsB2rK5/hZl3Bhv4/Pen4nIg71upwBpImrItITDABERgDTBQ2ZwQEAJCQAgIASGQUgL0cLehaRu+9+Z9eK92M1w2jQVWlmYgTdWQptu5Asut2xPZVy6k2d3wOOi7B2kOLzxOysNKg8fphqHZ+UE1EgkiHuqGMx6BoemWwCKhQi2E8SjisTBiIasCKxJqRyfa0WH3IaxE+SEzTpVX8TC33EQTrTckr0hixUhixUKIxqmdMAQzbseo7OMwu+x85LhHQFH2Hnw8VAKLpExlZSXuu+8ePPP0X2AYDr7W9DCbm5uLq666Cpdccgny8vJ3uQdaW1vxwgsv4O67/4DW1rYegWXoGk486WT85je/YdFSV1eH559/Hnfd9XuEQ+FE+5QluiZOnICbbvo2Tj/99L1WYRGfhQsX4le/+h+sWbMKlLmfFGbZ2Rm48sqr8e1vf4e30d3djbfffhu//OWtqK2t4YdqqmYx7HacdNKJuPHGmzB7tlVdklzo951dnVi5YiX+85//YP7bb7HIoty0+M7FZTu9jgSoppEMsK7vvgSW1eJmor29HcuWLcNrr72Cd999h/cVje7YkaLsCDXiAQNxEq4qcvNyMHvWETj33G9i5swZyMzM4kqtoVxSIrBIDCoGir2H4djyG1CWOZOHJtD71h9u5+oeYk+ymGRVVdsSvLnpVyhNm4FTDvkZMlwl/PtgpAPrGt/CexV3ozNUz9VXGfYSTC++AIeXnAenng6a+req7t+obl+KQwu/hpHZR0JXrYq95CRSajemzxS6t6wJpFThZaLFvw0LK/+Mz+r+wQJqQu6pmDPySmS4y3j/JH+6Qw0IhDvgMjLhdeRzWyH9rt1fgw8rH8Saxle5FW9C7ldx5IgrkOUeyZV/JM5D0W5el+QUrUNHFIx0Ym3D6/hg65+5OmpWyaWYXno+HHpa4rZITqikyi6TpZklqOjXNgTC7Vhe8yLWN83HUWWXc1WbXfPA0Khd0bqnqWUxGO3i7VPb4fqmd7Cp+V0cXnQ+JuafyuvRZ2GMWhpJKiuOnqEWZL/a/dvxfuWfsKbxdc72EoE1lO9Y2bcQGGYERGANswsihyMEhIAQEAJCQAj0kUAc1e11uOuDp/DU2kX8gJimaMghYaWpSNMNeDUSWI7E9EHKwqL2QTc8hptD3D12N1wON7cPaiq1dlk5V/Z4hKcZGrodUA3YFI3rgcxYlLNzYmE/IuFudMea0a62I6JE6YWIxq22QcpzYWnFIe4BRGNBrrqi7BqrEsv6c9iMQNdzMa34PEzKP4kfVvf20LY3gTX2kHEsXc4686ydspB2B5Xa3JYvX46f/vRH2LRpA0zTysOhFkm3x4ULLrwYv/j5L3oyoEhgbd26FQ88cD+effaZHQLLjHNL3pVXzsNFF12M3Ny8XXZHAusfL76Ie+/5I9ra2nsyhVRVwYknnog77/wVC6xgKIRFn3yMW2/7BTas3wBN21E1k5OTjfPPvwCXXnYpSopLdsuIHqBJ8Dz++GN46qmnuNXOyi+Ksww77LBDcdttv8SsWbP4ZySw3nlnPu6443bU1tZCVTUWWA6HHXPnnoDrr7+e1+0tr9ra2rBgwXt48qknsOKzlYiEQ4mMtGRO0u7ivJMdhTtk074EFlW81TfU45358/H0009zhRcdG0kozlxK5gpRyHZilz2h4HHrnDVNwbhDDsE3v/lNfP2cr/O1SbUQ6H0zpEpg2bU0TM3/Go4aeRUyXMXMyh9uw6ral7Gq/t/83nM7cpDpKEFHsB6bWt5DtnMMji+/GZMKT+d7hY61rmMV3q+4H5taF/Ak0dL06Tiq7CqMyT2GBVWLjyTUQ2gP1OCokVdjFAssSzLRPtoD29Hq34poPIpsRxlyvZR3Zw2KsKqw/oX3t/4JGc4SHDXiGkwuPJ23S58V1W1LsbzmBdR3r0dpxnRMKz4fRelTWISRXFtZ9zIWVT2FfM8EzBl1HQ+FoN+RNKLjpnY/qhQcmXkkSjOnsWQiidfUvQUfbX0M29oXYWbxJT0Cy5JPUXSHm9Hmr4I/0g6PkY0cdzmcegYzicXCqGpbigUV98OtpyGbBlJkH42R2TtaCFv9VVhb/wrLPW4h9FegJbANE3NPxeTCM7nlktoKO4O1zCHHM5ar19IchXz8JN7W1r2OBZX3oTNcl7jPe4fv9/H/Ivq4ulRg9RGYrC4EUklABFYqacu+hIAQEAJCQAgIgcEg0BbowEur38bPFvwVPtNEhqIhS7MjnQQWVWJRBZZmh9dwwG3QFEKaRujm6YM0ldBld7G8smsUfKzxA6QSjyPDMJDl8sAwXFB0yhLSEi2EYZhRqsDywx9tQ2u8AWFbyNIJZozbjWJm2Ao95lbBAFcSRKhay6Q/B3u1E5LAojBmG4ozZuGIskusB9G9VGHtSWCRvBtVXo558+bhpJNPhrqPahsSUmvWrMFvf/trVFRsTkiRoRNYJSUlnENVWVmBe++9Fy+99GLidrHEkMPhwNFHz8HVV1+DOXPm7LaaiM5p7dq1uP3227B48WJEozFLYJkmnC43zjvvm/jRj3+CjPT0PgusZF7WRx99hIcffhCLFy/h400KIZZI9D+2OItQW7IyKiGXuKKKQ9et09qbwKLfkfR7/Y3X8dSTT2Dt2nX8mh1h4lRlpEA3VM7TIkETi5qIxqKJYyLJZe1D16l6bSKuuOJKnHLKqfB6vUMmsVIhsKgi0KlnY0bxBZhVehG8DhKqcXSHWrCy9p9YUfsSfJFmhM0At81xRaUtDrvqxbSC83HcmBu5IokqKbuC9fi06ll8uv0p6IobUwu+hpllF3P2E72vtzQvxAeVD/C1mVv+HRY5JLBIYDd1b8anVU9hY/M7/H4fl3MyThz7fZZVVoVXF1bX/wcLKh9Arnss5pbfiBFZllj1h1uwdPvzWFT9JAulPJJUZddgYsEpLKJI8mxomI8VdS9hYv5pmFRwOhy616rs8lXg3U1/wKbWD6EpGsqzjsWx5Tci33sI/94XasFnNf/A6sZXMDn/bMwo/VbP+XYG67Cm/hU+rrbAdm77o8qu8pyjE2LORH3nBry24VZUtS+CW8/FMeU34MgRVzIDawrhEvxn7Y/QFqy2pnpSzaHNQJ57DHJc5dz22OTbzIKQfl/gmcCtjGNyj4OhOVnyb21ZhLc23YmWQEXiPSUCazD+v1O2KQS+cAREYH3hLpkcsBAQAkJACAgBIfA5AsFoEIuqluG7bz+MdW3tPIEwU9WQQRlYlIWl20Fh7m7NAY/hhNdwsshy6Q64DCechgMO3c6tgjQ1iySBR9NR5M3gcHdNd0HVnVyBxW1BVH0VCSIc6kZ3pAmdaEu0upGgiHLrILXHhHuEFckrf2IaoZ8FVpirsRKVWSS5zDDcRiGml16ECfknwa6593iddy+wLLmRnp6GSZMnY9TIUftsFyOZ0tTUiEWLFqGjo32HLBqiCiwSWPTwTlVTr7zyKn7/+9+gsbGexSHJGGqVGz26HJdfPo/b4kjEfH6h83jxxZdw7713c96U1a5lJWCNGXcIbvnBD3DGGWdxS1RfK7CoYo3k2CN/fpjFUjJ7KqGj+B7wuF3IzctFfn4BXG5PT5UU5XC1trRg8+aNHLrOk+X2koFFmVeffroI99xzL5YsXYwYZWrxaywO6WkejCofi/LyEfB4SMZZbY0VWypYAHZ1dVtNbIlKLafTgTlzjsa1117HFWUUmD8USyoEFnG165mYVvhNHDHiUngdBYkWUpOrnho616HVX4mWQCVXUDV2r0dXuIFzyUrTZ+OksT9AScZUZh2O+bCu4S18xC13wJyR12JSwancytcdasKn1c9gWe3/Id0owvGjv9sjsChwfX39W3hz8685U4q2ne+eiFMP+SlGZB+REFidnPe0oPJ+ZLvG4Ljy6zEq+ygurOPqrNp/YvH2Z9AVakSBdwqOKJuHsbnHsUii6qa1da+isvVTzB55GYrSJlvZXSZVWG3GZ3UvcQUY3f9p9jyMyT4OhemTeL9c4dTwBlbU/gNjck7AzNILWGDR5xFVfVF1VXXHpyyePEYBZhZfgOllF8JtZPN9Vt+5Hq9tuA1V7Yvh1rP3KrA4/D6xUEi9rtBnbzYHzHvsudx+mGEvxojMmZwpxvIvFsa21iV4Y9P/oNm3abeTGgfz3pUKrMGkK9sWAgdIQATWAQKUlwsBISAEhIAQEAJDToAqJWo6qnHXR4/jydXLYNjsyEgILC9VYGk6Z2C5VRJZJK0c3FLoMuxw6g6uvLJrBnRV5eBwh6ahyJ2O4vRcOJ1pUA03VN3BOVj0UGdGQ4iFAwhQ9lWsGaYaA+Ikt2L8AGnGQ/zgG46SrPLzAyN955/FfFyJRdUfNNbeklgksIJQFScOyTsFs8ou4oe7PbV67U5gJS9CMqR6l9F7e7pKNkt8JQbc81pD1UJIAosWqqJauXIl/vd/f4/33nuXq9GSIiYzMxNnnHEGrrnmWpSXl+/EiKqhtm6txO9//3u88cbriERI+lD1VRxOlx1nnHk2fvbTn/HEQz7PPrQQ0rrUOkg5Xk899QSHxHMmGgsyQNc1jBw5EsceexymT5+OsrIyFmzJZkKaQrh06VI8+OAD2Lq1Yq9TCEksUjsjtUE+//zfOAMr2TZIl6qwsBAnn3wyZ4FRWDtNSuTja2/HyhWfYf78t/HGG2+gsbGB84u4KAxAfkEeLrzwYlx44YUoKioakvdtSgQWhf4rLozJOg5zRl6DgrTxUGyUYbdzFQ+177b5t2Nz8wKWRQ2+DUh3FHEu1KwRl3CrH1UU1XaswpLtz3MbMG2vMG0yV1jWUHth5f3Y2r4IBe4JO1VgcdZU/et4p+J/WUbRku+ejFPG/Qgjso/cSWC9V3Evt+jNLLkIhxd/E7rm5AwrElGbmt5Da6AKRelTMTbnWKQ7ivlzptVXhU+qn0Ig3IkTx3wPma6yXpWAVn5V7/c0p8Alzp8+l0jKfVb7d4zOPq6XwApgW+tifFD5J1R3LuN7163lYnrxuZhVdhnc9pz+CSwa1mDTkO4swaiMIzEiczryPePhdRRyNRlnbPHxESUbC6ytrYvx5qY7ewRWPHHsqajDEoE1JB8NslMhsH8ERGDtHydZSwgIASEgBISAEBjeBPzhLry75TX88oO/obIjDreiI13VuQrLSwJLowosO1yaAZdu5+orp27AqTlgaAYMRWOBZagq8l0ejErLQZY3G5rdC81OAssOJZmPFQ0hSgIr3AafzcdiSwG1ypj8YEuh7SStwiyufAhGSWZ19QgsFlumVYnFEou/rBbE4vQZOG70TchyjeiXwBqIqzTUAosETn19PedsPfLIw/D5/AmJFedJe9OnT+Mw92OOOQaaRu1z1kITBT/88EP89re/wfr11HKXEHNxE6VlI/CDH/wA5557bk9lWl8EFkk1mpB41113Yf78NxEMhnpVRCkYMWIEB9jTFMaCgoKdqt9oP1S9Rcd2xx2/xPr16zlra08VWFR9RbLrD3/4PZYsWZxwkZYo83jcOPXU03DdddfhkEMO2WU/dJybNm3Cww8/hH/965/WNMREtZfT4cAxxx7LLZhHHnnkPiv0BuJe+vw2UiGwrH0qSLcX4bDCb+CQvBOR6RoBXaE2YEs6Wv+1dAjlSS3f/iJnUZnxMMZln4wTxn4fma5SFjZUAbW56X0Eo52YWvQ1riDyR9q4ze7jbY+jM1SLQs+UXQTWuvrXMb/iD4kKrKTA+vEuFVj/rbibPzdGZx2Ho0ddi8I0a8omiflQpIs/G6hSicLhKVOKKr/WN87nyq9M5yicOv7nSHcU8rnQ8dK2aAoidpFYFhn6HYkxOv6xOcdjRk8FVoAD7T+o+BOqOpdaFVgaZfMdmMCiIHivUYApBWfh8KJvcEg+BeJT2DudH01lpYpTCptP5mz1Flg8M7KXfLQlR0gOxg1KDKOYlwpRNkiHL5sVAgc3ARFYB/f1lbMTAkJACAgBIfBlIUAPdnUdlXhq+SN4fv1qNPvtcNkMZGoavKrOLYFO1bAElmbAqdvhUHU4NDsMleSVBpeqId/hxJj0LOR6smF3pkEzPFAMaiG09+RSmdEITx8MxroQ0SjvyMkPZPTwyKHsEZJWnQlp1c2Tv0hmhWPdCHEFFlViUUUWiatEJRZN5YpHkeeZiBPH3oJcz5gDEFi7DxHf872w8+PaUAssDrgOBPDee//FH//4R6xatYpFFVcS2YDi4iLO+frmN89DTk5u4sE9jrr6ejz15JN4+ukn0dlJ4e0KV1/phobjjz8Bd9zxP1wZlVz6IrB8Ph8+XPgh7v7j3Vi16rMeOUbHlJmZjrPP/hqH51Nl0+crfZIC64MPPuCw+A0b9i6wqNLrn/98iSVUdfX2RPWVde4TJkzA//t/P8TcuXN3O4mR85MCAa7C+s2vf8UVaSpVDiZaD8eMGcNZWOd+4xtwuffcpjpYnxupEliW4yCJVYCS9GkoST8cmc4SeO358Njz4NDTeQqhlSlmorZzNd5Yfwe2dy5Hnns8jiu/ERPyT+HfUyYThZpT5lVB2kTeclP3JiyqehKrG17hzLtCz+QDElh0DKOyjsIRpZejJHMai6pQ1Mfbppwo+k6irdW3Dds7PsPGlvmcUTUqcw5OG38bV47RsVI1Z1PnJmxq/i8Lot7iJ3lNqaqs2VfBGVVT8s/G9EQGFp3fQAmsl5MZWFBZvpVnzuHqNaok40D9SBvqOlZje/syFrkUfl+ccRhLus9XYHGGlqJxFR3llVF1WsI9DsptKgJrULDKRoXAwBAQgTUwHGUrQkAICAEhIASEwNAToMqm1fUf4W+rn8O722rR6XfBsDmQruhwaSrcJLE0O5wKfddhV60vElhpmoZiux3l3jQUerPhcKRBs3ug0pfuhKJZUwjp4YumEMaiQYQouF23w2l4oCp2friih04KZw5FOhCKdnCFgSWzrIqsUIy+k8BKBrpTNRaJrDA/pOZ6xuPEsf8PuZ6x/RZY9CDLEoW91D5kFk9c3HmdoRZYdNRUObRhwwY8/vjjeOGF/+MHeqqqoYddr8eDr57yVVx55VWYOvVQPtdwOMwTFe+++y5QyPqO8PY4Z1LRulS1RBVc/RFY7e1t+Ne//40H/nQ/qqurExMeraqocePG4Hvf+wFOOeWUPUolqsDaH4FF51JXV8ftg88++yw6Ozt7BJZhaDjhhBNxx//ciaLCwj1WUBG7VatX4a4//IFFlqpSDpF1rPn5+Tj/W+dj3uXz+M+pXlIhsHru5sQfqH2NhBVlQWU4SpHjHs2yqCxzJsshYt7iq8SCzfdhZeM/4dZzMK34Qhw98hrYdU9CTIeptxY6B6j7sKnpv/i46nHUdq7gFrgDEVgfbH0A2c5yzCq9hMPSVZuOFv9WVLZ+iI5QPctxqqryh1rQ4q/glsJQtJP3W5YxG6eM+xl/XlCrLQn0yqZP8PrGO+ALN35OYCk8pZUD/80oV5LNKL64ZwrhQAksmlL4n3U/5YwxqkxNsxfg8KLzcUTZZXAYO7K2KD+ssm0hPHo+jii7HFOKzuTr1Ftgtfg2888o5N6pZSBq+tHkr0BnqD4R7j7wd7AIrIFnKlsUAgNGQATWgKGUDQkBISAEhIAQEAJDToD+Zb8Dq+rfxysb/46lNbVoC7gQj7hgwGBxxVVXqganakktr6IiV1NRZjdQ5nYj25UOhzMDqj0NOokpuwuq5oRNpwwdK5DYjEU4yD1s2KDwBMN0S2CBWn46EAx3ce5NiCqvYl0I9Aisrp0FFk8n7F2BFeFpY1SBRaPl+5KBRWKH1qfcpXHjxqGkpHSfk+bMuMnB4itWrEBXV2fi6g3tFMLecokqkSgs/Y93/QG1tTU7cqNUFVOmTOYcLJqqR9MJaWIf5UU9+eQTqKmp7ZnWp6o2TJs2HbfeehtnU/Ve+lKB1dLSgr/+9Tk88sif0dTUlGgBBFRVwZFHHoWf//znmDRpUkIW7fxG6EsFFq1buXUrHn7oIZ7CSJVonH9lxpGW7uXweqrASk9P3+O7jbLAtm3bhkceeQTPPfesVbFCLa5xICtr5wyxVL9lUyWwqD3QoWUgzz2WxXB7sJZbeBGPwaXnYHrx+Zg94nJo3FZoQ3N3BRZsuQerG/8DVXFgVObROHH091CQThVXOxZq6+sI1OHT6qexou5Fbg88EIG1pv5VfLr9GUzKPx2zyy6FXfdy+3FF80KeQEjT+naUG8VB71mT2pTNMLcsZ7vG4vjyb2Ns7lzOzqKL3Oav4ddubnkP/nA7D56gajOvkY80RwG3RDZ0r4PHyOO8r+ml5ydC3PtegeXSs3Fs+fU4csRV1mejGUVD90Ys2HIvKts+4Z9Rddj04gsxs+xCFob0Dw0VLR/ik6qnUNe1miveZpdegnF5J3AbYW+B1R1qwJic4zA+5ytwGemIUj5W26f4rP4ldIcbE0JuYO9iEVgDy1O2JgQGlIAIrAHFKRsTAkJACAgBISAEhpgAPaxRBdT6xo/wwbZ/YWPLFnT4qULHiXjMDt2mwa7pcKk6spU4SiMxFENHtssLtzMDujMduj2dq6+ofVA1qPrKwW1YUFR+QIxzG0sUEacB1enhFhlFoTYtE5EYtQz6WF4Fox3cRhiMdoGmkiXbCOkBbk8VWHmJCqz+CCzFZsOo8nJccsmlOPHEE/eZcUSVOmvWrOGsJWo1swLgh4fAoiMJhULcPnjvvffgnXfeTkgpq4KkoCAf5513Pi699DIOZd+8eTPuuusPeOed+T3TAamyjNr7zv/WBfj+976/y9TCvgis5uZmPPPsM3j8sUfQ3NzSI7AMQ8dXvvJV/PCHP+RQeZJNn1/6IrAo/4syrB586CG88p9/MwOrFdJETm4errjiClx11VXweGjC4e6XZAj8U089yZVc4XCwR2ClpXn53rjhhhswadLklL9bUyWwNJuB0vQZmFl6MZx6OtoD29EZakA05odTz0JZxnQUpk2yQu5hoqp1CV7b+Es0da+DzaYj0zkCc0Zcg0OLvs7ta8nFqlKioPOHUNVB+WQkjpV+V2CtqX8Ny+v+jhklF+Kwom9wxx+1+JFwq+tcA1+oJRHIbh0BVWJ1hxrR2L0Rjb6NiMYjmJx3Bo4YcTnnfFGFFVVXdQbr0NC1Fu2BWn4NTRnMcJZwWHxl6yf4eNtjHFJ/oALLqWdizoircXT5ddyyaU057ML2jhXY3r4cwUgbgtFuFKUdyqKMJyXG6fgasK1tMVe+5bhGoTRzOud4KYq2k8AyzRhmllyAPPc4nibpCzexbFzT+Aq2tH2007UZqJtZBNZAkZTtCIFBICACaxCgyiaFgBAQAkJACAiBISZAEsuP6o7V2Ni0EBVtK9HS3YJwNMKCgVsHFR1pcRsKuqLI8RlwGBkwnJnQHGnQHQmBpbu5+kpJBLiD22+4BAsxm4mIxwHV6YVuc1jVQYgjGgtyhUEo1oVwpJMrrpKB7pSBZU0htFoId5eBlesej5PG9b2FkAPBFQXjDjkEN910M84888ydAs53d0GSbXc/+cmPsGnTepimFXo+HFoI+WE9FkNDQwOHuT/22KNcJcac43E4nU4cc8zRuPnm72Ds2LGcl3X33Xdj48YNPSKORNfUqVO5ve/EE0/YhcdACayvfvUr+OEPf4xRo0YNoMB6MCGwwj1ZXrl5ebjq6qtxxbx5cO8lvyopsP7yl7/gscce2UlgUQg85WfddNNN3H6Z6mWwBVayfdCtZWNa0XmYUXYxvPY8lkL0/qPvmkqTRz0J4WJyJc/iquewaPsTPFiB3udOLQ1T87+Oo0ZdjTSH1WpJgro71IxVdf/GJ9VPoCvUwOtStVf/Wgi7QBVYS2v/hsMKz8WM0m+x4LHaPanaKsrHS39OLiTPSYi3BapR0boQaxtfhwIN04u/halFZ8OhZyQm+tE2YghHAxwGTxVYmmrnyq1trZ9iQcX96AjWYnbp5f2vwOpYAkNxYlL+2Th57C1wGZk9AwNImtE/JJBwqmj5CL5IK6aXfIslWjKgPjmlVVcpwN3JryWWvSuwqLt5dslF3P6pqy74Qk382bqh6R1sbH0vwWtg72IRWAPLU7YmBAaUgAisAcUpGxMCQkAICAEhIASGEQH61/uuUAsauyvQ0LWBx9L7o+08ZoqqKgzoSAuqcDf5oXT7oBlulle6wwvV8EAjgUX5V6rB4gRUXUMVWNQsqNkQyXBDo4B3xc6tMWacsmVoCmGQpw9y3lWsm4UV5eawvIrRREKqwKLsqxBn1iSnENKDZr53Ck4Y833keEb3uYXQEljjcOONlsDSdXoY3vNCAmvZsmX46U9JYG0YdgKLA8n9frz77ju4//77sGLFyp4wd0WxYfTo0bjhhhtx+LRp+Otzz+L55//aK7zd5JDyc845B9/97vf2GK7e3d3NVVsUrl5bW8uVVSSAHA475s49Addffz1mzZoFaiF87rnn8OijD6OpqbmnAkvTVBx99NH42c9+jvHjxw9IC2FFRQUeeoimCL7UU01GDiMjIwMXXXQBvv3t78DrTdvjhaXjp5yuJ554An/5y5OIREK9KrDS8JWvnITrr7+RA+FTvaRCYNGUOreRh0MLv4ZJ+ach01UGTXHw+yk5eZDewxTO3uKrwLrGN7Gq/l/oolylxMRG1WagLGMm52CNyj7Kmo5nRlDfuR6fVD2BtY2vshiikinSLgWeSThuFqj5nwAAHaVJREFU1M0oy5rFooiy79Y3vIV3K//YM4Uwzz0JXx3zQ5Rmz+RoOhJRa+tex0fVj3LI/JFllyPfOxGaSjlte8quswYukNxq6d4KypFa3fBveO0FmFpwDsblnoBMnvKn9+Sc05Z4omG0kyueKloWYk3jqyzRZxdfhsNKvsGtiyTvtrctxYdbH0J157LEFMIcnhw4vfRiuO3ZLNMaOzfi9U23Y3vHMihQkOEsxaySSzj03mPPYTHIwg9xBCIdWF33CjY0v43J+WdifN7JXA2WvA50P/jCVGUWh8vIYtFGAquqbTne2nwn/OE2TMo7FeNyTmBxRS2fLb6t+LTmaXQEq2Gz7aiOG6h7WQTWQJGU7QiBQSAgAmsQoMomhYAQEAJCQAgIgWFDwKpkiPEkwO5wC4ukaIzasgAKd9ZjCqJN1WjdshDB7ibodjc0u5dllqpT/pUDNtUKcKeHWOuxLI6oU0M00wtNo+mEdn5oI4FFFRIkpWImVVhZoopC2yMJaWVJLKv6KsoTCHdILHoYG5F5JI4edT2Pmu9rBlaqBNaf/nQ/nnvuGRiGw3qYNuPIycnBFVfMw0UXXcwtfZ9fKKPqHy++iHvv+SPa2tp7ZVQp3NJ2552/QklJyS6vi0Yj2LBhI6gd7oUXnudwdyvMnfKcsnDmWWdi6pSpnBf1yScfIRaz5s/ZbHGMGlXO8uq0007jiq3dTQfcX4FFeVwvvvgPPPjgAz2iKzkVcfLkSbjllh/iuOOO2ykkPnkyfWkhpNfU1NRw1hZlenV3+3pC3J1OB04//XTcdtttyMrK3uP9QZVrFIB/33334d///hd7197Mzjr7TFx99TUYNXJUyt+ngy2wEuaE2+MyHEXIdo9BhrMYaUYeqN3NoXk5E4ukSXuoFs2+zVarXrg58f4mR01tgSoKPBNx1MirMDHvVL4G9NmxruEtfFL1OGdIcWundbfBo+egLHMG0hxFLLNpGiCJlm3tn/CfaaHsrfKsI5HmKOS/E4tm3xZUdSyF18jDtKLzcXjxudzySK+hzwnKvKKF9kFyh6b0UVg7/cQKk38Pb2/6FbrDzfDY81HknYw8z1hkOkp5O3HQZ58PneF6tAW3o8NXhZbAVq6IIqlH6+d7xzMvq7WvHtXtS9EVbuD9aooLBZ5DUJg2mfdNn3++cCu2tH6ArqC1DoXM04TH0owZyPccAq+Ry9ujz0Fq26RWweqOZch0lmJExizkuMr52DibLFDDOV+UH+g2cvgc6c+dgQZUtn3IVVw0SZKmF+qKA3Eb+B8iGrrW9AjEgb6JRWANNFHZnhAYQAIisAYQpmxKCAgBISAEhIAQGNYESDxZGVb02Bnn6gmq1ggHOtCy7RM0bvovwv5mrrpSDTc03QWFBJWqw6ZQiHtigpcKhDNdML1enhjG+VhUdcCyLMKVGtF4ENGEqKKKK5JVlL9jVV4FLYFFX/GEwIqFoGtpmFJ4Dj/EWu04VrXF55dgMIhFixbhlltuQXX1Vt7/jhbCwavAIjFSVVWFhx9+mCt7ktPtSGBlZ2fhkksuxsUXX4ri4uJdjrm/AovOq729Ha+99hruueeP2L59Oz/A0yWkiYKjR5cjLy8X69atQ2NjoyXGzDgcTgeOP/4E/Pznv0BZWdkeK6P2V2DRegsWvId777kHa9auSZyfNdkvNzcbF1xwEa699lquktqdKOvLFELK26JqryeeeIyrvTjEPU6B8TbMnDkTv/jFbZg8efJuK+ySsozuj1//+k6usNM0qlKx7qWiokJceOHFuPTSS5GdnZ3y92tKBFZCM1sNsRo0RYeuOliAsCDhrDqSyD4WyCS4rfd2ou4pTuLGjlFZR+OYkdeiJONwrrps81fj021PYWX9SwjGfJ+7zgo0ktz0OUD3YEJmx+IkXJNLYp3EMIjkOopiYGTGHA4yL8k8HKFIN6paF2Fr28eImAE+C0sSlWFc3ok8RZFaDelzprZ9FV5bfysafOv5GCmLj9r6HJqHBRWdETGnc6XPHsruI0FkHSdNJdSg0vH0HHOMRRZ/VvJi7Ts5rZEJxU1EqbUxsY4l8egfBOxwaG4YqitRkRrlqq4Qcw7yPg3VCbvqga7S1FaT26vp97Qtax8kBWkfMc7yMhP70OhzVjH4HwhoYisdA/8rxCAsIrAGAapsUggMFAERWANFUrYjBISAEBACQkAIfFEJcPh6oB1tNSvRvHUhfK1bQP/UT/lXKudf6UDiIS6u2BDxaAjnpMNGAe/0c8qtoWcpfmg1LYlFYipKVRTJFkFr4iC3DLK8CiAap2lioUQVVgReexFmjrgMh+TSNC7XHnEOpcBqaKjH008/jYcffghhChhnmRTngPQzzjgDV1xxJSZOnLiLxOmvwCIIFGS+cuUKriiywtxJ6FCVFaDrBjRN4XViMTMhsEyUlJbg2muvw7e+dQFcLtduZWBfMrBIQFG4+h//eBfefZeC4hPh6iyWgAnjJ+L6G27EKaecArudqvJ2hLn3pQKLXkey7L333sPdd9/FYs46XyJhIjcnD5dedhkuv/xyZGZakjMpzLja0DR5SuL//d/zePDBP3FuGFX2seBUNRx66FRcc801PL2RBGCql1QJrOR59c6P2t258tu2twhJDDJIt+djRsmlmFl6Iey6h9+7W5o/xAeVD6C2a0WPqOrZD/2hV1ZV8uesWBLb503vtA5VemnIdpVjTtnVmFR4Ogsnyoz6pOpJVHcs5b/bqOwIQJqjGEeWXYmJBafCZWSw4KnrWIXX19+G+u61luzhE9r9Ve3RPXs8Hut1vY/ZOuRdN7g/63yewb6uxeePOrmP3tw+fw6Dcf+KwBoMqrJNITBABERgDRBI2YwQEAJCQAgIASHwhSZA4ika9sHfVo227cvQWb8Gwe4Gq1CLKisU1WoTdGgI5KfD9Lp5OqEGlX+XrHChag7rK8Qj3+mBnYUVtxVa8ooqCOjvVvVVCGEzzM+cpenTMXvE5dyu03vy2efBDpXAIjlCrXR///sLuOeeu9HR0d4Tqq5rGiZOmsgthCRHSGj1rkSi1730z3/iT/ffg7a2jv1uIaRzp8qv+vp6PPPM03jiicfR2dnZk0FlsSERYD1607O2lUt1DFeoUYi7VYG069IXgUXrJnOwnnnmL6itrekRabRTu8PAhAkTcd5552Hu8cejsKBwJ7FErY8ffvghV0VRex/JJJZKmoopkyfjO9/5Lk4++SssvmhdmqpIAuuNN94EZZVZVVhWUP/oMWNx8SUX4+yzzuaKr+TvOJ+osRHz58/Hk08+wblmFhMbV6x4vB6cdtrpuPLKq7iCa08VfoP5Rk61wNrXufSqM+rJjKJQ8bFZx2HOyGuQn0Y5YXFuP15W8wIWVT3OmVbUYnigC1UaUdZWkWcK5o7+Nspz5nAu1ebm93lKILXd8W3Nn0Eq8twTcMzI6zE291gYmpsrOCtaP8YbG27nKYvJqtIDPa4v++tFYH3Z7wA5/2FNQATWsL48cnBCQAgIASEgBITAARLgNh3EEq0we3/o5HXNGKLhbvg7atFavxxtDasR9bfz5EEa0hdM1xDKToOi0+RBHSqo/YaqbazaAJr8RfujNh0KI2ZJFQtZ4e491VbWn2NcgWX92VDTMLnwbBxafA689vy9yoWhEljEJxAI4K233sJvfvMbbN1a2ROqTufucBicYzVx4iTk5+dD10nSWBeQjpnEzfLlSxEIUPWSJZtUde8ZWBbTOHw+P+bPfwv33nsPVyWRANq9lAJycqid8VJcfvk8zubak6jpi8CifZFI+uyzzzhQfsF777FosiXa+0geUEtlZmYWxowZzW2Lubm5XBFFixmLoXr7dnz00UJuibSqqnYvsOjnHR0dePnlf+OBB/6E6uptLExYRNF+FAV5+fk4as5RmDVrNsuyaCwKaj1c/OmnWLhwIerrakET3HpzHjt2NK6++lqcccaZLBiHYhl2AovuQZvOOU8F7vGIxqPIdJViTO7xKPBOYJHM4eYdn+HDyodQ2brQwjYA7Wt0/1PYeqF3Mo4vvxmjc4/htrquYBMqWz7E+qY30R6sZbmd5SjD2NzjMTZnrhWUbrPxekuq/4pPtz/FgfBDISSH4h4a7H2KwBpswrJ9IXAABERgHQA8eakQEAJCQAgIASEw7AlQm013sAmBSCuy3eVQVftO08h2PgHKsDIRifjQFahFe3clgsFWxGMRrs7qDDegK94KU6O2QYOzYxSqwOJqDFuicycGmn4YB4W5R7idkB7aY7SNhLCKcXB7GFGQvKJ1Yshxj8OckdehNPNwnmK2t2UoBRZJGxJIFGb+yiv/YWEHWJlUtKiKDZqusWDq/UBNUiYWjSASSebr7L/Aou3Sfjdu3IiHHnoQL7/8r54w996ckjlRhx56KH78459g5sxZ3M63p6WvAovWp0qy119/A4888jC2bN60kySyerdsnFWlafrnKr/iiEZjiEbDHHpvVUbtXmAlz5emET7854fx2quvoLOTqtas1kmCTf7E7nTA5XLD0K0MtEg0Cr/Ph3A4wBMlLXllrZuTk4uvfe0cXHbZZRg5cuROLY6pfBMPN4FFgxcok2l26WWYWXpxQhAasGvuRM5UlEPDP6v9B1bUvTigosi6NgoyqDWw9GocVvoNaDY7Z1lFYn6e4EdB7VQdate8HHxOrcV0XUMRHzY3vY+Pqh7hQHkrx2twMqFSeX8Mh32JwBoOV0GOQQjsgYAILLk1hIAQEAJCQAgIgYOZAAmpdn81Kps/4AyhovTDkOYsgqF5WEBZ3iXOgikc64Y/1IKuQB1C0Q4OSaaFKjDag9t5YhZVVKmKyhMMwaPqKQi5VwA0PX5SFVbcRNykLKwoZ9WQqKKKK5JXNH2LZRYHvkdhV72YkH86ppWeD689b58PokMlsJhUPM4ZTe+8+w4e+fPDWLFiRSJ0J5nTtIcAnsRNtlMm0H5WYCX3S1VJ//jH3/Hoo49wmLw1jW3HEjdNpKWn49xzz8XNN3+bpyHu7aG+rwKL9kQVVdRK+PLLL3M747ZtlfwzKwTcknJ7DCHqKdxJVuvtWWDRsVHF18pVK/HE44/j7bfnw+/vZhllVWLteendTmnJq2x85Stf5Yq08ePH7zbQPlWfAcNRYHntxThp9HcxpejsxLw/YkxB5SG0+iuxvOZFrGl8NTGp0IqGH4iFakNpuqCq2FGaNgOzSi/CyKwjOeg8eT9Z+0m+p+L8edIdbMampnexvO7vaPJt4M+QgagIG4hzOhi2IQLrYLiKcg4HLQERWAftpZUTEwJCQAgIASEgBBLChSZdVbR8iGXVz8CheZHnHstterpG07JIQtmsiiia0hUPwxZX+AGSRBTl3bQEq9AZqGd5w1O7VJ0FlkIB2qB16btVgUXVExymHTcRo7bDeIQnf5GsirO4ivI+6O9RevAEUJw2DTPLLuXqK5outq/FElif4JZbvo9tW6s584mPTVUwbvx43HzjzTjzzDN3O6Wu97ZJkNCUup/+9EdYv349yxc6Dzp2r9eDCy68GL/4+S922g63WSYmAy54fwEee/RRDliPRakSa0ei0C7nYEs+Y+8QADtaCE/AnXf+mtsP97ZQUPuSJUu4Cuud+fN3kVMka0jQfP8Ht+CEE06E0+nc6/aSAmv+/Ldx++13cK6VphJLEw6nE3PnnoDrr78es2bN2mk7fP4dHXj3nfn461//huXLlyMY8CfWoZbBHQHuezsA2g5Vq02eMoUzsL6SyMBKvoarqiIRbNmyBX/961/xxhuvo66uDmbMEqu8nwRXGspmLaRFrAovh8PJ1VbnnHMOtw0OZeVV8uiGm8Aixi4tE5MLTseYzGPgMnKgqAY6QjWobluMytZFaPZv4sw61k2DUOVEV4vaGNPtBRidfSxGZx+DHPf/b+9cYuMsrzD8eq62Z+zEJg7GThqaBEhKW6XKIqAiUZG0kVjQRbshtAs2dNFsKgG7RqqAdosotCqqBGlSukzV0tZtWbSKlAuhRQlJSBXSOLi52A7xbTyxZzzj6nz/jJ0bngTZ+JvPzw+RJWf8zznP+R1pHp1zvvXKpO5yO+bcaX3FUQ3lz7lRxnPDh3Vh9KgmiqOzpwUuQFy1/h0K9e8RWKFWlryCIIDACqKMJAEBCEAAAhCAwKcQiHZglTVy9byO9O3RiUt/UkvqLrU1dqkpsdyNDyVsHND2WTXY2FvMdTkUpnIaKfRrZPKCClPjTmrZzis76t2kl40ORicQRhJrVh9EAqtki9wro4RlWfeVdWSZyCpUOrCsS6ukbLpTm1d9TxtWbnMjQrfzAbkqsJ577lmdP2/LxKOOEPuyfv39+uHOnW7BdzI5twy7VmCdPn3GiRu7rKPITu57csdT2vXjXTfdpyqx8vm868D6S8+f9e7hd90C8VxuTIXJgvvQff1l4qv6nWoHUnUHlgmsn2nVqu45n2MTgpbvb/fu1e7db7hl7tUuLIupqSmtrVu/qWeffV7r1q2rOSZ3rcB64YUXZCcsurG7clmJZFKPPvoN7dy50+2ZuvGyn7U6nD17Vj1/69HhgwddbBZTfjyvicmJmr+TboQw3qAHH7Ql7j9yXVLXnl7odFTlZEE7xfHQoYPat2+fPjz5ofoHLmlycmLmNMZIPkqxeFzZbFarV69ycW/fvl2bNn1NmUymJo+aAc/DC3wTWFFKDYor4boy7d8CGwm2ET7bK2WHMdhJgZHdnZ/Oq5ueJfeN6JfD4kgnWpW2DtFYqvKeUeeVi6k47Lo43SmcM79OCxPXPJS7Lm+BwKrLshH0UiGAwFoqlSZPCEAAAhCAwNImYN1UA6OndKD31zo++EclGhrVnFym5mSr0rFm1wFhn0/tA/ZEKe92z9iHRhNWCeu6cn/sNbbzKhobtI+9UQdWZYSwIstcF0xleXzZOrLK1nVVcveLOrBMXhXdB+aNKx/X5tU7tKyp67YLZPugTBa9//6/lcuNO4kW7dNpUGtrqx54YINbIn6jDLnxDUxU2eJvu4+Jl+o97KstYF+z5l4nP2rdx+Kxsbq+vj5dvjzoYorG6mbfcTw3riPvHdE77/Qol7s6M25nS9ytW+zFF19Se3t7TQYm3Wx80DrG8vnx6076S6VSLmbrwqrVfVWVQ9bhdPHiBR07dkz5/NUZlraQ3RbRG0tbxj7XZbxsub11Rw0ODmp4eEijo7ZUe+50qrzb2trcCYZdXV01BaZ1ofX29rqF+B+f79PwJ1c0NDzsdo4tX9aqzs57XKfV+vX3qbu7a1HHBW+VvZ8CqxLprGGteK3FEUP2XERCa3Yct6KoK0JrceKq+csZyAsQWIEUkjTCJIDACrOuZAUBCEAAAhCAwM0E7MPzxdHj+seZl3VmyE4TK7uRuaibyoSUiahISJm0cp1WruPKzhqMvtcQs91XUceG63wymVU9gXBmgMsElokr01dRp1XZdmG5r9ahNaVYLK0vtD2sh9Y8rc7WDS6OkC8TXG/97i398hevanh4dOZ0vFQq6UbcXnrpp67ri+vOCLhuv1IpeiZj0Tirz5fXAstncMT2uRFAYH1uqHkjCNw5AQTWnTPjJyAAAQhAAAIQqFcC024x+8WRD3To3Bv6aGi/CqVod5HTUE5i2Z6bSGhF/1XklnVeuYXttsDdXhWNG9640Hm2Z8JElQkr67yKdmJJdgJfSYl4Vl9s+7o2dX9XXcu+orhJsTq4quNsNjpnnVC1ZInbxlSOlpHbCYKvv/4r7d//TxWL0YlpJvgy2Wbt2PF97dq1y7tuoTooSd2FiMCqu5ItuYARWEuu5CRcTwQQWPVULWKFAAQgAAEIQGA+CJjEGhg7paMXfq9Tl/+uXGHACSbXg2VSqrKc3fSVdVhZ91W1Q8vkVrSk27qwYvbX13VPucEf12Vl/V321cRV2Ykr+7mmZLvWtD2sTd3f0d0tD9zW0vb5yHk+7mFjgbaL6cCBAzp67Kg7jXGuywSW7cPq7+/XiRPH1dd3TsWiLa6vntYnrV27Vs89/7y+/cQT8xEi9/CcAALL8wIRnhBYPAQQ8JgAAsvj4hAaBCAAAQhAAAILRsBOBhyduKST/T06OdCjT/IfqVC66s4SjDqxInkVDQhGYisSWm7rVUViVZa3Xzu2dd3+GhNX7lxC17nVku7SfSse04Odj2tFZl3NDqYFS/4z3th2XdnS8ldeeVm/2f2mUqnG2neq7AdLxBvUELP9YdG+LpNYtnR927Zvue6r7u65F7jXfiNeUQ8EEFj1UKWlHSMCa2nXn+w9J4DA8rxAhAcBCEAAAhCAwIIRMJEyOZVzI4UnBnr08ci/lJu85ERWdT9WNFIYCa1oZM4NElbOHbS/u3bnUDRAWHZfomPhYkqqMdGqjuwG3d+xVetWPKJsesWC5bSQNzaBZQvEX3vt59q7d49SqXTNt7vlXuxpqbGp0S2If+aZH7iT8riWBgEE1tKocz1nicCq5+oRe/AEEFjBl5gEIQABCEAAAhCoQcD2VI1NDKhv+D3998pBXRj9QOOFQbcfyzq13IL16P+ZvVfV7908QBhJrngsrcZ4q5Y3rdKa5Vu0dsUj6siuVzJeW/r4WrBZgfWqE1jpdKp2qE7mRZIvFm9QIpFQS0uLNmzYqCeffErbtm1TNputfR9eEQQBBFYQZQw6CQRW0OUluXongMCq9woSPwQgAAEIQAAC80XARNbV4rAujhzX+ZEPNDh+WqOTl5QvDqkwNeYWwLvF5O70wqqXibqxotMKk0rHl6k52a72zBp1tX5Z97R+te7FVZWvnXbX19enPXv26O23/6BUam6BZd1XNkGYTKSUTCbV1NSkzs67tXHjl7Rly0PavHmzE1q1lsHPV325z+ITQGAtfg2IYG4CCCyeEAh4TACB5XFxCA0CEIAABCAAgUUhYKOFU6VJjRc+0dhkv66M92pook9Xp8Y0VZ7QRHFM0+WiGxOMNSSUTGaVTrQoHcuqvWm17srcq9bGLjcqGKux6HxREvyMb2pL3HO5nE6dOqXec72Kxyo7wD7lftZ8ZbvDmpubnbyyzquOjg6tXLnSyS/E1WcsRB3/GAKrjou3REJHYC2RQpNmfRJAYNVn3YgaAhCAAAQgAIHPj8D0dEmlcsmdJOjE1uQVlaYLLgDrvEqn2tSUyETnElonVkDS6laUo01ft3lVlmAhq26TV+AvQ2AFXuAA0kNgBVBEUgiXAAIr3NqSGQQgAAEIQAACEIAABHwigMDyqRrEcktBP6Wnrz2aA0oQgIBHBBBYHhWDUCAAAQhAAAIQgAAEIBAwAQRWwMUNJDU6sAIpJGmESQCBFWZdyQoCEIAABCAAAQhAAAK+EUBg+VYR4rmRAAKLZwICHhNAYHlcHEKDAAQgAAEIQAACEIBAQAQQWAEVM9BUEFiBFpa0wiCAwAqjjmQBAQhAAAIQgAAEIAAB3wkgsHyvEPEhsHgGIOAxAQSWx8UhNAhAAAIQgAAEIAABCAREAIEVUDEDTQWBFWhhSSsMAgisMOpIFhCAAAQgAAEIQAACEPCdAALL9woRHwKLZwACHhNAYHlcHEKDAAQgAAEIQAACEIBAQAQQWAEVM9BUEFiBFpa0wiCAwAqjjmQBAQhAAAIQgAAEIAAB3wkgsHyvEPEhsHgGIOAxAQSWx8UhNAhAAAIQgAAEIAABCAREAIEVUDEDTQWBFWhhSSsMAgisMOpIFhCAAAQgAAEIQAACEPCdAALL9woRHwKLZwACHhNAYHlcHEKDAAQgAAEIQAACEIBAQAQQWAEVM9BUEFiBFpa0wiCAwAqjjmQBAQhAAAIQgAAEIAAB3wkgsHyvEPEhsHgGIOAxAQSWx8UhNAhAAAIQgAAEIAABCAREAIEVUDEDTQWBFWhhSSsMAgisMOpIFhCAAAQgAAEIQAACEPCdAALL9woRHwKLZwACHhNAYHlcHEKDAAQgAAEIQAACEIBAQAQQWAEVM9BUEFiBFpa0wiCAwAqjjmQBAQhAAAIQgAAEIAAB3wkgsHyvEPEhsHgGIOAxAQSWx8UhNAhAAAIQgAAEIAABCAREAIEVUDEDTQWBFWhhSSsMAqdPn+7IZDJvZrPZxzKZjGKxWBiJkQUEIAABCEAAAhCAAAQg4BWB0nRR/xs+qr/+5ye6lDspqcGr+AgGAqVS+Zn/A/GO3bCAOKjsAAAAAElFTkSuQmCC",
+                            "base64": true,
+                            "position": "Left"
+                        },
+                        "component_id": "98a5-e0d2-ab4d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Print Agreement pdf",
+                        "component_id": "b8c7-d804-3d28",
+                        "required": false,
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "$(\"#opportunity_agreement_pdf_data\").prepend('<div class=\"custom-loader\"><div class=\"whirl traditional\"><div class=\"spinner-dialog\"><span  class=\"spinner-dialog-title\">Loading Records</span><br/><span>Please wait...</span><br/></div></div></div>');\nif($('#opportunity_agreement_pdf_data').val() === \"\" && window.formyoula.form_fields[\"d48d-6c58-d3c8\"].get(\"value\")){\nsetTimeout(function(){ \n$(\"#opportunity_agreement_pdf_data\").html(\"\");\n        \nvar opportunity_lineItem_length = 0;\nvar opportunitylineitem_data = '';\nif(window.formyoula.form_fields[\"f7e2-c61c-8a3a\"]){\nopportunity_lineItem_length = window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get(\"repeat_value\").length;\n}\n\nvar pdf_data = '<p><span class=\"title\">BESTELLSCHEIN 2019</span></p><p><span class=\"title\">F&Uuml;R HYVIDO&reg; HYBRIDGERSTE</span></p><table align=\"left\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%\"><thead><tr><th scope=\"col\" style=\"text-align: left;\"><strong>Anschrift Landwirt:</strong></th><th scope=\"col\" style=\"text-align: left;\"><strong>Anschrift H&auml;ndler:</strong></th></tr></thead><tbody><tr><td>' + window.formyoula.form_fields[\"027d-805c-73f7\"].get(\"value\") + '</td><td>' + window.formyoula.form_fields[\"6357-521f-4cc1\"].get(\"value\") + '</td></tr><tr><td>' + window.formyoula.form_fields[\"14b2-917a-8873\"].get(\"value\") + '</td><td>' + window.formyoula.form_fields[\"e5ce-1fc5-363f\"].get(\"value\") + '</td></tr><tr><td>' + window.formyoula.form_fields[\"0feb-28c3-b689\"].get(\"value\") + ' ' + window.formyoula.form_fields[\"f75c-37b5-e1df\"].get(\"value\") + '</td><td>' + window.formyoula.form_fields[\"324b-a666-55d3\"].get(\"value\") + ' ' + window.formyoula.form_fields[\"4a4e-90cd-d0fc\"].get(\"value\") + '</td></tr><tr><td>' + window.formyoula.form_fields[\"d48d-6c58-d3c8\"].get(\"value\") + '</td><td>&nbsp;</td></tr></tbody></table><p>&nbsp;</p><p><strong><span class=\"SubtitleHead\">Ihre Bestellung<sup>1</sup> </span></strong></p><p><span style=\"font-size: 9.0pt;\">(Die Aussaatmenge betr&auml;gt ca. 2 bis 2,2 Einheiten je ha. Ein Big Bag entspricht 22 Einheiten.)</span></p><table style=\"border-collapse: collapse; width:100%;\"><tbody><tr class=\"opportunityLineItemListHeading\"><td style=\"border: solid windowtext 1.0pt; border-right: solid black 1.0pt;background-color: #C5E0B3\"><p style=\"text-align: center; line-height: normal;\"><strong><span style=\"color: black;\">Sorte</span></strong></p></td><td style=\"border-top: solid windowtext 1.0pt; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid black 1.0pt;background-color: #C5E0B3\"><p style=\"text-align: center; line-height: normal;\"><strong><span style=\"color: black; vertical-align: -webkit-baseline-middle;\">Bestellmenge</span></strong></p></td></tr>';  \nvar repeatgroup_component_id = '';\n$.each(window.formyoula.form_fields[\"f7e2-c61c-8a3a\"].get(\"repeat_value\"), function(repeat_element, value){\nopportunitylineitem_data = opportunitylineitem_data + '<tr><td style=\"border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: solid black 1.0pt; background: white;\"><p style=\"text-align: center; line-height: normal;\"><span style=\"color: black;\">'\nvar product_name = _.where(value, {component_id: \"aece-570c-c78b\" })[0].value;\nopportunitylineitem_data = opportunitylineitem_data + product_name + '</td><td style=\"border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid black 1.0pt; background: white;\"><p style=\"text-align: center; line-height: normal;\"><span style=\"color: black; vertical-align: -webkit-baseline-middle;\">';\nvar quantity = _.where(value, {component_id: \"f039-b501-27fb\" })[0].value;\nopportunitylineitem_data = opportunitylineitem_data + quantity + '</span></p></td></tr>';\n});\npdf_data = pdf_data + opportunitylineitem_data;\npdf_data = pdf_data + '</tbody></table><p><strong><sup><span style=\"font-size: 8.0pt;\">1</span></sup></strong><span style=\"font-size: 8.0pt;\">Solange der Vorrat reicht. Gilt f&uuml;r alle Hyvido Verkaufssorten 2019.</span></p><br/><br/><table align=\"left\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width: 100%\"><tbody><tr><td><span style=\"font-size:20px;\"><span style=\"color:#55830c;\"><strong>FR&Uuml;H BESTELLEN UND ZUS&Auml;TZLICH&nbsp;</strong></span></span></td><td><p style=\"margin-left:-.25pt;\"><span style=\"color:#55830c;\"><span style=\"font-size:20px;\"><strong>VERTRAUEN WIRD BELOHNT!</strong></span></span></p></td></tr><tr><td><span style=\"color:#55830c;\"><span style=\"font-size:20px;\"><strong>5,‑&nbsp;&euro; JE EINHEIT SPAREN!</strong></span></span></td><td>&nbsp;</td></tr><tr><td>Bestellen Sie Ihr Hyvido Saatgut bis zum <span style=\"color:#55830c;\"><strong>02.08.2019</strong></span> bei&nbsp;</td><td>Beachten Sie unseren neuen<strong> <span style=\"color:#55830c;\">Mengenrabatt</span></strong> in der&nbsp;</td></tr><tr><td>Ihrem H&auml;ndler und sichern Sie sich so einen&nbsp;</td><td>Saison 2019.</td></tr><tr><td>zus&auml;tzlichen Rabatt von 5,&ndash; Euro je Einheit (110,&ndash; Euro&nbsp;</td><td>Sie sparen ab einer Bestellmenge von</td></tr><tr><td>je Big Bag)!</td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=\"font-size:14px;\"><strong>10 Einheiten: 1,50 &euro; je Einheit</strong></span></td></tr><tr><td>&nbsp;</td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=\"font-size:14px;\"><strong>50 Einheiten: 2,50 &euro; je Einheit</strong></span></td></tr><tr><td>&nbsp;</td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=\"font-size:14px;\"><strong>100 Einheiten: 3,00 &euro; je Einheit</strong></span></td></tr><tr><td>&nbsp;</td><td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Gilt auch bei Bestellung von Big Bags.)</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table><br/><p>⃝&nbsp; &nbsp; Ja, ich m&ouml;chte in der Anbausaison 2019/2020 unser Hyvido Anbautelegramm mit wertvollen Hinweisen zur optimalen Bestandesf&uuml;hrung als E-Mail-Newsletter (ca. 5 Ausgaben) erhalten.</p><br/><br/><p><span style=\"font-size: 10pt; font-family: Calibri; text-align: justify;\">Die Verantwortliche gem&auml;&szlig; Datenschutzrecht ist die Syngenta Agro GmbH und die Verarbeitung Ihrer Daten erfolgt entsprechend der Datenschutzerkl&auml;rung der Syngenta Agro GmbH <u><a href=\"www.syngenta.de/unternehmen/datenschutz\">www.syngenta.de/unternehmen/datenschutz</a></u>. Sie erreichen die Datenschutzbeauftragte von Syngenta Agro unter Syngenta Agro GmbH, Abteilung Marketing, Postfach 1234, 63462 Maintal oder per Email an <u><a href=\"mailto:de.Datenschutz@syngenta.com\">de.Datenschutz@syngenta.com</a></u>.</span></p></div><hr /><p style=\"margin-bottom: .0001pt; line-height: normal;\"><span style=\"font-size: 9.0pt;\">&nbsp;</span></p><table style=\"border-collapse: collapse; border: none; width: 100%;\"><tbody><tr><td style=\"width: 127px;\"><p style=\"text-align: justify; line-height: normal;\"><span style=\"font-size: 9.0pt;\">Datum</span></p></td><td style=\"width: 345px;\"><p style=\"line-height: normal;\"><span style=\"font-size: 9.0pt;\">' + window.formyoula.form_fields[\"ef2f-279b-ab7c\"].get(\"value\") + '</span></p></td><td style=\"width: 204px;\"><p style=\"line-height: normal;\"><span style=\"font-size: 9.0pt; color: black;\">Name Verkaufsberater/Anbauberater</span></p></td></tr><tr><td style=\"width: 127px;\"><p style=\"text-align: justify; line-height: normal;\"><span style=\"font-size: 9.0pt;\">Grower Account </span></p></td><td style=\"width: 345px;\"><p style=\"line-height: normal;\"><span style=\"font-size: 9.0pt;\">' + window.formyoula.form_fields[\"027d-805c-73f7\"].get(\"value\") + '</span></p></td><td style=\"width: 204px;\"><p style=\"line-height: normal;\"><span style=\"font-size: 9.0pt;\">' + window.formyoula.form_fields[\"65f8-fc8a-300b\"].get(\"value\") + '</span></p></td></tr><tr><td style=\"width: 127px;\"><p style=\"text-align: justify; line-height: normal;\"><span style=\"font-size: 9.0pt;\">Unterschrift Landwirt </span></p></td><td style=\"width: 345px;\"><p style=\"line-height: normal;\"><span style=\"font-size: 9.0pt;\">' + window.formyoula.form_fields[\"e7ac-0f87-4735\"].get(\"value\") + '</span></p><p style=\"line-height: normal;\"><span style=\"font-size: 9.0pt;\">' + window.formyoula.form_fields[\"0b9c-1cfb-ca3d\"].get(\"value\") + '</span></p><p style=\"line-height: normal;\"><span style=\"font-size: 9.0pt;\"> </span></p></td></tr></tbody></table><p>&nbsp;</p><p>Syngenta Agro GmbH &ndash; Sitz der Gesellschaft: 63477 Maintal &ndash; Gesch&auml;ftsf&uuml;hrer: Dr. Manfred Hudetz &ndash; Amtsgericht Hanau HRB-Nr. 7225</p><span>' + window.formyoula.form_fields[\"98a5-e0d2-ab4d\"].get(\"value\") + '</span>'\n$(\"#opportunity_agreement_pdf_data\").append(pdf_data);\n$(\"#opportunity_agreement_pdf_data .custom-loader\").remove();\n}, 1000);\n}"
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Email",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Public",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce",
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "b52bd90a1c7fa693a1db4aac3c274625358c7c67"
+        }
+    },
+    "connections": [
+        {
+            "_id": "5d43c7ca78647a0015fabfc7",
+            "created_at": "2017-10-04T06:24:22.902Z",
+            "updated_at": "2019-08-02T05:19:06.422Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "CloseDate",
+                    "field_name": "Schlusstermin* ( CloseDate )",
+                    "component_id": "ef2f-279b-ab7c",
+                    "component_name": "Schlusstermin ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Description",
+                    "field_name": "Beschreibung ( Description )",
+                    "component_id": "b81f-dc1e-5db9",
+                    "component_name": "Notizen ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Order_Number__c",
+                    "field_name": "Order Number ( Order_Number__c )",
+                    "component_id": "6ed1-9e52-3a1d",
+                    "component_name": "Retailer Account Id ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "StageName",
+                    "field_name": "Stage ( StageName )",
+                    "component_id": "8af0-5b36-bbdc",
+                    "component_name": "Phase ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Existing Record ID (Only For Updates)",
+                    "component_id": "d557-86be-405c",
+                    "component_name": "Opp ID ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Opportunity ID ( Id )",
+                    "component_id": "d557-86be-405c",
+                    "component_name": "Opp ID ( Page: Opportunity Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Opportunity",
+                "object_name": "Opportunity",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "d557-86be-405c",
+                "update_field": "",
+                "upsert_field": "",
+                "attachment": "note_and_attachment",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfc8",
+            "created_at": "2019-04-10T13:43:36.884Z",
+            "updated_at": "2019-08-02T05:19:06.461Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Id",
+                    "field_name": "Existing Record ID (Only For Updates)",
+                    "component_id": "450d-23a1-d052",
+                    "component_name": "Account Retailer ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Account ID ( Id )",
+                    "component_id": "5856-cd23-96eb",
+                    "component_name": "Description ( Page: Bestellschein )"
+                },
+                {
+                    "field_id": "Email__c",
+                    "field_name": "Email ( Email__c )",
+                    "component_id": "b251-6c97-3431",
+                    "component_name": "Retailer Email ( Page: Bestellschein )"
+                },
+                {
+                    "field_id": "Name",
+                    "field_name": "Account Name ( Name )",
+                    "component_id": "6357-521f-4cc1",
+                    "component_name": "Account Retailer Name ( Page: Bestellschein )"
+                },
+                {
+                    "field_id": "BillingStreet",
+                    "field_name": "Billing Street ( BillingStreet )",
+                    "component_id": "e5ce-1fc5-363f",
+                    "component_name": "Account Retailer Billing Street ( Page: Bestellschein )"
+                },
+                {
+                    "field_id": "BillingPostalCode",
+                    "field_name": "Billing Zip/Postal Code ( BillingPostalCode )",
+                    "component_id": "324b-a666-55d3",
+                    "component_name": "Account Retailer Billing Postal Code ( Page: Bestellschein )"
+                },
+                {
+                    "field_id": "BillingCity",
+                    "field_name": "Billing City ( BillingCity )",
+                    "component_id": "4a4e-90cd-d0fc",
+                    "component_name": "Account Retailer Billing City ( Page: Bestellschein )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Account ID ( Id )",
+                    "component_id": "6ed1-9e52-3a1d",
+                    "component_name": "Retailer Account Id ( Page: Opportunity Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "attachment": "false",
+                "object_id": "Account",
+                "object_name": "Account",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "450d-23a1-d052",
+                "upsert_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfc9",
+            "created_at": "2017-10-04T06:26:54.532Z",
+            "updated_at": "2019-08-02T05:19:06.482Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 4,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "UnitPrice",
+                    "field_name": "Farm Gate Price ( UnitPrice )",
+                    "component_id": "03c2-b143-4a9f",
+                    "component_name": "Farm Gate Price ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "OpportunityId",
+                    "field_name": "Opportunity ID ( OpportunityId )",
+                    "component_id": "8e24-10c2-692a",
+                    "component_name": "Opportunities ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Line Item ID ( Id )",
+                    "component_id": "2f41-ae0f-bb13",
+                    "component_name": "OpportunityLineItemId ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "PricebookEntryId",
+                    "field_name": "Price Book Entry ID ( PricebookEntryId )",
+                    "component_id": "37b6-fecf-51c0",
+                    "component_name": "Search Product ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "Quantity",
+                    "field_name": "Quantity (Not Used by Syngenta) ( Quantity )",
+                    "component_id": "f039-b501-27fb",
+                    "component_name": "Planned Quantity ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "Planned_Quantity__c",
+                    "field_name": "Current Year Planned Quantity ( Planned_Quantity__c )",
+                    "component_id": "f039-b501-27fb",
+                    "component_name": "Planned Quantity ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "ProdLocalDesc__c",
+                    "field_name": "Product Local Description ( ProdLocalDesc__c )",
+                    "component_id": "6ee2-acfd-2e89",
+                    "component_name": "OLI Price book ID ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "PricebookEntryId",
+                    "field_name": "Price Book Entry ID ( PricebookEntryId )",
+                    "component_id": "6ee2-acfd-2e89",
+                    "component_name": "OLI Price book ID ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "OpportunityLineItem",
+                "object_name": "Opportunity Product",
+                "repeat_group": "f7e2-c61c-8a3a",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfca",
+            "created_at": "2017-10-04T06:30:20.072Z",
+            "updated_at": "2019-08-02T05:19:06.497Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 6,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Desc_DE__c",
+                    "field_name": "Desc DE ( Desc_DE__c )",
+                    "component_id": "aece-570c-c78b",
+                    "component_name": "Produktname ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Product2",
+                "object_name": "Syngenta Product",
+                "repeat_group": "f7e2-c61c-8a3a",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "37b6-fecf-51c0",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": true,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfcb",
+            "created_at": "2017-10-04T06:31:45.862Z",
+            "updated_at": "2019-08-02T05:19:06.509Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 8,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "UnitPrice",
+                    "field_name": "List Price ( UnitPrice )",
+                    "component_id": "03c2-b143-4a9f",
+                    "component_name": "Farm Gate Price ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Existing Record ID (Only For Updates)",
+                    "component_id": "37b6-fecf-51c0",
+                    "component_name": "Search Product ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Price Book Entry ID ( Id )",
+                    "component_id": "37b6-fecf-51c0",
+                    "component_name": "Search Product ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                },
+                {
+                    "field_id": "Desc_Local__c",
+                    "field_name": "Local Description ( Desc_Local__c )",
+                    "component_id": "aece-570c-c78b",
+                    "component_name": "Produktname ( Page: Opportunity Details | Repeat: Opportunity Products )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "PricebookEntry",
+                "object_name": "Price Book Entry",
+                "repeat_group": "f7e2-c61c-8a3a",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "",
+                "attachment": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": true,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfcc",
+            "created_at": "2017-10-04T06:53:18.565Z",
+            "updated_at": "2019-08-02T05:19:06.525Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 10,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "IsPrimary",
+                    "field_name": "Primary ( IsPrimary )",
+                    "component_id": "9e2c-eb82-124a",
+                    "component_name": "Is Primary Contact ( Page: Opportunity Details | Repeat: Opportunity Contact Roles )"
+                },
+                {
+                    "field_id": "OpportunityId",
+                    "field_name": "Opportunity ID ( OpportunityId )",
+                    "component_id": "53ea-e1ca-33fe",
+                    "component_name": "OpportunityContactRole_OpportunityId ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Contact Role ID ( Id )",
+                    "component_id": "0d80-6439-e534",
+                    "component_name": "OpportunityContactRoleId ( Page: Opportunity Details | Repeat: Opportunity Contact Roles )"
+                },
+                {
+                    "field_id": "ContactId",
+                    "field_name": "Contact ID ( ContactId )",
+                    "component_id": "f66b-dde2-631c",
+                    "component_name": "Kontaktsuche ( Page: Opportunity Details | Repeat: Contact Roles )"
+                },
+                {
+                    "field_id": "ContactId",
+                    "field_name": "Contact ID ( ContactId )",
+                    "component_id": "d018-2150-b80d",
+                    "component_name": "Contact Id ( Page: Opportunity Details | Repeat: Contact Roles )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "OpportunityContactRole",
+                "object_name": "Opportunity Contact Role",
+                "repeat_group": "5c35-c2f7-7a01",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfcd",
+            "created_at": "2018-07-24T00:39:09.860Z",
+            "updated_at": "2019-08-02T05:19:06.550Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 11,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Id",
+                    "field_name": "Existing Record ID (Only For Updates)",
+                    "component_id": "8e24-10c2-692a",
+                    "component_name": "Opportunities ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "AccountId",
+                    "field_name": "Account ID ( AccountId )",
+                    "component_id": "07df-5343-dc4e",
+                    "component_name": "Opportunity Account Details ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "OwnerId",
+                    "field_name": "Owner ID ( OwnerId )",
+                    "component_id": "b9f2-de7a-cf01",
+                    "component_name": "Opportunity Owner Details ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Opportunity ID ( Id )",
+                    "component_id": "53ea-e1ca-33fe",
+                    "component_name": "OpportunityContactRole_OpportunityId ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Year__c",
+                    "field_name": "Year ( Year__c )",
+                    "component_id": "5c67-1bd1-b48e",
+                    "component_name": "Year ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Order_Number__c",
+                    "field_name": "Order Number ( Order_Number__c )",
+                    "component_id": "6ed1-9e52-3a1d",
+                    "component_name": "Retailer Account Id ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Opportunity ID ( Id )",
+                    "component_id": "d557-86be-405c",
+                    "component_name": "Opp ID ( Page: Opportunity Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Opportunity",
+                "object_name": "Opportunity",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfce",
+            "created_at": "2018-07-25T19:35:53.302Z",
+            "updated_at": "2019-08-02T05:19:06.561Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 12,
+            "type": "Public",
+            "emails": [],
+            "mappings": [],
+            "public_form": {
+                "loading_background_color": "#000000",
+                "logo": "",
+                "redirect": "",
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 2,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfcf",
+            "created_at": "2017-10-04T06:55:12.967Z",
+            "updated_at": "2019-08-02T05:19:06.572Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 12,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Full Name ( Name )",
+                    "component_id": "a310-09cc-62bf",
+                    "component_name": "Name ( Page: Opportunity Details | Repeat: Contact Roles )"
+                },
+                {
+                    "field_id": "Email",
+                    "field_name": "Email ( Email )",
+                    "component_id": "28a3-195b-d07f",
+                    "component_name": "E-Mail ( Page: Opportunity Details | Repeat: Contact Roles )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Contact ID ( Id )",
+                    "component_id": "d018-2150-b80d",
+                    "component_name": "Contact Id ( Page: Opportunity Details | Repeat: Contact Roles )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Contact",
+                "object_name": "Contact",
+                "repeat_group": "5c35-c2f7-7a01",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "f66b-dde2-631c",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": true,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfd0",
+            "created_at": "2017-10-05T07:52:15.714Z",
+            "updated_at": "2019-08-02T05:19:06.587Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 14,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "BillingStreet",
+                    "field_name": "Billing Street ( BillingStreet )",
+                    "component_id": "14b2-917a-8873",
+                    "component_name": "Account Billing Street ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "BillingPostalCode",
+                    "field_name": "Billing Zip/Postal Code ( BillingPostalCode )",
+                    "component_id": "0feb-28c3-b689",
+                    "component_name": "Account Billing PostalCode ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "BillingCity",
+                    "field_name": "Billing City ( BillingCity )",
+                    "component_id": "f75c-37b5-e1df",
+                    "component_name": "Account City ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "Email__c",
+                    "field_name": "Email ( Email__c )",
+                    "component_id": "6eed-8707-08a5",
+                    "component_name": "Account Email ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "Phone",
+                    "field_name": "Account Phone ( Phone )",
+                    "component_id": "7407-4702-647d",
+                    "component_name": "Account Phone ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "Name",
+                    "field_name": "Account Name ( Name )",
+                    "component_id": "027d-805c-73f7",
+                    "component_name": "Account Name ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "Account ID ( Id )",
+                    "component_id": "07df-5343-dc4e",
+                    "component_name": "Opportunity Account Details ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Email__c",
+                    "field_name": "Email ( Email__c )",
+                    "component_id": "e312-d0f7-181d",
+                    "component_name": "Grower Email ( Page: Bestellschein )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Account",
+                "object_name": "Account",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "07df-5343-dc4e",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": true,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfd1",
+            "created_at": "2017-10-05T09:20:38.550Z",
+            "updated_at": "2019-08-02T05:19:06.598Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 15,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Full Name ( Name )",
+                    "component_id": "65f8-fc8a-300b",
+                    "component_name": "Opportunity Owner Name ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "Email",
+                    "field_name": "Email ( Email )",
+                    "component_id": "825f-3f0f-9475",
+                    "component_name": "Opportunity Owner Email ( Page: Print Agreement )"
+                },
+                {
+                    "field_id": "Id",
+                    "field_name": "User ID ( Id )",
+                    "component_id": "b9f2-de7a-cf01",
+                    "component_name": "Opportunity Owner Details ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Signature__c",
+                    "field_name": "Signature ( Signature__c )",
+                    "component_id": "80c3-b7d8-d44a",
+                    "component_name": "Owner Signature Link ( Page: Bestellschein )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "User",
+                "object_name": "User",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "b9f2-de7a-cf01",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": true,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfd2",
+            "created_at": "2019-06-21T09:16:37.587Z",
+            "updated_at": "2019-08-16T07:57:30.822Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 15,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Quantity",
+                    "field_name": "Quantity ( Quantity )",
+                    "component_id": "68d9-878c-8ba9",
+                    "component_name": "Opportunity LineItem Offline prefill ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "PricebookEntryId",
+                    "field_name": "Price Book Entry ID ( PricebookEntryId )",
+                    "component_id": "d59e-24dd-853c",
+                    "component_name": "Hidden Contact Name ( Page: Opportunity Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "OrderItem",
+                "object_name": "Order Product",
+                "attachment": "",
+                "repeat_group": "f7e2-c61c-8a3a",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "346a-b76b-2ff1",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 34
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfd3",
+            "created_at": "2017-10-06T06:50:24.734Z",
+            "updated_at": "2019-08-02T05:19:06.626Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 16,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Full Name ( Name )",
+                    "component_id": "d59e-24dd-853c",
+                    "component_name": "Hidden Contact Name ( Page: Opportunity Details )"
+                },
+                {
+                    "field_id": "Email",
+                    "field_name": "Email ( Email )",
+                    "component_id": "ff24-7ed0-5f36",
+                    "component_name": "Hidden Contact Email ( Page: Opportunity Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Contact",
+                "object_name": "Contact",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "8f77-858b-6a76",
+                "upsert_field": "",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": true,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfd4",
+            "created_at": "2019-04-15T20:56:38.612Z",
+            "updated_at": "2019-08-02T05:19:06.634Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 18,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "ContactId",
+                    "field_name": "Contact ID ( ContactId )",
+                    "component_id": "c0e4-6749-f1d9",
+                    "component_name": "Contact Id ( Page: Bestellschein )"
+                },
+                {
+                    "field_id": "CampaignId",
+                    "field_name": "Campaign ID ( CampaignId )",
+                    "component_id": "9bf4-e154-6d43",
+                    "component_name": "Campaign ID ( Page: Bestellschein )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "attachment": "false",
+                "object_id": "CampaignMember",
+                "object_name": "Campaign Member",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "7ec1-46cc-81ba",
+                "update_field": "",
+                "upsert_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5d43c7ca78647a0015fabfd5",
+            "created_at": "2017-10-06T13:04:23.960Z",
+            "updated_at": "2019-08-02T05:19:06.644Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 20,
+            "type": "Email",
+            "push_updates": false,
+            "emails": [
+                {
+                    "from_name": "Syngenta Agro GmbH",
+                    "from_email": "dinesh.acharya@formyoula.intercom-mail.com",
+                    "_id": "59d77f570a77cb00152a8adc",
+                    "bcc": "",
+                    "cc": "{{825f-3f0f-9475}}",
+                    "subject": "Hyvido Bestellschein",
+                    "template": "<p>&nbsp;</p>\r\n\r\n<p>Sehr geehrte Kundin, sehr geehrter Kunde,&nbsp;</p>\r\n\r\n<p>vielen Dank f&uuml;r die Bestellanfrage f&uuml;r Ihr Hyvido Hybridgerstensaatgut. Im Anhang finden Sie die Details, die Sie gemeinsam mit Ihrem Syngenta Verkaufsberater aufgenommen haben.</p>\r\n\r\n<p>Bitte beachten Sie, dass es sich hierbei zun&auml;chst um ein Auftragsangebot Ihrerseits an den H&auml;ndler handelt.&nbsp;<strong>Zur Finalisierung der Bestellung leiten Sie den Bestellschein bitte an Ihren H&auml;ndler vor Ort weiter.</strong> Erst dadurch kommt der Kauf zustande und das Saatgut kann von Ihrem H&auml;ndler entsprechend bereitgestellt werden.</p>\r\n\r\n<p>Wir w&uuml;nschen Ihnen viel Erfolg mit Ihrer Hybridgerste.&nbsp;<br />\r\n&nbsp;&nbsp;<br />\r\nMit freundlichen Gr&uuml;&szlig;en&nbsp;<br />\r\nIhre Syngenta Agro GmbH&nbsp;</p>\r\n\r\n<p>Dies ist eine automatisch generierte E-Mail. Bei Fragen zu Ihrer Bestellanfrage antworten Sie bitte nicht auf diese E-Mail, sondern wenden Sie sich direkt an Ihren Syngenta Verkaufsberater.&nbsp;<br />\r\n&nbsp;&nbsp;<br />\r\nSyngenta Agro GmbH Gesch&auml;ftsf&uuml;hrer: Dr. Manfred Hudetz &ndash; Sitz der Gesellschaft: 63477 Maintal &ndash; Amtsgericht Hanau HRB-Nr. 7225;Bankkonto: Deutsche Bank AG Frankfurt am Main, IBAN: DE93500700100091831800, BIC: DEUTDEFFXXX&nbsp;</p>\r\n",
+                    "to": "{{d48d-6c58-d3c8}}",
+                    "attachment": true,
+                    "mail_merge": false
+                }
+            ],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 3,
+            "__v": 0
+        },
+        {
+            "_id": "5d56702fa040190010590d0a",
+            "created_at": "2019-08-16T08:58:23.576Z",
+            "updated_at": "2019-08-16T08:59:26.730Z",
+            "template_id": "5d43c7ca78647a0015fabf8a",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 16,
+            "type": "Salesforce",
+            "emails": [],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "object_id": "Account",
+                "object_name": "Account",
+                "upsert_field": ""
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 2,
+            "push_updates": false
+        }
+    ],
+    "form_pdf": {
+        "_id": "5d43c7ca78647a0015fabfd6",
+        "created_at": "2019-04-03T15:10:03.753Z",
+        "updated_at": "2019-08-06T10:46:29.756Z",
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "template_id": "5d43c7ca78647a0015fabf8a",
+        "html": "<div class=\"newdiv\" style=\"padding-left:40px;padding-right:40px;padding-top:40px;padding-bottom:40px\">\n<div style=\"display: inline-block; margin-left: 20px;margin-right: 20px; margin-top:5px;\">\n<h1><span style=\"font-size:48px;\"><strong><span style=\"color:#55830c;\"><span class=\"title\">BESTELLSCHEIN 2019</span></span></strong></span></h1>\n\n<h1><span style=\"font-size:48px;\"><strong><span style=\"color:#55830c;\">F&Uuml;R HYVIDO&nbsp;HYBRIDGERSTE</span></strong></span></h1>\n</div>\n\n<div style=\"display: inline-block; margin-left: 20px;margin-right: 20px; margin-top:5px; width:80%\">\n<table align=\"left\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:1000px;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\" style=\"text-align: left;\"><strong>Anschrift Landwirt:</strong></th>\n\t\t\t<th scope=\"col\" style=\"text-align: left;\"><strong>Anschrift H&auml;ndler:</strong></th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>{{027d-805c-73f7}}</td>\n\t\t\t<td>{{6357-521f-4cc1}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>{{14b2-917a-8873}}</td>\n\t\t\t<td>{{e5ce-1fc5-363f}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>{{0feb-28c3-b689}}&nbsp;{{f75c-37b5-e1df}}</td>\n\t\t\t<td>{{324b-a666-55d3}}&nbsp;{{4a4e-90cd-d0fc}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>{{d48d-6c58-d3c8}}</td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n<p><span style=\"font-size:20px;\"><strong><span style=\"font-family: Arial;\">&nbsp; &nbsp;Ihre Bestellung<sup>1</sup> </span></strong></span></p>\n\n<div style=\"display: inline-block; margin-left: 20px;margin-right: 20px; margin-top:5px;width:100%;\">\n<p><span style=\"font-size:12px;\">(Die Aussaatmenge betr&auml;gt ca. 2 bis 2,2 Einheiten je ha. Ein Big Bag entspricht 22 Einheiten.)</span></p>\n\n<table cellpadding=\"1\" style=\"border-collapse:collapse;width:100%;\">\n\t<tbody>\n\t\t<tr class=\"opportunityLineItemListHeading\">\n\t\t\t<td style=\"border-width: 1pt; border-style: solid; border-color: windowtext black windowtext windowtext; border-image: initial; background-color: rgb(153, 204, 153);\">\n\t\t\t<p style=\"text-align: center; line-height: normal;\"><strong><span style=\"color: black;\">Sorte</span></strong></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: 1pt solid windowtext; border-left: none; border-bottom: 1pt solid windowtext; border-right: 1pt solid black; background-color: rgb(153, 204, 153);\">\n\t\t\t<p style=\"text-align: center; line-height: normal;\"><strong><span style=\"color: black;\">Bestellmenge</span></strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<!-- {{formyoula_repeat_f7e2-c61c-8a3a}} -->\n\t\t<tr>\n\t\t\t<td style=\"border-top: none; border-left: solid windowtext 1.0pt; border-bottom: solid windowtext 1.0pt; border-right: solid black 1.0pt; background: white;\">\n\t\t\t<p style=\"text-align: center; line-height: normal;\"><span style=\"vertical-align: -webkit-baseline-middle;\">{{aece-570c-c78b}}</span></p>\n\t\t\t</td>\n\t\t\t<td style=\"border-top: none; border-left: none; border-bottom: solid windowtext 1.0pt; border-right: solid black 1.0pt; background: white;\">\n\t\t\t<p style=\"text-align: center; line-height: normal;\"><span style=\"vertical-align: -webkit-baseline-middle;\">{{f039-b501-27fb}}​</span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<!-- {{formyoula_repeat_f7e2-c61c-8a3a}} -->\n\t</tbody>\n</table>\n</div>\n\n<p><span style=\"font-size:12px;\"><strong><sup>&nbsp; &nbsp; &nbsp;1</sup></strong>Solange der Vorrat reicht. Gilt f&uuml;r alle Hyvido Verkaufssorten 2019.</span></p>\n\n<p>&nbsp;</p>\n\n<table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:1000px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td><span style=\"font-size:20px;\"><span style=\"color:#55830c;\"><strong>&nbsp; &nbsp; FR&Uuml;H BESTELLEN UND ZUS&Auml;TZLICH&nbsp;</strong></span></span></td>\n\t\t\t<td>\n\t\t\t<p style=\"margin-left:-.25pt;\"><span style=\"color:#55830c;\"><span style=\"font-size:20px;\"><strong>VERTRAUEN WIRD BELOHNT!</strong></span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td><span style=\"color:#55830c;\"><span style=\"font-size:20px;\"><strong>&nbsp; &nbsp; 5,‑&nbsp;&euro; JE EINHEIT SPAREN!</strong></span></span></td>\n\t\t\t<td>&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; Bestellen Sie Ihr Hyvido Saatgut bis zum <span style=\"color:#55830c;\"><strong>02.08.2019</strong></span> bei&nbsp;</td>\n\t\t\t<td>Beachten Sie unseren neuen<strong> <span style=\"color:#55830c;\">Mengenrabatt</span></strong> in der&nbsp;</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; Ihrem H&auml;ndler und sichern Sie sich so einen&nbsp;</td>\n\t\t\t<td>Saison 2019.</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; zus&auml;tzlichen Rabatt von 5,&ndash; &euro; je Einheit (110,&ndash; &euro; &nbsp;</td>\n\t\t\t<td>Sie sparen ab einer Bestellmenge von</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; je Big Bag)!</td>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=\"font-size:14px;\"><strong>10 Einheiten: 1,50 &euro; je Einheit</strong></span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=\"font-size:14px;\"><strong>50 Einheiten: 2,50 &euro; je Einheit</strong></span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style=\"font-size:14px;\"><strong>100 Einheiten: 3,00 &euro; je Einheit</strong></span></td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>&nbsp;</td>\n\t\t\t<td>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(Gilt auch bei Bestellung von Big Bags.)</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<div style=\"display: inline-block; margin-left: 20px;margin-right: 20px; margin-top:5px;\">\n<p><input class=\"jscb\" data-val=\"{{7ec1-46cc-81ba}}\" name=\"Hyvido\" type=\"checkbox\" />Ja, ich m&ouml;chte in der Anbausaison 2019/2020 unser Hyvido Anbautelegramm mit wertvollen Hinweisen zur optimalen Bestandesf&uuml;hrung als E-Mail-Newsletter (ca. 5 Ausgaben) erhalten.</p>\n\n<p><span style=\"font-size:12px;\">Die Verantwortliche gem&auml;&szlig; Datenschutzrecht ist die Syngenta Agro GmbH und die Verarbeitung Ihrer Daten erfolgt entsprechend der Datenschutzerkl&auml;rung der Syngenta Agro GmbH <u><a href=\"file:///C:/Users/t968949/Downloads/www.syngenta.de/unternehmen/datenschutz\">www.syngenta.de/unternehmen/datenschutz</a></u>. Sie erreichen die Datenschutzbeauftragte von Syngenta Agro unter Syngenta Agro GmbH, Abteilung Marketing, Postfach 1234, 63462 Maintal oder per Email an <u><a href=\"mailto:de.Datenschutz@syngenta.com\">de.Datenschutz@syngenta.com</a></u>.</span></p>\n</div>\n\n<hr />\n<div style=\"display: inline-block; margin-left: 20px;margin-right: 20px; margin-top:5px;\">\n<table border=\"0\" cellpadding=\"7\" cellspacing=\"5\" style=\"width:1000px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"font-size: 14px;\"><strong>&nbsp;Datum</strong></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 339px;\">\n\t\t\t<p><span style=\"font-size: 12px;\">&nbsp;</span><strong>Unterschrift Landwirt&nbsp; &nbsp;</strong> &nbsp; &nbsp; &nbsp;&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 48px;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 297px;\">\n\t\t\t<p><strong>Unterschrift Verkaufsberater​</strong></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>{{ef2f-279b-ab7c}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 339px;\">\n\t\t\t<p>&nbsp;{{027d-805c-73f7}}</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 48px;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 297px;\">\n\t\t\t<p>&nbsp;Syngenta Agro GmbH</p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 339px;\">\n\t\t\t<p>&nbsp;{{e7ac-0f87-4735}}</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 48px;\">\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 297px;\">{{6eef-1c80-5ef6}}</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p>&nbsp;</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 339px;\">\n\t\t\t<p>&nbsp;{{0b9c-1cfb-ca3d}}</p>\n\t\t\t</td>\n\t\t\t<td style=\"width: 48px;\">&nbsp;</td>\n\t\t\t<td style=\"width: 297px;\">\n\t\t\t<p>{{65f8-fc8a-300b}}</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>&nbsp;</p>\n</div>\n</div>\n\n<p><span style=\"font-size:12px;\">Syngenta Agro GmbH &ndash; Sitz der Gesellschaft: 63477 Maintal &ndash; Gesch&auml;ftsf&uuml;hrer: Dr. Manfred Hudetz &ndash; Amtsgericht Hanau HRB-Nr. 7225</span></p>\n\n<p>&nbsp;</p>\n\n<div class=\"footer\">\n<p><span style=\"font-size:12px;width: 100%;\"><img alt=\"\" src=\"https://syngenta--projectist--c.documentforce.com/servlet/servlet.ImageServer?id=0151w000000BLfD&amp;oid=00D1w0000008ahH\" style=\"width: 1000px; height: 100px;\" /></span></p>\n</div>\n",
+        "file_name": "DE Hyvido Bestellschein_{{027d-805c-73f7}}_{{5c67-1bd1-b48e}}",
+        "css": "<style>\n.footer {\n  position: fixed;\n  bottom: 0;\n  left: 0;\n  right: 0;\n  display: inline-block; \n}\n@media print {\nbody {-webkit-print-color-adjust: exact;}\n}\n</style>",
+        "javascript": " <script type=\"text/javascript\" src=\"https://d3iyvxaud7i110.cloudfront.net/vendor/jquery/jquery-2.1.3.min.js\"></script>\n<script>\n(function($){ \n$('input[type=\"checkbox\"].jscb').each(function() {\n           var d = $(this);\n           if (d.data('val')=='Yes') { d.attr('checked', 'checked'); }\n       }\n);\n\n})(jQuery);\n</script>                                       ",
+        "page_settings": {
+            "footer_html": "",
+            "header_html": "",
+            "enable_advanced_templating": true,
+            "disable_auto_page_break": false,
+            "disable_timezone_offset": false,
+            "disable_forms": false,
+            "engine": true,
+            "lowquality": false,
+            "image_dpi": 600,
+            "image_quality": 25,
+            "no_images": false,
+            "header_left": "",
+            "header_right": "",
+            "header_center": "",
+            "footer_left": "",
+            "footer_right": "",
+            "footer_center": "",
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "page_width": "",
+            "page_height": "",
+            "orientation": "Portrait",
+            "page_size": "A4"
+        },
+        "use_beta_engine": true,
+        "disable_bootstrap": false,
+        "use_custom": true,
+        "__v": 0,
+        "version": "",
+        "attributes": {
+            "github_repository_sha": "276375c34fc1db29eb357e7494ad9c36dc28afe6"
+        }
+    }
+}
