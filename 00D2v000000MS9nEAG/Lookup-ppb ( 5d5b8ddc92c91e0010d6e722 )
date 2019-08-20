@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-08-20T06:06:20.038Z",
         "attributes": {
-            "github_repository_sha": "e8c1e79713e9a5d4f5ebdd15952330b871bd437a"
+            "github_repository_sha": "7cee6e6119a3fe48eceda0dfe78adaccb24655c5"
         },
         "pages": [
             {
@@ -40,7 +40,7 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "Name",
+                        "sfdc_query_fields": "OwnerId",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
