@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-08-20T06:06:20.038Z",
         "attributes": {
-            "github_repository_sha": "3d97962193748d3c557ab682ea6ccaf669ffcdcd"
+            "github_repository_sha": "e8c1e79713e9a5d4f5ebdd15952330b871bd437a"
         },
         "pages": [
             {
@@ -18,6 +18,43 @@
                 "component_count": null,
                 "deployed": true,
                 "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Find",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Name",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5d5b8ddc92c91e0010d6e728",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "1e1d-e11e-e7fe",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
                     {
                         "type": "SalesforceSelect",
                         "name": "",
@@ -45,7 +82,7 @@
                         "sfdc_query_visibility": "All Records",
                         "sfdc_query_order_by": "",
                         "sfdc_query_search_group": "",
-                        "sfdc_auto_fill_id": "5d5b8ddc92c91e0010d6e728",
+                        "sfdc_auto_fill_id": "",
                         "object_label": "None Selected",
                         "object_api_name": "Account",
                         "component_id": "8c57-c1b7-fa5b",
