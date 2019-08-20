@@ -1,0 +1,223 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "lookup-spec",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-20T07:33:44.448Z",
+        "attributes": {
+            "github_repository_sha": "51f56fce1430d6eb92bfbbc440a433808d1549fd"
+        },
+        "pages": [
+            {
+                "page_id": "6458-b4af-753c",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Oil\nSingapore",
+                        "component_id": "7815-e7bf-1136",
+                        "attributes": {
+                            "select_option_values": "",
+                            "unselected_label": "none",
+                            "dependent_list_values": ""
+                        },
+                        "required": false,
+                        "value": "",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Find",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Name",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5d5ba25892c91e0010d6e739",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "0008-0311-a397",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Account Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "9c89-c5c6-3b8e",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Account Type",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "6537-b27b-6487",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "OwnerId",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Find",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "User",
+                        "component_id": "1e1d-e11e-e7fe",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "7700-bc29-933a",
+                        "attributes": {
+                            "script": "formyoula.form_fields[\"Select List\"].on(\"input:set:success\", function(e){\nvar lookup = formyoula.form_fields[\"Record Lookup\"]\nlookup.set({\"name\":this.get(\"value\")}).trigger(\"change:value\", lookup);\n})",
+                            "script_detail": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": [
+        {
+            "_id": "5d5ba25892c91e0010d6e739",
+            "created_at": "2019-08-20T04:38:31.436Z",
+            "updated_at": "2019-08-20T07:33:44.491Z",
+            "template_id": "5d5ba25892c91e0010d6e731",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Account Name ( Name )",
+                    "component_id": "9c89-c5c6-3b8e",
+                    "component_name": "Account Name ( Page: Details )"
+                },
+                {
+                    "field_id": "Type",
+                    "field_name": "Account Type ( Type )",
+                    "component_id": "6537-b27b-6487",
+                    "component_name": "Account Type ( Page: Details )"
+                },
+                {
+                    "field_id": "OwnerId",
+                    "field_name": "Owner ID ( OwnerId )",
+                    "component_id": "1e1d-e11e-e7fe",
+                    "component_name": "OwnerId ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Account",
+                "object_name": "Account",
+                "upsert_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        }
+    ]
+}
