@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-08-20T06:06:20.038Z",
         "attributes": {
-            "github_repository_sha": "32e2caa77c5a27545e6ac2b9fde08663d65206e8"
+            "github_repository_sha": "3b0e5d89e87f7af5f8a65da404664156ddfd5df4"
         },
         "pages": [
             {
@@ -41,7 +41,7 @@
                         },
                         "sfdc_query_fields": "Name",
                         "sfdc_query_limit": "10",
-                        "sfdc_filter_fields": "",
+                        "sfdc_filter_fields": "Name='United Oil & Gas, UK'",
                         "sfdc_query_visibility": "All Records",
                         "sfdc_query_order_by": "",
                         "sfdc_query_search_group": "",
