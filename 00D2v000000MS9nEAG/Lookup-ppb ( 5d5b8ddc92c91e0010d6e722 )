@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-08-20T06:06:20.038Z",
         "attributes": {
-            "github_repository_sha": "9b943e099afc5e132d7a4a3acc229507a7f7ccdf"
+            "github_repository_sha": "0c5d14d634423e226a42316576516a3bf929de79"
         },
         "pages": [
             {
@@ -130,7 +130,7 @@
                         "version": "2",
                         "component_id": "7700-bc29-933a",
                         "attributes": {
-                            "script": "formyoula.form_fields[\"Record Lookup\"].on(\"input:set:success\", function(e){\nvar lookup = formyoula.form_fields[\"OwnerId\"]\nlookup.set({\"name\":this.get(\"value\")}).trigger(\"change:value\", lookup);\n})",
+                            "script": "formyoula.form_fields[\"Record Lookup\"].on(\"input:set:success\", function(e){\nconsole.log(this.get(\"value\"));\nvar lookup = formyoula.form_fields[\"OwnerId\"]\nlookup.set({\"name\":this.get(\"value\")}).trigger(\"change:value\", lookup);\n})",
                             "script_detail": ""
                         },
                         "required": false,
@@ -158,7 +158,7 @@
         {
             "_id": "5d5b8ddc92c91e0010d6e728",
             "created_at": "2019-08-20T04:38:31.436Z",
-            "updated_at": "2019-08-20T06:35:12.533Z",
+            "updated_at": "2019-08-20T07:12:52.875Z",
             "template_id": "5d5b8ddc92c91e0010d6e722",
             "created_by_id": "5cc17f16630ca900103bac08",
             "owner_id": "5cc17f16630ca900103bac08",
@@ -178,12 +178,6 @@
                     "field_name": "Account Type ( Type )",
                     "component_id": "6537-b27b-6487",
                     "component_name": "Account Type ( Page: Details )"
-                },
-                {
-                    "field_id": "OwnerId",
-                    "field_name": "Owner ID ( OwnerId )",
-                    "component_id": "1e1d-e11e-e7fe",
-                    "component_name": "OwnerId ( Page: Details )"
                 }
             ],
             "public_form": {
@@ -198,7 +192,7 @@
             },
             "is_disabled": false,
             "version": 1,
-            "__v": 3
+            "__v": 4
         }
     ]
 }
