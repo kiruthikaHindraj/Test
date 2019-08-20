@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-08-20T06:06:20.038Z",
         "attributes": {
-            "github_repository_sha": "c6fcde0985ad49f2e62b8d429859d6eeded4c1e7"
+            "github_repository_sha": "9b943e099afc5e132d7a4a3acc229507a7f7ccdf"
         },
         "pages": [
             {
@@ -130,7 +130,7 @@
                         "version": "2",
                         "component_id": "7700-bc29-933a",
                         "attributes": {
-                            "script": "formyoula.form_fields[\"Select Record\"].on(\"input:set:success\", function(e){\nvar lookup = formyoula.form_fields[\"OwnerId\"]\nlookup.set({\"name\":this.get(\"value\")}).trigger(\"change:value\", lookup);\n})",
+                            "script": "formyoula.form_fields[\"Record Lookup\"].on(\"input:set:success\", function(e){\nvar lookup = formyoula.form_fields[\"OwnerId\"]\nlookup.set({\"name\":this.get(\"value\")}).trigger(\"change:value\", lookup);\n})",
                             "script_detail": ""
                         },
                         "required": false,
