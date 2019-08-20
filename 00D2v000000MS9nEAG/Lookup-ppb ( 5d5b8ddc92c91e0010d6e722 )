@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-08-20T06:06:20.038Z",
         "attributes": {
-            "github_repository_sha": "f8ef631c2c74449cf1de0ec8ea87792fe95c89f2"
+            "github_repository_sha": "56a4bb3d0810255ac636986ce7244bb5c3858c8c"
         },
         "pages": [
             {
@@ -40,7 +40,7 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "OwnerId",
+                        "sfdc_query_fields": "Name",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
@@ -76,7 +76,7 @@
                             "offline_sync_filter": "",
                             "custom_offline_lookup_filter": ""
                         },
-                        "sfdc_query_fields": "Name",
+                        "sfdc_query_fields": "OwnerId",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
