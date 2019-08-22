@@ -42,7 +42,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "JavaScript",
@@ -74,7 +75,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "54865b32850bce3f69d62b64026ca615ee652453"
+            "github_repository_sha": "ee55c69363f50cf0ca4d1f962f7db984e44ab6da"
         }
     },
     "connections": []
