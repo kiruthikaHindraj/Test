@@ -42,7 +42,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "HTML",
@@ -53,7 +54,7 @@
                         "component_id": "0855-7410-f68b",
                         "attributes": {
                             "html_detail": "",
-                            "html_edit": "<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.8/inputmask/inputmask.min.js'></script>"
+                            "html_edit": "<head><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/inputmask-multi/1.2.0/js/jquery.inputmask-multi.js'></script></head>"
                         },
                         "required": false,
                         "components": [],
@@ -90,7 +91,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "c5a79c9ddd4d746bafdf74f85ef3739529c2c60c"
+            "github_repository_sha": "4ebea456a73e64b69f62aa86a61db40c7f7fab53"
         }
     },
     "connections": []
