@@ -42,8 +42,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "HTML",
@@ -54,23 +53,7 @@
                         "component_id": "0855-7410-f68b",
                         "attributes": {
                             "html_detail": "",
-                            "html_edit": "<head><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/inputmask-multi/1.2.0/js/jquery.inputmask-multi.js'></script></head>"
-                        },
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "JavaScript",
-                        "name": "JavaScript",
-                        "category": "media",
-                        "label": "Custom JavaScript",
-                        "version": "2",
-                        "component_id": "4497-db40-8fd0",
-                        "attributes": {
-                            "script_detail": "",
-                            "script": "$(\"input\").inputmask();\n\n$(\"#phone\").inputmask({\"mask\": \"99999-99999\"});"
+                            "html_edit": "<head><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/imask/5.1.9/imask.min.js'></script></head>"
                         },
                         "required": false,
                         "components": [],
@@ -91,7 +74,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "4ebea456a73e64b69f62aa86a61db40c7f7fab53"
+            "github_repository_sha": "a16bbe283bc478f9f5f914900e6a4ad62cebf00f"
         }
     },
     "connections": []
