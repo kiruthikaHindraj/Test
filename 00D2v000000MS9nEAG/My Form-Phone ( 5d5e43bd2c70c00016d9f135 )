@@ -31,6 +31,18 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "e7cc-c0fa-a4b9",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -46,7 +58,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "7f75cc0cdc93683ce5439cf585c25cb32864b6ce"
+            "github_repository_sha": "6bcf45a1c39e8b1c8180acb1c946d4ea84b6f693"
         }
     },
     "connections": []
