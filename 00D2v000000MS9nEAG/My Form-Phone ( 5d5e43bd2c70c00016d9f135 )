@@ -43,6 +43,22 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "4497-db40-8fd0",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "$(\":input\").inputmask();\n\n$(\"#phone\").inputmask({\"mask\": \"99999-99999\"});"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -58,7 +74,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "6bcf45a1c39e8b1c8180acb1c946d4ea84b6f693"
+            "github_repository_sha": "54865b32850bce3f69d62b64026ca615ee652453"
         }
     },
     "connections": []
