@@ -42,8 +42,23 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "HTML",
+                        "name": "HTML",
+                        "category": "media",
+                        "label": "Custom HTML",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "0855-7410-f68b",
+                        "attributes": {
+                            "html_detail": "",
+                            "html_edit": "<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.8/inputmask/inputmask.min.js'></script>"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     },
                     {
                         "type": "JavaScript",
@@ -54,7 +69,7 @@
                         "component_id": "4497-db40-8fd0",
                         "attributes": {
                             "script_detail": "",
-                            "script": "$(\":input\").inputmask();\n\n$(\"#phone\").inputmask({\"mask\": \"99999-99999\"});"
+                            "script": "$(\"input\").inputmask();\n\n$(\"#phone\").inputmask({\"mask\": \"99999-99999\"});"
                         },
                         "required": false,
                         "components": [],
@@ -75,7 +90,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ee55c69363f50cf0ca4d1f962f7db984e44ab6da"
+            "github_repository_sha": "c5a79c9ddd4d746bafdf74f85ef3739529c2c60c"
         }
     },
     "connections": []
