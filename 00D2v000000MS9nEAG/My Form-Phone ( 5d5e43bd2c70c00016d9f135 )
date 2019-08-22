@@ -42,7 +42,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "HTML",
@@ -53,7 +54,7 @@
                         "component_id": "0855-7410-f68b",
                         "attributes": {
                             "html_detail": "",
-                            "html_edit": "<head><script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/imask/5.1.9/imask.min.js'></script></head>"
+                            "html_edit": "<!doctype html>\n<html>\n<head>\n\n  <link rel=\"stylesheet\" href=\"css/masking-input/masking-input.css\"/>\n  <style>\n  /* additional styles */\n  li {line-height: 2; clear: both;}\n  label {display: inline-block; width: 200px;}\n  .shell span {color: pink;}\n  li {font-family: helvetica; font-size: 0.93rem;}\n  </style>\n     \n</head>\n\n<body>\n<ul>\n<li>\n  <label for=\"tel\">Enter Phone</label>\n  <input id=\"tel\" type=\"tel\" name=\"phone\" placeholder=\"(XXXX) XXX--XXXX\" pattern=\"\\(\\d{4}\\) \\d{3}\\--\\d{4}\" class=\"masked\" title=\"Enter number without parenthesis\">\n</li>\n</ul>\n\n<script src=\"js/masking-input/masking-input.js\" data-autoinit=\"true\"></script>\n\n</body>\n</html>"
                         },
                         "required": false,
                         "components": [],
@@ -74,7 +75,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "a16bbe283bc478f9f5f914900e6a4ad62cebf00f"
+            "github_repository_sha": "70bd60664bbb77b8c035ce3d4fce9374bec655ea"
         }
     },
     "connections": []
