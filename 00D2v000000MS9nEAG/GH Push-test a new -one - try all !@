@@ -31,6 +31,34 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Email",
+                        "name": "Email",
+                        "category": "input",
+                        "label": "Email Field",
+                        "icon": "/scripts/formbuilder/img/email.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "61ff-6753-9007",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Header Text",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "h2",
+                        "component_id": "2e8a-4163-79c6",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Phone",
                         "name": "Phone",
                         "category": "input",
@@ -40,8 +68,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -57,7 +84,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "a2d7c63a4b7e6473c1066956a4698c3d1a3f1747"
+            "github_repository_sha": "6bfb61fc4524a70e511fb90a458ef036bc8521f3"
         }
     },
     "connections": []
