@@ -56,7 +56,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Phone",
@@ -68,7 +69,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -84,7 +86,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "6bfb61fc4524a70e511fb90a458ef036bc8521f3"
+            "github_repository_sha": "033b3849926711d547dfc1b7be7603cb8b2bb5a9"
         }
     },
     "connections": []
