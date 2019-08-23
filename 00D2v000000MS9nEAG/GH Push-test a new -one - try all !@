@@ -70,7 +70,11 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": [],
-                        "attributes": {}
+                        "attributes": {
+                            "country_selection_value": "+91",
+                            "auto_format": "true",
+                            "country_selection": "false"
+                        }
                     }
                 ]
             }
@@ -86,7 +90,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "033b3849926711d547dfc1b7be7603cb8b2bb5a9"
+            "github_repository_sha": "a8bddd7ee7f690a416f20be921cfeafc6aab022e"
         }
     },
     "connections": []
