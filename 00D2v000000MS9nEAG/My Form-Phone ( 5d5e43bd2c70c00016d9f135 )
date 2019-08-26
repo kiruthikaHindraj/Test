@@ -42,7 +42,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Phone",
@@ -75,7 +76,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ef4f7ea2b769db2866dcaacc77882053a541d7c8"
+            "github_repository_sha": "ae3f0da37aef4e252af55aa8d6a00e39f6853fe6"
         }
     },
     "connections": []
