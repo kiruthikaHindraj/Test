@@ -42,24 +42,6 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
-                    },
-                    {
-                        "type": "Phone",
-                        "name": "Phone",
-                        "category": "input",
-                        "label": "Phone Field_1",
-                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
-                        "component_id": "da8c-9419-b452",
-                        "attributes": {
-                            "country_selection_value": "",
-                            "auto_format": "false",
-                            "country_selection": "false"
-                        },
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
                         "controlling_elements": []
                     }
                 ]
@@ -76,7 +58,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "7276229460dec34fb16acf258ed5e12a4dab4d5a"
+            "github_repository_sha": "6bf8527d5e8583715668ee5a59c2f5d60ab4e777"
         }
     },
     "connections": []
