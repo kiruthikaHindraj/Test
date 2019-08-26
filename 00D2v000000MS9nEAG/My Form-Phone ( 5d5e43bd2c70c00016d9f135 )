@@ -44,22 +44,6 @@
                         "repeat_value": [],
                         "controlling_elements": [],
                         "attributes": {}
-                    },
-                    {
-                        "type": "HTML",
-                        "name": "HTML",
-                        "category": "media",
-                        "label": "Custom HTML",
-                        "icon": "/scripts/formbuilder/img/paragraph.png",
-                        "component_id": "0855-7410-f68b",
-                        "attributes": {
-                            "html_detail": "",
-                            "html_edit": "<!doctype html>\n<html>\n<head>\n\n  <link rel=\"stylesheet\" href=\"https://github.com/estelle/input-masking/blob/master/css/masking-input.css\"/>\n  <style>\n  /* additional styles */\n  li {line-height: 2; clear: both;}\n  label {display: inline-block; width: 200px;}\n  .shell span {color: pink;}\n  li {font-family: helvetica; font-size: 0.93rem;}\n  </style>\n     \n</head>\n\n<body>\n<ul>\n<li>\n  <label for=\"tel\">Enter Phone</label>\n  <input id=\"tel\" type=\"tel\" name=\"phone\" placeholder=\"(XXXX) XXX--XXXX\" pattern=\"\\(\\d{4}\\) \\d{3}\\--\\d{4}\" class=\"masked\" title=\"Enter number without parenthesis\">\n</li>\n</ul>\n\n<script src=\"https://github.com/estelle/input-masking/blob/master/js/input-mask.min.js\" data-autoinit=\"true\"></script>\n\n</body>\n</html>"
-                        },
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
                     }
                 ]
             }
@@ -75,7 +59,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "963ced71e4e48499845989a2b3bb8307e861007e"
+            "github_repository_sha": "bbcdfaab7187d2f295f751825829cf69e817efd2"
         }
     },
     "connections": []
