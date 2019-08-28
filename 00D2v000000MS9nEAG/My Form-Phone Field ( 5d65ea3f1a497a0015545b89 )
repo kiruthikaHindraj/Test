@@ -1,0 +1,51 @@
+{
+    "form": {
+        "created_by_id": "5cdd2055b9e3bc001a597983",
+        "owner_id": "5cdd2055b9e3bc001a597983",
+        "name": "My Form-Phone Field",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-08-28T02:42:46.315Z",
+        "pages": [
+            {
+                "page_id": "1ca0-d886-d13b",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "3dcc-6cfa-caa0",
+                        "attributes": {
+                            "country_selection_value": "+91",
+                            "auto_format": "true",
+                            "country_selection": "true",
+                            "country_code_selected": "IN"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "123",
+            "first_name": "test",
+            "id": "5cdd2055b9e3bc001a597983"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
