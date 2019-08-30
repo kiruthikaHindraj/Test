@@ -37,7 +37,43 @@
                         "type": "Phone",
                         "name": "Phone",
                         "category": "input",
-                        "label": "Phone Field",
+                        "label": "Phone Field with code",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "2478-5db8-2043",
+                        "attributes": {
+                            "country_selection_value": "+1",
+                            "country_code_selected": "US",
+                            "auto_format": "true",
+                            "country_selection": "false"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field with code without format",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "e47a-86da-0e74",
+                        "attributes": {
+                            "country_selection_value": "+1",
+                            "country_code_selected": "US",
+                            "auto_format": "false",
+                            "country_selection": "false"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field without code",
                         "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
                         "component_id": "8ed5-28f7-bd45",
                         "attributes": {
@@ -61,8 +97,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -78,7 +113,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "12c913682ba3d3be9acb3a0c438fa86a25b08b24"
+            "github_repository_sha": "9ed25f43fdf5c792d0332c9f7a43a053435ee2dc"
         }
     },
     "connections": []
