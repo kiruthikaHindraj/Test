@@ -59,8 +59,8 @@
                         "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
                         "component_id": "e47a-86da-0e74",
                         "attributes": {
-                            "country_selection_value": "+1",
-                            "country_code_selected": "US",
+                            "country_selection_value": "+91",
+                            "country_code_selected": "IN",
                             "auto_format": "false",
                             "country_selection": "false"
                         },
@@ -115,7 +115,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -131,7 +132,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "1027641f96ede4bf7db3dce83a1c19225146405b"
+            "github_repository_sha": "a1ea5bbf199da0205b71db434d0d1e710b124f46"
         }
     },
     "connections": []
