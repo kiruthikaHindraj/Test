@@ -73,6 +73,24 @@
                         "type": "Phone",
                         "name": "Phone",
                         "category": "input",
+                        "label": "Phone Field without code and select",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "2959-e551-59e1",
+                        "attributes": {
+                            "country_selection_value": "",
+                            "country_code_selected": "",
+                            "auto_format": "false",
+                            "country_selection": "true"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
                         "label": "Phone Field without code",
                         "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
                         "component_id": "8ed5-28f7-bd45",
@@ -97,8 +115,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -114,7 +131,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "e47bdbe1267f3c12ca6aacc37429584b33d5ca23"
+            "github_repository_sha": "1027641f96ede4bf7db3dce83a1c19225146405b"
         }
     },
     "connections": []
