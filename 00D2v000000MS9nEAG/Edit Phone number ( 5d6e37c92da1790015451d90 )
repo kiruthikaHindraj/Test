@@ -93,7 +93,7 @@
                         "attributes": {
                             "country_selection_value": "+1",
                             "country_code_selected": "US",
-                            "auto_format": "false",
+                            "auto_format": "true",
                             "country_selection": "false"
                         },
                         "required": false,
@@ -117,7 +117,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "d40901cd800bc7f47b79492db968b3264a307f6d"
+            "github_repository_sha": "1c52001398cd2baca1e7d86b3c812841ba438051"
         }
     },
     "connections": [
