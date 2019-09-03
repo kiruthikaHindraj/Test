@@ -54,6 +54,18 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Currency",
+                        "name": "Currency",
+                        "category": "input",
+                        "label": "Currency Field",
+                        "icon": "/scripts/formbuilder/img/currency.png",
+                        "component_id": "5f4c-b240-9a19",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Text",
                         "name": "Text",
                         "category": "input",
@@ -117,7 +129,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "2a7d77119aa9f2b96eb6387db1281b0bdd706787"
+            "github_repository_sha": "90d2f96756e25c22a7babd2545a02275051a27a1"
         }
     },
     "connections": [
