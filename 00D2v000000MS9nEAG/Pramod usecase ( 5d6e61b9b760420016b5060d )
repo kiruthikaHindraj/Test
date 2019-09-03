@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-09-03T12:51:05.121Z",
         "attributes": {
-            "github_repository_sha": "a71469f9946f33ebcf36e36d0e6a2a821bdeaf28"
+            "github_repository_sha": "c3231be95470d4d14c66953dcf540dd5e87e5458"
         },
         "pages": [
             {
@@ -84,8 +84,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Hidden",
@@ -98,8 +97,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Header",
@@ -211,8 +209,7 @@
                                 "icon": "/scripts/formbuilder/img/hidden.png",
                                 "component_id": "0d80-6439-e534",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "type": "Hidden",
@@ -223,8 +220,7 @@
                                 "icon": "/scripts/formbuilder/img/hidden.png",
                                 "component_id": "d018-2150-b80d",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "type": "Salesforce",
@@ -286,8 +282,7 @@
                                 "icon": "/scripts/formbuilder/img/checkbox.png",
                                 "component_id": "9e2c-eb82-124a",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "type": "Email",
@@ -297,21 +292,6 @@
                                 "icon": "/scripts/formbuilder/img/email.png",
                                 "component_id": "28a3-195b-d07f",
                                 "required": true,
-                                "components": [],
-                                "attributes": {}
-                            },
-                            {
-                                "type": "JavaScript",
-                                "name": "JavaScript",
-                                "category": "media",
-                                "label": "Custom JavaScript",
-                                "version": 2,
-                                "component_id": "9095-61db-f845",
-                                "attributes": {
-                                    "script": "//Pre-fill success event - Contact Roles\nformyoula.form_fields['5c35-c2f7-7a01'].on('element:create:success',function(){\n //Hide all the SF element\n $('.existing_repeat_entry_panel #component-f66b-dde2-631c').css('display','none')\n})\n//Pre-fill success event - Contact Roles\nformyoula.form_fields['5c35-c2f7-7a01'].on('prefill:success',function(){\n //Hide all the SF element\n $('.existing_repeat_entry_panel #component-f66b-dde2-631c').css('display','none')\n})",
-                                    "script_detail": ""
-                                },
-                                "required": false,
                                 "components": []
                             }
                         ],
@@ -329,8 +309,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Hidden",
@@ -343,8 +322,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Hidden",
@@ -354,22 +332,6 @@
                         "label": "OpportunityContactRole_OpportunityId",
                         "icon": "/scripts/formbuilder/img/hidden.png",
                         "component_id": "53ea-e1ca-33fe",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
-                    },
-                    {
-                        "type": "JavaScript",
-                        "name": "JavaScript",
-                        "category": "media",
-                        "label": "Record delete Script",
-                        "component_id": "f6be-e123-2483",
-                        "attributes": {
-                            "script_detail": "",
-                            "script": "function delete_sfdc_record(e,t,n){function o(e,t){new Lawnchair({name:e,adapter:localStorage.getItem(\"f_db_adapter\")},function(e){e.all(function(n){n.every(function(n){return n.Id!=t||(e.remove(n.key),!1)})})})}function a(e,t){new Lawnchair({name:e,adapter:localStorage.getItem(\"f_db_adapter\")},function(e){e.all(function(n){n.every(function(n){return n.Id!=t||(e.remove(n.key),!1)})})})}$(\"#component-\"+e+\" .before_delete\").length||($(\"#component-\"+e+\"  .delete\").addClass(\"hide\"),$(\"#component-\"+e+\"  .panel-body\").append('<a class=\"btn btn-danger btn-block before_delete\">Delete</a>'),JSON.parse(localStorage.getItem(\"sfdc_delete_request_queue\"))||localStorage.setItem(\"sfdc_delete_request_queue\",JSON.stringify({})),$(\"#component-\"+e+\"  .before_delete\").on(\"click\",function(l){var d=$(this).parent(\".panel-body\").find(\".delete\").attr(\"data-item_index\"),r=window.formyoula.form_fields[t+d],c=window.formyoula.form_fields[e];r&&c&&($(this).parent(\".panel-body\").find(\".delete\").click(),a(\"offline_lookup_\"+c.get(\"component_id\").replace(/-/g,\"\")+\"_temp_\"+n,r.value),o(\"offline_lookup_\"+c.get(\"sfdc_auto_fill_id\")+\"_temp_\"+n,r.value),window.formyoula.sfdc.del(c.get(\"object_api_name\"),r.value,function(e){},function(e){var t=JSON.parse(localStorage.getItem(\"sfdc_delete_request_queue\"));t[r.value]={record_id:r.value,object_api_name:c.get(\"object_api_name\")},localStorage.setItem(\"sfdc_delete_request_queue\",JSON.stringify(t))}))}))}"
-                        },
                         "required": false,
                         "components": [],
                         "repeat_value": [],
@@ -385,22 +347,6 @@
                         "component_id": "9d79-f275-bbbc",
                         "attributes": {
                             "position": "Left"
-                        },
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "JavaScript",
-                        "name": "JavaScript",
-                        "category": "media",
-                        "label": "PreFill",
-                        "version": "2",
-                        "component_id": "aa90-63ec-e289",
-                        "attributes": {
-                            "script_detail": "",
-                            "script": "var timeout;\nvar timeout_time =  5000;\nformyoula.form_fields[\"f7e2-c61c-8a3a\"].on(\"prefill:success\", function(e){\nformyoula.event_trigger(\"main:spinner_dialog\",{show:true});\nclearTimeout(timeout);\ntimeout = setTimeout(function(){\nformyoula.event_trigger(\"main:spinner_dialog\",{show:false});\nformyoula.form_fields[\"f7e2-c61c-8a3a\"].trigger(\"change\")\n},timeout_time)\n})"
                         },
                         "required": false,
                         "components": [],
@@ -442,8 +388,7 @@
                                 "icon": "/scripts/formbuilder/img/hidden.png",
                                 "component_id": "2f41-ae0f-bb13",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "components": [],
@@ -504,8 +449,7 @@
                                 "icon": "/scripts/formbuilder/img/number.png",
                                 "component_id": "f039-b501-27fb",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "components": [],
@@ -515,8 +459,7 @@
                                 "label": "Einheit",
                                 "category": "input",
                                 "name": "Number",
-                                "type": "Number",
-                                "attributes": {}
+                                "type": "Number"
                             },
                             {
                                 "type": "Currency",
@@ -532,19 +475,6 @@
                                     "suffix": "",
                                     "currency_locale": ""
                                 }
-                            },
-                            {
-                                "type": "JavaScript",
-                                "name": "JavaScript",
-                                "category": "media",
-                                "label": "Custom JavaScript",
-                                "component_id": "3215-57cf-a470",
-                                "attributes": {
-                                    "script_detail": "",
-                                    "script": "//Add a javascript element inside  repat group with following code\n//Pass repeat_group_component_id, sub_component_id, template_id)\ndelete_sfdc_record(\"f7e2-c61c-8a3a\",\"2f41-ae0f-bb13\", \"59d47d13b6aeac0015f167b5\");\n\n//Script for Opportunity Products\nformyoula.form_fields['f7e2-c61c-8a3a'].on('element:create:success',function(){\n $('.existing_repeat_entry_panel #component-37b6-fecf-51c0').css('display','none')\n})\n//Script for Opportunity Products\nformyoula.form_fields['f7e2-c61c-8a3a'].on('prefill:success',function(){\n $('.existing_repeat_entry_panel #component-37b6-fecf-51c0').css('display','none')\n})"
-                                },
-                                "required": false,
-                                "components": []
                             }
                         ],
                         "repeat_value": [],
@@ -561,8 +491,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Hidden",
@@ -575,8 +504,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Date",
@@ -666,8 +594,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "HTML",
@@ -696,8 +623,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Hidden",
@@ -710,8 +636,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "SalesforceSelect",
@@ -745,36 +670,6 @@
                         "object_label": "None Selected",
                         "object_api_name": "Account",
                         "component_id": "07df-5343-dc4e",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "JavaScript",
-                        "name": "JavaScript",
-                        "category": "media",
-                        "label": "Opportunity Contact Repeat Group Prefills",
-                        "component_id": "ee04-dc8c-2c07",
-                        "attributes": {
-                            "script_detail": "",
-                            "script": ""
-                        },
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "JavaScript",
-                        "name": "JavaScript",
-                        "category": "media",
-                        "label": "Opp Product Validation",
-                        "component_id": "68d9-878c-8ba9",
-                        "attributes": {
-                            "script_detail": "",
-                            "script": ""
-                        },
                         "required": false,
                         "components": [],
                         "repeat_value": [],
