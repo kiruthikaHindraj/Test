@@ -38,7 +38,7 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "CloseDate,IsClosed,Name,StageName",
+                        "sfdc_query_fields": "CloseDate,IsClosed,Name,StageName,IsWon",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "isclosed=false",
                         "sfdc_query_visibility": "All Records",
@@ -116,14 +116,14 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "f69ba1fc3f494070a65063c6a27f6581622b86ca"
+            "github_repository_sha": "c9084666e4a68b6a90ea24d8e486fbd888779e98"
         }
     },
     "connections": [
         {
             "_id": "5d6e823d58e89b0015d27b11",
             "created_at": "2019-09-03T15:09:49.326Z",
-            "updated_at": "2019-09-03T15:24:13.978Z",
+            "updated_at": "2019-09-03T15:32:07.678Z",
             "template_id": "5d6e8219d2c98d0016ae6341",
             "created_by_id": "5cc17f16630ca900103bac08",
             "owner_id": "5cc17f16630ca900103bac08",
@@ -163,7 +163,7 @@
                 "repeat_group": "",
                 "skip_field": "",
                 "skip_field_false": "",
-                "update_field": ""
+                "update_field": "2656-e41a-15f8"
             },
             "is_disabled": false,
             "version": 1,
