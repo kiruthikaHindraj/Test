@@ -75,7 +75,9 @@
                 ]
             }
         ],
-        "connections": [],
+        "connections": [
+            "Salesforce"
+        ],
         "created_by": {
             "last_name": "H",
             "first_name": "Shanu",
@@ -84,7 +86,49 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "1fed42e9865f85b2d75d493cf9351c129fefbdfa"
+        }
     },
-    "connections": []
+    "connections": [
+        {
+            "_id": "5d6e823d58e89b0015d27b11",
+            "created_at": "2019-09-03T15:09:49.326Z",
+            "updated_at": "2019-09-03T15:19:08.498Z",
+            "template_id": "5d6e8219d2c98d0016ae6341",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "StageName",
+                    "field_name": "Stage ( StageName )",
+                    "component_id": "0ccc-ce15-766c",
+                    "component_name": "Select List ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false,
+                "object_id": "Opportunity",
+                "object_name": "Opportunity",
+                "upsert_field": "",
+                "attachment": "",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": ""
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 1,
+            "push_updates": true
+        }
+    ]
 }
