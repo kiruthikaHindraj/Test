@@ -63,7 +63,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Text",
@@ -129,14 +130,14 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "90d2f96756e25c22a7babd2545a02275051a27a1"
+            "github_repository_sha": "c36499eda5a2e1f068040a063596823ea4b8e880"
         }
     },
     "connections": [
         {
             "_id": "5d6e37e5c2f3ce001091d489",
             "created_at": "2019-09-03T09:52:37.990Z",
-            "updated_at": "2019-09-03T09:55:03.789Z",
+            "updated_at": "2019-09-03T11:01:28.904Z",
             "template_id": "5d6e37c92da1790015451d90",
             "created_by_id": "5cc17f16630ca900103bac08",
             "owner_id": "5cc17f16630ca900103bac08",
@@ -161,6 +162,12 @@
                     "field_name": "Phone Number ( Phone_Number__c )",
                     "component_id": "8c02-3b5e-2746",
                     "component_name": "Phone Number ( Page: Details )"
+                },
+                {
+                    "field_id": "Industry",
+                    "field_name": "Industry ( Industry )",
+                    "component_id": "5f4c-b240-9a19",
+                    "component_name": "Currency Field ( Page: Details )"
                 }
             ],
             "public_form": {
@@ -175,7 +182,7 @@
             },
             "is_disabled": false,
             "version": 1,
-            "__v": 5,
+            "__v": 6,
             "push_updates": false
         }
     ]
