@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-09-03T12:51:05.121Z",
         "attributes": {
-            "github_repository_sha": "d67352034e3951437025a30b1fa15a3739732d6e"
+            "github_repository_sha": "97abe53278e1d62b9f4d0d3b996cbf5d70124f10"
         },
         "pages": [
             {
@@ -26,9 +26,10 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
+                            "enable_clear_button": false,
                             "disable_incremental_sync": true,
                             "custom_offline_lookup_filter": "",
-                            "offline_sync_filter": "isclosed=false AND Year__c='2020' AND RecordTypeId='01224000000FMNrAAO' AND Product_Category__c='Corn' AND product_type__c='Seeds' AND Country__c='DE'",
+                            "offline_sync_filter": "isclosed=false",
                             "show_auto_search_results": false,
                             "button": "Find",
                             "enable_barcode_scanner": false,
@@ -41,9 +42,9 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "CloseDate,Corporate_Account_Name__c,Name,StageName",
+                        "sfdc_query_fields": "CloseDate,IsClosed,Name,StageName",
                         "sfdc_query_limit": "10",
-                        "sfdc_filter_fields": "isclosed=false AND Year__c='2020' AND RecordTypeId='01224000000FMNrAAO' AND Product_Category__c='Corn' AND product_type__c='Seeds' AND Country__c='DE'",
+                        "sfdc_filter_fields": "isclosed=false",
                         "sfdc_query_visibility": "My Records",
                         "sfdc_query_order_by": "",
                         "sfdc_query_search_group": "All Fields",
