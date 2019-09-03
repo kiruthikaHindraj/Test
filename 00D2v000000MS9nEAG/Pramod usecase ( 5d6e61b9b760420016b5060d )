@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-09-03T12:51:05.121Z",
         "attributes": {
-            "github_repository_sha": "b56a73b147793f42082a429c9a7bbcd8e8060582"
+            "github_repository_sha": "d563d27b8e5e5a7a4e00d3f9bdcb0f71fda85da4"
         },
         "pages": [
             {
@@ -52,7 +52,7 @@
                         "object_label": "None Selected",
                         "object_api_name": "Opportunity",
                         "component_id": "8e24-10c2-692a",
-                        "required": true,
+                        "required": false,
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
@@ -68,7 +68,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -81,7 +82,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Header",
@@ -169,7 +171,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -182,7 +185,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -195,7 +199,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Header",
@@ -224,7 +229,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -237,7 +243,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Date",
@@ -290,7 +297,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -303,7 +311,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -316,7 +325,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
