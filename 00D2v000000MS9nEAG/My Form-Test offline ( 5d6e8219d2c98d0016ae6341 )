@@ -54,6 +54,33 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "6599-4a10-2344",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field1",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "f33d-8da6-de23",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Select",
                         "name": "Select",
                         "category": "select",
@@ -88,7 +115,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "1fed42e9865f85b2d75d493cf9351c129fefbdfa"
+            "github_repository_sha": "54f9c3f5c9b3a36bbbf3d3068807f59f7da24bbf"
         }
     },
     "connections": [
