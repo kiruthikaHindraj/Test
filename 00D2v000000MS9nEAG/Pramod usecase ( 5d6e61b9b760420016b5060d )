@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-09-03T12:51:05.121Z",
         "attributes": {
-            "github_repository_sha": "954a73bd39be1c3a898ebdb2ae966e93a2d290e1"
+            "github_repository_sha": "b56a73b147793f42082a429c9a7bbcd8e8060582"
         },
         "pages": [
             {
@@ -53,22 +53,6 @@
                         "object_api_name": "Opportunity",
                         "component_id": "8e24-10c2-692a",
                         "required": true,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "JavaScript",
-                        "name": "JavaScript",
-                        "category": "media",
-                        "label": "Logged in user Name",
-                        "version": "2",
-                        "component_id": "0ad1-aa8a-486b",
-                        "attributes": {
-                            "script": "formyoula.form_fields[\"65f8-fc8a-300b\"].set(\"value\", formyoula.form_fields[\"Formyoula_Created_By\"]);\nformyoula.form_fields[\"825f-3f0f-9475\"].set(\"value\", formyoula.form_fields[\"Formyoula_User_Email\"]);",
-                            "script_detail": ""
-                        },
-                        "required": false,
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
@@ -175,130 +159,6 @@
                         "controlling_elements": []
                     },
                     {
-                        "sfdc_query_limit": "",
-                        "type": "Repeat",
-                        "name": "Repeat Group",
-                        "category": "select",
-                        "label": "Contact Roles",
-                        "icon": "/scripts/formbuilder/img/repeat.png",
-                        "component_id": "5c35-c2f7-7a01",
-                        "attributes": {
-                            "max_repeat_items": "",
-                            "add_title_label": "",
-                            "all_expanded": false,
-                            "sfdc_parent_field_name": "OpportunityId",
-                            "sfdc_parent_component": "8e24-10c2-692a",
-                            "list_view_fields": [
-                                "a310-09cc-62bf"
-                            ],
-                            "add_button_label": "",
-                            "delete_button_label": ""
-                        },
-                        "required": false,
-                        "object_api_name": "OpportunityContactRole",
-                        "sfdc_filter_fields": "Opportunity.Year__c = '2020' AND Opportunity.isclosed=false AND Opportunity.RecordTypeId='01224000000FMNrAAO' AND Opportunity.Product_Category__c='Corn' AND Opportunity.product_type__c='Seeds' AND Opportunity.Country__c='DE'",
-                        "sfdc_auto_fill_id": "5d6e61bab760420016b50665",
-                        "sfdc_query_order_by": "",
-                        "components": [
-                            {
-                                "type": "Hidden",
-                                "value": "",
-                                "name": "Hidden",
-                                "category": "input",
-                                "label": "OpportunityContactRoleId",
-                                "icon": "/scripts/formbuilder/img/hidden.png",
-                                "component_id": "0d80-6439-e534",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Hidden",
-                                "value": "",
-                                "name": "Hidden",
-                                "category": "input",
-                                "label": "Contact Id",
-                                "icon": "/scripts/formbuilder/img/hidden.png",
-                                "component_id": "d018-2150-b80d",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Salesforce",
-                                "name": "",
-                                "category": "salesforce",
-                                "label": "Kontaktsuche",
-                                "icon": "/scripts/formbuilder/img/salesforce.png",
-                                "version": "2",
-                                "attributes": {
-                                    "custom_offline_lookup_filter": "(function(result) { \n  return result.AccountId == formyoula.form_fields['07df-5343-dc4e'].get('value'); \n\n})",
-                                    "offline_sync_filter": "Account.BillingCountryCode='DE'  AND Active__c=true AND Account.Twitter__c='Verkaufschance'",
-                                    "show_auto_search_results": false,
-                                    "query_fields": "",
-                                    "query_limit": "10",
-                                    "filter_fields": "",
-                                    "query_visibility": "",
-                                    "query_order_by": "",
-                                    "query_search_group": "",
-                                    "auto_fill_id": "",
-                                    "position": "Fill",
-                                    "enable_barcode_scanner": false,
-                                    "button": "Find",
-                                    "disable_incremental_sync": true,
-                                    "enable_clear_button": false
-                                },
-                                "sfdc_query_fields": "AccountId,Email,Name",
-                                "sfdc_query_limit": "10",
-                                "sfdc_filter_fields": "",
-                                "sfdc_query_visibility": "All Records",
-                                "sfdc_query_order_by": "",
-                                "sfdc_query_search_group": "All Fields",
-                                "sfdc_auto_fill_id": "5d6e61bab760420016b50666",
-                                "object_label": "None Selected",
-                                "object_api_name": "Contact",
-                                "record_id": "",
-                                "component_id": "f66b-dde2-631c",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Text",
-                                "name": "Text",
-                                "category": "input",
-                                "label": "Name",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "component_id": "a310-09cc-62bf",
-                                "attributes": {
-                                    "readonly": "yes"
-                                },
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "CheckBox",
-                                "value": "",
-                                "name": "CheckBox",
-                                "category": "input",
-                                "label": "Primärer Kontakt",
-                                "icon": "/scripts/formbuilder/img/checkbox.png",
-                                "component_id": "9e2c-eb82-124a",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Email",
-                                "name": "Email",
-                                "category": "input",
-                                "label": "E-Mail",
-                                "icon": "/scripts/formbuilder/img/email.png",
-                                "component_id": "28a3-195b-d07f",
-                                "required": true,
-                                "components": []
-                            }
-                        ],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
                         "type": "Hidden",
                         "value": "",
                         "name": "Hidden",
@@ -350,133 +210,6 @@
                         },
                         "required": false,
                         "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "sfdc_query_order_by": "",
-                        "sfdc_query_limit": "",
-                        "type": "Repeat",
-                        "name": "Repeat Group",
-                        "category": "select",
-                        "label": "Opportunity Products",
-                        "icon": "/scripts/formbuilder/img/repeat.png",
-                        "component_id": "f7e2-c61c-8a3a",
-                        "attributes": {
-                            "max_repeat_items": "",
-                            "add_title_label": "",
-                            "all_expanded": false,
-                            "sfdc_parent_field_name": "OpportunityId",
-                            "sfdc_parent_component": "8e24-10c2-692a",
-                            "list_view_fields": [
-                                "aece-570c-c78b"
-                            ],
-                            "add_button_label": "",
-                            "delete_button_label": ""
-                        },
-                        "required": false,
-                        "object_api_name": "OpportunityLineItem",
-                        "sfdc_filter_fields": "Opportunity.Year__c = '2020' AND Opportunity.isclosed=false AND Opportunity.RecordTypeId='01224000000FMNrAAO' AND Opportunity.Product_Category__c='Corn' AND Opportunity.product_type__c='Seeds' AND Opportunity.Country__c='DE'",
-                        "sfdc_auto_fill_id": "5d6e61bab760420016b50662",
-                        "components": [
-                            {
-                                "type": "Hidden",
-                                "value": "",
-                                "name": "Hidden",
-                                "category": "input",
-                                "label": "OpportunityLineItemId",
-                                "icon": "/scripts/formbuilder/img/hidden.png",
-                                "component_id": "2f41-ae0f-bb13",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "components": [],
-                                "required": false,
-                                "component_id": "37b6-fecf-51c0",
-                                "record_id": "",
-                                "object_api_name": "PricebookEntry",
-                                "object_label": "None Selected",
-                                "sfdc_auto_fill_id": "5d6e61bab760420016b50664",
-                                "sfdc_query_search_group": "All Fields",
-                                "sfdc_query_order_by": "",
-                                "custom_offline_lookup_filter": "",
-                                "sfdc_query_visibility": "All Records",
-                                "sfdc_filter_fields": "IsActive = true AND CurrencyIsoCode = 'EUR' AND Pricebook2Id='01s1o0000051vW2'",
-                                "sfdc_query_limit": "10",
-                                "sfdc_query_fields": "Desc_Local__c",
-                                "attributes": {
-                                    "button": "Find",
-                                    "enable_barcode_scanner": false,
-                                    "position": "Fill",
-                                    "auto_fill_id": "",
-                                    "query_search_group": "",
-                                    "query_order_by": "",
-                                    "query_visibility": "",
-                                    "filter_fields": "",
-                                    "query_limit": "10",
-                                    "query_fields": "",
-                                    "show_auto_search_results": false,
-                                    "offline_sync_filter": "IsActive = true AND CurrencyIsoCode = 'EUR' AND Pricebook2Id='01s1o0000051vW2'",
-                                    "custom_offline_lookup_filter": "",
-                                    "disable_incremental_sync": true
-                                },
-                                "version": "2",
-                                "icon": "/scripts/formbuilder/img/salesforce.png",
-                                "label": "Produktsuche",
-                                "category": "salesforce",
-                                "name": "",
-                                "type": "Salesforce"
-                            },
-                            {
-                                "type": "Text",
-                                "name": "Text",
-                                "category": "input",
-                                "label": "Produktname",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "component_id": "aece-570c-c78b",
-                                "attributes": {
-                                    "readonly": "yes"
-                                },
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Number",
-                                "name": "Number",
-                                "category": "input",
-                                "label": "Menge",
-                                "icon": "/scripts/formbuilder/img/number.png",
-                                "component_id": "f039-b501-27fb",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "components": [],
-                                "required": false,
-                                "component_id": "4e6b-4ae3-a214",
-                                "icon": "/scripts/formbuilder/img/number.png",
-                                "label": "Einheit",
-                                "category": "input",
-                                "name": "Number",
-                                "type": "Number"
-                            },
-                            {
-                                "type": "Currency",
-                                "name": "Currency",
-                                "category": "input",
-                                "label": "Einheit Unit Price",
-                                "icon": "/scripts/formbuilder/img/currency.png",
-                                "component_id": "03c2-b143-4a9f",
-                                "required": false,
-                                "components": [],
-                                "attributes": {
-                                    "prefix": "",
-                                    "suffix": "",
-                                    "currency_locale": ""
-                                }
-                            }
-                        ],
                         "repeat_value": [],
                         "controlling_elements": []
                     },
@@ -547,43 +280,6 @@
                         "controlling_elements": []
                     },
                     {
-                        "type": "Salesforce",
-                        "name": "",
-                        "category": "salesforce",
-                        "label": "Account Retailer",
-                        "icon": "/scripts/formbuilder/img/salesforce.png",
-                        "version": "2",
-                        "attributes": {
-                            "custom_offline_lookup_filter": "",
-                            "offline_sync_filter": "Account_country__c='DE' and recordtypeid='01224000000R2Rb' and Owner.id !='005240000010FDXAA2' and Status_c__c='Active' and Account_Sub_Type_baseline__c not in ('Contractor','Distrubutor','Industrie','L&G Channel')",
-                            "show_auto_search_results": false,
-                            "button": "Auswahlliste",
-                            "enable_barcode_scanner": false,
-                            "position": "Fill",
-                            "auto_fill_id": "",
-                            "query_search_group": "",
-                            "query_order_by": "",
-                            "query_visibility": "",
-                            "filter_fields": "",
-                            "query_limit": "10",
-                            "query_fields": ""
-                        },
-                        "sfdc_query_fields": "Name,Location__c,BillingCity,BillingStreet,BillingPostalCode",
-                        "sfdc_query_limit": "10",
-                        "sfdc_filter_fields": "Account_country__c='DE' and recordtypeid='01224000000R2Rb' and Owner.id !='005240000010FDXAA2' and Status_c__c='Active' and Account_Sub_Type_baseline__c not in ('Contractor','Distrubutor','Industrie','L&G Channel')",
-                        "sfdc_query_visibility": "All Records",
-                        "sfdc_query_order_by": "",
-                        "sfdc_query_search_group": "All Fields",
-                        "sfdc_auto_fill_id": "5d6e61bab760420016b50669",
-                        "object_label": "None Selected",
-                        "object_api_name": "Account",
-                        "component_id": "450d-23a1-d052",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
                         "type": "Hidden",
                         "value": "",
                         "name": "Hidden",
@@ -591,22 +287,6 @@
                         "label": "Retailer Account Id",
                         "icon": "/scripts/formbuilder/img/hidden.png",
                         "component_id": "6ed1-9e52-3a1d",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "HTML",
-                        "name": "HTML",
-                        "category": "media",
-                        "label": "Hide the Contact ID",
-                        "icon": "/scripts/formbuilder/img/paragraph.png",
-                        "component_id": "08d8-5b8b-0368",
-                        "attributes": {
-                            "html_edit": "<style>\n.found_record_list .sfdc_field_AccountId{\n display:none;\n}\n.sfdc_field_AccountId{\n display:none;\n}\n</style>",
-                            "html_detail": ""
-                        },
                         "required": false,
                         "components": [],
                         "repeat_value": [],
@@ -633,59 +313,6 @@
                         "label": "Hidden Contact Name",
                         "icon": "/scripts/formbuilder/img/hidden.png",
                         "component_id": "d59e-24dd-853c",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "SalesforceSelect",
-                        "name": "",
-                        "category": "salesforce",
-                        "version": "2",
-                        "label": "Opportunity Account Details",
-                        "icon": "/scripts/formbuilder/img/salesforce.png",
-                        "attributes": {
-                            "disable_incremental_sync": true,
-                            "custom_offline_lookup_filter": "",
-                            "offline_sync_filter": "BillingCountryCode = 'DE' AND Status_c__c='Active' AND twitter__c ='Verkaufschance'",
-                            "owner_field": "",
-                            "button": "Select",
-                            "position": "Fill",
-                            "auto_fill_id": "",
-                            "query_search_group": "",
-                            "query_order_by": "",
-                            "query_visibility": "",
-                            "filter_fields": "",
-                            "query_limit": "10",
-                            "query_fields": ""
-                        },
-                        "sfdc_query_fields": "",
-                        "sfdc_query_limit": "10",
-                        "sfdc_filter_fields": "BillingCountryCode = 'DE' AND Status_c__c='Active' AND twitter__c ='Verkaufschance'",
-                        "sfdc_query_visibility": "All Records",
-                        "sfdc_query_order_by": "",
-                        "sfdc_query_search_group": "",
-                        "sfdc_auto_fill_id": "5d6e61bab760420016b50667",
-                        "object_label": "None Selected",
-                        "object_api_name": "Account",
-                        "component_id": "07df-5343-dc4e",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
-                        "type": "HTML",
-                        "name": "HTML",
-                        "category": "media",
-                        "label": "<style>\n#component-b9f2-de7a-cf01,\n#component-0f99-4486-f5fe,\n#component-07df-5343-dc4e,\n#component-ea1b-3d2e-555e,\n#component-03c2-b143-4a9f{\ndisplay:none;\n}\n</style>",
-                        "icon": "/scripts/formbuilder/img/paragraph.png",
-                        "component_id": "405b-84ac-711e",
-                        "attributes": {
-                            "html_detail": "",
-                            "html_edit": ""
-                        },
                         "required": false,
                         "components": [],
                         "repeat_value": [],
