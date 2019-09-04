@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-09-04T03:32:04.985Z",
         "attributes": {
-            "github_repository_sha": "2a577dac32fe5c28e27cd03f1bda7d196ebdf101"
+            "github_repository_sha": "6070627ea6e8ca94a51a799f8b69e6a15d52d8cc"
         },
         "pages": [
             {
@@ -26,6 +26,7 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
+                            "enable_clear_button": false,
                             "disable_incremental_sync": true,
                             "custom_offline_lookup_filter": "",
                             "offline_sync_filter": "isclosed=false AND Year__c='2020' AND RecordTypeId='01224000000FMNrAAO' AND Product_Category__c='Corn' AND product_type__c='Seeds' AND Country__c='DE'",
@@ -41,9 +42,9 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "CloseDate,Corporate_Account_Name__c,Name,StageName",
+                        "sfdc_query_fields": "CloseDate,Name,StageName",
                         "sfdc_query_limit": "10",
-                        "sfdc_filter_fields": "isclosed=false AND Year__c='2020' AND RecordTypeId='01224000000FMNrAAO' AND Product_Category__c='Corn' AND product_type__c='Seeds' AND Country__c='DE'",
+                        "sfdc_filter_fields": "isclosed=false",
                         "sfdc_query_visibility": "My Records",
                         "sfdc_query_order_by": "",
                         "sfdc_query_search_group": "All Fields",
@@ -83,7 +84,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -96,7 +98,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Header",
@@ -200,111 +203,116 @@
                         "sfdc_query_order_by": "",
                         "components": [
                             {
-                                "type": "Hidden",
-                                "value": "",
-                                "name": "Hidden",
-                                "category": "input",
-                                "label": "OpportunityContactRoleId",
-                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "components": [],
+                                "required": false,
                                 "component_id": "0d80-6439-e534",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Hidden",
-                                "value": "",
-                                "name": "Hidden",
-                                "category": "input",
-                                "label": "Contact Id",
                                 "icon": "/scripts/formbuilder/img/hidden.png",
-                                "component_id": "d018-2150-b80d",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Salesforce",
-                                "name": "",
-                                "category": "salesforce",
-                                "label": "Kontaktsuche",
-                                "icon": "/scripts/formbuilder/img/salesforce.png",
-                                "version": "2",
-                                "attributes": {
-                                    "custom_offline_lookup_filter": "(function(result) { \n  return result.AccountId == formyoula.form_fields['07df-5343-dc4e'].get('value'); \n\n})",
-                                    "offline_sync_filter": "Account.BillingCountryCode='DE'  AND Active__c=true AND Account.Twitter__c='Verkaufschance'",
-                                    "show_auto_search_results": false,
-                                    "query_fields": "",
-                                    "query_limit": "10",
-                                    "filter_fields": "",
-                                    "query_visibility": "",
-                                    "query_order_by": "",
-                                    "query_search_group": "",
-                                    "auto_fill_id": "",
-                                    "position": "Fill",
-                                    "enable_barcode_scanner": false,
-                                    "button": "Find",
-                                    "disable_incremental_sync": true
-                                },
-                                "sfdc_query_fields": "AccountId,Email,Name",
-                                "sfdc_query_limit": "10",
-                                "sfdc_filter_fields": "Account.BillingCountryCode='DE'  AND Active__c=true AND Account.twitter__c='Verkaufschance' AND accountid='{{07df-5343-dc4e}}'",
-                                "sfdc_query_visibility": "All Records",
-                                "sfdc_query_order_by": "",
-                                "sfdc_query_search_group": "All Fields",
-                                "sfdc_auto_fill_id": "5d6f3035bcbb3d0010b2fc76",
-                                "object_label": "None Selected",
-                                "object_api_name": "Contact",
-                                "record_id": "",
-                                "component_id": "f66b-dde2-631c",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Text",
-                                "name": "Text",
+                                "label": "OpportunityContactRoleId",
                                 "category": "input",
-                                "label": "Name",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "component_id": "a310-09cc-62bf",
+                                "name": "Hidden",
+                                "value": "",
+                                "type": "Hidden",
+                                "attributes": {}
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "d018-2150-b80d",
+                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "label": "Contact Id",
+                                "category": "input",
+                                "name": "Hidden",
+                                "value": "",
+                                "type": "Hidden",
+                                "attributes": {}
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "f66b-dde2-631c",
+                                "record_id": "",
+                                "object_api_name": "Contact",
+                                "object_label": "None Selected",
+                                "sfdc_auto_fill_id": "5d6f3035bcbb3d0010b2fc76",
+                                "sfdc_query_search_group": "All Fields",
+                                "sfdc_query_order_by": "",
+                                "sfdc_query_visibility": "All Records",
+                                "sfdc_filter_fields": "",
+                                "sfdc_query_limit": "10",
+                                "sfdc_query_fields": "AccountId,Email,Name",
+                                "attributes": {
+                                    "disable_incremental_sync": true,
+                                    "button": "Find",
+                                    "enable_barcode_scanner": false,
+                                    "position": "Fill",
+                                    "auto_fill_id": "",
+                                    "query_search_group": "",
+                                    "query_order_by": "",
+                                    "query_visibility": "",
+                                    "filter_fields": "",
+                                    "query_limit": "10",
+                                    "query_fields": "",
+                                    "show_auto_search_results": false,
+                                    "offline_sync_filter": "Account.BillingCountryCode='DE'  AND Active__c=true AND Account.Twitter__c='Verkaufschance'",
+                                    "custom_offline_lookup_filter": "(function(result) { \n  return result.AccountId == formyoula.form_fields['07df-5343-dc4e'].get('value'); \n\n})",
+                                    "enable_clear_button": false
+                                },
+                                "version": "2",
+                                "icon": "/scripts/formbuilder/img/salesforce.png",
+                                "label": "Kontaktsuche",
+                                "category": "salesforce",
+                                "name": "",
+                                "type": "Salesforce"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
                                 "attributes": {
                                     "readonly": "yes"
                                 },
-                                "required": false,
-                                "components": []
+                                "component_id": "a310-09cc-62bf",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Name",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
                             },
                             {
-                                "type": "CheckBox",
-                                "value": "",
-                                "name": "CheckBox",
-                                "category": "input",
-                                "label": "Primärer Kontakt",
-                                "icon": "/scripts/formbuilder/img/checkbox.png",
+                                "components": [],
+                                "required": false,
                                 "component_id": "9e2c-eb82-124a",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Email",
-                                "name": "Email",
+                                "icon": "/scripts/formbuilder/img/checkbox.png",
+                                "label": "Primärer Kontakt",
                                 "category": "input",
-                                "label": "E-Mail",
-                                "icon": "/scripts/formbuilder/img/email.png",
-                                "component_id": "28a3-195b-d07f",
-                                "required": true,
-                                "components": []
+                                "name": "CheckBox",
+                                "value": "",
+                                "type": "CheckBox",
+                                "attributes": {}
                             },
                             {
-                                "type": "JavaScript",
-                                "name": "JavaScript",
-                                "category": "media",
-                                "label": "Custom JavaScript",
-                                "version": 2,
-                                "component_id": "9095-61db-f845",
-                                "attributes": {
-                                    "script": "//Pre-fill success event - Contact Roles\nformyoula.form_fields['5c35-c2f7-7a01'].on('element:create:success',function(){\n //Hide all the SF element\n $('.existing_repeat_entry_panel #component-f66b-dde2-631c').css('display','none')\n})\n//Pre-fill success event - Contact Roles\nformyoula.form_fields['5c35-c2f7-7a01'].on('prefill:success',function(){\n //Hide all the SF element\n $('.existing_repeat_entry_panel #component-f66b-dde2-631c').css('display','none')\n})",
-                                    "script_detail": ""
-                                },
+                                "components": [],
+                                "required": true,
+                                "component_id": "28a3-195b-d07f",
+                                "icon": "/scripts/formbuilder/img/email.png",
+                                "label": "E-Mail",
+                                "category": "input",
+                                "name": "Email",
+                                "type": "Email",
+                                "attributes": {}
+                            },
+                            {
+                                "components": [],
                                 "required": false,
-                                "components": []
+                                "attributes": {
+                                    "script_detail": "",
+                                    "script": "//Pre-fill success event - Contact Roles\nformyoula.form_fields['5c35-c2f7-7a01'].on('element:create:success',function(){\n //Hide all the SF element\n $('.existing_repeat_entry_panel #component-f66b-dde2-631c').css('display','none')\n})\n//Pre-fill success event - Contact Roles\nformyoula.form_fields['5c35-c2f7-7a01'].on('prefill:success',function(){\n //Hide all the SF element\n $('.existing_repeat_entry_panel #component-f66b-dde2-631c').css('display','none')\n})"
+                                },
+                                "component_id": "9095-61db-f845",
+                                "version": 2,
+                                "label": "Custom JavaScript",
+                                "category": "media",
+                                "name": "JavaScript",
+                                "type": "JavaScript"
                             }
                         ],
                         "repeat_value": [],
@@ -321,7 +329,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -334,7 +343,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -347,7 +357,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "JavaScript",
@@ -423,114 +434,117 @@
                         "sfdc_auto_fill_id": "5d6f3035bcbb3d0010b2fc72",
                         "components": [
                             {
-                                "components": [],
-                                "required": false,
-                                "component_id": "2f41-ae0f-bb13",
-                                "icon": "/scripts/formbuilder/img/hidden.png",
-                                "label": "OpportunityLineItemId",
-                                "category": "input",
-                                "name": "Hidden",
+                                "type": "Hidden",
                                 "value": "",
-                                "type": "Hidden"
-                            },
-                            {
-                                "type": "Salesforce",
-                                "name": "",
-                                "category": "salesforce",
-                                "label": "Produktsuche",
-                                "icon": "/scripts/formbuilder/img/salesforce.png",
-                                "version": "2",
-                                "attributes": {
-                                    "disable_incremental_sync": true,
-                                    "custom_offline_lookup_filter": "",
-                                    "offline_sync_filter": "IsActive = true AND CurrencyIsoCode = 'EUR' AND Pricebook2Id='01s1o0000051vW2'",
-                                    "show_auto_search_results": false,
-                                    "query_fields": "",
-                                    "query_limit": "10",
-                                    "filter_fields": "",
-                                    "query_visibility": "",
-                                    "query_order_by": "",
-                                    "query_search_group": "",
-                                    "auto_fill_id": "",
-                                    "position": "Fill",
-                                    "enable_barcode_scanner": false,
-                                    "button": "Find"
-                                },
-                                "sfdc_query_fields": "Desc_Local__c",
-                                "sfdc_query_limit": "10",
-                                "sfdc_filter_fields": "IsActive = true AND CurrencyIsoCode = 'EUR' AND Pricebook2Id='01s1o0000051vW2'",
-                                "sfdc_query_visibility": "All Records",
-                                "custom_offline_lookup_filter": "",
-                                "sfdc_query_order_by": "",
-                                "sfdc_query_search_group": "All Fields",
-                                "sfdc_auto_fill_id": "5d6f3035bcbb3d0010b2fc74",
-                                "object_label": "None Selected",
-                                "object_api_name": "PricebookEntry",
-                                "record_id": "",
-                                "component_id": "37b6-fecf-51c0",
+                                "name": "Hidden",
+                                "category": "input",
+                                "label": "OpportunityLineItemId",
+                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "component_id": "2f41-ae0f-bb13",
                                 "required": false,
-                                "components": []
+                                "components": [],
+                                "attributes": {}
                             },
                             {
                                 "components": [],
                                 "required": false,
+                                "component_id": "37b6-fecf-51c0",
+                                "record_id": "",
+                                "object_api_name": "PricebookEntry",
+                                "object_label": "None Selected",
+                                "sfdc_auto_fill_id": "5d6f3035bcbb3d0010b2fc74",
+                                "sfdc_query_search_group": "All Fields",
+                                "sfdc_query_order_by": "",
+                                "custom_offline_lookup_filter": "",
+                                "sfdc_query_visibility": "All Records",
+                                "sfdc_filter_fields": "IsActive = true AND CurrencyIsoCode = 'EUR' AND Pricebook2Id='01s1o0000051vW2'",
+                                "sfdc_query_limit": "10",
+                                "sfdc_query_fields": "Desc_Local__c",
+                                "attributes": {
+                                    "button": "Find",
+                                    "enable_barcode_scanner": false,
+                                    "position": "Fill",
+                                    "auto_fill_id": "",
+                                    "query_search_group": "",
+                                    "query_order_by": "",
+                                    "query_visibility": "",
+                                    "filter_fields": "",
+                                    "query_limit": "10",
+                                    "query_fields": "",
+                                    "show_auto_search_results": false,
+                                    "offline_sync_filter": "IsActive = true AND CurrencyIsoCode = 'EUR' AND Pricebook2Id='01s1o0000051vW2'",
+                                    "custom_offline_lookup_filter": "",
+                                    "disable_incremental_sync": true
+                                },
+                                "version": "2",
+                                "icon": "/scripts/formbuilder/img/salesforce.png",
+                                "label": "Produktsuche",
+                                "category": "salesforce",
+                                "name": "",
+                                "type": "Salesforce"
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Produktname",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "aece-570c-c78b",
                                 "attributes": {
                                     "readonly": "yes"
                                 },
-                                "component_id": "aece-570c-c78b",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "label": "Produktname",
-                                "category": "input",
-                                "name": "Text",
-                                "type": "Text"
-                            },
-                            {
-                                "components": [],
                                 "required": false,
-                                "component_id": "f039-b501-27fb",
-                                "icon": "/scripts/formbuilder/img/number.png",
-                                "label": "Menge",
-                                "category": "input",
-                                "name": "Number",
-                                "type": "Number"
+                                "components": []
                             },
                             {
                                 "type": "Number",
                                 "name": "Number",
                                 "category": "input",
-                                "label": "Einheit",
+                                "label": "Menge",
                                 "icon": "/scripts/formbuilder/img/number.png",
+                                "component_id": "f039-b501-27fb",
+                                "required": false,
+                                "components": [],
+                                "attributes": {}
+                            },
+                            {
+                                "components": [],
+                                "required": false,
                                 "component_id": "4e6b-4ae3-a214",
+                                "icon": "/scripts/formbuilder/img/number.png",
+                                "label": "Einheit",
+                                "category": "input",
+                                "name": "Number",
+                                "type": "Number",
+                                "attributes": {}
+                            },
+                            {
+                                "type": "Currency",
+                                "name": "Currency",
+                                "category": "input",
+                                "label": "Einheit Unit Price",
+                                "icon": "/scripts/formbuilder/img/currency.png",
+                                "component_id": "03c2-b143-4a9f",
+                                "required": false,
+                                "components": [],
+                                "attributes": {
+                                    "prefix": "",
+                                    "suffix": "",
+                                    "currency_locale": ""
+                                }
+                            },
+                            {
+                                "type": "JavaScript",
+                                "name": "JavaScript",
+                                "category": "media",
+                                "label": "Custom JavaScript",
+                                "component_id": "3215-57cf-a470",
+                                "attributes": {
+                                    "script_detail": "",
+                                    "script": "//Add a javascript element inside  repat group with following code\n//Pass repeat_group_component_id, sub_component_id, template_id)\ndelete_sfdc_record(\"f7e2-c61c-8a3a\",\"2f41-ae0f-bb13\", \"59d47d13b6aeac0015f167b5\");\n\n//Script for Opportunity Products\nformyoula.form_fields['f7e2-c61c-8a3a'].on('element:create:success',function(){\n $('.existing_repeat_entry_panel #component-37b6-fecf-51c0').css('display','none')\n})\n//Script for Opportunity Products\nformyoula.form_fields['f7e2-c61c-8a3a'].on('prefill:success',function(){\n $('.existing_repeat_entry_panel #component-37b6-fecf-51c0').css('display','none')\n})"
+                                },
                                 "required": false,
                                 "components": []
-                            },
-                            {
-                                "attributes": {
-                                    "currency_locale": "",
-                                    "suffix": "",
-                                    "prefix": ""
-                                },
-                                "components": [],
-                                "required": false,
-                                "component_id": "03c2-b143-4a9f",
-                                "icon": "/scripts/formbuilder/img/currency.png",
-                                "label": "Einheit Unit Price",
-                                "category": "input",
-                                "name": "Currency",
-                                "type": "Currency"
-                            },
-                            {
-                                "components": [],
-                                "required": false,
-                                "attributes": {
-                                    "script": "//Add a javascript element inside  repat group with following code\n//Pass repeat_group_component_id, sub_component_id, template_id)\ndelete_sfdc_record(\"f7e2-c61c-8a3a\",\"2f41-ae0f-bb13\", \"59d47d13b6aeac0015f167b5\");\n\n//Script for Opportunity Products\nformyoula.form_fields['f7e2-c61c-8a3a'].on('element:create:success',function(){\n $('.existing_repeat_entry_panel #component-37b6-fecf-51c0').css('display','none')\n})\n//Script for Opportunity Products\nformyoula.form_fields['f7e2-c61c-8a3a'].on('prefill:success',function(){\n $('.existing_repeat_entry_panel #component-37b6-fecf-51c0').css('display','none')\n})",
-                                    "script_detail": ""
-                                },
-                                "component_id": "3215-57cf-a470",
-                                "label": "Custom JavaScript",
-                                "category": "media",
-                                "name": "JavaScript",
-                                "type": "JavaScript"
                             }
                         ],
                         "repeat_value": [],
@@ -547,7 +561,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -560,7 +575,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Date",
@@ -650,7 +666,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "HTML",
@@ -679,7 +696,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -692,7 +710,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "SalesforceSelect",
@@ -797,7 +816,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -810,7 +830,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -823,7 +844,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -836,7 +858,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -849,7 +872,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -862,7 +886,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -875,7 +900,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -888,7 +914,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -901,7 +928,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -914,7 +942,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -927,7 +956,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -940,7 +970,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -953,7 +984,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -966,7 +998,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -979,7 +1012,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -992,7 +1026,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1005,7 +1040,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1018,7 +1054,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1031,7 +1068,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1044,7 +1082,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Text",
@@ -1072,7 +1111,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1085,7 +1125,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1098,7 +1139,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1111,7 +1153,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1124,7 +1167,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1137,7 +1181,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "HTML",
@@ -1166,7 +1211,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Header",
@@ -1233,55 +1279,57 @@
                         "sfdc_query_order_by": "",
                         "components": [
                             {
-                                "type": "Select",
-                                "name": "Select",
-                                "category": "select",
-                                "label": "Produkt",
-                                "icon": "/scripts/formbuilder/img/select.png",
-                                "select_options": "SY_TALISMAN STANDARD EH\nSY_PANDORAS Maxim Quattro EH\nSY_NORDICSTAR STANDARD EH\nSY_KARDONA STANDARD EH\nSY_Chorintos Standard EH",
-                                "component_id": "1416-43f0-7989",
-                                "attributes": {
-                                    "select_option_values": "01u24000003GO6e\n01u1o00000QmYwt\n01u24000003GO1c\n01u24000003GO0W\n01u1o00000Qt4Y8",
-                                    "unselected_label": "",
-                                    "dependent_list_values": ""
-                                },
-                                "required": false,
+                                "value": "",
                                 "components": [],
-                                "value": ""
-                            },
-                            {
-                                "type": "Number",
-                                "name": "Number",
-                                "category": "input",
-                                "label": "Menge",
-                                "icon": "/scripts/formbuilder/img/number.png",
-                                "component_id": "0db6-fe00-c7d5",
                                 "required": false,
-                                "components": []
+                                "attributes": {
+                                    "dependent_list_values": "",
+                                    "unselected_label": "",
+                                    "select_option_values": "01u24000003GO6e\n01u1o00000QmYwt\n01u24000003GO1c\n01u24000003GO0W\n01u1o00000Qt4Y8"
+                                },
+                                "component_id": "1416-43f0-7989",
+                                "select_options": "SY_TALISMAN STANDARD EH\nSY_PANDORAS Maxim Quattro EH\nSY_NORDICSTAR STANDARD EH\nSY_KARDONA STANDARD EH\nSY_Chorintos Standard EH",
+                                "icon": "/scripts/formbuilder/img/select.png",
+                                "label": "Produkt",
+                                "category": "select",
+                                "name": "Select",
+                                "type": "Select"
                             },
                             {
-                                "type": "Text",
-                                "name": "Text",
+                                "components": [],
+                                "required": false,
+                                "component_id": "0db6-fe00-c7d5",
+                                "icon": "/scripts/formbuilder/img/number.png",
+                                "label": "Menge",
                                 "category": "input",
-                                "label": "Order Unit Price",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "component_id": "3613-63ad-4241",
+                                "name": "Number",
+                                "type": "Number",
+                                "attributes": {}
+                            },
+                            {
+                                "components": [],
+                                "required": false,
                                 "attributes": {
                                     "readonly": "no"
                                 },
-                                "required": false,
-                                "components": []
+                                "component_id": "3613-63ad-4241",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Order Unit Price",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
                             },
                             {
-                                "type": "Hidden",
-                                "value": "",
-                                "name": "Hidden",
-                                "category": "input",
-                                "label": "Order Item PBI",
-                                "icon": "/scripts/formbuilder/img/hidden.png",
-                                "component_id": "9914-dc6c-34a8",
+                                "components": [],
                                 "required": false,
-                                "components": []
+                                "component_id": "9914-dc6c-34a8",
+                                "icon": "/scripts/formbuilder/img/hidden.png",
+                                "label": "Order Item PBI",
+                                "category": "input",
+                                "name": "Hidden",
+                                "value": "",
+                                "type": "Hidden",
+                                "attributes": {}
                             }
                         ],
                         "repeat_value": [],
@@ -1414,7 +1462,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Text",
@@ -1477,7 +1526,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1490,7 +1540,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1503,7 +1554,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1516,7 +1568,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Hidden",
@@ -1529,7 +1582,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "HTML",
@@ -1654,7 +1708,6 @@
             "Salesforce",
             "Salesforce",
             "Salesforce",
-            "Email",
             "Salesforce",
             "Salesforce",
             "Salesforce",
@@ -2649,43 +2702,6 @@
             },
             "is_disabled": false,
             "version": 1,
-            "__v": 0
-        },
-        {
-            "_id": "5d6f3036bcbb3d0010b2fc80",
-            "created_at": "2017-10-06T13:04:23.960Z",
-            "updated_at": "2019-09-04T03:32:06.032Z",
-            "template_id": "5d6f3034bcbb3d0010b2fc1d",
-            "created_by_id": "5cc17f16630ca900103bac08",
-            "owner_id": "5cc17f16630ca900103bac08",
-            "sequence": 20,
-            "type": "Email",
-            "push_updates": false,
-            "emails": [
-                {
-                    "from_name": "Syngenta Agro GmbH",
-                    "from_email": "dinesh.acharya@formyoula.intercom-mail.com",
-                    "_id": "59d77f570a77cb00152a8adc",
-                    "bcc": "",
-                    "cc": "{{825f-3f0f-9475}}",
-                    "subject": "Syngenta Mais Bestellschein",
-                    "template": "<p>&nbsp;</p>\r\n\r\n<p>Sehr geehrte Kundin, sehr geehrter Kunde,&nbsp;</p>\r\n\r\n<p>vielen Dank f&uuml;r die Bestellanfrage f&uuml;r Ihr Syngenta Maissaatgut. Im Anhang finden Sie die Details, die Sie gemeinsam mit Ihrem Syngenta Verkaufsberater aufgenommen haben.</p>\r\n\r\n<p>Bitte beachten Sie, dass es sich hierbei zun&auml;chst um ein Auftragsangebot Ihrerseits an den H&auml;ndler handelt.&nbsp;<strong>Zur Finalisierung der Bestellung leiten Sie den Bestellschein bitte an Ihren H&auml;ndler vor Ort weiter.</strong> Erst dadurch kommt der Kauf zustande und das Saatgut kann von Ihrem H&auml;ndler entsprechend bereitgestellt werden.</p>\r\n\r\n<p>Wir w&uuml;nschen Ihnen viel Erfolg f&uuml;r die kommende Maissaison.&nbsp;<br />\r\n&nbsp;&nbsp;<br />\r\nMit freundlichen Gr&uuml;&szlig;en&nbsp;<br />\r\nIhre Syngenta Agro GmbH&nbsp;</p>\r\n\r\n<p>Dies ist eine automatisch generierte E-Mail. Bei Fragen zu Ihrer Bestellanfrage antworten Sie bitte nicht auf diese E-Mail, sondern wenden Sie sich direkt an Ihren Syngenta Verkaufsberater.&nbsp;<br />\r\n&nbsp;&nbsp;<br />\r\nSyngenta Agro GmbH Gesch&auml;ftsf&uuml;hrer: Dr. Manfred Hudetz &ndash; Sitz der Gesellschaft: 63477 Maintal &ndash; Amtsgericht Hanau HRB-Nr. 7225;Bankkonto: Deutsche Bank AG Frankfurt am Main, IBAN: DE93500700100091831800, BIC: DEUTDEFFXXX&nbsp;</p>\r\n",
-                    "to": "{{d48d-6c58-d3c8}}",
-                    "attachment": true,
-                    "mail_merge": false
-                }
-            ],
-            "mappings": [],
-            "public_form": {
-                "disable_formyoula_branding": false
-            },
-            "salesforce": {
-                "attachment": "false",
-                "enable_blank_values": false,
-                "use_form_owner": false
-            },
-            "is_disabled": false,
-            "version": 3,
             "__v": 0
         }
     ],
