@@ -24,7 +24,7 @@
                         "version": "2",
                         "attributes": {
                             "custom_offline_lookup_filter": "",
-                            "offline_sync_filter": "isclosed=false OR stagename='Closed Won'",
+                            "offline_sync_filter": "isclosed=false OR stagename!='Closed Won'",
                             "enable_clear_button": false,
                             "show_auto_search_results": false,
                             "button": "Find",
@@ -116,7 +116,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "fbaa154b7b87dc8be660d0cc340035f7844f9352"
+            "github_repository_sha": "96118379601cf193b64fd91787237f2b48524e25"
         }
     },
     "connections": [
