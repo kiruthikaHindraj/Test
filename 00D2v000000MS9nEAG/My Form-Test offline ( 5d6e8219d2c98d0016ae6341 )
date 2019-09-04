@@ -40,7 +40,7 @@
                         },
                         "sfdc_query_fields": "CloseDate,IsClosed,Name,StageName,IsWon",
                         "sfdc_query_limit": "10",
-                        "sfdc_filter_fields": "isclosed=false",
+                        "sfdc_filter_fields": "isclosed=false OR stagename!='Closed Won'",
                         "sfdc_query_visibility": "All Records",
                         "sfdc_query_order_by": "",
                         "sfdc_query_search_group": "All Fields",
@@ -116,7 +116,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "96118379601cf193b64fd91787237f2b48524e25"
+            "github_repository_sha": "e83336ece7628e964563f3ab9d8790511ddab4e1"
         }
     },
     "connections": [
