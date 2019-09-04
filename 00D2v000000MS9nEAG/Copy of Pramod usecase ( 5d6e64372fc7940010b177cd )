@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-09-03T13:01:43.524Z",
         "attributes": {
-            "github_repository_sha": "580c86f0177329dbafa7d50ff2c68ded5ffeb058"
+            "github_repository_sha": "4d3d41300dffc3c0bbc6de546e64010cb7f95bec"
         },
         "pages": [
             {
@@ -1728,7 +1728,7 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": true
+        "archived": false
     },
     "connections": [
         {
