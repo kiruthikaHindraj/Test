@@ -61,7 +61,7 @@
                         "attributes": {
                             "country_selection_value": "+91",
                             "country_code_selected": "IN",
-                            "auto_format": "true",
+                            "auto_format": "false",
                             "country_selection": "false"
                         },
                         "required": false,
@@ -132,7 +132,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "570465391eadde966184cb77c8c3650bc4cbde0c"
+            "github_repository_sha": "e3fc11b877b44cd20d00dc6e5758b326caa2f7de"
         }
     },
     "connections": []
