@@ -116,7 +116,8 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "22e4eec1ebdf0a73fa5f6a543a14e470885f496e"
+            "enable_offline_record_updates": "true",
+            "github_repository_sha": "2b72f299d2845c252b07c2b4680f506a8fc53fed"
         }
     },
     "connections": [
