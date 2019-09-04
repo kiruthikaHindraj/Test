@@ -61,7 +61,7 @@
                         "attributes": {
                             "country_selection_value": "+91",
                             "country_code_selected": "IN",
-                            "auto_format": "false",
+                            "auto_format": "true",
                             "country_selection": "false"
                         },
                         "required": false,
@@ -79,7 +79,7 @@
                         "attributes": {
                             "country_selection_value": "",
                             "country_code_selected": "",
-                            "auto_format": "false",
+                            "auto_format": "true",
                             "country_selection": "true"
                         },
                         "required": false,
@@ -132,7 +132,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "d4d66958bddb633a211abfb5c88d7e95be85662a"
+            "github_repository_sha": "570465391eadde966184cb77c8c3650bc4cbde0c"
         }
     },
     "connections": []
