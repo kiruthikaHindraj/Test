@@ -23,7 +23,7 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
-                            "custom_offline_lookup_filter": "",
+                            "custom_offline_lookup_filter": "(function(result) { \n  return result.StageName != 'Closed Won'\n\n})",
                             "offline_sync_filter": "isclosed=false OR stagename!='Closed Won'",
                             "enable_clear_button": false,
                             "show_auto_search_results": false,
@@ -116,7 +116,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "e83336ece7628e964563f3ab9d8790511ddab4e1"
+            "github_repository_sha": "22e4eec1ebdf0a73fa5f6a543a14e470885f496e"
         }
     },
     "connections": [
