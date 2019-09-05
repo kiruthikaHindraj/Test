@@ -106,6 +106,24 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field no editing",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "ea77-b5d3-5b5a",
+                        "attributes": {
+                            "country_selection_value": "",
+                            "country_code_selected": "",
+                            "auto_format": "false",
+                            "country_selection": "false"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Text",
                         "name": "Text",
                         "category": "input",
@@ -115,8 +133,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -132,7 +149,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "4cec84ae7d98b6d7aa0ae6470f7b16138eb6e64a"
+            "github_repository_sha": "40307bc24bbefe8e367592fe361cf7f38b0994b2"
         }
     },
     "connections": []
