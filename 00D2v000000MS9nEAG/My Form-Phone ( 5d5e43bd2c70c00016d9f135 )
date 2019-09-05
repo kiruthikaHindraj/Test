@@ -133,7 +133,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -149,7 +150,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "40307bc24bbefe8e367592fe361cf7f38b0994b2"
+            "github_repository_sha": "21c9f0f1ed9f0927c094bde5f142c83deb1ec85d"
         }
     },
     "connections": []
