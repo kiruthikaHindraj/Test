@@ -25,7 +25,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Number",
@@ -70,7 +71,9 @@
         "public": false,
         "list_view_fields": [],
         "archived": false,
-        "attributes": {}
+        "attributes": {
+            "github_repository_sha": "4cc3729bb4a96389e2f28c1d0ec7ba75aa1175f6"
+        }
     },
     "connections": []
 }
