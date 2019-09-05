@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-09-05T07:50:57.970Z",
         "attributes": {
-            "github_repository_sha": "f993e0ab0f17ac02aa6b68edadedc1a0978d6644"
+            "github_repository_sha": "c6a7db1f9b30466447255a2cbc6604992095a8b3"
         },
         "pages": [
             {
@@ -98,6 +98,22 @@
                         },
                         "required": false,
                         "value": "",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "66a6-459f-bb89",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "window.formyoula.event_on('form:finish', function () {\nconsole.log(done);\n\tformyoula.sfdc_offline.Update({\n     \tcomponent_id: \"2656-e41a-15f8\", //Lookup Component Id\n     \trecord_id: formyoula.form_fields[\"2656-e41a-15f8\"].get('value'),\n     \ttemplate_id: '5d70be61f3010200157c5565',\n     \tfields: {\n       \t\t'IsClosed': true,\n\t\t'IsWon': true,\n\t\t'StageName': \"Closed Won\"\n     \t}\n    },function(error,results){\n     \tconsole.log(error,results);\n    });\n});"
+                        },
+                        "required": false,
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
