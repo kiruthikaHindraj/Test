@@ -1,0 +1,174 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Copy of My Form-Test offline",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-09-05T07:50:57.970Z",
+        "attributes": {
+            "github_repository_sha": "2f3d7eb77ff81238e27188955137491acbbc2e51",
+            "enable_offline_record_updates": "true"
+        },
+        "pages": [
+            {
+                "page_id": "432f-1071-7560",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "auto_fill_id": "",
+                            "position": "Fill",
+                            "enable_barcode_scanner": false,
+                            "button": "Find",
+                            "show_auto_search_results": false,
+                            "enable_clear_button": false,
+                            "offline_sync_filter": "isclosed=false OR stagename!='Closed Won'",
+                            "custom_offline_lookup_filter": "(function(result) { \n  return result.StageName != 'Closed Won'\n\n})"
+                        },
+                        "sfdc_query_fields": "CloseDate,IsClosed,Name,StageName,IsWon",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "isclosed=false OR stagename!='Closed Won'",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5d70be62f3010200157c556b",
+                        "object_label": "None Selected",
+                        "object_api_name": "Opportunity",
+                        "component_id": "2656-e41a-15f8",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "6599-4a10-2344",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field1",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "f33d-8da6-de23",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Closed Won",
+                        "component_id": "0ccc-ce15-766c",
+                        "attributes": {
+                            "select_option_values": "",
+                            "unselected_label": "",
+                            "dependent_list_values": ""
+                        },
+                        "required": false,
+                        "value": "",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": [
+        {
+            "_id": "5d70be62f3010200157c556b",
+            "created_at": "2019-09-03T15:09:49.326Z",
+            "updated_at": "2019-09-05T07:50:58.074Z",
+            "template_id": "5d70be61f3010200157c5565",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": true,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "StageName",
+                    "field_name": "Stage ( StageName )",
+                    "component_id": "0ccc-ce15-766c",
+                    "component_name": "Select List ( Page: Details )"
+                },
+                {
+                    "field_id": "Name",
+                    "field_name": "Name ( Name )",
+                    "component_id": "6599-4a10-2344",
+                    "component_name": "Text Field ( Page: Details )"
+                },
+                {
+                    "field_id": "CloseDate",
+                    "field_name": "Close Date ( CloseDate )",
+                    "component_id": "f33d-8da6-de23",
+                    "component_name": "Text Field1 ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Opportunity",
+                "object_name": "Opportunity",
+                "upsert_field": "",
+                "attachment": "",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "2656-e41a-15f8",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        }
+    ]
+}
