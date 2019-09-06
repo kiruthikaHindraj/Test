@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-08-20T07:33:44.448Z",
         "attributes": {
-            "github_repository_sha": "51f56fce1430d6eb92bfbbc440a433808d1549fd"
+            "github_repository_sha": "7b21ebd4a80aa938938b093d74113d61ea503acc"
         },
         "pages": [
             {
@@ -38,6 +38,57 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Signature",
+                        "name": "Signature",
+                        "category": "media",
+                        "label": "Signature Input",
+                        "icon": "/scripts/formbuilder/img/signature.png",
+                        "height": "110",
+                        "component_id": "06e4-ddde-d909",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": [],
+                        "attributes": {}
+                    },
+                    {
+                        "type": "SalesforceSelect",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Select Record",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "enable_clear_button": true,
+                            "owner_field": "",
+                            "button": "Select",
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Description,Id,Name,Type",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "sfdc_auto_fill_id": "5d5ba25892c91e0010d6e739",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "c697-e97c-1699",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Salesforce",
                         "name": "",
                         "category": "salesforce",
@@ -45,7 +96,8 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
-                            "custom_offline_lookup_filter": "",
+                            "enable_clear_button": true,
+                            "custom_offline_lookup_filter": "(function(result){  result = result || {};  return (result[\"Type\"] == 'Custom')})",
                             "offline_sync_filter": "",
                             "show_auto_search_results": false,
                             "button": "Find",
@@ -59,7 +111,7 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "Name",
+                        "sfdc_query_fields": "Description,Id,Name,Type",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
@@ -112,6 +164,7 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
+                            "enable_clear_button": true,
                             "custom_offline_lookup_filter": "",
                             "offline_sync_filter": "",
                             "show_auto_search_results": false,
