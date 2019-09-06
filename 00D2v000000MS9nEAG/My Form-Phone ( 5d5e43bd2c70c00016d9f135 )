@@ -34,6 +34,25 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One\nSelect Two\nSelect Three",
+                        "component_id": "eaac-ba1e-f7c7",
+                        "attributes": {
+                            "dependent_list_values": "",
+                            "unselected_label": "",
+                            "select_option_values": "1\n2\n3"
+                        },
+                        "required": false,
+                        "value": "",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Phone",
                         "name": "Phone",
                         "category": "input",
@@ -133,8 +152,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -150,7 +168,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "2231f6eff460f9e1c82b9843c079eda906b5adab"
+            "github_repository_sha": "64329fd1d883e397d4f12bf73d13b206e1743d3f"
         }
     },
     "connections": []
