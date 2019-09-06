@@ -26,7 +26,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": true,
+        "attributes": {
+            "github_repository_sha": "c2a78ec7622f3fbf87ebc9e24fbcba18c1085d98"
+        }
     },
     "connections": []
 }
