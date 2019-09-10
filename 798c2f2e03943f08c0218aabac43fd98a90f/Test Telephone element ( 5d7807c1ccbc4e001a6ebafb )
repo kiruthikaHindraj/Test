@@ -45,9 +45,9 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false,
+        "archived": true,
         "attributes": {
-            "github_repository_sha": "7a41c5536a414d265b0cf58ee20f9d8176db93d5"
+            "github_repository_sha": "40321c5a9be6ad000172ab4c62bfd88c221749b5"
         }
     },
     "connections": []
