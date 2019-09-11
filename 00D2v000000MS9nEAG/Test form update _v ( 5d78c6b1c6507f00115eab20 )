@@ -25,7 +25,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Phone",
@@ -37,7 +38,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -55,14 +57,14 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "7cdf2b52dbba8c322c003cfb70e4259f2a4ca29a"
+            "github_repository_sha": "f2a131d3f73334754461e33b096953c83a96f3d9"
         }
     },
     "connections": [
         {
             "_id": "5d78c6c5c6507f00115eab26",
             "created_at": "2019-09-11T10:04:53.073Z",
-            "updated_at": "2019-09-11T10:05:29.121Z",
+            "updated_at": "2019-09-11T10:07:58.822Z",
             "template_id": "5d78c6b1c6507f00115eab20",
             "created_by_id": "5cc17f16630ca900103bac08",
             "owner_id": "5cc17f16630ca900103bac08",
@@ -93,7 +95,7 @@
             "is_disabled": false,
             "version": 3,
             "__v": 0,
-            "push_updates": false
+            "push_updates": true
         }
     ]
 }
