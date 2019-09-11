@@ -26,11 +26,25 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
+                    },
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Phone Field",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "c3dd-e7c9-3d09",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
         ],
-        "connections": [],
+        "connections": [
+            "Email"
+        ],
         "created_by": {
             "last_name": "H",
             "first_name": "Shanu",
@@ -39,7 +53,47 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "7cdf2b52dbba8c322c003cfb70e4259f2a4ca29a"
+        }
     },
-    "connections": []
+    "connections": [
+        {
+            "_id": "5d78c6c5c6507f00115eab26",
+            "created_at": "2019-09-11T10:04:53.073Z",
+            "updated_at": "2019-09-11T10:05:29.121Z",
+            "template_id": "5d78c6b1c6507f00115eab20",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Email",
+            "emails": [
+                {
+                    "from_name": "Shanu H",
+                    "from_email": "kiruthikahindraj94@gmail.com",
+                    "_id": "5d78c6c5c6507f00115eab27",
+                    "attachment": false,
+                    "mail_merge": false,
+                    "bcc": "",
+                    "cc": "",
+                    "subject": "Test Email",
+                    "template": "",
+                    "to": "kiruthika@formyoula.com"
+                }
+            ],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 3,
+            "__v": 0,
+            "push_updates": false
+        }
+    ]
 }
