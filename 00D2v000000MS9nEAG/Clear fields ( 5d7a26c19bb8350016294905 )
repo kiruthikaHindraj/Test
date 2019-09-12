@@ -29,7 +29,7 @@
                             "show_auto_search_results": false,
                             "button": "Find",
                             "enable_barcode_scanner": false,
-                            "position": "Center",
+                            "position": "Fill",
                             "auto_fill_id": "",
                             "query_search_group": "",
                             "query_order_by": "",
@@ -79,7 +79,7 @@
                         "repeat_value": [],
                         "controlling_elements": [],
                         "attributes": {
-                            "position": "Left"
+                            "position": "Center"
                         }
                     }
                 ]
@@ -96,7 +96,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "2cf1946bab234f232e91c307736c7eee6e7f599d"
+            "github_repository_sha": "e2ef7b63d18c5230847927584c668ed488460fb3"
         }
     },
     "connections": []
