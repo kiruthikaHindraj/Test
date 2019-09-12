@@ -79,7 +79,7 @@
                         "repeat_value": [],
                         "controlling_elements": [],
                         "attributes": {
-                            "position": "Right"
+                            "position": "Fill"
                         }
                     }
                 ]
@@ -96,7 +96,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "e1301d89b1ff4ec054b7dc4a5d5d06b324c2d18e"
+            "github_repository_sha": "177c143b105a3740dca7af2852d90d63c9c11261"
         }
     },
     "connections": []
