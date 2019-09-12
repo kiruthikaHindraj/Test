@@ -64,7 +64,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Clear",
@@ -76,7 +77,10 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {
+                            "position": "Default"
+                        }
                     }
                 ]
             }
@@ -92,7 +96,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "62b4daada522c182e51586f406f97eed89337237"
+            "github_repository_sha": "18ba948541692f426368a940756adf0649ac09bd"
         }
     },
     "connections": []
