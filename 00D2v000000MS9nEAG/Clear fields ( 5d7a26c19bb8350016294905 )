@@ -54,6 +54,22 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "HTML",
+                        "name": "HTML",
+                        "category": "media",
+                        "label": "Custom HTML",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "2204-f281-78f3",
+                        "attributes": {
+                            "html_detail": "",
+                            "html_edit": "<a href=\"tel:123-456-7890\">CLICK TO CALL</a>"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Signature",
                         "name": "Signature",
                         "category": "media",
@@ -64,8 +80,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Clear",
@@ -75,13 +90,13 @@
                         "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
                         "component_id": "e085-7d28-ba0d",
                         "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": [],
                         "attributes": {
                             "fields_to_clear": "dee1-84b3-fdc0,8393-d8ef-d0fd",
                             "position": "Fill"
-                        }
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -97,7 +112,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "f0d63f016def7d54b147969a000c8f9384901c71"
+            "github_repository_sha": "89fc48dbabd5ce991d12ad952bb3938e8d65553f"
         }
     },
     "connections": []
