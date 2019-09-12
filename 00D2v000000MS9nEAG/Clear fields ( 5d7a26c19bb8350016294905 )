@@ -29,7 +29,7 @@
                             "show_auto_search_results": false,
                             "button": "Find",
                             "enable_barcode_scanner": false,
-                            "position": "Fill",
+                            "position": "Center",
                             "auto_fill_id": "",
                             "query_search_group": "",
                             "query_order_by": "",
@@ -77,25 +77,6 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
-                    },
-                    {
-                        "type": "AutoSubmit",
-                        "name": "Auto Submit",
-                        "category": "input",
-                        "label": "Auto Submit",
-                        "icon": "/scripts/formbuilder/img/navigation.png",
-                        "attributes": {
-                            "disable_cancel_popup": "false",
-                            "go_to_page": "",
-                            "type": "timer",
-                            "inactive_time": "15",
-                            "action": "submit"
-                        },
-                        "component_id": "dfe8-39fc-dbc5",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
                     }
                 ]
             }
@@ -111,7 +92,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "87613bc67d8df2576f8ef5f56b3523a6167cceb6"
+            "github_repository_sha": "62b4daada522c182e51586f406f97eed89337237"
         }
     },
     "connections": []
