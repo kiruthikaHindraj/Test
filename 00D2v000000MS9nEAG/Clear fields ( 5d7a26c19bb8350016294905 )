@@ -54,12 +54,44 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Signature",
+                        "name": "Signature",
+                        "category": "media",
+                        "label": "Signature Input",
+                        "icon": "/scripts/formbuilder/img/signature.png",
+                        "height": "110",
+                        "component_id": "8393-d8ef-d0fd",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Clear",
                         "name": "Clear",
                         "category": "input",
                         "label": "Clear Fields",
                         "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
                         "component_id": "e085-7d28-ba0d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "AutoSubmit",
+                        "name": "Auto Submit",
+                        "category": "input",
+                        "label": "Auto Submit",
+                        "icon": "/scripts/formbuilder/img/navigation.png",
+                        "attributes": {
+                            "disable_cancel_popup": "false",
+                            "go_to_page": "",
+                            "type": "timer",
+                            "inactive_time": "15",
+                            "action": "submit"
+                        },
+                        "component_id": "dfe8-39fc-dbc5",
                         "required": false,
                         "components": [],
                         "repeat_value": [],
@@ -77,7 +109,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "87613bc67d8df2576f8ef5f56b3523a6167cceb6"
+        }
     },
     "connections": []
 }
