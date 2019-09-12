@@ -79,6 +79,7 @@
                         "repeat_value": [],
                         "controlling_elements": [],
                         "attributes": {
+                            "fields_to_clear": "dee1-84b3-fdc0,8393-d8ef-d0fd",
                             "position": "Fill"
                         }
                     }
@@ -96,7 +97,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "177c143b105a3740dca7af2852d90d63c9c11261"
+            "github_repository_sha": "6f8dc1c0d0792ebea1ec2a0164462e8238ae3a15"
         }
     },
     "connections": []
