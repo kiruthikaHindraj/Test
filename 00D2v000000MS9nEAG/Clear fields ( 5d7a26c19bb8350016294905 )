@@ -94,8 +94,75 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Repeat Group",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "256b-39e1-6bb5",
+                        "required": false,
+                        "components": [
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "5fd2-ca01-4297",
+                                "attributes": {
+                                    "show_label": "Yes"
+                                },
+                                "icon": "/scripts/formbuilder/img/number.png",
+                                "label": "Number Field",
+                                "category": "input",
+                                "name": "Number",
+                                "type": "Number"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "7b6d-0383-7310",
+                                "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/barcode.png",
+                                "label": "Barcode Scanner",
+                                "category": "media",
+                                "name": "Barcode Scanner",
+                                "type": "Barcode"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "f8e0-3905-5bb2",
+                                "record_id": "",
+                                "object_api_name": "None Selected",
+                                "object_label": "None Selected",
+                                "sfdc_auto_fill_id": "",
+                                "sfdc_query_search_group": "",
+                                "sfdc_query_order_by": "",
+                                "sfdc_query_visibility": "",
+                                "sfdc_filter_fields": "",
+                                "sfdc_query_limit": "10",
+                                "sfdc_query_fields": "",
+                                "attributes": {
+                                    "button": "Select",
+                                    "position": "Fill",
+                                    "auto_fill_id": "",
+                                    "query_search_group": "",
+                                    "query_order_by": "",
+                                    "query_visibility": "",
+                                    "filter_fields": "",
+                                    "query_limit": "10",
+                                    "query_fields": ""
+                                },
+                                "version": "2",
+                                "icon": "/scripts/formbuilder/img/salesforce.png",
+                                "label": "Select Record",
+                                "category": "salesforce",
+                                "name": "",
+                                "type": "SalesforceSelect"
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     },
                     {
                         "type": "Signature",
@@ -108,8 +175,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Clear",
@@ -154,7 +220,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "a15f5e6306f7976473cf35975692236304806cb3"
+            "github_repository_sha": "b955d85e1df35c17d869929dc15aaca37805fa4b"
         }
     },
     "connections": []
