@@ -80,7 +80,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Clear",
@@ -91,7 +92,16 @@
                         "component_id": "e085-7d28-ba0d",
                         "required": false,
                         "attributes": {
-                            "fields_to_clear": "dee1-84b3-fdc0,8393-d8ef-d0fd",
+                            "fields_to_clear": [
+                                {
+                                    "Value": "",
+                                    "Field": "Record Lookup (dee1-84b3-fdc0)"
+                                },
+                                {
+                                    "Value": "",
+                                    "Field": "Custom HTML (2204-f281-78f3)"
+                                }
+                            ],
                             "position": "Fill"
                         },
                         "components": [],
@@ -112,7 +122,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "89fc48dbabd5ce991d12ad952bb3938e8d65553f"
+            "github_repository_sha": "35e8363c5530e432a57fe8c174bd6731b4961915"
         }
     },
     "connections": []
