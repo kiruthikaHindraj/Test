@@ -70,6 +70,18 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "8f55-322b-e442",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Signature",
                         "name": "Signature",
                         "category": "media",
@@ -80,8 +92,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Clear",
@@ -94,12 +105,16 @@
                         "attributes": {
                             "fields_to_clear": [
                                 {
-                                    "Value": "",
+                                    "Value": "Lookup",
                                     "Field": "Record Lookup (dee1-84b3-fdc0)"
                                 },
                                 {
                                     "Value": "",
                                     "Field": "Signature Input (8393-d8ef-d0fd)"
+                                },
+                                {
+                                    "Value": "Cleared",
+                                    "Field": "Text Field (8f55-322b-e442)"
                                 }
                             ],
                             "position": "Fill"
@@ -122,7 +137,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "94d9b62a898b38daae89f6c1c5a58da8d565d6f7"
+            "github_repository_sha": "3c9740d274a8fb1a06bfcc1841dbc72004fb63d3"
         }
     },
     "connections": []
