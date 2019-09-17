@@ -94,7 +94,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Signature",
@@ -107,7 +108,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Clear",
@@ -121,15 +123,15 @@
                             "fields_to_clear": [
                                 {
                                     "Value": "Lookup",
-                                    "Field": "Record Lookup (dee1-84b3-fdc0)"
+                                    "Field": "Record Lookup (dee1-84b3-fdc0 ) ( Page:Details)"
                                 },
                                 {
                                     "Value": "",
-                                    "Field": "Signature Input (8393-d8ef-d0fd)"
+                                    "Field": "Signature Input (8393-d8ef-d0fd ) ( Page:Details)"
                                 },
                                 {
                                     "Value": "Cleared",
-                                    "Field": "Text Field (8f55-322b-e442)"
+                                    "Field": "Text Field (8f55-322b-e442 ) ( Page:Details)"
                                 }
                             ],
                             "position": "Fill"
@@ -152,7 +154,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "f076c040b0d8746908f300872472263884a6239c"
+            "github_repository_sha": "a15f5e6306f7976473cf35975692236304806cb3"
         }
     },
     "connections": []
