@@ -54,6 +54,21 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Number",
+                        "name": "Number",
+                        "category": "input",
+                        "label": "Number Field",
+                        "icon": "/scripts/formbuilder/img/number.png",
+                        "attributes": {
+                            "show_label": "Yes"
+                        },
+                        "component_id": "4974-891a-154d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "HTML",
                         "name": "HTML",
                         "category": "media",
@@ -137,7 +152,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "3c9740d274a8fb1a06bfcc1841dbc72004fb63d3"
+            "github_repository_sha": "f076c040b0d8746908f300872472263884a6239c"
         }
     },
     "connections": []
