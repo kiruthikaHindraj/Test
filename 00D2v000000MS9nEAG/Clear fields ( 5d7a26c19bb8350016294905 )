@@ -94,7 +94,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Repeat",
@@ -106,63 +107,69 @@
                         "required": false,
                         "components": [
                             {
-                                "components": [],
-                                "required": false,
-                                "component_id": "5fd2-ca01-4297",
+                                "type": "Number",
+                                "name": "Number",
+                                "category": "input",
+                                "label": "Number Field",
+                                "icon": "/scripts/formbuilder/img/number.png",
                                 "attributes": {
                                     "show_label": "Yes"
                                 },
-                                "icon": "/scripts/formbuilder/img/number.png",
-                                "label": "Number Field",
-                                "category": "input",
-                                "name": "Number",
-                                "type": "Number"
+                                "component_id": "5fd2-ca01-4297",
+                                "required": false,
+                                "components": []
                             },
                             {
-                                "components": [],
-                                "required": false,
-                                "component_id": "7b6d-0383-7310",
-                                "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/barcode.png",
-                                "label": "Barcode Scanner",
-                                "category": "media",
+                                "type": "Barcode",
                                 "name": "Barcode Scanner",
-                                "type": "Barcode"
+                                "category": "media",
+                                "label": "Barcode Scanner",
+                                "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/barcode.png",
+                                "component_id": "7b6d-0383-7310",
+                                "required": false,
+                                "components": [],
+                                "attributes": {}
                             },
                             {
-                                "components": [],
-                                "required": false,
-                                "component_id": "f8e0-3905-5bb2",
-                                "record_id": "",
-                                "object_api_name": "None Selected",
-                                "object_label": "None Selected",
-                                "sfdc_auto_fill_id": "",
-                                "sfdc_query_search_group": "",
-                                "sfdc_query_order_by": "",
-                                "sfdc_query_visibility": "",
-                                "sfdc_filter_fields": "",
-                                "sfdc_query_limit": "10",
-                                "sfdc_query_fields": "",
-                                "attributes": {
-                                    "button": "Select",
-                                    "position": "Fill",
-                                    "auto_fill_id": "",
-                                    "query_search_group": "",
-                                    "query_order_by": "",
-                                    "query_visibility": "",
-                                    "filter_fields": "",
-                                    "query_limit": "10",
-                                    "query_fields": ""
-                                },
-                                "version": "2",
-                                "icon": "/scripts/formbuilder/img/salesforce.png",
-                                "label": "Select Record",
-                                "category": "salesforce",
+                                "type": "SalesforceSelect",
                                 "name": "",
-                                "type": "SalesforceSelect"
+                                "category": "salesforce",
+                                "label": "Select Record",
+                                "icon": "/scripts/formbuilder/img/salesforce.png",
+                                "version": "2",
+                                "attributes": {
+                                    "query_fields": "",
+                                    "query_limit": "10",
+                                    "filter_fields": "",
+                                    "query_visibility": "",
+                                    "query_order_by": "",
+                                    "query_search_group": "",
+                                    "auto_fill_id": "",
+                                    "position": "Fill",
+                                    "button": "Select",
+                                    "owner_field": "",
+                                    "enable_clear_button": false,
+                                    "offline_sync_filter": "",
+                                    "custom_offline_lookup_filter": ""
+                                },
+                                "sfdc_query_fields": "",
+                                "sfdc_query_limit": "10",
+                                "sfdc_filter_fields": "",
+                                "sfdc_query_visibility": "All Records",
+                                "sfdc_query_order_by": "",
+                                "sfdc_query_search_group": "",
+                                "sfdc_auto_fill_id": "",
+                                "object_label": "None Selected",
+                                "object_api_name": "Account",
+                                "record_id": "",
+                                "component_id": "f8e0-3905-5bb2",
+                                "required": false,
+                                "components": []
                             }
                         ],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Signature",
@@ -175,7 +182,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Clear",
@@ -189,15 +197,19 @@
                             "fields_to_clear": [
                                 {
                                     "Value": "Lookup",
-                                    "Field": "Record Lookup (dee1-84b3-fdc0 ) ( Page:Details)"
+                                    "Field": "Record Lookup (dee1-84b3-fdc0 ) ( Page:Details )"
                                 },
                                 {
                                     "Value": "",
-                                    "Field": "Signature Input (8393-d8ef-d0fd ) ( Page:Details)"
+                                    "Field": "Number Field (4974-891a-154d ) ( Page:Details )"
                                 },
                                 {
                                     "Value": "Cleared",
-                                    "Field": "Text Field (8f55-322b-e442 ) ( Page:Details)"
+                                    "Field": "Text Field (8f55-322b-e442 ) ( Page:Details )"
+                                },
+                                {
+                                    "Value": "New Find",
+                                    "Field": "Select Record (f8e0-3905-5bb2 ) ( Page: Details| Repeat: Repeat Group )"
                                 }
                             ],
                             "position": "Fill"
@@ -220,7 +232,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "b955d85e1df35c17d869929dc15aaca37805fa4b"
+            "github_repository_sha": "2734251995938110630b5784f0a1ae7da84df57e"
         }
     },
     "connections": []
