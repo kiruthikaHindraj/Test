@@ -194,7 +194,7 @@
                         "component_id": "e085-7d28-ba0d",
                         "required": false,
                         "attributes": {
-                            "width": "",
+                            "width": "30",
                             "size": "",
                             "style": "btn-default",
                             "fields_to_clear": [],
@@ -218,7 +218,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ed4098b88659b08166c8d8c5831d9042c8da84f0"
+            "github_repository_sha": "715ab8253884bfc401ac107e28c17b6e8b7ef1c3"
         }
     },
     "connections": []
