@@ -194,32 +194,10 @@
                         "component_id": "e085-7d28-ba0d",
                         "required": false,
                         "attributes": {
-                            "fields_to_clear": [
-                                {
-                                    "Value": "Lookup",
-                                    "Field": "Record Lookup (dee1-84b3-fdc0 ) ( Page:Details )"
-                                },
-                                {
-                                    "Value": "",
-                                    "Field": "Number Field (4974-891a-154d ) ( Page:Details )"
-                                },
-                                {
-                                    "Value": "Cleared",
-                                    "Field": "Text Field (8f55-322b-e442 ) ( Page:Details )"
-                                },
-                                {
-                                    "Value": "New Find",
-                                    "Field": "Select Record (f8e0-3905-5bb2 ) ( Page: Details| Repeat: Repeat Group )"
-                                },
-                                {
-                                    "Value": "",
-                                    "Field": "Repeat Group (256b-39e1-6bb5 ) ( Page:Details )"
-                                },
-                                {
-                                    "Value": "",
-                                    "Field": "Signature Input (8393-d8ef-d0fd ) ( Page:Details )"
-                                }
-                            ],
+                            "width": "",
+                            "size": "",
+                            "style": "btn-default",
+                            "fields_to_clear": [],
                             "position": "Fill"
                         },
                         "components": [],
@@ -240,7 +218,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "1e3100b1e881ed4c3d988c3c5243ecbf55739cb2"
+            "github_repository_sha": "f9afc64fc8212f8a5d5e263f9b6e51e1a9810357"
         }
     },
     "connections": []
