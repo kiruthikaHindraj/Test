@@ -225,11 +225,11 @@
                             "style": "btn-info",
                             "fields_to_clear": [
                                 {
-                                    "Value": "23-09-2019 14:38",
+                                    "Value": "moment()",
                                     "Field": "Date Time Field ( Page:Details )"
                                 },
                                 {
-                                    "Value": "23-09-2019",
+                                    "Value": "new Date()",
                                     "Field": "Date Field ( Page:Details )"
                                 },
                                 {
@@ -274,7 +274,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "0aadbadc5710e0bc523df4c0e50d84f54a10844d"
+            "github_repository_sha": "b551c2010e5d2e80cb6476b36d5f9e44ecadb2a9"
         }
     },
     "connections": []
