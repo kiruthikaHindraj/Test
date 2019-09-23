@@ -94,8 +94,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Repeat",
@@ -127,8 +126,7 @@
                                 "label": "Barcode Scanner",
                                 "category": "media",
                                 "name": "Barcode Scanner",
-                                "type": "Barcode",
-                                "attributes": {}
+                                "type": "Barcode"
                             },
                             {
                                 "components": [],
@@ -168,8 +166,7 @@
                             }
                         ],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Signature",
@@ -182,34 +179,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
-                    },
-                    {
-                        "type": "DateTime",
-                        "name": "Date and Time",
-                        "category": "input",
-                        "label": "Date Time Field",
-                        "icon": "/scripts/formbuilder/img/datetime.png",
-                        "component_id": "c083-76a3-845e",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
-                    },
-                    {
-                        "type": "Time",
-                        "name": "Time",
-                        "category": "input",
-                        "label": "Time Field",
-                        "icon": "/scripts/formbuilder/img/datetime.png",
-                        "component_id": "6547-9266-ab62",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Clear",
@@ -236,6 +206,30 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "DateTime",
+                        "name": "Date and Time",
+                        "category": "input",
+                        "label": "Date Time Field",
+                        "icon": "/scripts/formbuilder/img/datetime.png",
+                        "component_id": "c083-76a3-845e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Time",
+                        "name": "Time",
+                        "category": "input",
+                        "label": "Time Field",
+                        "icon": "/scripts/formbuilder/img/datetime.png",
+                        "component_id": "6547-9266-ab62",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Date",
                         "name": "Date",
                         "category": "input",
@@ -245,8 +239,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -262,7 +255,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ab012182136d1fa8b2d372fb7a0f429b479508ae"
+            "github_repository_sha": "b41f950a5c433f60b2a8fcdd713d138053ba1f91"
         }
     },
     "connections": []
