@@ -195,10 +195,10 @@
                         "required": false,
                         "attributes": {
                             "width": "",
-                            "size": "btn-lg",
-                            "style": "btn-success",
+                            "size": "btn-sm",
+                            "style": "btn-info",
                             "fields_to_clear": [],
-                            "position": "Fill"
+                            "position": "Left"
                         },
                         "components": [],
                         "repeat_value": [],
@@ -218,7 +218,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "fce0ae73a3be54c21aa99674411d54e1f14a9408"
+            "github_repository_sha": "95e334019b1278e08412725ee6e6e9096beab24b"
         }
     },
     "connections": []
