@@ -225,22 +225,6 @@
                             "style": "btn-info",
                             "fields_to_clear": [
                                 {
-                                    "Value": "moment()",
-                                    "Field": "Date Time Field ( Page:Details )"
-                                },
-                                {
-                                    "Value": "new Date()",
-                                    "Field": "Date Field ( Page:Details )"
-                                },
-                                {
-                                    "Value": "14:39",
-                                    "Field": "Time Field ( Page:Details )"
-                                },
-                                {
-                                    "Value": "Cleared",
-                                    "Field": "Text Field ( Page:Details )"
-                                },
-                                {
                                     "Value": "0",
                                     "Field": "Number Field ( Page: Details| Repeat: Repeat Group )"
                                 }
@@ -278,7 +262,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "30e03ae775b6b5653386fe95acc713be4b117505"
+            "github_repository_sha": "2caeefadeb4423a8d8f815e38e4de0904beebe24"
         }
     },
     "connections": []
