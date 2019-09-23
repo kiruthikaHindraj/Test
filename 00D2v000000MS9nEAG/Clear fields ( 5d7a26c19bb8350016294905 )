@@ -16,6 +16,22 @@
                 "deployed": true,
                 "components": [
                     {
+                        "type": "HTML",
+                        "name": "HTML",
+                        "category": "media",
+                        "label": "Custom HTML",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "2204-f281-78f3",
+                        "attributes": {
+                            "html_detail": "",
+                            "html_edit": "<a href=\"tel:123-456-7890\">CLICK TO CALL</a>"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Salesforce",
                         "name": "",
                         "category": "salesforce",
@@ -69,22 +85,6 @@
                         "controlling_elements": []
                     },
                     {
-                        "type": "HTML",
-                        "name": "HTML",
-                        "category": "media",
-                        "label": "Custom HTML",
-                        "icon": "/scripts/formbuilder/img/paragraph.png",
-                        "component_id": "2204-f281-78f3",
-                        "attributes": {
-                            "html_detail": "",
-                            "html_edit": "<a href=\"tel:123-456-7890\">CLICK TO CALL</a>"
-                        },
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
                         "type": "Text",
                         "name": "Text",
                         "category": "input",
@@ -94,8 +94,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Repeat",
@@ -127,8 +126,7 @@
                                 "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/barcode.png",
                                 "component_id": "7b6d-0383-7310",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "type": "SalesforceSelect",
@@ -168,8 +166,7 @@
                             }
                         ],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Signature",
@@ -182,8 +179,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Clear",
@@ -219,8 +215,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Time",
@@ -232,8 +227,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Date",
@@ -245,8 +239,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -262,7 +255,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "abcd1924b31cc18724fe85e42dcf9f3b75e60bd5"
+            "github_repository_sha": "3078f9b758881d6f7cd4fdbd47ce50fd4b23480e"
         }
     },
     "connections": []
