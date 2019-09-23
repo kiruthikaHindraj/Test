@@ -94,8 +94,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Repeat",
@@ -127,8 +126,7 @@
                                 "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/barcode.png",
                                 "component_id": "7b6d-0383-7310",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "type": "SalesforceSelect",
@@ -168,8 +166,7 @@
                             }
                         ],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Signature",
@@ -182,8 +179,31 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "DateTime",
+                        "name": "Date and Time",
+                        "category": "input",
+                        "label": "Date Time Field",
+                        "icon": "/scripts/formbuilder/img/datetime.png",
+                        "component_id": "c083-76a3-845e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Time",
+                        "name": "Time",
+                        "category": "input",
+                        "label": "Time Field",
+                        "icon": "/scripts/formbuilder/img/datetime.png",
+                        "component_id": "6547-9266-ab62",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     },
                     {
                         "type": "Clear",
@@ -194,12 +214,41 @@
                         "component_id": "e085-7d28-ba0d",
                         "required": false,
                         "attributes": {
-                            "width": "30",
+                            "width": "",
                             "size": "",
-                            "style": "btn-default",
-                            "fields_to_clear": [],
-                            "position": "Right"
+                            "style": "btn-info",
+                            "fields_to_clear": [
+                                {
+                                    "Value": "23-09-2019 14:38",
+                                    "Field": "Date Time Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "23-09-2019",
+                                    "Field": "Date Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "14:39",
+                                    "Field": "Time Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "Cleared",
+                                    "Field": "Text Field ( Page:Details )"
+                                }
+                            ],
+                            "position": "Fill"
                         },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Date",
+                        "name": "Date",
+                        "category": "input",
+                        "label": "Date Field",
+                        "icon": "/scripts/formbuilder/img/date.png",
+                        "component_id": "68f8-7e45-a4bd",
+                        "required": false,
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
@@ -218,7 +267,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "715ab8253884bfc401ac107e28c17b6e8b7ef1c3"
+            "github_repository_sha": "6c26b46ec0e245491ade049fd9e3e8d7781f0472"
         }
     },
     "connections": []
