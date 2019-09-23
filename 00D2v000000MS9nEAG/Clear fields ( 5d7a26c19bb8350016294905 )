@@ -196,7 +196,7 @@
                         "attributes": {
                             "width": "",
                             "size": "",
-                            "style": "btn-default",
+                            "style": "btn-primary",
                             "fields_to_clear": [],
                             "position": "Fill"
                         },
@@ -218,7 +218,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "f9afc64fc8212f8a5d5e263f9b6e51e1a9810357"
+            "github_repository_sha": "c6d21a3a4973f522f72aa5ad8bbc2da4819bd92b"
         }
     },
     "connections": []
