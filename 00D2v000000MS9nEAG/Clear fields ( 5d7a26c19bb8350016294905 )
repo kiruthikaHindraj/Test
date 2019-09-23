@@ -195,8 +195,8 @@
                         "required": false,
                         "attributes": {
                             "width": "",
-                            "size": "btn-xs",
-                            "style": "btn-link",
+                            "size": "",
+                            "style": "btn-default",
                             "fields_to_clear": [],
                             "position": "Right"
                         },
@@ -218,7 +218,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "97de25c0fa40719d36ce44e8030b7796aa837059"
+            "github_repository_sha": "8460535b1778f55b68ec242631862838e811d987"
         }
     },
     "connections": []
