@@ -585,12 +585,13 @@
         "access": "Private",
         "public": false,
         "list_view_fields": null,
-        "archived": true,
+        "archived": false,
         "attributes": {
-            "enable_sfdc_storage": false,
-            "is_navigation_hidden": true,
+            "github_repository_sha": "c2ee63aa5f21a3265d713785162ab05f27857a53",
+            "is_repeat": false,
             "is_header_hidden": false,
-            "is_repeat": false
+            "is_navigation_hidden": true,
+            "enable_sfdc_storage": false
         },
         "description": "",
         "tags": ""
