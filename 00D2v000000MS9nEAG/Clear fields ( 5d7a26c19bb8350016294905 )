@@ -218,6 +218,46 @@
                                 {
                                     "Value": "0",
                                     "Field": "Number Field ( Page: Details| Repeat: Repeat Group )"
+                                },
+                                {
+                                    "Value": "search",
+                                    "Field": "Record Lookup ( Page:Details )"
+                                },
+                                {
+                                    "Value": "",
+                                    "Field": "Number Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "cleared",
+                                    "Field": "Text Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "",
+                                    "Field": "Barcode Scanner ( Page: Details| Repeat: Repeat Group )"
+                                },
+                                {
+                                    "Value": "new",
+                                    "Field": "Select Record ( Page: Details| Repeat: Repeat Group )"
+                                },
+                                {
+                                    "Value": "",
+                                    "Field": "Signature Input1 ( Page:Details )"
+                                },
+                                {
+                                    "Value": "",
+                                    "Field": "Signature Input ( Page:Details )"
+                                },
+                                {
+                                    "Value": "new Date()",
+                                    "Field": "Date Time Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "",
+                                    "Field": "Time Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "moment()",
+                                    "Field": "Date Field ( Page:Details )"
                                 }
                             ],
                             "position": "Fill"
@@ -281,7 +321,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "32f6222ee1c96d0767c884cfa85eb14b4ead2e4b"
+            "github_repository_sha": "486b0ca370c5121c83e67421ce4ff4bc47a31e70"
         }
     },
     "connections": [
