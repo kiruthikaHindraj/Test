@@ -258,6 +258,10 @@
                                 {
                                     "Value": "moment()",
                                     "Field": "Date Field ( Page:Details )"
+                                },
+                                {
+                                    "Value": "",
+                                    "Field": "Repeat Group ( Page:Details )"
                                 }
                             ],
                             "position": "Fill"
@@ -321,7 +325,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "6f4ccfd74d0a29ce6f334837fd8f3ac6f8ea97a4"
+            "github_repository_sha": "eeed40c6343469df2a3eaf0b02c9152c6c8e5361"
         }
     },
     "connections": [
