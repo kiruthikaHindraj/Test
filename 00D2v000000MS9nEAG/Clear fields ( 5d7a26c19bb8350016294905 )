@@ -220,7 +220,7 @@
                                     "Field": "Number Field ( Page: Details| Repeat: Repeat Group )"
                                 },
                                 {
-                                    "Value": "search",
+                                    "Value": "",
                                     "Field": "Record Lookup ( Page:Details )"
                                 },
                                 {
@@ -321,7 +321,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "c882e21e867c164bcdab73283272f56ef5bce218"
+            "github_repository_sha": "0e8c79435874d7276e7f4be22b22292293268c6a"
         }
     },
     "connections": [
