@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-10-05T04:14:51.830Z",
         "attributes": {
-            "github_repository_sha": "74822164bc163c93a5ccbb8031f0abb7077c3f54"
+            "github_repository_sha": "81358dd2f36d20f657595a849f6ac9d4fc3280c8"
         },
         "pages": [
             {
@@ -78,7 +78,7 @@
                         "version": "2",
                         "component_id": "54e9-a2fe-3c87",
                         "attributes": {
-                            "script": "$('#component-53ad-22e3-3be8').on(\"click\", \".add_blank_row\" ,function(e){\nconsole.log(\"clicked\");\nvar salesforce_table = $(e.currentTarget).parent().parent().parent().DataTable();\n$(\"td.Id\").trigger('click');\n$(\"td.Id\").on('click', function () {\n// formyoula.form_fields[\"f67d-4a77-520a\"].off(\"prefill:success\")\n// formyoula.form_fields[\"f67d-4a77-520a\"].on(\"prefill:success\", function(){\nconsole.log(\"prefill success\");\n//Update row \nsalesforce_table.row.add( [\n            formyoula.form_fields[\"f67d-4a77-520a\"].get(\"value\"),\n            \"tttttttttt@g.comt\",\n            \"pooran\",\n            formyoula.form_fields[\"lasstname\"].get(\"value\")\n        ] ).draw( false );\n// var current_row = salesforce_table.row($(e.currentTarget).parent());\n//console.log(current_row());\n//console.log(current_row.data());\nconsole.log(formyoula.form_fields[\"Email\"].get(\"value\"));\nconsole.log(formyoula.form_fields[\"f67d-4a77-520a\"].get(\"value\"));\nconsole.log(formyoula.form_fields[\"lasstname\"].get(\"value\"));\n// current_row.data().previous_record_id = current_row.data() ? '' : //current_row.data().Id;\n//current_row.data().Id = formyoula.form_fields[\"f67d-4a77-520a\"].get(\"value\");\n//current_row.data().Email = \"tttttttttt@g.comt\";\n//current_row.data().FirstName = \"pooran\";\n//current_row.data().LastName = formyoula.form_fields[\"lasstname\"].get(\"value\");\n//$(e.currentTarget).parent().find(\"td.Id\").text(current_row.Id);\n//$(e.currentTarget).parent().find(\"td.Email input\").val(current_row.Email);\n//$(e.currentTarget).parent().find(\"td.Email input\").val( //current_row.data().FirstName).trigger(\"change\");\n//salesforce_table.rows($(e.currentTarget).parent()).invalidate().draw(false);\n//console.log($(e.currentTarget).parent(),current_row.data())\nformyoula.form_fields[\"f67d-4a77-520a\"].set({\"value\":\"\",name:\"\"},{silent:true});\n});\n});",
+                            "script": "",
                             "script_detail": ""
                         },
                         "required": false,
