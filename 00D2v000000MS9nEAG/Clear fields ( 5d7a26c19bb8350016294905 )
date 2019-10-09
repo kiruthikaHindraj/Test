@@ -202,7 +202,7 @@
                         "repeat_value": [],
                         "controlling_elements": [],
                         "attributes": {
-                            "custom_width": "94",
+                            "custom_width": "100",
                             "width": "",
                             "clear_label": ""
                         }
@@ -330,7 +330,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "868ae6a07080135da63e53a5d48d7ec16bafd5ad"
+            "github_repository_sha": "b620f49e46dbc5a6775297135f9d601a506344b2"
         }
     },
     "connections": [
