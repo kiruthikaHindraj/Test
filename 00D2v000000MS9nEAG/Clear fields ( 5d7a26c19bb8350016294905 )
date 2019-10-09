@@ -180,6 +180,7 @@
                         "height": "110",
                         "component_id": "8dba-4e3b-3829",
                         "attributes": {
+                            "custom_width": "",
                             "width": "30",
                             "clear_label": ""
                         },
@@ -200,7 +201,11 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": [],
-                        "attributes": {}
+                        "attributes": {
+                            "custom_width": "94",
+                            "width": "",
+                            "clear_label": ""
+                        }
                     },
                     {
                         "type": "Clear",
@@ -325,7 +330,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "eeed40c6343469df2a3eaf0b02c9152c6c8e5361"
+            "github_repository_sha": "868ae6a07080135da63e53a5d48d7ec16bafd5ad"
         }
     },
     "connections": [
