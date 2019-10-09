@@ -181,7 +181,7 @@
                         "component_id": "8dba-4e3b-3829",
                         "attributes": {
                             "custom_width": "",
-                            "width": "30",
+                            "width": "",
                             "clear_label": ""
                         },
                         "required": false,
@@ -330,7 +330,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "09ca31db05ec0dd2c384ba1252787961a2362ac5"
+            "github_repository_sha": "e88a052dbac982e68a798f77bc80993efe5005e0"
         }
     },
     "connections": [
