@@ -180,6 +180,7 @@
                         "height": "110",
                         "component_id": "8dba-4e3b-3829",
                         "attributes": {
+                            "set_full_width": true,
                             "custom_width": "",
                             "width": "",
                             "clear_label": ""
@@ -330,7 +331,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "b4281289060295730c5d55eb21f316fc26676d35"
+            "github_repository_sha": "dc55c65671fe74000c7c840c8770e396c4b5f51c"
         }
     },
     "connections": [
