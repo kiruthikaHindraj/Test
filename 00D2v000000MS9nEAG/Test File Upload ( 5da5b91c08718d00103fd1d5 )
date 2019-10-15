@@ -25,7 +25,15 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {
+                            "file_upload_success_message": "",
+                            "parent_id": "0012v00002YvmvG",
+                            "file_description": "",
+                            "file_upload_button_label": "Upload DOC",
+                            "upload_on": "on_file_selection",
+                            "file_attachment_name": ""
+                        }
                     }
                 ]
             }
@@ -39,7 +47,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "51f7cac444ed7170312a022a7604ac1699ca1296"
+        }
     },
     "connections": []
 }
