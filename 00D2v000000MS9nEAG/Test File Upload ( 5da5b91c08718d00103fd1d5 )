@@ -23,9 +23,6 @@
                         "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
                         "component_id": "6aa7-71e6-5fe3",
                         "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": [],
                         "attributes": {
                             "file_upload_success_message": "",
                             "parent_id": "0012v00002YvmvG",
@@ -33,7 +30,23 @@
                             "file_upload_button_label": "Upload DOC",
                             "upload_on": "on_file_selection",
                             "file_attachment_name": ""
-                        }
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "7c14-d022-32c3",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -49,7 +62,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "000917a49b68a1b2b7cce487db8033a5fe6e8ffd"
+            "github_repository_sha": "f26067f66214390d5dc62e77c17a42d7d714be8a"
         }
     },
     "connections": []
