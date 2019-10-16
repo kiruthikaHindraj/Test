@@ -1,0 +1,66 @@
+{
+    "form": {
+        "created_by_id": "5da6c0265befb700152f5a04",
+        "owner_id": "5da6c0265befb700152f5a04",
+        "name": "My Form",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-10-16T07:01:20.352Z",
+        "pages": [
+            {
+                "page_id": "8fd1-f267-9ad3",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "File_Upload",
+                        "name": "File Upload",
+                        "category": "media",
+                        "label": "File Upload",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "13e3-b07a-9dbf",
+                        "attributes": {
+                            "file_upload_success_message": "File uploaded successfully",
+                            "parent_id": "0012v00002YdmZW",
+                            "file_description": "",
+                            "file_upload_button_label": "",
+                            "upload_on": "on_form_submit",
+                            "file_attachment_name": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "ec46-037b-e27f",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5da6c0265befb700152f5a04"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
