@@ -1,0 +1,66 @@
+{
+    "form": {
+        "created_by_id": "5da6c947afb6bf00159598ff",
+        "owner_id": "5da6c947afb6bf00159598ff",
+        "name": "My Form",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-10-16T07:40:07.560Z",
+        "pages": [
+            {
+                "page_id": "28b6-91ca-e048",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "File_Upload",
+                        "name": "File Upload",
+                        "category": "media",
+                        "label": "File Upload",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "2829-fcd9-0403",
+                        "attributes": {
+                            "file_upload_success_message": "",
+                            "parent_id": "0012v00002ZtZiI",
+                            "file_description": "",
+                            "file_upload_button_label": "",
+                            "upload_on": "on_file_selection",
+                            "file_attachment_name": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "cc1f-2cf5-6f8e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5da6c947afb6bf00159598ff"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
