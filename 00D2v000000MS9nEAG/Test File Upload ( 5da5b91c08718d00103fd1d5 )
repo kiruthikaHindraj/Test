@@ -28,7 +28,7 @@
                             "parent_id": "0012v00002YvmvG",
                             "file_description": "",
                             "file_upload_button_label": "Upload DOC",
-                            "upload_on": "on_file_selection",
+                            "upload_on": "on_form_submit",
                             "file_attachment_name": ""
                         },
                         "components": [],
@@ -63,7 +63,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "b021188b8ebfae3b1944b0326f3cf32a3500b21a"
+            "github_repository_sha": "dea21ebeb94fffc3bb991db0ebeecbae3fdae893"
         }
     },
     "connections": []
