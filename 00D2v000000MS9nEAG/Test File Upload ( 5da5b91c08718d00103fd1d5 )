@@ -24,7 +24,8 @@
                         "component_id": "6aa7-71e6-5fe3",
                         "required": false,
                         "attributes": {
-                            "file_upload_success_message": "",
+                            "file_upload_notification_title": "Success",
+                            "file_upload_success_message": "Whoo! file uploaded successfully",
                             "parent_id": "0012v00002YvmvG",
                             "file_description": "",
                             "file_upload_button_label": "Upload DOC",
@@ -63,7 +64,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "7bde5d733443efa238d3554e637c68905b874368"
+            "github_repository_sha": "b45f6494492f5ed307935849cc1ea00e6de68d50"
         }
     },
     "connections": []
