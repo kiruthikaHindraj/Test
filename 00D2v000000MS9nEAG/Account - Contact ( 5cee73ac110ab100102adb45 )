@@ -79,43 +79,56 @@
                         "sfdc_query_order_by": "",
                         "components": [
                             {
-                                "components": [],
-                                "required": false,
-                                "attributes": {
-                                    "readonly": "no"
-                                },
-                                "component_id": "3349-e788-885b",
-                                "icon": "/scripts/formbuilder/img/text.png",
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
                                 "label": "First name",
-                                "category": "input",
-                                "name": "Text",
-                                "type": "Text"
-                            },
-                            {
-                                "components": [],
-                                "required": false,
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "3349-e788-885b",
                                 "attributes": {
                                     "readonly": "no"
                                 },
-                                "component_id": "dc22-da59-4870",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "label": "Last name",
-                                "category": "input",
-                                "name": "Text",
-                                "type": "Text"
+                                "required": false,
+                                "components": []
                             },
                             {
-                                "components": [],
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Last name",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "dc22-da59-4870",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
                                 "required": false,
-                                "component_id": "3cca-4082-1727",
+                                "components": []
+                            },
+                            {
+                                "type": "Email",
+                                "name": "Email",
+                                "category": "input",
+                                "label": "Email Field",
+                                "icon": "/scripts/formbuilder/img/email.png",
                                 "attributes": {
                                     "show_label": "Yes"
                                 },
-                                "icon": "/scripts/formbuilder/img/email.png",
-                                "label": "Email Field",
+                                "component_id": "3cca-4082-1727",
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Number",
+                                "name": "Number",
                                 "category": "input",
-                                "name": "Email",
-                                "type": "Email"
+                                "label": "Number Field",
+                                "icon": "/scripts/formbuilder/img/number.png",
+                                "attributes": {
+                                    "show_label": "Yes"
+                                },
+                                "component_id": "91c9-25a8-f262",
+                                "required": true,
+                                "components": []
                             }
                         ],
                         "repeat_value": [],
@@ -138,7 +151,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "9ffc5b05270cbfb66671734a9e73cd14c48faad2"
+            "github_repository_sha": "48a4e8bcc92f8352df8a1786382ad6bce951fa5b"
         }
     },
     "connections": [
