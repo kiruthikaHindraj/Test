@@ -1,0 +1,346 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "test_repeat_prefill",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-10-25T10:19:23.960Z",
+        "attributes": {
+            "github_repository_sha": "1dc15f96f1216524af9aee48616ae0a7880133c3"
+        },
+        "pages": [
+            {
+                "page_id": "6049-1271-5457",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "show_auto_search_results": false,
+                            "button": "Find",
+                            "enable_barcode_scanner": false,
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Description,Name",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5db2cc2cde1de3001ac2ab0f",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "b67b-1f26-7d62",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "8e55-402d-40d3",
+                        "attributes": {
+                            "script": "formyoula.form_fields[\"12d1-c186-2a78\"].on('element:create:success prefill:success', function(){\n  $.each(document.querySelectorAll('.existing_repeat_entry_panel .panel-heading .panel-title a'), function (val, element) {\n  console.log(element);\n  var index = element.href.split('_')[element.href.split('_').length -1];\n  console.log(index);\n  element.prepend(parseInt(index)+1 +'.');\n  element.innerHTML = element.innerHTML.replace(/<br\\s*\\/?>/gi,'<br>&nbsp;&nbsp;');\n});\n});",
+                            "script_detail": ""
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Repeat Group",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "2679-3df2-53ed",
+                        "attributes": {
+                            "all_expanded": false,
+                            "max_repeat_items": "",
+                            "sfdc_parent_field_name": "Description",
+                            "sfdc_parent_component": "b67b-1f26-7d62",
+                            "list_view_fields": [
+                                "f3db-ffe6-1120"
+                            ],
+                            "delete_button_label": "",
+                            "add_title_label": "",
+                            "add_button_label": "",
+                            "repeat_view_option": "table"
+                        },
+                        "required": false,
+                        "object_api_name": "Account",
+                        "sfdc_query_limit": "5",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_order_by": "",
+                        "sfdc_auto_fill_id": "5d3ed2abe74489001949a17d",
+                        "components": [
+                            {
+                                "components": [],
+                                "required": true,
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "component_id": "f3db-ffe6-1120",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Name",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Contact Number",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "9e84-c817-2e73",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Contact",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "12d1-c186-2a78",
+                        "attributes": {
+                            "sfdc_parent_field_name": "AccountId",
+                            "all_expanded": false,
+                            "max_repeat_items": "",
+                            "sfdc_parent_component": "b67b-1f26-7d62",
+                            "list_view_fields": [
+                                "1134-c6c1-a019",
+                                "ed1a-6d38-55e9",
+                                "4fd7-008c-08bc"
+                            ],
+                            "delete_button_label": "",
+                            "add_title_label": "",
+                            "add_button_label": "",
+                            "repeat_view_option": "list"
+                        },
+                        "required": false,
+                        "sfdc_query_limit": "",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_order_by": "",
+                        "object_api_name": "Contact",
+                        "sfdc_auto_fill_id": "5db2cc2cde1de3001ac2ab0e",
+                        "components": [
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Name",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "1134-c6c1-a019",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Email",
+                                "name": "Email",
+                                "category": "input",
+                                "label": "Email Field",
+                                "icon": "/scripts/formbuilder/img/email.png",
+                                "component_id": "ed1a-6d38-55e9",
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Phone Number",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "4fd7-008c-08bc",
+                                "attributes": {
+                                    "readonly": "no"
+                                },
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "components": [],
+                                "required": true,
+                                "component_id": "2168-2a4d-594e",
+                                "attributes": {
+                                    "show_label": "Yes"
+                                },
+                                "icon": "/scripts/formbuilder/img/number.png",
+                                "label": "Number Field",
+                                "category": "input",
+                                "name": "Number",
+                                "type": "Number"
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": [
+                            {
+                                "component_id": "b67b-1f26-7d62",
+                                "label": "Record Lookup (Details)",
+                                "value": "Yes",
+                                "type": "Salesforce",
+                                "_id": "5d8b466f48ee170019038f73"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Number",
+                        "name": "Number",
+                        "category": "input",
+                        "label": "Number Field",
+                        "icon": "/scripts/formbuilder/img/number.png",
+                        "component_id": "70fd-524f-1cfc",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce",
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": [
+        {
+            "_id": "5db2cc2cde1de3001ac2ab0e",
+            "created_at": "2019-07-29T05:37:01.549Z",
+            "updated_at": "2019-10-25T10:19:24.046Z",
+            "template_id": "5db2cc2bde1de3001ac2ab07",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Full Name ( Name )",
+                    "component_id": "1134-c6c1-a019",
+                    "component_name": "Name ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "Email",
+                    "field_name": "Email ( Email )",
+                    "component_id": "ed1a-6d38-55e9",
+                    "component_name": "Email Field ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "MobilePhone",
+                    "field_name": "Mobile Phone ( MobilePhone )",
+                    "component_id": "4fd7-008c-08bc",
+                    "component_name": "Phone Number ( Page: Details | Repeat: Contact )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Contact",
+                "object_name": "Contact",
+                "attachment": "",
+                "repeat_group": "12d1-c186-2a78",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5db2cc2cde1de3001ac2ab0f",
+            "created_at": "2019-07-29T06:04:22.913Z",
+            "updated_at": "2019-10-25T10:19:24.057Z",
+            "template_id": "5db2cc2bde1de3001ac2ab07",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Account Name ( Name )",
+                    "component_id": "f3db-ffe6-1120",
+                    "component_name": "Name ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "Phone",
+                    "field_name": "Account Phone ( Phone )",
+                    "component_id": "9e84-c817-2e73",
+                    "component_name": "Contact Number ( Page: Details | Repeat: Repeat Group )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Account",
+                "object_name": "Account",
+                "upsert_field": "",
+                "attachment": "",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "b67b-1f26-7d62",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        }
+    ]
+}
