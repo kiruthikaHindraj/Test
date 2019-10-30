@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-10-25T10:19:23.960Z",
         "attributes": {
-            "github_repository_sha": "23ca31bb48b18829b39e20af85200fe42120d310"
+            "github_repository_sha": "b7653c461d31425ba5b9f3d1cd1fb500e57c6e55"
         },
         "pages": [
             {
@@ -178,8 +178,7 @@
                                 "label": "Email Field",
                                 "category": "input",
                                 "name": "Email",
-                                "type": "Email",
-                                "attributes": {}
+                                "type": "Email"
                             },
                             {
                                 "components": [],
@@ -220,6 +219,18 @@
                         ]
                     },
                     {
+                        "type": "PDF_Download",
+                        "name": "PDF Download",
+                        "category": "media",
+                        "label": "PDF Download",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "161d-250e-5568",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Number",
                         "name": "Number",
                         "category": "input",
@@ -229,15 +240,15 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
         ],
         "connections": [
             "Salesforce",
-            "Salesforce"
+            "Salesforce",
+            "Public"
         ],
         "created_by": {
             "id": "5cc17f16630ca900103bac08",
@@ -342,6 +353,28 @@
             },
             "is_disabled": false,
             "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5db92afd32a2f00010ad5f1c",
+            "created_at": "2019-10-30T06:17:33.048Z",
+            "updated_at": "2019-10-30T06:17:33.048Z",
+            "template_id": "5db2cc2bde1de3001ac2ab07",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 3,
+            "type": "Public",
+            "emails": [],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 2,
             "__v": 0
         }
     ]
