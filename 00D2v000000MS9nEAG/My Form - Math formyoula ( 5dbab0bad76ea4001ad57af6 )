@@ -38,6 +38,7 @@
                         "label": "Number Field",
                         "icon": "/scripts/formbuilder/img/number.png",
                         "attributes": {
+                            "default_value": "0",
                             "show_label": "Yes"
                         },
                         "component_id": "9783-73e1-7ac0",
@@ -53,6 +54,7 @@
                         "label": "Number Field",
                         "icon": "/scripts/formbuilder/img/number.png",
                         "attributes": {
+                            "default_value": "0",
                             "show_label": "Yes"
                         },
                         "component_id": "d43b-d994-0bfe",
@@ -90,7 +92,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "665b558d4c66db3ba79ab492baf6cac9f2d6ad0f"
+            "github_repository_sha": "ca66604437dea8800c2258db8d3f0375e6434df7"
         }
     },
     "connections": []
