@@ -1,0 +1,51 @@
+{
+    "form": {
+        "created_by_id": "5dbb01a72515970016192142",
+        "owner_id": "5dbb01a72515970016192142",
+        "name": "Test Telephone element",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-10-31T15:46:03.332Z",
+        "pages": [
+            {
+                "page_id": "c916-448f-b859",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Phone",
+                        "name": "Phone",
+                        "category": "input",
+                        "label": "Mobile Number",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
+                        "component_id": "9856-29ab-eafa",
+                        "attributes": {
+                            "country_selection_value": "",
+                            "country_code_selected": "",
+                            "auto_format": "false",
+                            "country_selection": "false"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "Test",
+            "first_name": "Formyoula_Cypress",
+            "id": "5dbb01a72515970016192142"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
