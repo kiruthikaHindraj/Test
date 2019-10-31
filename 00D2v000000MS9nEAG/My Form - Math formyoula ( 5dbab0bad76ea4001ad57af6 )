@@ -22,6 +22,7 @@
                         "label": "Number Field",
                         "icon": "/scripts/formbuilder/img/number.png",
                         "attributes": {
+                            "default_value": "0",
                             "show_label": "Yes"
                         },
                         "component_id": "563d-01c8-6b91",
@@ -89,7 +90,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "7af19e4f395b45d5d473a905510388635b839df6"
+            "github_repository_sha": "26bb13cbd1fb565e0e730a440b358fd98b1fd815"
         }
     },
     "connections": []
