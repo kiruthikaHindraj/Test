@@ -77,6 +77,7 @@
                         "sfdc_query_limit": "",
                         "sfdc_filter_fields": "",
                         "sfdc_query_order_by": "",
+                        "sfdc_auto_fill_id": "5cee73ba110ab100102adb4c",
                         "components": [
                             {
                                 "type": "Text",
@@ -132,14 +133,26 @@
                             }
                         ],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "sfdc_auto_fill_id": "5cee73ba110ab100102adb4c"
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "PDF_Download",
+                        "name": "PDF Download",
+                        "category": "media",
+                        "label": "PDF Download",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "bb03-0188-49e1",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
         ],
         "connections": [
-            "Salesforce"
+            "Salesforce",
+            "Public"
         ],
         "created_by": {
             "last_name": "H",
@@ -151,7 +164,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "48a4e8bcc92f8352df8a1786382ad6bce951fa5b"
+            "github_repository_sha": "df3ed4109a237d79eed22fed3f2f8cc57aa377f8"
         }
     },
     "connections": [
@@ -202,6 +215,28 @@
                 "github_repository_sha": "77b03e14d77aea8d3b4aa0bcd060c14afd0ade10"
             },
             "push_updates": false
+        },
+        {
+            "_id": "5dba9c35afdeb2001a2fa76d",
+            "created_at": "2019-10-31T08:32:53.132Z",
+            "updated_at": "2019-10-31T08:32:53.132Z",
+            "template_id": "5cee73ac110ab100102adb45",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Public",
+            "emails": [],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 2,
+            "__v": 0
         }
     ]
 }
