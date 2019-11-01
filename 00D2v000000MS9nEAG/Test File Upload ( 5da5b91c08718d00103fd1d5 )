@@ -47,7 +47,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Date",
@@ -59,7 +60,11 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {
+                            "default_date": "+1",
+                            "format": "MM/DD/YYYY"
+                        }
                     },
                     {
                         "type": "DatePicker",
@@ -69,7 +74,7 @@
                         "icon": "/scripts/formbuilder/img/date.png",
                         "component_id": "5d2a-2602-a36c",
                         "attributes": {
-                            "default_date": "",
+                            "default_date": "+1",
                             "format": "mm-dd-yyyy"
                         },
                         "required": false,
@@ -91,7 +96,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "97dd857481526343bfcc31aec818851fc27ae106"
+            "github_repository_sha": "0c09db1190611098011d3127a152253c27016bee"
         }
     },
     "connections": []
