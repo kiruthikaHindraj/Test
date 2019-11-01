@@ -47,8 +47,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "Date",
@@ -58,13 +57,13 @@
                         "icon": "/scripts/formbuilder/img/date.png",
                         "component_id": "074d-044c-a66a",
                         "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": [],
                         "attributes": {
                             "default_date": "+1",
                             "format": "MM/DD/YYYY"
-                        }
+                        },
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     },
                     {
                         "type": "DatePicker",
@@ -77,6 +76,18 @@
                             "default_date": "+1",
                             "format": "MM.DD.YYYY"
                         },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "DateTime",
+                        "name": "Date and Time",
+                        "category": "input",
+                        "label": "Date Time Field",
+                        "icon": "/scripts/formbuilder/img/datetime.png",
+                        "component_id": "92fc-528d-eea4",
                         "required": false,
                         "components": [],
                         "repeat_value": [],
@@ -96,7 +107,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ff7b4ff990a8afd7f972f6907a36966f4d59acef"
+            "github_repository_sha": "331e1e623196e0f8cf6d4a76886f35697a65ebdc"
         }
     },
     "connections": []
