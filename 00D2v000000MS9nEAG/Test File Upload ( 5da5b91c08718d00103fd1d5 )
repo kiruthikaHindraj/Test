@@ -47,7 +47,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "DatePicker",
@@ -58,7 +59,7 @@
                         "component_id": "5d2a-2602-a36c",
                         "attributes": {
                             "default_date": "",
-                            "format": "DD/MM/YYYY"
+                            "format": "YYYY.DD.MM"
                         },
                         "required": false,
                         "components": [],
@@ -79,7 +80,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "2cf7261c2a2655841617159bdb48f2802c4f2543"
+            "github_repository_sha": "a7df1e89cbc0bf76beb2b1f4516a7c35c097afac"
         }
     },
     "connections": []
