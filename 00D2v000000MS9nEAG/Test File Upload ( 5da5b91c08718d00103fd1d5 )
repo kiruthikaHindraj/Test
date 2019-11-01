@@ -59,7 +59,7 @@
                         "component_id": "5d2a-2602-a36c",
                         "attributes": {
                             "default_date": "",
-                            "format": "dd.MM.yyyy"
+                            "format": "mm-dd-yyyy"
                         },
                         "required": false,
                         "components": [],
@@ -80,7 +80,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "4b1c4578bd8ac7d740177c01e3a1bbe3a06b107e"
+            "github_repository_sha": "e9ec3c2aeb09ce2396b3ab671da50228d295866a"
         }
     },
     "connections": []
