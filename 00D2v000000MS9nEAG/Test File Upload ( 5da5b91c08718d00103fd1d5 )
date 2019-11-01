@@ -47,8 +47,23 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "DatePicker",
+                        "name": "DatePicker",
+                        "category": "input",
+                        "label": "DatePicker Field",
+                        "icon": "/scripts/formbuilder/img/date.png",
+                        "component_id": "5d2a-2602-a36c",
+                        "attributes": {
+                            "default_date": "",
+                            "format": "DD/MM/YYYY"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -64,7 +79,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "b45f6494492f5ed307935849cc1ea00e6de68d50"
+            "github_repository_sha": "2cf7261c2a2655841617159bdb48f2802c4f2543"
         }
     },
     "connections": []
