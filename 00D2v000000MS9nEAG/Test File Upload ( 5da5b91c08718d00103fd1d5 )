@@ -47,7 +47,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Date",
@@ -74,7 +75,7 @@
                         "component_id": "5d2a-2602-a36c",
                         "attributes": {
                             "default_date": "+1",
-                            "format": "MM.DD.YYYY"
+                            "format": "YYYY/MM/DD"
                         },
                         "required": false,
                         "components": [],
@@ -91,7 +92,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -107,7 +109,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "331e1e623196e0f8cf6d4a76886f35697a65ebdc"
+            "github_repository_sha": "472cff7a6531f1102349b35e1d9b0d80e0c8760a"
         }
     },
     "connections": []
