@@ -23,9 +23,35 @@
                         "icon": "/scripts/formbuilder/img/repeat.png",
                         "component_id": "fe6c-57e2-c3ca",
                         "required": false,
-                        "components": [],
+                        "components": [
+                            {
+                                "type": "Photo_Sketch",
+                                "name": "Photo Sketch",
+                                "category": "media",
+                                "label": "Sketch Input",
+                                "icon": "/scripts/formbuilder/img/signature.png",
+                                "version": 1,
+                                "height": 220,
+                                "attributes": {},
+                                "component_id": "970a-eac3-eb26",
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Text Field",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "6985-2936-68f0",
+                                "attributes": {},
+                                "required": false,
+                                "components": []
+                            }
+                        ],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -39,7 +65,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "8138c829665cf6fb0aa1b793de94e559989d76a0"
+        }
     },
     "connections": []
 }
