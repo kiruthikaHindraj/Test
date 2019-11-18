@@ -1,0 +1,102 @@
+{
+    "form": {
+        "created_by_id": "5cdd2055b9e3bc001a597983",
+        "owner_id": "5cdd2055b9e3bc001a597983",
+        "name": "Checkbox",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-06-26T15:42:02.738Z",
+        "pages": [
+            {
+                "page_id": "bbe2-8198-6165",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "CheckBox",
+                        "value": "",
+                        "name": "CheckBox",
+                        "category": "input",
+                        "label": "Checkbox Field",
+                        "icon": "/scripts/formbuilder/img/checkbox.png",
+                        "component_id": "efe0-6ea8-0d72",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Currency",
+                        "name": "Currency",
+                        "category": "input",
+                        "label": "Currency Field",
+                        "icon": "/scripts/formbuilder/img/currency.png",
+                        "component_id": "d93a-0671-b050",
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Repeat Group",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "7993-f9cb-99b4",
+                        "attributes": {
+                            "all_expanded": false,
+                            "max_repeat_items": "",
+                            "sfdc_parent_component": "",
+                            "list_view_fields": [
+                                ""
+                            ],
+                            "repeat_view_option": "list",
+                            "delete_button_label": "",
+                            "add_title_label": "",
+                            "add_button_label": ""
+                        },
+                        "required": true,
+                        "sfdc_query_limit": "",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_order_by": "",
+                        "components": [
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "be2e-4d1e-01a4",
+                                "attributes": {
+                                    "show_label": "Yes"
+                                },
+                                "icon": "/scripts/formbuilder/img/email.png",
+                                "label": "Email Field",
+                                "category": "input",
+                                "name": "Email",
+                                "type": "Email"
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "123",
+            "first_name": "test",
+            "id": "5cdd2055b9e3bc001a597983"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "0d72eb61974435f5e59fa36677746ea11cf15233"
+        }
+    },
+    "connections": []
+}
