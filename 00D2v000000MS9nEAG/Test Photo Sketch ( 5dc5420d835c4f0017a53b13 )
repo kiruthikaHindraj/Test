@@ -51,7 +51,21 @@
                         ],
                         "repeat_value": [],
                         "controlling_elements": [],
-                        "attributes": {}
+                        "attributes": {
+                            "all_expanded": false,
+                            "max_repeat_items": "",
+                            "sfdc_parent_component": "",
+                            "list_view_fields": [
+                                ""
+                            ],
+                            "repeat_view_option": "list",
+                            "delete_button_label": "",
+                            "add_title_label": "",
+                            "add_button_label": ""
+                        },
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_limit": "",
+                        "sfdc_query_order_by": ""
                     }
                 ]
             }
@@ -67,7 +81,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "8138c829665cf6fb0aa1b793de94e559989d76a0"
+            "github_repository_sha": "24a6706e72685dc8cd8a7bcaf76806d7d00e6d74"
         }
     },
     "connections": []
