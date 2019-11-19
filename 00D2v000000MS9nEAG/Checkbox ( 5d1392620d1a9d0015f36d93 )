@@ -26,7 +26,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Currency",
@@ -38,7 +39,8 @@
                         "required": true,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Repeat",
@@ -59,7 +61,7 @@
                             "add_title_label": "",
                             "add_button_label": ""
                         },
-                        "required": true,
+                        "required": false,
                         "sfdc_query_limit": "",
                         "sfdc_filter_fields": "",
                         "sfdc_query_order_by": "",
@@ -95,7 +97,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "0d72eb61974435f5e59fa36677746ea11cf15233"
+            "github_repository_sha": "587fdbcef2640d25f09406eacefaef369351faa5"
         }
     },
     "connections": []
