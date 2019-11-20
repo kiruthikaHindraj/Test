@@ -1,0 +1,157 @@
+{
+    "form": {
+        "created_by_id": "5cdd2055b9e3bc001a597983",
+        "owner_id": "5cdd2055b9e3bc001a597983",
+        "name": "Test email template",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-11-20T07:53:35.307Z",
+        "attributes": {
+            "github_repository_sha": "35f568aa18fab9e1b18c34f5756be51d9d138fa1"
+        },
+        "pages": [
+            {
+                "page_id": "44d7-0d04-746e",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Header Text",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "h2",
+                        "component_id": "e8a0-3c79-96f3",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "CheckBox",
+                        "value": "",
+                        "name": "CheckBox",
+                        "category": "input",
+                        "label": "Checkbox Field",
+                        "icon": "/scripts/formbuilder/img/checkbox.png",
+                        "component_id": "ad4e-724f-9b7f",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One\nSelect Two\nSelect Three",
+                        "component_id": "b684-e6f5-799d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Email"
+        ],
+        "created_by": {
+            "id": "5cdd2055b9e3bc001a597983",
+            "first_name": "test",
+            "last_name": "123"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": [
+        {
+            "_id": "5dd4f0fff304d800156c032b",
+            "created_at": "2019-10-15T11:18:40.936Z",
+            "updated_at": "2019-11-20T07:53:35.365Z",
+            "template_id": "5dd4f0fff304d800156c0326",
+            "created_by_id": "5cdd2055b9e3bc001a597983",
+            "owner_id": "5cdd2055b9e3bc001a597983",
+            "sequence": 1,
+            "type": "Email",
+            "push_updates": true,
+            "emails": [
+                {
+                    "from_name": "Shanu H",
+                    "from_email": "kiruthikahindraj94@gmail.com",
+                    "_id": "5da5ab1066d90300140778b1",
+                    "bcc": "",
+                    "cc": "",
+                    "subject": "Test Email",
+                    "template": "<p>Hello</p>\r\n<!--{{#if ad4e-724f-9b7f}}  -->\r\n\r\n<p>x</p>\r\n<!-- {{else}} -->\r\n\r\n<p>y</p>\r\n<!-- {{/if}} --><!-- {{#compare b684-e6f5-799d 'Select One'  operator='==' }} -->\r\n\r\n<p>Your selected value is: Select One</p>\r\n<!-- {{/compare}} --><!-- {{#compare b684-e6f5-799d 'Select Two'  operator='==' }} -->\r\n\r\n<p>Your selected value is: Select Two</p>\r\n<!-- {{/compare}} -->",
+                    "to": "kiruthika@formyoula.com",
+                    "attachment": false,
+                    "mail_merge": false
+                }
+            ],
+            "mappings": [],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 3,
+            "__v": 0
+        }
+    ],
+    "form_pdf": {
+        "_id": "5dd4f0fff304d800156c032c",
+        "created_at": "2019-10-15T11:21:57.285Z",
+        "updated_at": "2019-11-20T07:53:35.383Z",
+        "created_by_id": "5cdd2055b9e3bc001a597983",
+        "template_id": "5dd4f0fff304d800156c0326",
+        "html": "<p>Hello PDF</p>\n<!--{{#if ad4e-724f-9b7f}}  -->\n\n<p>x</p>\n<!-- {{else}} -->\n\n<p>y</p>\n<!-- {{/if}} --><!-- {{#compare b684-e6f5-799d 'Select One'  operator='==' }} -->\n\n<p>Your selected value is: Select One</p>\n<!-- {{/compare}} --><!-- {{#compare b684-e6f5-799d 'Select Two'  operator='==' }} -->\n\n<p>Your selected value is: Select Two</p>\n<!-- {{/compare}} -->",
+        "version": "2",
+        "file_name": "",
+        "css": "",
+        "javascript": " ",
+        "page_settings": {
+            "page_size": "",
+            "orientation": "",
+            "page_height": "",
+            "page_width": "",
+            "margin_left": "",
+            "margin_bottom": "",
+            "margin_right": "",
+            "margin_top": "",
+            "footer_center": "",
+            "footer_right": "",
+            "footer_left": "",
+            "header_center": "",
+            "header_right": "",
+            "header_left": "",
+            "no_images": false,
+            "image_quality": 25,
+            "image_dpi": 600,
+            "lowquality": false,
+            "engine": false,
+            "disable_forms": false,
+            "disable_timezone_offset": false,
+            "disable_auto_page_break": false,
+            "enable_advanced_templating": false,
+            "header_html": "",
+            "footer_html": ""
+        },
+        "use_beta_engine": false,
+        "disable_bootstrap": false,
+        "use_custom": false,
+        "__v": 0
+    }
+}
