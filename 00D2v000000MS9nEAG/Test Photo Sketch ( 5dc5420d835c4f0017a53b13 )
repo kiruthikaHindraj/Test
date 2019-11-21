@@ -16,6 +16,19 @@
                 "deployed": true,
                 "components": [
                     {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One\nSelect Two\nSelect Three",
+                        "component_id": "a0b6-44f5-4c72",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "SalesforceTable",
                         "name": "Salesforce Table",
                         "category": "salesforce",
@@ -178,7 +191,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "89249f4572b84d92e9c4e1fe1a41e2713457b83f"
+            "github_repository_sha": "2b96b02eb55d6c9a7ce2f07d73c7fa539feb819e"
         }
     },
     "connections": []
