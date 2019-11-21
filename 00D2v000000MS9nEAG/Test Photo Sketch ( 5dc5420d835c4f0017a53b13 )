@@ -81,6 +81,22 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "fd46-c280-0a60",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "formyoula.form_fields[\"394c-9ddd-f5a6\"].on('all', function (e) {\n  console.log(e);\n});"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Repeat",
                         "name": "Repeat Group",
                         "category": "select",
@@ -114,8 +130,7 @@
                                 "label": "Sketch Input",
                                 "category": "media",
                                 "name": "Photo Sketch",
-                                "type": "Photo_Sketch",
-                                "attributes": {}
+                                "type": "Photo_Sketch"
                             },
                             {
                                 "components": [],
@@ -125,8 +140,7 @@
                                 "label": "Text Field",
                                 "category": "input",
                                 "name": "Text",
-                                "type": "Text",
-                                "attributes": {}
+                                "type": "Text"
                             }
                         ],
                         "repeat_value": [],
@@ -146,7 +160,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ba759c18ab0ace668ae982a1dd4ead9b53032d0f"
+            "github_repository_sha": "c672d24cfae66f778f5de6f6c2381439720658cc"
         }
     },
     "connections": []
