@@ -16,6 +16,71 @@
                 "deployed": true,
                 "components": [
                     {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Records",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "disable_add_new_record_alert": false,
+                            "add_new_record_button": false,
+                            "table_submit_button_label": "",
+                            "add_table_submit_button": false,
+                            "owner_field": "",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": [
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": true,
+                                    "data_type": "none",
+                                    "column_label": "Name",
+                                    "api_name": "Name"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": true,
+                                    "data_type": "none",
+                                    "column_label": "Phone",
+                                    "api_name": "Phone"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": true,
+                                    "data_type": "none",
+                                    "column_label": "Type",
+                                    "api_name": "Type"
+                                }
+                            ],
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Name,Phone,Type",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "394c-9ddd-f5a6",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Repeat",
                         "name": "Repeat Group",
                         "category": "select",
@@ -23,34 +88,6 @@
                         "icon": "/scripts/formbuilder/img/repeat.png",
                         "component_id": "fe6c-57e2-c3ca",
                         "required": false,
-                        "components": [
-                            {
-                                "type": "Photo_Sketch",
-                                "name": "Photo Sketch",
-                                "category": "media",
-                                "label": "Sketch Input",
-                                "icon": "/scripts/formbuilder/img/signature.png",
-                                "version": 1,
-                                "height": 220,
-                                "attributes": {},
-                                "component_id": "970a-eac3-eb26",
-                                "required": false,
-                                "components": []
-                            },
-                            {
-                                "type": "Text",
-                                "name": "Text",
-                                "category": "input",
-                                "label": "Text Field",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "component_id": "6985-2936-68f0",
-                                "attributes": {},
-                                "required": false,
-                                "components": []
-                            }
-                        ],
-                        "repeat_value": [],
-                        "controlling_elements": [],
                         "attributes": {
                             "all_expanded": false,
                             "max_repeat_items": "",
@@ -65,7 +102,33 @@
                         },
                         "sfdc_filter_fields": "",
                         "sfdc_query_limit": "",
-                        "sfdc_query_order_by": ""
+                        "sfdc_query_order_by": "",
+                        "components": [
+                            {
+                                "type": "Photo_Sketch",
+                                "name": "Photo Sketch",
+                                "category": "media",
+                                "label": "Sketch Input",
+                                "icon": "/scripts/formbuilder/img/signature.png",
+                                "version": 1,
+                                "height": 220,
+                                "component_id": "970a-eac3-eb26",
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Text Field",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "6985-2936-68f0",
+                                "required": false,
+                                "components": []
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -81,7 +144,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "24a6706e72685dc8cd8a7bcaf76806d7d00e6d74"
+            "github_repository_sha": "42e848aef7114c51bec1b8c2446c73928a5fc297"
         }
     },
     "connections": []
