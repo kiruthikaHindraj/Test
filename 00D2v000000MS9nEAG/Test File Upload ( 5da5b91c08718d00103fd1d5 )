@@ -16,6 +16,19 @@
                 "deployed": true,
                 "components": [
                     {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "7c14-d022-32c3",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "File_Upload",
                         "name": "File Upload",
                         "category": "media",
@@ -35,20 +48,6 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
-                    },
-                    {
-                        "type": "Photo",
-                        "name": "Photo",
-                        "category": "media",
-                        "label": "Photo Attachment",
-                        "icon": "/scripts/formbuilder/img/photo.png",
-                        "quality": "Low",
-                        "component_id": "7c14-d022-32c3",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
                     },
                     {
                         "type": "Date",
@@ -92,8 +91,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -109,7 +107,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "1d20971977f8e89ee159cb6d75bf3590bcdefb55"
+            "github_repository_sha": "3d23ad28b5db9571a9bdb521e2130f991f79a2b0"
         }
     },
     "connections": []
