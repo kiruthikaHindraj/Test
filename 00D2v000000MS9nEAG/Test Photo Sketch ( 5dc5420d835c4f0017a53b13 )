@@ -84,6 +84,21 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "3283-ef0e-6a97",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "JavaScript",
                         "name": "JavaScript",
                         "category": "media",
@@ -133,8 +148,7 @@
                                 "height": 220,
                                 "component_id": "970a-eac3-eb26",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "type": "Text",
@@ -144,8 +158,7 @@
                                 "icon": "/scripts/formbuilder/img/text.png",
                                 "component_id": "6985-2936-68f0",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             }
                         ],
                         "repeat_value": [],
@@ -165,7 +178,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "066fc7273c8137028071406f1d662182c97ecd6c"
+            "github_repository_sha": "89249f4572b84d92e9c4e1fe1a41e2713457b83f"
         }
     },
     "connections": []
