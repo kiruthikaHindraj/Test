@@ -26,7 +26,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "File_Upload",
@@ -91,7 +92,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -107,7 +109,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "3d23ad28b5db9571a9bdb521e2130f991f79a2b0"
+            "github_repository_sha": "8d761a27b89c9ae62db03532ef652bf501e77f1f"
         }
     },
     "connections": []
