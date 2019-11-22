@@ -38,6 +38,7 @@
                         "component_id": "6aa7-71e6-5fe3",
                         "required": false,
                         "attributes": {
+                            "type": "File",
                             "file_upload_notification_title": "Success",
                             "file_upload_success_message": "Whoo! file uploaded successfully",
                             "parent_id": "0012v00002YvmvG",
@@ -109,7 +110,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "eb74c1e0597b6224b2c639f89b42016f9869eca1"
+            "github_repository_sha": "d355138fb69249921363267fdf8c792b8c5b94f3"
         }
     },
     "connections": []
