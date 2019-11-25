@@ -97,22 +97,6 @@
                         "controlling_elements": []
                     },
                     {
-                        "type": "JavaScript",
-                        "name": "JavaScript",
-                        "category": "media",
-                        "label": "Custom JavaScript",
-                        "version": "2",
-                        "component_id": "6baa-a8fc-1212",
-                        "attributes": {
-                            "script_detail": "",
-                            "script": "var component_id = \"394c-9ddd-f5a6\";\n$('.finish').on('click', function() {\n $.each($(\"#salesforce_table_\"+component_id).find(\"td input\"),function(key,value){\n      $(value).parsley().validate();\n   });\n});"
-                        },
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
-                        "controlling_elements": []
-                    },
-                    {
                         "type": "Text",
                         "name": "Text",
                         "category": "input",
@@ -207,7 +191,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "24c1a483c749acc89d71c95c9daafc2a1baa04af"
+            "github_repository_sha": "d241a8270df8eb3bea145f7b5fde95fb4ee8e873"
         }
     },
     "connections": []
