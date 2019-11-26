@@ -50,7 +50,7 @@
                                 {
                                     "default_option": "",
                                     "default_value": "",
-                                    "required": true,
+                                    "required": false,
                                     "editable": true,
                                     "data_type": "none",
                                     "column_label": "Name",
@@ -59,7 +59,7 @@
                                 {
                                     "default_option": "",
                                     "default_value": "",
-                                    "required": true,
+                                    "required": false,
                                     "editable": true,
                                     "data_type": "none",
                                     "column_label": "Phone",
@@ -194,7 +194,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "2c5bc4474cc854908ecc47c7b262c9fc8c28813c"
+            "github_repository_sha": "54ddfe20514c73bac7c3b4c7db7419da67d2ca63"
         }
     },
     "connections": []
