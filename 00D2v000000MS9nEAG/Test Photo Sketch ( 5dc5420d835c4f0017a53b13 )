@@ -26,7 +26,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "SalesforceTable",
@@ -152,26 +153,28 @@
                         "sfdc_query_order_by": "",
                         "components": [
                             {
-                                "components": [],
-                                "required": false,
-                                "component_id": "970a-eac3-eb26",
-                                "height": 220,
-                                "version": 1,
-                                "icon": "/scripts/formbuilder/img/signature.png",
-                                "label": "Sketch Input",
-                                "category": "media",
+                                "type": "Photo_Sketch",
                                 "name": "Photo Sketch",
-                                "type": "Photo_Sketch"
+                                "category": "media",
+                                "label": "Sketch Input",
+                                "icon": "/scripts/formbuilder/img/signature.png",
+                                "version": 1,
+                                "height": 220,
+                                "component_id": "970a-eac3-eb26",
+                                "required": false,
+                                "components": [],
+                                "attributes": {}
                             },
                             {
-                                "components": [],
-                                "required": false,
-                                "component_id": "6985-2936-68f0",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "label": "Text Field",
-                                "category": "input",
+                                "type": "Text",
                                 "name": "Text",
-                                "type": "Text"
+                                "category": "input",
+                                "label": "Text Field",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "6985-2936-68f0",
+                                "required": false,
+                                "components": [],
+                                "attributes": {}
                             }
                         ],
                         "repeat_value": [],
@@ -191,7 +194,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "d241a8270df8eb3bea145f7b5fde95fb4ee8e873"
+            "github_repository_sha": "45c1481f4ee7b5920d74f0becc53005ee6f00528"
         }
     },
     "connections": []
