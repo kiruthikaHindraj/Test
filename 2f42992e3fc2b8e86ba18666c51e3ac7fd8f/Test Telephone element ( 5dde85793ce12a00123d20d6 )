@@ -23,8 +23,8 @@
                         "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/phone.png",
                         "component_id": "ae20-b6ac-e61e",
                         "attributes": {
-                            "country_selection_value": "",
-                            "country_code_selected": "",
+                            "country_selection_value": "+91",
+                            "country_code_selected": "IN",
                             "auto_format": "false",
                             "country_selection": "false"
                         },
@@ -45,7 +45,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "68fdfde09d310fe7cc3a573f81bd0c1474634f5a"
+        }
     },
     "connections": []
 }
