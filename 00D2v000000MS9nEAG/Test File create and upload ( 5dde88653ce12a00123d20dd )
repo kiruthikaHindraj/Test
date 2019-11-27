@@ -1,0 +1,255 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Test File create and upload",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-11-27T14:29:57.003Z",
+        "attributes": {
+            "github_repository_sha": "9718fbaae05e265a92d4253e6f95746e4e1f98db"
+        },
+        "pages": [
+            {
+                "page_id": "7827-038d-6fbb",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "file_id",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "e00b-829e-db8e",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "ShareType",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "b244-b2e8-5245",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Visibility",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "0d8a-4416-a648",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "cfbc-acae-1d3f",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "File_Upload",
+                        "name": "File Upload",
+                        "category": "media",
+                        "label": "File Upload",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/file_upload.png",
+                        "component_id": "16fd-8a86-acb6",
+                        "attributes": {
+                            "file_upload_success_message": "",
+                            "type": "File",
+                            "file_upload_notification_title": "",
+                            "parent_id": "",
+                            "file_description": "",
+                            "file_upload_button_label": "",
+                            "file_attachment_name": "Test File Upload"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce",
+            "Salesforce",
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": [
+        {
+            "_id": "5dde88653ce12a00123d20e4",
+            "created_at": "2019-11-26T11:28:09.321Z",
+            "updated_at": "2019-11-27T14:29:57.039Z",
+            "template_id": "5dde88653ce12a00123d20dd",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Account Name ( Name )",
+                    "component_id": "cfbc-acae-1d3f",
+                    "component_name": "Name ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Account",
+                "object_name": "Account",
+                "upsert_field": "cfbc-acae-1d3f",
+                "attachment": "",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5dde88653ce12a00123d20e5",
+            "created_at": "2019-11-26T11:28:38.285Z",
+            "updated_at": "2019-11-27T14:29:57.054Z",
+            "template_id": "5dde88653ce12a00123d20dd",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "ContentDocumentId",
+                    "field_name": "ContentDocument ID ( ContentDocumentId )",
+                    "component_id": "e00b-829e-db8e",
+                    "component_name": "file_id ( Page: Details )"
+                },
+                {
+                    "field_id": "LinkedEntityId",
+                    "field_name": "Linked Entity ID ( LinkedEntityId )",
+                    "component_id": "5dde88653ce12a00123d20e4",
+                    "component_name": "[New Account Record ID (Seq. 1)]"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "ContentDocumentLink",
+                "object_name": "Content Document Link",
+                "upsert_field": "e00b-829e-db8e",
+                "attachment": "",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5dde88653ce12a00123d20e6",
+            "created_at": "2019-11-26T14:48:15.790Z",
+            "updated_at": "2019-11-27T14:29:57.068Z",
+            "template_id": "5dde88653ce12a00123d20dd",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 3,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "ContentDocumentId",
+                    "field_name": "ContentDocument ID ( ContentDocumentId )",
+                    "component_id": "e00b-829e-db8e",
+                    "component_name": "file_id ( Page: Details )"
+                },
+                {
+                    "field_id": "LinkedEntityId",
+                    "field_name": "Linked Entity ID ( LinkedEntityId )",
+                    "component_id": "5dde88653ce12a00123d20e4",
+                    "component_name": "[New Account Record ID (Seq. 1)]"
+                },
+                {
+                    "field_id": "ShareType",
+                    "field_name": "Share Type ( ShareType )",
+                    "component_id": "b244-b2e8-5245",
+                    "component_name": "ShareType ( Page: Details )"
+                },
+                {
+                    "field_id": "Visibility",
+                    "field_name": "Visibility ( Visibility )",
+                    "component_id": "0d8a-4416-a648",
+                    "component_name": "Visibility ( Page: Details )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "ContentDocumentLink",
+                "object_name": "Content Document Link",
+                "upsert_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        }
+    ]
+}
