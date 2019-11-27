@@ -41,7 +41,7 @@
                             "type": "File",
                             "file_upload_notification_title": "Success",
                             "file_upload_success_message": "Whoo! file uploaded successfully",
-                            "parent_id": "0012v00002YvmvG",
+                            "parent_id": "",
                             "file_description": "",
                             "file_upload_button_label": "Upload DOC",
                             "upload_on": "on_file_selection",
@@ -110,7 +110,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "d956a5b04175cc7f52a490b975f4eba72de98b19"
+            "github_repository_sha": "73585feb7b06a8f40871ae746c263cb015491faf"
         }
     },
     "connections": []
