@@ -69,6 +69,64 @@
                         "controlling_elements": []
                     },
                     {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Records",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "add_new_record_button": false,
+                            "table_submit_button_label": "",
+                            "add_table_submit_button": false,
+                            "owner_field": "",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": [
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": false,
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "",
+                                    "api_name": "Name"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": false,
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "",
+                                    "api_name": "Type"
+                                }
+                            ],
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Id,Name,Type",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "Custom_Field__c != 'Example Value'",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "13b8-78a9-204d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "type": "Text",
                         "name": "Text",
                         "category": "input",
@@ -124,7 +182,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "18e61dd8986db7d3b83258874c8a9c9c502b8010"
+        }
     },
     "connections": [
         {
