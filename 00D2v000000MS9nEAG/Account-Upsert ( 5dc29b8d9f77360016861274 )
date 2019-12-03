@@ -112,7 +112,7 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "Id,Name,Type",
+                        "sfdc_query_fields": "Id,Name,Type, Account_Name__c",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "Custom_Field__c != 'Example Value'",
                         "sfdc_query_visibility": "All Records",
@@ -166,7 +166,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -184,7 +185,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "18e61dd8986db7d3b83258874c8a9c9c502b8010"
+            "github_repository_sha": "cce5e0d4ec734eaa072a4a37e925091517d05a75"
         }
     },
     "connections": [
@@ -238,5 +239,48 @@
             "version": 1,
             "__v": 0
         }
-    ]
+    ],
+    "form_pdf": {
+        "_id": "5de60965d820fd00113c4cd0",
+        "created_at": "2019-12-03T07:06:13.210Z",
+        "updated_at": "2019-12-03T07:16:22.518Z",
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "template_id": "5dc29b8d9f77360016861274",
+        "html": "<div style=\"display:block; text-align: center; margin-top:5px;\">\n<table align=\"center\" border=\"1\" cellpadding=\"7\" cellspacing=\"5\" style=\"border-color:rgb(49, 49, 49);width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; Продукт&nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Объем&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t</tr>\n\t\t<!-- {{#each 13b8-78a9-204d}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">{{Name}}</span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">{{Type}}</span></td>\n\t\t</tr>\n\t\t<!-- {{/each}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><strong><span style=\"font-size:10px;\">Итого</span></strong></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:9px;\"><strong><span style=\"font-family: arial, helvetica, sans-serif; text-align: center; background-color: rgb(248, 208, 86);\">{{8fad-7cd2-8331}}</span></strong></span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n",
+        "version": "",
+        "file_name": "",
+        "css": "",
+        "javascript": "   ",
+        "page_settings": {
+            "footer_html": "",
+            "header_html": "",
+            "enable_advanced_templating": true,
+            "disable_auto_page_break": false,
+            "disable_timezone_offset": false,
+            "disable_forms": false,
+            "engine": false,
+            "lowquality": false,
+            "image_dpi": 600,
+            "image_quality": 25,
+            "no_images": false,
+            "header_left": "",
+            "header_right": "",
+            "header_center": "",
+            "footer_left": "",
+            "footer_right": "",
+            "footer_center": "",
+            "margin_top": "",
+            "margin_right": "",
+            "margin_bottom": "",
+            "margin_left": "",
+            "page_width": "",
+            "page_height": "",
+            "orientation": "",
+            "page_size": ""
+        },
+        "use_beta_engine": false,
+        "disable_bootstrap": true,
+        "use_custom": true,
+        "__v": 0
+    }
 }
