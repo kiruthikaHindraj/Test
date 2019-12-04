@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-04T08:50:49.769Z",
         "attributes": {
-            "github_repository_sha": "f0e9136cbbbf2c0c7415937d1a671031307af87a"
+            "github_repository_sha": "716cbbbe4b59135049505c1d592d534f42f6e1a5"
         },
         "pages": [
             {
@@ -59,37 +59,50 @@
                         "required": false,
                         "components": [
                             {
-                                "components": [],
-                                "required": false,
+                                "type": "Text",
+                                "name": "Text",
+                                "category": "input",
+                                "label": "Text Field",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "component_id": "5d46-9cf0-9ded",
                                 "attributes": {
                                     "readonly": "no"
                                 },
-                                "component_id": "5d46-9cf0-9ded",
-                                "icon": "/scripts/formbuilder/img/text.png",
-                                "label": "Text Field",
-                                "category": "input",
-                                "name": "Text",
-                                "type": "Text"
+                                "required": false,
+                                "components": []
                             },
                             {
-                                "components": [],
-                                "required": false,
+                                "type": "Email",
+                                "name": "Email",
+                                "category": "input",
+                                "label": "Email Field",
+                                "icon": "/scripts/formbuilder/img/email.png",
                                 "attributes": {
-                                    "default_source": "",
-                                    "saveToPhotoAlbum": "no",
-                                    "camera_direction": "back",
-                                    "album_button_lable": "",
-                                    "camera_button_lable": "",
-                                    "library_button_lable": "",
-                                    "photo_source_selection_label": ""
+                                    "show_label": "Yes"
                                 },
-                                "component_id": "8a1f-250a-5a3f",
-                                "quality": "Low",
-                                "icon": "/scripts/formbuilder/img/photo.png",
-                                "label": "Photo Attachment",
-                                "category": "media",
+                                "component_id": "9fc7-7b52-012c",
+                                "required": false,
+                                "components": []
+                            },
+                            {
+                                "type": "Photo",
                                 "name": "Photo",
-                                "type": "Photo"
+                                "category": "media",
+                                "label": "Photo Attachment",
+                                "icon": "/scripts/formbuilder/img/photo.png",
+                                "quality": "Low",
+                                "component_id": "8a1f-250a-5a3f",
+                                "attributes": {
+                                    "photo_source_selection_label": "",
+                                    "library_button_lable": "",
+                                    "camera_button_lable": "",
+                                    "album_button_lable": "",
+                                    "camera_direction": "back",
+                                    "saveToPhotoAlbum": "no",
+                                    "default_source": ""
+                                },
+                                "required": false,
+                                "components": []
                             }
                         ],
                         "repeat_value": [],
