@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-04T08:50:49.769Z",
         "attributes": {
-            "github_repository_sha": "4d49e3b8c258811f30d3b2b592042a1a0e11a63c"
+            "github_repository_sha": "edc040a4e169c9250148bb1f7061fa9913338a6c"
         },
         "pages": [
             {
@@ -34,7 +34,26 @@
                             "sfdc_parent_field_name": "",
                             "custom_offline_lookup_filter": "",
                             "offline_sync_filter": "",
-                            "custom_column_name": [],
+                            "custom_column_name": [
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": true,
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "",
+                                    "api_name": "Name"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": true,
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "",
+                                    "api_name": "Type"
+                                }
+                            ],
                             "table_page_length": "",
                             "query_search_group": "",
                             "query_order_by": "",
@@ -165,14 +184,14 @@
     "form_pdf": {
         "_id": "5de77369bd55b6001052a5ea",
         "created_at": "2019-12-04T05:35:37.518Z",
-        "updated_at": "2019-12-05T08:02:34.033Z",
+        "updated_at": "2019-12-05T11:22:55.390Z",
         "created_by_id": "5cc17f16630ca900103bac08",
         "template_id": "5de77369bd55b6001052a5e6",
-        "html": "<!-- {{#compare 3f2b-5344-f3ef '' operator=\"!=\"}} -->\n<p>Hello!!!!</p>\n<!-- {{/compare}} --><!-- {{#if 3f2b-5344-f3ef}} -->\n\n<p>Hiiii!!!!</p>\n<!-- {{/if}} -->\n\n<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"0\" style=\"width:100%;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th><strong>Name</strong></th>\n\t\t\t<th>&nbsp;</th>\n\t\t\t<th><strong>Photo</strong></th>\n\t\t</tr>\n\t</thead>\n\t<!-- {{formyoula_repeat_5d4a-c719-a224}} -->\n\t<tbody>\n   {{#notNull 9fc7-7b52-012c}}\n\t\t<tr>\n\t\t\t<td>New111</td>\n\t\t\t<td>{{9fc7-7b52-012c}}</td>\n\t\t\t<td>{{8a1f-250a-5a3f}}</td>\n\t\t</tr>\n\t\t{{/notNull}}\n\t</tbody>\n\t<!-- {{formyoula_repeat_5d4a-c719-a224}} -->\n\n\t\t\n\t</tbody>\n</table>\n<div style=\"display:block; text-align: center; margin-top:5px;\">\n<table align=\"center\" border=\"1\" cellpadding=\"7\" cellspacing=\"5\" style=\"border-color:rgb(49, 49, 49);width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; Продукт&nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Объем&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t</tr>\n\t\t<!-- {{#each 5d4a-c719-a224}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">Hii{{@index}}</span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">Hii{{9fc7-7b52-012c}}</span></td>\n\t\t</tr>\n\t\t<!-- {{/each}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><strong><span style=\"font-size:10px;\">Итого</span></strong></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:9px;\"><strong><span style=\"font-family: arial, helvetica, sans-serif; text-align: center; background-color: rgb(248, 208, 86);\">1670</span></strong></span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n\n",
+        "html": "<!-- {{#compare 3f2b-5344-f3ef '' operator=\"!=\"}} -->\n<p>Hello!!!!</p>\n<!-- {{/compare}} --><!-- {{#if 3f2b-5344-f3ef}} -->\n\n<p>Hiiii!!!!</p>\n<!-- {{/if}} -->\n<table align=\"center\" border=\"1\" cellpadding=\"7\" cellspacing=\"5\" style=\"border-color:rgb(49, 49, 49);width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; Продукт&nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Объем&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t</tr>\n\t\t<!-- {{#each 51b1-1558-bd20}} -->\n<!-- {{#compare Name 'Tete009' operator='=='}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">Hii{{Ph}}</span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">Hii{{Ty}}</span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">{{Name}}</span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">Hii{{Type}}</span></td>\n\t\t</tr>\n<!--{{/compare}} -->\n\t\t<!-- {{/each}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><strong><span style=\"font-size:10px;\">Итого</span></strong></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:9px;\"><strong><span style=\"font-family: arial, helvetica, sans-serif; text-align: center; background-color: rgb(248, 208, 86);\">1670</span></strong></span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p>*************************</p>\n\n<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"0\" style=\"width:100%;\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th><strong>Name</strong></th>\n\t\t\t<th>&nbsp;</th>\n\t\t\t<th><strong>Photo</strong></th>\n\t\t</tr>\n\t</thead>\n\t<!-- {{formyoula_repeat_5d4a-c719-a224}} -->\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>New111</td>\n\t\t\t<td>{{#append 9fc7-7b52-012c _ 1}}</td>\n\t\t\t<td>{{8a1f-250a-5a3f}}</td>\n\t\t</tr>\n\t</tbody>\n\t<!-- {{formyoula_repeat_5d4a-c719-a224}} --><!-- {{#each 5d4a-c719-a224}} -->\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>New111</td>\n\t\t\t<td>{{#append 9fc7-7b52-012c &#39;_&#39; @index}}</td>\n\t\t\t<td>{{8a1f-250a-5a3f}}</td>\n\t\t</tr>\n\t</tbody>\n\t<!-- {{/each}} -->\n</table>\n\n<div class=\"entry\">\n<ul>\n\t<li style=\"list-style: none\">{{#each 5d4a-c719-a224}}</li>\n\t<li>Vlue: {{this.value}}</li>\n\t<li>COMID: {{9fc7-7b52-012c}}</li>\n\t<li style=\"list-style: none\">{{/each}}</li>\n</ul>\n</div>\n\n<div style=\"display:block; text-align: center; margin-top:5px;\">\n<table align=\"center\" border=\"1\" cellpadding=\"7\" cellspacing=\"5\" style=\"border-color:rgb(49, 49, 49);width:500px;\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; Продукт&nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49); vertical-align: middle; margin-left: 80px;\"><span style=\"font-family:arial,helvetica,sans-serif;\"><span style=\"font-size:10px;\"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Объем&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></span></span></td>\n\t\t</tr>\n\t\t<!-- {{#each cbf3-2459-ce3f}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">Hii{{Type}}</span></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:10px;\">Hii{{Name}}</span></td>\n\t\t</tr>\n\t\t<!-- {{/each}} -->\n\t\t<tr>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><strong><span style=\"font-size:10px;\">Итого</span></strong></td>\n\t\t\t<td style=\"text-align: center; background-color: rgb(248, 208, 86); border-color: rgb(49, 49, 49);\"><span style=\"font-size:9px;\"><strong><span style=\"font-family: arial, helvetica, sans-serif; text-align: center; background-color: rgb(248, 208, 86);\">1670</span></strong></span></td>\n\t\t</tr>\n\t</tbody>\n</table>\n</div>\n",
         "version": "",
         "file_name": "",
         "css": "",
-        "javascript": "                           ",
+        "javascript": "                            ",
         "page_settings": {
             "page_size": "",
             "orientation": "",
