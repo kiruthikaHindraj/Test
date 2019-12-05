@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-04T08:50:49.769Z",
         "attributes": {
-            "github_repository_sha": "edc040a4e169c9250148bb1f7061fa9913338a6c"
+            "github_repository_sha": "18bff48e8c4fab9f4b007d10e218ef3e5bc872da"
         },
         "pages": [
             {
@@ -26,6 +26,7 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
+                            "new_record_button_label": "",
                             "add_new_record_button": false,
                             "table_submit_button_label": "",
                             "add_table_submit_button": false,
@@ -39,7 +40,7 @@
                                     "default_option": "",
                                     "default_value": "",
                                     "required": true,
-                                    "editable": false,
+                                    "editable": true,
                                     "data_type": "none",
                                     "column_label": "",
                                     "api_name": "Name"
@@ -48,7 +49,7 @@
                                     "default_option": "",
                                     "default_value": "",
                                     "required": true,
-                                    "editable": false,
+                                    "editable": true,
                                     "data_type": "none",
                                     "column_label": "",
                                     "api_name": "Type"
