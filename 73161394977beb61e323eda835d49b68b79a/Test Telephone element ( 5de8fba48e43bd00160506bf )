@@ -1,0 +1,46 @@
+{
+    "form": {
+        "created_by_id": "5de8fb7e0f827200151f8523",
+        "owner_id": "5de8fb7e0f827200151f8523",
+        "name": "Test Telephone element",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-12-05T12:44:05.185Z",
+        "pages": [
+            {
+                "page_id": "1f01-50f3-4f3d",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Header Text",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "h2",
+                        "component_id": "1e08-9b2e-dd86",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "Test",
+            "first_name": "Formyoula_Cypress",
+            "id": "5de8fb7e0f827200151f8523"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
