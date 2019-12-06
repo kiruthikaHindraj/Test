@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-04T08:50:49.769Z",
         "attributes": {
-            "github_repository_sha": "ce7a90dd4bf212dd1276ead92364d013510c47e0"
+            "github_repository_sha": "321726f7add715dea7a221e66be43e316c8fae3b"
         },
         "pages": [
             {
@@ -33,7 +33,7 @@
                             "owner_field": "",
                             "sfdc_parent_component": "",
                             "sfdc_parent_field_name": "",
-                            "custom_offline_lookup_filter": "(function(result){ \nreturn (result.CreatedDate &lt;= new Date())  \n});",
+                            "custom_offline_lookup_filter": "(function(result){ \nreturn (result.CreatedDate >= new Date())  \n});",
                             "offline_sync_filter": "",
                             "custom_column_name": [
                                 {
