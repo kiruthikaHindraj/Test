@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-04T08:50:49.769Z",
         "attributes": {
-            "github_repository_sha": "574ce2f98d53a3a49619075fe3708f7bff955d36"
+            "github_repository_sha": "24ade1beaeed17f161d66b2a7125be8babc01c08"
         },
         "pages": [
             {
@@ -27,9 +27,9 @@
                         "version": "2",
                         "attributes": {
                             "new_record_button_label": "",
-                            "add_new_record_button": false,
+                            "add_new_record_button": true,
                             "table_submit_button_label": "",
-                            "add_table_submit_button": false,
+                            "add_table_submit_button": true,
                             "owner_field": "",
                             "sfdc_parent_component": "",
                             "sfdc_parent_field_name": "",
