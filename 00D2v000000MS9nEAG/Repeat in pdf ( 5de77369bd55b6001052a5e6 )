@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-04T08:50:49.769Z",
         "attributes": {
-            "github_repository_sha": "24ade1beaeed17f161d66b2a7125be8babc01c08"
+            "github_repository_sha": "0eba6de73d846b0658dffb9023d46a13714f7f6b"
         },
         "pages": [
             {
@@ -64,7 +64,7 @@
                             "query_fields": ""
                         },
                         "sfdc_query_fields": "Id,Name,Type,CreatedDate",
-                        "sfdc_query_limit": "10",
+                        "sfdc_query_limit": "0",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
                         "sfdc_query_order_by": "",
