@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-10-09T11:55:52.127Z",
         "attributes": {
-            "github_repository_sha": "9ca8e224e664afd98e8805332f624f499bd0b9ed"
+            "github_repository_sha": "f9fac339597ca914563bb2240e55a0049281b836"
         },
         "pages": [
             {
@@ -18,6 +18,19 @@
                 "component_count": null,
                 "deployed": true,
                 "components": [
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Select List",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Select One\nSelect Two\nSelect Three",
+                        "component_id": "195d-8e68-0162",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
                     {
                         "type": "Repeat",
                         "name": "Repeat Group",
@@ -127,7 +140,15 @@
                             }
                         ],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [
+                            {
+                                "component_id": "195d-8e68-0162",
+                                "label": "Select List (Details)",
+                                "value": "Select Two",
+                                "type": "Select",
+                                "_id": "5dee11d5462d52001074495b"
+                            }
+                        ]
                     },
                     {
                         "type": "JavaScript",
