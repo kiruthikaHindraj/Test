@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-10-09T11:55:52.127Z",
         "attributes": {
-            "github_repository_sha": "116192fb18ff93581186bf7ce13dc9c8275346f9"
+            "github_repository_sha": "d0335d3e919efc7dbb8b1fb1139ef87dddba6ca3"
         },
         "pages": [
             {
@@ -22,7 +22,7 @@
                         "type": "Select",
                         "name": "Select",
                         "category": "select",
-                        "label": "Select List2",
+                        "label": "Select List",
                         "icon": "/scripts/formbuilder/img/select.png",
                         "select_options": "Select One\nSelect Two\nSelect Three",
                         "component_id": "195d-8e68-0162",
@@ -149,7 +149,7 @@
                         "controlling_elements": [
                             {
                                 "component_id": "195d-8e68-0162",
-                                "label": "Select List2 (Details)",
+                                "label": "Select List (Details)",
                                 "value": "Select Two",
                                 "type": "Select",
                                 "_id": "5dee11d5462d52001074495b"
@@ -193,7 +193,7 @@
         {
             "_id": "5d9dcac85d418f001a2321f3",
             "created_at": "2019-10-01T08:34:16.894Z",
-            "updated_at": "2019-10-09T11:55:52.194Z",
+            "updated_at": "2019-12-12T06:21:22.530Z",
             "template_id": "5d9dcac85d418f001a2321ef",
             "created_by_id": "5cc17f16630ca900103bac08",
             "owner_id": "5cc17f16630ca900103bac08",
@@ -207,6 +207,12 @@
                     "field_name": "Account Name ( Name )",
                     "component_id": "8b7e-b748-19f1",
                     "component_name": "Account ( Page: Details | Repeat: Repeat Group )"
+                },
+                {
+                    "field_id": "Name",
+                    "field_name": "Account Name ( Name )",
+                    "component_id": "195d-8e68-0162",
+                    "component_name": "Select List2 ( Page: Details )"
                 }
             ],
             "public_form": {
@@ -226,7 +232,7 @@
             },
             "is_disabled": false,
             "version": 1,
-            "__v": 0
+            "__v": 1
         },
         {
             "_id": "5d9dcac85d418f001a2321f4",
