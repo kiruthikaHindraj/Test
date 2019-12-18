@@ -1,0 +1,161 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Salesforce Table [Gatis]",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-12-18T12:13:58.297Z",
+        "attributes": {
+            "github_repository_sha": "6a1af4d56865bd21547b11cd2bd64bdb71a06bfe"
+        },
+        "pages": [
+            {
+                "page_id": "27c8-347e-2d5a",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Account",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "auto_fill_id": "",
+                            "position": "Fill",
+                            "enable_barcode_scanner": false,
+                            "button": "Account",
+                            "show_auto_search_results": false,
+                            "offline_sync_filter": "",
+                            "custom_offline_lookup_filter": ""
+                        },
+                        "sfdc_query_fields": "",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "385a-d487-c683",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Records",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "table_page_length": "",
+                            "custom_column_name": [
+                                {
+                                    "api_name": "FirstName",
+                                    "column_label": "First",
+                                    "data_type": "text",
+                                    "editable": true,
+                                    "default_value": "",
+                                    "default_option": ""
+                                },
+                                {
+                                    "api_name": "LastName",
+                                    "column_label": "Last",
+                                    "data_type": "text",
+                                    "editable": true,
+                                    "default_value": "",
+                                    "default_option": ""
+                                },
+                                {
+                                    "api_name": "Phone",
+                                    "column_label": "Phone",
+                                    "data_type": "number",
+                                    "editable": true,
+                                    "default_value": "",
+                                    "default_option": ""
+                                },
+                                {
+                                    "api_name": "Email",
+                                    "column_label": "Email",
+                                    "data_type": "email",
+                                    "editable": true,
+                                    "default_value": "",
+                                    "default_option": ""
+                                },
+                                {
+                                    "api_name": "Percent__c",
+                                    "column_label": "%",
+                                    "data_type": "text",
+                                    "editable": true,
+                                    "default_value": "",
+                                    "default_option": ""
+                                },
+                                {
+                                    "api_name": "AccountId",
+                                    "column_label": "Account ID",
+                                    "data_type": "none",
+                                    "editable": false,
+                                    "default_value": "",
+                                    "default_option": ""
+                                }
+                            ],
+                            "offline_sync_filter": "",
+                            "custom_offline_lookup_filter": "",
+                            "sfdc_parent_field_name": "AccountId",
+                            "sfdc_parent_component": "385a-d487-c683",
+                            "owner_field": "",
+                            "add_table_submit_button": true,
+                            "table_submit_button_label": "",
+                            "add_new_record_button": true
+                        },
+                        "sfdc_query_fields": "AccountId,Phone,Email,FirstName,Name,LastName,Percent__c",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Contact",
+                        "component_id": "b844-3a60-5140",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
