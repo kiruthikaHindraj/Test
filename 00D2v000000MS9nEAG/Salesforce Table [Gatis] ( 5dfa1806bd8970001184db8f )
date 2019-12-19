@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-18T12:13:58.297Z",
         "attributes": {
-            "github_repository_sha": "6a1af4d56865bd21547b11cd2bd64bdb71a06bfe"
+            "github_repository_sha": "5cc6bcf62262548a882c28069c0ce5c59fbeda84"
         },
         "pages": [
             {
@@ -72,52 +72,58 @@
                             "table_page_length": "",
                             "custom_column_name": [
                                 {
-                                    "api_name": "FirstName",
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": false,
+                                    "editable": true,
+                                    "data_type": "text",
                                     "column_label": "First",
-                                    "data_type": "text",
-                                    "editable": true,
-                                    "default_value": "",
-                                    "default_option": ""
+                                    "api_name": "FirstName"
                                 },
                                 {
-                                    "api_name": "LastName",
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": false,
+                                    "editable": true,
+                                    "data_type": "text",
                                     "column_label": "Last",
-                                    "data_type": "text",
-                                    "editable": true,
-                                    "default_value": "",
-                                    "default_option": ""
+                                    "api_name": "LastName"
                                 },
                                 {
-                                    "api_name": "Phone",
-                                    "column_label": "Phone",
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": false,
+                                    "editable": true,
                                     "data_type": "number",
-                                    "editable": true,
-                                    "default_value": "",
-                                    "default_option": ""
+                                    "column_label": "Phone",
+                                    "api_name": "Phone"
                                 },
                                 {
-                                    "api_name": "Email",
-                                    "column_label": "Email",
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": false,
+                                    "editable": true,
                                     "data_type": "email",
-                                    "editable": true,
-                                    "default_value": "",
-                                    "default_option": ""
+                                    "column_label": "Email",
+                                    "api_name": "Email"
                                 },
                                 {
-                                    "api_name": "Percent__c",
-                                    "column_label": "%",
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "required": false,
+                                    "editable": true,
                                     "data_type": "text",
-                                    "editable": true,
-                                    "default_value": "",
-                                    "default_option": ""
+                                    "column_label": "%",
+                                    "api_name": "Percent__c"
                                 },
                                 {
-                                    "api_name": "AccountId",
-                                    "column_label": "Account ID",
-                                    "data_type": "none",
-                                    "editable": false,
+                                    "default_option": "",
                                     "default_value": "",
-                                    "default_option": ""
+                                    "required": false,
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "Account ID",
+                                    "api_name": "AccountId"
                                 }
                             ],
                             "offline_sync_filter": "",
