@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-18T12:13:58.297Z",
         "attributes": {
-            "github_repository_sha": "ec1543187c021c49e7ef69e67b1ecdb487bd7aa4"
+            "github_repository_sha": "136ba64816870e73a91dc5a646353f7ee7a3c314"
         },
         "pages": [
             {
@@ -94,7 +94,7 @@
                                 {
                                     "default_option": "",
                                     "default_value": "",
-                                    "required": false,
+                                    "required": true,
                                     "editable": true,
                                     "data_type": "number",
                                     "column_label": "Phone",
