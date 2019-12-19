@@ -8,7 +8,7 @@
         "deployed": true,
         "created_at": "2019-12-18T12:13:58.297Z",
         "attributes": {
-            "github_repository_sha": "5cc6bcf62262548a882c28069c0ce5c59fbeda84"
+            "github_repository_sha": "b82a345cd56cf925c36e913a68d056e3795211cc"
         },
         "pages": [
             {
@@ -63,6 +63,8 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
+                            "disable_auto_submission": true,
+                            "new_record_button_label": "",
                             "query_fields": "",
                             "query_limit": "10",
                             "filter_fields": "",
@@ -135,7 +137,7 @@
                             "table_submit_button_label": "",
                             "add_new_record_button": true
                         },
-                        "sfdc_query_fields": "AccountId,Phone,Email,FirstName,Name,LastName,Percent__c",
+                        "sfdc_query_fields": "AccountId,Phone,Email,FirstName,Name,LastName",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
