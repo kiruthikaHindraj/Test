@@ -1,0 +1,403 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Test upsert error",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2019-12-23T07:15:06.996Z",
+        "attributes": {
+            "github_repository_sha": "1391d4249d60a43df604f1387c0f05aec7f36b5f"
+        },
+        "pages": [
+            {
+                "page_id": "ff69-ce83-e12b",
+                "title": "Introduce yourself!",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "auto_fill_id": "",
+                            "position": "Fill",
+                            "enable_barcode_scanner": false,
+                            "button": "Find",
+                            "show_auto_search_results": false,
+                            "offline_sync_filter": "",
+                            "custom_offline_lookup_filter": ""
+                        },
+                        "sfdc_query_fields": "Email,FirstName,LastName",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5e00697bc2dbd0001a52cea8",
+                        "object_label": "None Selected",
+                        "object_api_name": "Lead",
+                        "component_id": "fcc3-dfd7-a5d4",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Header",
+                        "name": "Header",
+                        "category": "input",
+                        "label": "Welcome to Canadian University Dubai!",
+                        "icon": "/scripts/formbuilder/img/header.png",
+                        "header": "H2",
+                        "component_id": "a767-6cb0-6d59",
+                        "attributes": {
+                            "position": "Left"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "First Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "c3cb-f200-50c0",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Last Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "71eb-e9e5-16fd",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Number",
+                        "name": "Number",
+                        "category": "input",
+                        "label": "Phone",
+                        "icon": "/scripts/formbuilder/img/number.png",
+                        "component_id": "022a-14a3-5c2f",
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Email",
+                        "name": "Email",
+                        "category": "input",
+                        "label": "Email",
+                        "icon": "/scripts/formbuilder/img/email.png",
+                        "component_id": "75c1-45a9-69a9",
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "Program of Interest",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "Master in Information Technology Management and Governance\nMaster of Business Administration in General Management\nMaster of Business Administration in Human Resource Management\nMaster of Business Administration in Finance\nMaster of Business Administration in Marketing\nBachelor of Arts in Communication in Advertisement\nBachelor of Arts in Communication in Journalism\nBachelor of Arts in Communication in Public Relations\nBachelor of Arts in Psychology\nBachelor of Arts in Psychology (Arabic)\nBachelor of Arts in Sociology (Arabic)\nBachelor of Business Administration in Accounting and Finance\nBachelor of Business Administration in e-Business\nBachelor of Business Administration in Events and Tourism\nBachelor of Business Administration in Forensic Accounting\nBachelor of Business Administration in Human Resource Management\nBachelor of Business Administration in International Business\nBachelor of Business Administration in Luxury Marketing\nBachelor of Business Administration in Marketing\nBachelor of Business Administration in Operations and Supply Management\nBachelor of Business Administration in Sports Management\nBachelor of Architecture\nBachelor of Science in Interior Design\nBachelor of Science in Electrical Engineering - Telecommunications\nBachelor of Science in Electrical Engineering - Electronics\nBachelor of Science in Electrical Engineering - Mechatronics\nBachelor of Science in Network Engineering\nBachelor of Computer and Networking Engineering Technology\nBachelor of Science in Health Organization Management\nBachelor of Science in Environmental Health Management\nBachelor of Science in Health Information Management\nProgram Not Offered (Mention in Comments)\nBachelor of Arts in Creative Industries\nIntensive English Program",
+                        "component_id": "6553-e817-cbef",
+                        "attributes": {
+                            "select_option_values": "",
+                            "unselected_label": "",
+                            "dependent_list_values": ""
+                        },
+                        "required": true,
+                        "value": "",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Select",
+                        "name": "Select",
+                        "category": "select",
+                        "label": "School Year",
+                        "icon": "/scripts/formbuilder/img/select.png",
+                        "select_options": "9\n10\n11\n12\nUG",
+                        "component_id": "0eb5-c919-35c6",
+                        "attributes": {
+                            "dependent_list_values": "",
+                            "unselected_label": "",
+                            "select_option_values": ""
+                        },
+                        "required": false,
+                        "value": "UG",
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "RadioSelect",
+                        "name": "Radio Select",
+                        "category": "select",
+                        "label": "Gender",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "Female\nMale",
+                        "component_id": "9aed-733d-fbeb",
+                        "required": true,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "TextArea",
+                        "name": "TextArea",
+                        "category": "input",
+                        "label": "Make a wish :)",
+                        "icon": "/scripts/formbuilder/img/text_area.png",
+                        "height": "3",
+                        "attributes": {
+                            "readonly": "no",
+                            "show_label": "Yes"
+                        },
+                        "component_id": "b8f0-7e03-822c",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "Open House",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Lead Source",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "e198-bfda-51d0",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "7014H000000lPt1",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Campaign ID",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "971d-e54c-710e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "Confirmed Attending",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Attendance F/U",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "fb8b-cc22-b6cc",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Recruiter",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "e4a2-763e-9bf6",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce",
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": [
+        {
+            "_id": "5e00697bc2dbd0001a52cea8",
+            "created_at": "2017-12-11T09:01:29.670Z",
+            "updated_at": "2019-12-23T07:15:07.108Z",
+            "template_id": "5e00697bc2dbd0001a52ce98",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "FirstName",
+                    "field_name": "First Name ( FirstName )",
+                    "component_id": "c3cb-f200-50c0",
+                    "component_name": "First Name ( Page: Details )"
+                },
+                {
+                    "field_id": "LastName",
+                    "field_name": "Last Name ( LastName )",
+                    "component_id": "71eb-e9e5-16fd",
+                    "component_name": "Last Name ( Page: Details )"
+                },
+                {
+                    "field_id": "Phone",
+                    "field_name": "Phone ( Phone )",
+                    "component_id": "022a-14a3-5c2f",
+                    "component_name": "Phone ( Page: Details )"
+                },
+                {
+                    "field_id": "Email",
+                    "field_name": "Email ( Email )",
+                    "component_id": "75c1-45a9-69a9",
+                    "component_name": "Email ( Page: Details )"
+                },
+                {
+                    "field_id": "LeadSource",
+                    "field_name": "Lead Source ( LeadSource )",
+                    "component_id": "e198-bfda-51d0",
+                    "component_name": "Lead Source ( Page: Details )"
+                },
+                {
+                    "field_id": "School_Year_at_Import__c",
+                    "field_name": "School Year at Import ( School_Year_at_Import__c )",
+                    "component_id": "0eb5-c919-35c6",
+                    "component_name": "School Year ( Page: Details )"
+                },
+                {
+                    "field_id": "Gender__c",
+                    "field_name": "Gender ( Gender__c )",
+                    "component_id": "9aed-733d-fbeb",
+                    "component_name": "Gender ( Page: Details )"
+                },
+                {
+                    "field_id": "program_of_interest__c",
+                    "field_name": "Program of Interest ( program_of_interest__c )",
+                    "component_id": "6553-e817-cbef",
+                    "component_name": "Program of Interest ( Page: Introduce yourself! )"
+                },
+                {
+                    "field_id": "Comments__c",
+                    "field_name": "Comments ( Comments__c )",
+                    "component_id": "b8f0-7e03-822c",
+                    "component_name": "Make a wish :) ( Page: Introduce yourself! )"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Lead",
+                "object_name": "Lead",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "75c1-45a9-69a9",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        },
+        {
+            "_id": "5e00697bc2dbd0001a52cea9",
+            "created_at": "2017-12-11T09:02:59.624Z",
+            "updated_at": "2019-12-23T07:15:07.126Z",
+            "template_id": "5e00697bc2dbd0001a52ce98",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 2,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "CampaignId",
+                    "field_name": "Campaign ID ( CampaignId )",
+                    "component_id": "971d-e54c-710e",
+                    "component_name": "Campaign ID ( Page: Details )"
+                },
+                {
+                    "field_id": "Status",
+                    "field_name": "Status ( Status )",
+                    "component_id": "e4a2-763e-9bf6",
+                    "component_name": "Status ( Page: Details )"
+                },
+                {
+                    "field_id": "LeadId",
+                    "field_name": "Lead ID ( LeadId )",
+                    "component_id": "5e00697bc2dbd0001a52cea8",
+                    "component_name": "[New Lead Record ID (Seq. 1)]"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "CampaignMember",
+                "object_name": "Campaign Member",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "upsert_field": "75c1-45a9-69a9",
+                "attachment": "false",
+                "enable_blank_values": false,
+                "use_form_owner": false
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        }
+    ]
+}
