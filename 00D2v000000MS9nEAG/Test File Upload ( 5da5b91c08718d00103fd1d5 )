@@ -37,7 +37,7 @@
                             "query_limit": "10",
                             "query_fields": ""
                         },
-                        "sfdc_query_fields": "Id,Name,Phone,Type",
+                        "sfdc_query_fields": "Id,Name,Phone,Type,Ownership,Salutation__c,Status_c__c,Website",
                         "sfdc_query_limit": "10",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
@@ -63,7 +63,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "Signature",
@@ -146,7 +147,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -162,7 +164,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "6ca483322f5bb82380d2e598fbb7fd7218223bae"
+            "github_repository_sha": "73b5dc9240d4bfc77c1c47df3cde9a7daaaead8f"
         }
     },
     "connections": []
