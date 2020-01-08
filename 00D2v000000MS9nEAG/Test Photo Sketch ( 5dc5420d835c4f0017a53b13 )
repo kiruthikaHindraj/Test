@@ -26,8 +26,7 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "SalesforceTable",
@@ -162,8 +161,7 @@
                                 "height": 220,
                                 "component_id": "970a-eac3-eb26",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             },
                             {
                                 "type": "Text",
@@ -173,10 +171,30 @@
                                 "icon": "/scripts/formbuilder/img/text.png",
                                 "component_id": "6985-2936-68f0",
                                 "required": false,
-                                "components": [],
-                                "attributes": {}
+                                "components": []
                             }
                         ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "6349-9358-d67b",
+                "title": "Page 1",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "PDF",
+                        "name": "PDF Preview",
+                        "category": "media",
+                        "label": "PDF Preview",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "0c56-51b5-fa2a",
+                        "required": false,
+                        "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
                     }
@@ -194,7 +212,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "54ddfe20514c73bac7c3b4c7db7419da67d2ca63"
+            "github_repository_sha": "1e95efbf495f896658e2ca084a3c49ef2cc78141"
         }
     },
     "connections": []
