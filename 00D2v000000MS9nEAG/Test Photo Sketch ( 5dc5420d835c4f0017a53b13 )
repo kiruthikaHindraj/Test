@@ -121,7 +121,7 @@
                             "query_fields": ""
                         },
                         "sfdc_query_fields": "Name,Phone,Type",
-                        "sfdc_query_limit": "3",
+                        "sfdc_query_limit": "20",
                         "sfdc_filter_fields": "",
                         "sfdc_query_visibility": "All Records",
                         "sfdc_query_order_by": "",
@@ -253,7 +253,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ca14abb2c1135690ed5cb8a0c0b58714c00ad01f"
+            "github_repository_sha": "332501ab975a052718d533f3c17089fe9518939c"
         }
     },
     "connections": []
