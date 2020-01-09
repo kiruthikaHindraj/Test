@@ -1,0 +1,118 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "SalesforceTable in PDF PREVIEW",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2020-01-09T08:00:37.794Z",
+        "pages": [
+            {
+                "page_id": "66e8-f35c-6754",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Records",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "add_new_record_button": false,
+                            "table_submit_button_label": "",
+                            "add_table_submit_button": false,
+                            "owner_field": "",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": [
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "",
+                                    "api_name": "Id"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "",
+                                    "api_name": "Name"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": false,
+                                    "data_type": "none",
+                                    "column_label": "",
+                                    "api_name": "Type"
+                                }
+                            ],
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Id,Name,Type",
+                        "sfdc_query_limit": "3",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "3a23-ad92-8d44",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "d49b-d235-baea",
+                "title": "Page 1",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "PDF",
+                        "name": "PDF Preview",
+                        "category": "media",
+                        "label": "PDF Preview",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "1cce-4fa3-eb4c",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "H",
+            "first_name": "Shanu",
+            "id": "5cc17f16630ca900103bac08"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
