@@ -548,25 +548,6 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
-                    },
-                    {
-                        "type": "AutoSubmit",
-                        "name": "Auto Submit",
-                        "category": "input",
-                        "label": "Auto Submit",
-                        "icon": "/scripts/formbuilder/img/navigation.png",
-                        "attributes": {
-                            "go_to_page": "",
-                            "type": "timer",
-                            "inactive_time": "15",
-                            "action": "submit"
-                        },
-                        "component_id": "4cbc-47d7-0a95",
-                        "required": false,
-                        "components": [],
-                        "repeat_value": [],
                         "controlling_elements": []
                     }
                 ]
@@ -587,11 +568,11 @@
         "list_view_fields": null,
         "archived": false,
         "attributes": {
-            "github_repository_sha": "c2ee63aa5f21a3265d713785162ab05f27857a53",
-            "is_repeat": false,
-            "is_header_hidden": false,
+            "enable_sfdc_storage": false,
             "is_navigation_hidden": true,
-            "enable_sfdc_storage": false
+            "is_header_hidden": false,
+            "is_repeat": false,
+            "github_repository_sha": "99db4e1f9739803c37e4a8faadba9f95a09b3d25"
         },
         "description": "",
         "tags": ""
