@@ -26,8 +26,43 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceSelect",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Select Record",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "owner_field": "",
+                            "button": "Select",
+                            "position": "Fill",
+                            "auto_fill_id": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Id,Lat_Long__Latitude__s,Lat_Long__Longitude__s,NumberofLocations__c,Phone_Number__c,Property__c",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "sfdc_auto_fill_id": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "5428-78f1-c077",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     },
                     {
                         "type": "SalesforceTable",
@@ -215,7 +250,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "5415458f4222626f5ca919c4d16209e03aa6bb57"
+            "github_repository_sha": "4393bcbd1971b98fde2edcd9d540d9bc49239cff"
         }
     },
     "connections": []
