@@ -16,6 +16,7 @@
                 "deployed": true,
                 "components": [
                     {
+                        "value": "",
                         "type": "Select",
                         "name": "Select",
                         "category": "select",
@@ -23,11 +24,15 @@
                         "icon": "/scripts/formbuilder/img/select.png",
                         "select_options": "Select One\nSelect Two\nSelect Three",
                         "component_id": "a0b6-44f5-4c72",
-                        "required": false,
+                        "required": true,
+                        "attributes": {
+                            "dependent_list_values": "",
+                            "unselected_label": "",
+                            "select_option_values": ""
+                        },
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": [],
-                        "attributes": {}
+                        "controlling_elements": []
                     },
                     {
                         "type": "SalesforceSelect",
@@ -200,8 +205,7 @@
                                 "label": "Sketch Input",
                                 "category": "media",
                                 "name": "Photo Sketch",
-                                "type": "Photo_Sketch",
-                                "attributes": {}
+                                "type": "Photo_Sketch"
                             },
                             {
                                 "components": [],
@@ -211,10 +215,90 @@
                                 "label": "Text Field",
                                 "category": "input",
                                 "name": "Text",
-                                "type": "Text",
-                                "attributes": {}
+                                "type": "Text"
                             }
                         ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Email",
+                        "name": "Email",
+                        "category": "input",
+                        "label": "Email Field",
+                        "icon": "/scripts/formbuilder/img/email.png",
+                        "component_id": "c04f-9eb5-daa9",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Navigation",
+                        "name": "Navigation",
+                        "category": "input",
+                        "label": "Submit Button",
+                        "icon": "/scripts/formbuilder/img/navigation.png",
+                        "attributes": {
+                            "text_color": "#fff",
+                            "button_color": "#5cb85c",
+                            "position": "Left",
+                            "action": "save"
+                        },
+                        "component_id": "01d4-d02c-e5ad",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "CheckBox",
+                        "value": "",
+                        "name": "CheckBox",
+                        "category": "input",
+                        "label": "Checkbox Field",
+                        "icon": "/scripts/formbuilder/img/checkbox.png",
+                        "component_id": "eb73-f380-df9d",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Hidden Field",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "cb3a-7e16-085e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Hidden",
+                        "value": "",
+                        "name": "Hidden",
+                        "category": "input",
+                        "label": "Hidden Field",
+                        "icon": "/scripts/formbuilder/img/hidden.png",
+                        "component_id": "ca07-ab75-69ab",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Text Field",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "ddbc-70b8-4531",
+                        "required": false,
+                        "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
                     }
@@ -237,7 +321,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     },
                     {
                         "type": "PDF_Download",
@@ -249,7 +334,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -265,7 +351,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "8aabbc5fe214f04e62d00e8783d08d5b62b4eff1"
+            "github_repository_sha": "01030383d2654a105c51a1ec804e2643322abcd6"
         }
     },
     "connections": []
