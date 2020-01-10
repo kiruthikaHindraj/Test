@@ -16,6 +16,97 @@
                 "deployed": true,
                 "components": [
                     {
+                        "type": "Repeat",
+                        "name": "Repeat Group",
+                        "category": "select",
+                        "label": "Repeat Group",
+                        "icon": "/scripts/formbuilder/img/repeat.png",
+                        "component_id": "fd9a-55d4-8d43",
+                        "attributes": {
+                            "all_expanded": false,
+                            "max_repeat_items": "",
+                            "sfdc_parent_component": "",
+                            "list_view_fields": [
+                                ""
+                            ],
+                            "repeat_view_option": "list",
+                            "delete_button_label": "",
+                            "add_title_label": "",
+                            "add_button_label": ""
+                        },
+                        "required": true,
+                        "object_api_name": "",
+                        "sfdc_query_limit": "",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_order_by": "",
+                        "components": [
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "4e8d-9af3-5b0d",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Text Field",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "97af-ef7c-7581",
+                                "record_id": "",
+                                "object_api_name": "None Selected",
+                                "object_label": "None Selected",
+                                "sfdc_auto_fill_id": "",
+                                "sfdc_query_search_group": "",
+                                "sfdc_query_order_by": "",
+                                "sfdc_query_visibility": "",
+                                "sfdc_filter_fields": "",
+                                "sfdc_query_limit": "10",
+                                "sfdc_query_fields": "",
+                                "attributes": {
+                                    "button": "Select",
+                                    "position": "Fill",
+                                    "auto_fill_id": "",
+                                    "query_search_group": "",
+                                    "query_order_by": "",
+                                    "query_visibility": "",
+                                    "filter_fields": "",
+                                    "query_limit": "10",
+                                    "query_fields": ""
+                                },
+                                "version": "2",
+                                "icon": "/scripts/formbuilder/img/salesforce.png",
+                                "label": "Select Record",
+                                "category": "salesforce",
+                                "name": "",
+                                "type": "SalesforceSelect"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "4651-c525-66fa",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Text Field",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
+                            },
+                            {
+                                "components": [],
+                                "required": false,
+                                "component_id": "e16a-1df2-793c",
+                                "icon": "/scripts/formbuilder/img/text.png",
+                                "label": "Text Field",
+                                "category": "input",
+                                "name": "Text",
+                                "type": "Text"
+                            }
+                        ],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
                         "value": "",
                         "type": "Select",
                         "name": "Select",
@@ -351,7 +442,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "01030383d2654a105c51a1ec804e2643322abcd6"
+            "github_repository_sha": "8e0c06371a1112bfeb9321cd1894dc4b52ec0212"
         }
     },
     "connections": []
