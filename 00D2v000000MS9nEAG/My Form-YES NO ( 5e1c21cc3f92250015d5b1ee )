@@ -30,6 +30,22 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
+                    },
+                    {
+                        "type": "YesNo",
+                        "name": "YesNo Select",
+                        "category": "select",
+                        "label": "YesNo List",
+                        "icon": "/scripts/formbuilder/img/radio_options.png",
+                        "select_options": "Yes\nNo",
+                        "component_id": "3260-65fe-3772",
+                        "attributes": {
+                            "layout": "Horizontal"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             }
@@ -45,7 +61,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "5b4929f9f045b7f8baa6e60fdf188c5b67b66fca"
+            "github_repository_sha": "1f5c12bc8391b054962e87b1e6bedceaf9771605"
         }
     },
     "connections": []
