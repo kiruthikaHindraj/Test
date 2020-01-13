@@ -24,7 +24,7 @@
                         "select_options": "Yes\nNo",
                         "component_id": "da07-605a-25c4",
                         "attributes": {
-                            "layout": "Vertical"
+                            "layout": "Horizontal"
                         },
                         "required": false,
                         "components": [],
@@ -43,7 +43,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "5b4929f9f045b7f8baa6e60fdf188c5b67b66fca"
+        }
     },
     "connections": []
 }
