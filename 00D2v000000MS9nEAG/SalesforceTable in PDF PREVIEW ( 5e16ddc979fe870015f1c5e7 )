@@ -23,9 +23,10 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
-                            "add_new_record_button": false,
+                            "disable_auto_submission": false,
+                            "add_new_record_button": true,
                             "table_submit_button_label": "",
-                            "add_table_submit_button": false,
+                            "add_table_submit_button": true,
                             "owner_field": "",
                             "sfdc_parent_component": "",
                             "sfdc_parent_field_name": "",
@@ -98,7 +99,8 @@
                         "required": false,
                         "components": [],
                         "repeat_value": [],
-                        "controlling_elements": []
+                        "controlling_elements": [],
+                        "attributes": {}
                     }
                 ]
             }
@@ -112,7 +114,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "a347314edabf1c774b4d9fffb70cdd40f1c21d50"
+        }
     },
     "connections": []
 }
