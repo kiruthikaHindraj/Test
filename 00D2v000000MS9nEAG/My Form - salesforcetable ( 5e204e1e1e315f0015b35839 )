@@ -23,7 +23,7 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
-                            "enable_auto_submission": false,
+                            "enable_auto_submission": true,
                             "add_new_record_button": true,
                             "table_submit_button_label": "",
                             "add_table_submit_button": true,
@@ -84,7 +84,10 @@
         "access": "Private",
         "public": false,
         "list_view_fields": [],
-        "archived": false
+        "archived": false,
+        "attributes": {
+            "github_repository_sha": "117cbc13af121c9c35ac54d90fddc5966daf9834"
+        }
     },
     "connections": []
 }
