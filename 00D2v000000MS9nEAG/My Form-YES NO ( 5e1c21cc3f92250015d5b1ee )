@@ -21,7 +21,7 @@
                         "category": "select",
                         "label": "YesNo List",
                         "icon": "/scripts/formbuilder/img/radio_options.png",
-                        "select_options": "Yes\nNo",
+                        "select_options": "Green\nBlue",
                         "component_id": "da07-605a-25c4",
                         "attributes": {
                             "layout": "Horizontal"
@@ -61,7 +61,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "1f5c12bc8391b054962e87b1e6bedceaf9771605"
+            "github_repository_sha": "2840c941e41dce231ad8bcfac1566106cae008d7"
         }
     },
     "connections": []
