@@ -23,6 +23,7 @@
                         "icon": "/scripts/formbuilder/img/salesforce.png",
                         "version": "2",
                         "attributes": {
+                            "enable_record_auto_submit": false,
                             "disable_auto_submission": false,
                             "add_new_record_button": true,
                             "table_submit_button_label": "",
@@ -36,7 +37,8 @@
                                 {
                                     "default_option": "",
                                     "default_value": "",
-                                    "editable": false,
+                                    "required": false,
+                                    "editable": true,
                                     "data_type": "none",
                                     "column_label": "",
                                     "api_name": "Id"
@@ -44,7 +46,8 @@
                                 {
                                     "default_option": "",
                                     "default_value": "",
-                                    "editable": false,
+                                    "required": false,
+                                    "editable": true,
                                     "data_type": "none",
                                     "column_label": "",
                                     "api_name": "Name"
@@ -52,7 +55,8 @@
                                 {
                                     "default_option": "",
                                     "default_value": "",
-                                    "editable": false,
+                                    "required": false,
+                                    "editable": true,
                                     "data_type": "none",
                                     "column_label": "",
                                     "api_name": "Type"
@@ -116,7 +120,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "a347314edabf1c774b4d9fffb70cdd40f1c21d50"
+            "github_repository_sha": "f01cd77fb5dbd384c4429c11a9ca5f8f1aec537b"
         }
     },
     "connections": []
