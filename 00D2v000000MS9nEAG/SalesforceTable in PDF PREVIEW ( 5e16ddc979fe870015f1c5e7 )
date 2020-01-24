@@ -83,6 +83,22 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
+                    },
+                    {
+                        "type": "JavaScript",
+                        "name": "JavaScript",
+                        "category": "media",
+                        "label": "Custom JavaScript",
+                        "version": "2",
+                        "component_id": "a02d-3c05-497b",
+                        "attributes": {
+                            "script_detail": "",
+                            "script": "return x;\nvar x =45;\nconsole.log(\"Heloo\");"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             },
@@ -120,7 +136,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "f01cd77fb5dbd384c4429c11a9ca5f8f1aec537b"
+            "github_repository_sha": "dfc6caf7daec2db9175812d6d624c9c82a62ce6a"
         }
     },
     "connections": []
