@@ -92,6 +92,13 @@
                         "version": "2",
                         "component_id": "a02d-3c05-497b",
                         "attributes": {
+                            "error": [
+                                {
+                                    "index": 6,
+                                    "description": "Illegal return statement",
+                                    "lineNumber": 1
+                                }
+                            ],
                             "script_detail": "",
                             "script": "return x;\nvar x =45;\nconsole.log(\"Heloo\");"
                         },
@@ -136,7 +143,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "dfc6caf7daec2db9175812d6d624c9c82a62ce6a"
+            "github_repository_sha": "4a5a3b74d3684ede1fd6779fc99692a453f6e85b"
         }
     },
     "connections": []
