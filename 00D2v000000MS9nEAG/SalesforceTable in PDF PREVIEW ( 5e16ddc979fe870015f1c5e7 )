@@ -106,6 +106,23 @@
                         "components": [],
                         "repeat_value": [],
                         "controlling_elements": []
+                    },
+                    {
+                        "type": "HTML",
+                        "name": "HTML",
+                        "category": "media",
+                        "label": "Custom HTML",
+                        "icon": "/scripts/formbuilder/img/paragraph.png",
+                        "component_id": "43ab-e6bc-60bc",
+                        "attributes": {
+                            "html_detail": "",
+                            "html_edit": "<b>Hello how are you today?</b>\n<a ERROR/<a/>\n\n<h1>hello</h1>",
+                            "error": []
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
                     }
                 ]
             },
@@ -143,7 +160,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "e8aff41922a48315c8d467c74770458b8bb1da8d"
+            "github_repository_sha": "ca3419f8940f662dea06e72e6e1ccbeb31332029"
         }
     },
     "connections": []
