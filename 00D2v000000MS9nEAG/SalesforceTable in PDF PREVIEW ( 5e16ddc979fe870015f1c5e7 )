@@ -100,7 +100,7 @@
                                 }
                             ],
                             "script_detail": "",
-                            "script": "return x;\nvar x =45;\nconsole.log(\"Heloo\");"
+                            "script": "return x\nvar x =45;\nconsole.log(\"Heloo\");"
                         },
                         "required": false,
                         "components": [],
@@ -143,7 +143,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "4a5a3b74d3684ede1fd6779fc99692a453f6e85b"
+            "github_repository_sha": "e8aff41922a48315c8d467c74770458b8bb1da8d"
         }
     },
     "connections": []
