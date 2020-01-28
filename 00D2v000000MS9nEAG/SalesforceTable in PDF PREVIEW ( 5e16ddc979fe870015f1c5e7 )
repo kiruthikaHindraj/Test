@@ -92,6 +92,7 @@
                         "version": "2",
                         "component_id": "a02d-3c05-497b",
                         "attributes": {
+                            "error_count": 1,
                             "error": [
                                 {
                                     "index": 6,
@@ -115,6 +116,7 @@
                         "icon": "/scripts/formbuilder/img/paragraph.png",
                         "component_id": "43ab-e6bc-60bc",
                         "attributes": {
+                            "error_count": 1,
                             "html_detail": "",
                             "html_edit": "<b>Hello how are you today?</b>\n<a ERROR/<a/>\n\n<h1>hello</h1>",
                             "error": []
@@ -160,7 +162,7 @@
         "list_view_fields": [],
         "archived": false,
         "attributes": {
-            "github_repository_sha": "ca3419f8940f662dea06e72e6e1ccbeb31332029"
+            "github_repository_sha": "0531f7c537d4ebbd37ce3b0c83155631332646e9"
         }
     },
     "connections": []
