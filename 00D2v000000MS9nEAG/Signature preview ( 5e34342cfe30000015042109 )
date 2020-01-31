@@ -1,0 +1,80 @@
+{
+    "form": {
+        "created_by_id": "5cdd2055b9e3bc001a597983",
+        "owner_id": "5cdd2055b9e3bc001a597983",
+        "name": "Signature preview",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2020-01-31T14:04:58.489Z",
+        "pages": [
+            {
+                "page_id": "a9c2-f76b-5d71",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Photo",
+                        "name": "Photo",
+                        "category": "media",
+                        "label": "Photo Attachment",
+                        "icon": "/scripts/formbuilder/img/photo.png",
+                        "quality": "Low",
+                        "component_id": "9003-4204-35d2",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Signature",
+                        "name": "Signature",
+                        "category": "media",
+                        "label": "Signature Input",
+                        "icon": "/scripts/formbuilder/img/signature.png",
+                        "height": "110",
+                        "component_id": "132f-c221-000e",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "3ebf-4e61-b462",
+                "title": "Page 1",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "PDF",
+                        "name": "PDF Preview",
+                        "category": "media",
+                        "label": "PDF Preview",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "e47d-5926-439c",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "last_name": "123",
+            "first_name": "test",
+            "id": "5cdd2055b9e3bc001a597983"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
