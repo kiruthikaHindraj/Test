@@ -1,0 +1,345 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Rich Salesforce table",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2020-02-04T11:10:19.306Z",
+        "attributes": {
+            "github_repository_sha": "59f681c7407e4b4fbcc82c5568bb6ff10f1bde4a"
+        },
+        "pages": [
+            {
+                "page_id": "08db-200d-d043",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Records",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "table_submit_button_label": "",
+                            "add_table_submit_button": true,
+                            "owner_field": "",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": [
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": false,
+                                    "data_type": "",
+                                    "column_label": "Account Name",
+                                    "api_name": "Name"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": true,
+                                    "data_type": "",
+                                    "column_label": "Acc Nr.",
+                                    "api_name": "AccountNumber"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": true,
+                                    "data_type": "currency",
+                                    "column_label": "Rev",
+                                    "api_name": "AnnualRevenue"
+                                },
+                                {
+                                    "default_option": "1,2,3,4,Yes",
+                                    "default_value": "",
+                                    "editable": true,
+                                    "data_type": "select",
+                                    "column_label": "Type",
+                                    "api_name": "Type"
+                                },
+                                {
+                                    "default_option": "",
+                                    "default_value": "",
+                                    "editable": true,
+                                    "data_type": "checkbox",
+                                    "column_label": "Phone?",
+                                    "api_name": "Phone"
+                                }
+                            ],
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Name,AccountNumber,Phone,Rating,Type,AnnualRevenue",
+                        "sfdc_query_limit": "20",
+                        "sfdc_filter_fields": "AnnualRevenue != null",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "a40f-1cc1-e94b",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Account Records",
+                        "icon": "/scripts/formbuilder/img/SalesforceTable.png",
+                        "version": "2",
+                        "attributes": {
+                            "custom_column_name": [],
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "table_submit_button_label": "",
+                            "add_table_submit_button": false,
+                            "sfdc_parent_field_name": "",
+                            "sfdc_parent_component": "",
+                            "table_page_length": "",
+                            "owner_field": ""
+                        },
+                        "sfdc_query_fields": "Description,Fax,Id,Name,AccountNumber,Phone,Rating,Site,AccountSource,Type",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "7e84-3b14-551b",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceTableV2",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Account Records 2",
+                        "icon": "/scripts/formbuilder/img/SalesforceTableV2.png",
+                        "version": "2",
+                        "attributes": {
+                            "owner_field": "",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": "",
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Description,Fax,Id,Name,AccountNumber,Phone,Rating,Site,AccountSource,Type",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "edfb-a7db-b881",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Records",
+                        "icon": "/scripts/formbuilder/img/SalesforceTable.png",
+                        "version": "2",
+                        "attributes": {
+                            "table_submit_button_label": "",
+                            "add_table_submit_button": false,
+                            "owner_field": "",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": [
+                                {
+                                    "data_type": "ReadOnly",
+                                    "column_label": "ACC",
+                                    "api_name": "AccountNumber"
+                                },
+                                {
+                                    "data_type": "ReadOnly",
+                                    "column_label": "Phone",
+                                    "api_name": "Phone"
+                                },
+                                {
+                                    "data_type": "ReadOnly",
+                                    "column_label": "",
+                                    "api_name": "Description"
+                                }
+                            ],
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Description,Fax,Id,Name,AccountNumber,Phone,Rating,Site,AccountSource,Type",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "c5aa-8450-5f9b",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "SalesforceTable",
+                        "name": "Salesforce Table",
+                        "category": "salesforce",
+                        "label": "Records",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "disable_auto_submission": false,
+                            "new_record_button_label": "",
+                            "add_new_record_button": true,
+                            "table_submit_button_label": "",
+                            "add_table_submit_button": true,
+                            "owner_field": "",
+                            "sfdc_parent_component": "",
+                            "sfdc_parent_field_name": "",
+                            "custom_offline_lookup_filter": "",
+                            "offline_sync_filter": "",
+                            "custom_column_name": [
+                                {
+                                    "api_name": "Name",
+                                    "column_label": "",
+                                    "data_type": "none",
+                                    "editable": true,
+                                    "required": true,
+                                    "default_value": "",
+                                    "default_option": ""
+                                },
+                                {
+                                    "api_name": "Phone",
+                                    "column_label": "",
+                                    "data_type": "none",
+                                    "editable": true,
+                                    "required": true,
+                                    "default_value": "",
+                                    "default_option": ""
+                                }
+                            ],
+                            "table_page_length": "",
+                            "query_search_group": "",
+                            "query_order_by": "",
+                            "query_visibility": "",
+                            "filter_fields": "",
+                            "query_limit": "10",
+                            "query_fields": ""
+                        },
+                        "sfdc_query_fields": "Name,Phone,AnnualRevenue",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "cf39-5bb8-5556",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Date",
+                        "name": "Date",
+                        "category": "input",
+                        "label": "Date Field",
+                        "icon": "/scripts/formbuilder/img/date.png",
+                        "component_id": "7bf3-e43b-fbe1",
+                        "attributes": {
+                            "format": "YYYY.MM.DD"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            },
+            {
+                "page_id": "359d-14d6-7ab0",
+                "title": "Page 1",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "PDF",
+                        "name": "PDF Preview",
+                        "category": "media",
+                        "label": "PDF Preview",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "93f5-f514-a3a3",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "PDF_Download",
+                        "name": "PDF Download",
+                        "category": "media",
+                        "label": "PDF Download",
+                        "icon": "https://d3iyvxaud7i110.cloudfront.net/apps/builder/elements/pdf.png",
+                        "component_id": "b3e0-e7db-16bc",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": []
+}
