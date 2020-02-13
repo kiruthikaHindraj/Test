@@ -1,0 +1,141 @@
+{
+    "form": {
+        "created_by_id": "5cc17f16630ca900103bac08",
+        "owner_id": "5cc17f16630ca900103bac08",
+        "name": "Client issue fix",
+        "page_count": 1,
+        "current_page": 0,
+        "deployed": true,
+        "created_at": "2020-02-13T12:06:46.786Z",
+        "attributes": {
+            "github_repository_sha": "0f6c98b92052c8d039693c461fad0eafd6ff47d9"
+        },
+        "pages": [
+            {
+                "page_id": "7ada-d998-ba1f",
+                "title": "Details",
+                "page_index": 1,
+                "component_count": null,
+                "deployed": true,
+                "components": [
+                    {
+                        "type": "Salesforce",
+                        "name": "",
+                        "category": "salesforce",
+                        "label": "Record Lookup",
+                        "icon": "/scripts/formbuilder/img/salesforce.png",
+                        "version": "2",
+                        "attributes": {
+                            "query_fields": "",
+                            "query_limit": "10",
+                            "filter_fields": "",
+                            "query_visibility": "",
+                            "query_order_by": "",
+                            "query_search_group": "",
+                            "auto_fill_id": "",
+                            "position": "Fill",
+                            "enable_barcode_scanner": false,
+                            "button": "Find",
+                            "show_auto_search_results": false,
+                            "offline_sync_filter": "",
+                            "custom_offline_lookup_filter": ""
+                        },
+                        "sfdc_query_fields": "Name,Type",
+                        "sfdc_query_limit": "10",
+                        "sfdc_filter_fields": "",
+                        "sfdc_query_visibility": "All Records",
+                        "sfdc_query_order_by": "",
+                        "sfdc_query_search_group": "All Fields",
+                        "sfdc_auto_fill_id": "5e453bd6b27d7d001037acd4",
+                        "object_label": "None Selected",
+                        "object_api_name": "Account",
+                        "component_id": "e626-f011-31bb",
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    },
+                    {
+                        "type": "Text",
+                        "name": "Text",
+                        "category": "input",
+                        "label": "Account Name",
+                        "icon": "/scripts/formbuilder/img/text.png",
+                        "component_id": "148c-235b-5ce5",
+                        "attributes": {
+                            "readonly": "no"
+                        },
+                        "required": false,
+                        "components": [],
+                        "repeat_value": [],
+                        "controlling_elements": []
+                    }
+                ]
+            }
+        ],
+        "connections": [
+            "Salesforce"
+        ],
+        "created_by": {
+            "id": "5cc17f16630ca900103bac08",
+            "first_name": "Shanu",
+            "last_name": "H"
+        },
+        "access": "Private",
+        "public": false,
+        "list_view_fields": [],
+        "archived": false
+    },
+    "connections": [
+        {
+            "_id": "5e453bd6b27d7d001037acd4",
+            "created_at": "2020-02-13T08:54:03.248Z",
+            "updated_at": "2020-02-13T12:06:46.863Z",
+            "template_id": "5e453bd6b27d7d001037acd0",
+            "created_by_id": "5cc17f16630ca900103bac08",
+            "owner_id": "5cc17f16630ca900103bac08",
+            "sequence": 1,
+            "type": "Salesforce",
+            "push_updates": false,
+            "emails": [],
+            "mappings": [
+                {
+                    "field_id": "Name",
+                    "field_name": "Account Name ( Name )",
+                    "component_id": "148c-235b-5ce5",
+                    "component_name": "Account Name ( Page: Details )"
+                },
+                {
+                    "field_id": "Customer__c",
+                    "field_name": "Customer ( Customer__c )",
+                    "component_id": "FormyoulaUserUsername",
+                    "component_name": "[User Username]"
+                },
+                {
+                    "field_id": "Website",
+                    "field_name": "Website ( Website )",
+                    "component_id": "FormyoulaUserEmail",
+                    "component_name": "[User Email]"
+                }
+            ],
+            "public_form": {
+                "disable_formyoula_branding": false
+            },
+            "salesforce": {
+                "object_id": "Account",
+                "object_name": "Account",
+                "upsert_field": "148c-235b-5ce5",
+                "attachment": "",
+                "repeat_group": "",
+                "skip_field": "",
+                "skip_field_false": "",
+                "update_field": "",
+                "enable_blank_values": false,
+                "use_form_owner": true
+            },
+            "is_disabled": false,
+            "version": 1,
+            "__v": 0
+        }
+    ]
+}
